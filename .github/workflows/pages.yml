@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
-      - run: uv run python tools/build.py build
+      - run: uv run --no-dev python tools/build.py build
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with:

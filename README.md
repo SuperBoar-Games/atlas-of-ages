@@ -10,9 +10,11 @@ dynasties and sages, the Vedas, the two epics and recorded history. The graph is
 | `ontology/yc.ttl` | Vocabulary: entry classes, the 12 relation types, and SKOS schemes for periods, source tiers, beings and roles |
 | `shapes/yc-shapes.ttl` | SHACL shapes every change must pass |
 | `graph/*.ttl` | The data, one file per period. A figure's block also holds its plain outgoing links |
-| `layout/layout.json` | Canvas, bands, captions, era markers and the x/y of every entry. Not knowledge, so not RDF |
-| `web/` | Page markup, styles and display code; reads the built `DATA` |
-| `tools/build.py` | Validates, then writes `dist/` |
+| `layout/layout.json` | Layout rules by type only (bands per period, which link types set layers, spacing); never per entry |
+| `web/` | Page markup, styles and the Canvas renderer; reads the built `DATA` |
+| `tools/build.py` | Validates, lays out, then writes `dist/` |
+| `tools/layout.py` | The layout: period bands, lineage layers, barycentre ordering, rows wrapped at a fixed width |
+| `tools/perf.py` | Frame-time test in headless Chromium |
 
 Namespace: `https://w3id.org/yugachakra#`.
 
@@ -39,9 +41,19 @@ Namespace: `https://w3id.org/yugachakra#`.
 ```sh
 uv run python tools/build.py check          # SHACL validation and layout consistency
 uv run python tools/build.py build          # check, then dist/index.html (single file), graph.json, yugachakra.ttl, yugachakra.jsonld
-uv run python -m http.server -d dist 8000   # serve the build on http://localhost:8000
+uv run python tools/dev.py                  # dev server on http://127.0.0.1:8000: quick rebuild on change (no SHACL), reloads the browser
+uv run python tools/perf.py -v              # frame times for pan, zoom and selection; fails if draw p95 > 8 ms
 ```
 
-A new entry needs a block in the right `graph/*.ttl` and a position in `layout/layout.json`; `check` names anything missing.
+A new entry needs only its block in the right `graph/*.ttl`; the layout places it.
+
+`perf.py` needs Chromium once: `uv run playwright install chromium-headless-shell`. It uses the machine GPU by default;
+`--renderer software` runs SwiftShader as a slow-device worst case.
+
+## Rendering
+
+The page draws on one canvas. The graph is rendered into 256 px tiles per half-octave zoom level and cached, as map
+engines do: panning moves bitmaps, zooming scales them until the gesture rests, and new tiles are drawn within a
+3 ms per-frame budget plus idle prefetch. Labels are placed once per zoom level. Selection and hover are a live overlay.
 
 Pushes to `main` deploy `dist/` to GitHub Pages (`.github/workflows/pages.yml`); pull requests only build.

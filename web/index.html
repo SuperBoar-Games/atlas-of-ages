@@ -4,109 +4,61 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Yugachakra</title>
+<meta name="description" content="Gods, sages and kings across the four ages of Indian sacred history, all connected.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Hind:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="page">
-  <header class="top">
+<canvas id="sky" role="img" aria-label="Map of Indian sacred history: figures and events in bands from creation through the four yugas to 1947, joined by their links"></canvas>
+
+<nav class="ribbon" id="ribbon" aria-label="Ages"></nav>
+
+<header class="top">
+  <div class="brand">
     <h1>Yugachakra</h1>
-    <p class="sub">From creation through the four yugas to 1947: gods and avatars, dynasties and sages, the Vedas, the two epics and recorded history, all connected. Search or tap any name to see its links and trace its line.</p>
-    <p class="stats" id="stats"></p>
-  </header>
-
-  <div class="bar">
+    <p id="stats"></p>
+  </div>
+  <div class="tools">
     <div class="search">
-      <svg class="s-ic" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5 14 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-      <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Search names" aria-label="Search names" aria-controls="qres" aria-expanded="false" role="combobox">
-      <ul class="dd-menu" id="qres" role="listbox" aria-label="Search results" hidden></ul>
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5 14 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Find a name" aria-label="Find a name" role="combobox" aria-controls="qres" aria-expanded="false">
+      <ul id="qres" role="listbox" aria-label="Matches" hidden></ul>
     </div>
-    <div class="dd" id="jumpDD">
-      <button type="button" class="dd-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Jump to a section"><span class="dd-label">Jump to</span><svg class="dd-chev" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-      <ul class="dd-menu" role="listbox" aria-label="Sections" hidden></ul>
-    </div>
-    <button type="button" class="mode" id="keyBtn" aria-expanded="false" aria-controls="keyPanel">Key</button>
+    <button type="button" class="btn" id="filtersBtn" aria-expanded="false" aria-controls="filters">Filters</button>
+    <button type="button" class="btn icon" id="themeBtn" aria-label="Switch light and dark">
+      <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.6A5.8 5.8 0 0 1 6.4 2.5a5.8 5.8 0 1 0 7.1 7.1Z" fill="currentColor"/></svg>
+    </button>
   </div>
+</header>
 
-  <div class="keypanel" id="keyPanel" hidden>
-    <div class="kp-row">
-      <h3>Links · tap to hide</h3>
-      <div class="legend" id="legend"></div>
-    </div>
-    <div class="kp-row">
-      <h3>Beings · each figure in one class</h3>
-      <div class="key" id="beingKey"></div>
-    </div>
-    <div class="kp-row">
-      <h3>Roles · a figure can hold several</h3>
-      <div class="key" id="roleKey"></div>
-    </div>
-    <div class="kp-row">
-      <h3>Marks · tap to highlight</h3>
-      <div class="key" aria-label="Marks">
-        <button type="button" class="kitem" data-k="core" aria-pressed="false"><svg width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="var(--fg)"/></svg><span>Core narrative</span><span class="kc" data-kc="core"></span></button>
-        <button type="button" class="kitem" data-k="layer" aria-pressed="false"><svg width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="var(--surface)" stroke="var(--fg)" stroke-width="2.4"/></svg><span>Later layer of the critical text</span><span class="kc" data-kc="layer"></span></button>
-        <button type="button" class="kitem" data-k="vulgate" aria-pressed="false"><svg width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="var(--surface)" stroke="var(--fg)" stroke-width="1.8" stroke-dasharray="6 2"/></svg><span>Popular versions only</span><span class="kc" data-kc="vulgate"></span></button>
-        <button type="button" class="kitem" data-k="purana" aria-pressed="false"><svg width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="var(--surface)" stroke="var(--fg)" stroke-width="1.6" stroke-dasharray="2 2"/></svg><span>Puranas and later works</span><span class="kc" data-kc="purana"></span></button>
-        <button type="button" class="kitem" data-k="folk" aria-pressed="false"><svg width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="var(--surface)" stroke="var(--accent)" stroke-width="2" stroke-dasharray="1 2"/></svg><span>Folk, Jain or sectarian</span><span class="kc" data-kc="folk"></span></button>
-        <button type="button" class="kitem" data-k="chiranjivi" aria-pressed="false"><svg width="22" height="22" aria-hidden="true"><circle cx="11" cy="11" r="5" fill="var(--fg)"/><circle cx="11" cy="11" r="9.5" fill="none" stroke="var(--accent)" stroke-width="1.6"/></svg><span>Chiranjivi</span><span class="kc" data-kc="chiranjivi"></span></button>
-        <button type="button" class="kitem" data-k="span" aria-pressed="false"><svg width="22" height="22" aria-hidden="true"><circle cx="11" cy="11" r="5" fill="var(--fg)"/><circle cx="11" cy="11" r="9.5" fill="none" stroke="var(--muted)" stroke-width="1.2"/></svg><span>Lives across yugas</span><span class="kc" data-kc="span"></span></button>
-        <button type="button" class="kitem" data-k="cross" aria-pressed="false"><svg width="26" height="16" aria-hidden="true"><line x1="5" y1="12" x2="21" y2="4" stroke="var(--cross)" stroke-width="2" stroke-dasharray="4 3"/><circle cx="5" cy="12" r="3.5" fill="var(--fg)"/><circle cx="21" cy="4" r="3.5" fill="var(--fg)"/></svg><span>Crosses between yugas</span><span class="kc" data-kc="cross"></span></button>
-        <button type="button" class="kitem" data-k="cat" aria-pressed="false"><svg width="22" height="22" aria-hidden="true"><rect x="6" y="6" width="10" height="10" fill="var(--story)" transform="rotate(45 11 11)"/><circle cx="11" cy="11" r="9.5" fill="none" stroke="var(--kill)" stroke-width="1.8" stroke-dasharray="3 2"/></svg><span>Catastrophe</span><span class="kc" data-kc="cat"></span></button>
-      </div>
-    </div>
+<section class="filters" id="filters" hidden aria-label="Filters">
+  <div class="fgroup">
+    <h2>Links</h2>
+    <div class="chips" id="linkChips"></div>
   </div>
-
-  <div class="stage">
-    <div class="wrap" id="wrap"><svg id="g" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Connected map of Indian sacred history from creation through the four yugas to 1947"></svg></div>
-    <div class="zoom">
-      <button type="button" id="zout" aria-label="Zoom out"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 7h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
-      <button type="button" id="zfit">Fit</button>
-      <button type="button" id="zin" aria-label="Zoom in"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 7h8M7 3v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
-    </div>
+  <div class="fgroup">
+    <h2>Sources</h2>
+    <div class="seg" id="tierSeg" role="radiogroup" aria-label="Show sources up to"></div>
   </div>
-
-  <p class="howto">Dotted grey lines skip generations. Yuga placement of early figures follows tradition and is approximate; dates before about 600 BCE are traditional.</p>
-
-  <section class="refs" aria-labelledby="refs-h">
-    <h2 id="refs-h">References</h2>
-    <h3>Checked against</h3>
-    <p class="refnote">The epic and Puranic figures and links were checked against these texts; the recorded-history section was not. Each figure's details list the chapters or sections that support it.</p>
-    <ol>
-      <li>Kisari Mohan Ganguli, trans. <i>The Mahabharata of Krishna-Dwaipayana Vyasa</i>, 1883–1896 (popular recension). <a href="https://sacred-texts.com/hin/maha/index.htm" target="_blank" rel="noopener">sacred-texts.com</a></li>
-      <li>Desiraju Hanumanta Rao and K. M. K. Murthy, trans. <i>Valmiki Ramayana</i>, Bala to Yuddha Kandas, 2006. <a href="https://valmikiramayan.net/" target="_blank" rel="noopener">valmikiramayan.net</a></li>
-      <li>Hari Prasad Shastri, trans. <i>The Ramayana of Valmiki</i>, Uttara Kanda, 1952. <a href="https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki" target="_blank" rel="noopener">wisdomlib.org</a></li>
-      <li>Manmatha Nath Dutt, trans. <i>A Prose English Translation of Harivamsha</i>, 1897. <a href="https://www.gutenberg.org/ebooks/61937" target="_blank" rel="noopener">Project Gutenberg</a></li>
-      <li><i>Srimad Bhagavatam</i>, trans. A. C. Bhaktivedanta Swami Prabhupada. <a href="https://vedabase.io/en/library/sb/" target="_blank" rel="noopener">vedabase.io</a></li>
-      <li>H. H. Wilson, trans. <i>The Vishnu Purana</i>, 1840. <a href="https://sacred-texts.com/hin/vp/index.htm" target="_blank" rel="noopener">sacred-texts.com</a></li>
-    </ol>
-    <h3>Further reading</h3>
-    <ol>
-      <li>V. S. Sukthankar et al., eds. <i>The Mahabharata: Critical Edition</i>. Bhandarkar Oriental Research Institute, Pune, 1933–1966.</li>
-      <li>P. L. Vaidya, ed. <i>The Harivamsa: Critical Edition</i>. Bhandarkar Oriental Research Institute, Pune, 1969–1971.</li>
-      <li>G. H. Bhatt et al., eds. <i>The Valmiki Ramayana: Critical Edition</i>. Oriental Institute, Baroda, 1960–1975.</li>
-      <li>Bibek Debroy, trans. <i>The Mahabharata</i>. 10 vols. Penguin, 2010–2014.</li>
-      <li>J. A. B. van Buitenen, trans. <i>The Mahabharata</i>, Books 1–5. University of Chicago Press, 1973–1978.</li>
-      <li>Robert P. Goldman et al., trans. <i>The Ramayana of Valmiki</i>. Princeton University Press, 1984–2017.</li>
-      <li>Stephanie W. Jamison and Joel P. Brereton, trans. <i>The Rigveda</i>. Oxford University Press, 2014.</li>
-      <li>Julius Eggeling, trans. <i>The Satapatha Brahmana</i>. Sacred Books of the East, 1882–1900.</li>
-      <li>Patrick Olivelle, trans. <i>The Early Upanisads</i>. Oxford University Press, 1998.</li>
-      <li>George L. Hart and Hank Heifetz, trans. <i>The Four Hundred Songs of War and Wisdom (Purananuru)</i>. Columbia University Press, 1999.</li>
-      <li>Vettam Mani. <i>Puranic Encyclopaedia</i>. Motilal Banarsidass, 1975.</li>
-      <li>John Brockington. <i>The Sanskrit Epics</i>. Brill, 1998.</li>
-      <li>Alf Hiltebeitel. <i>Rethinking the Mahabharata</i>. University of Chicago Press, 2001.</li>
-      <li>F. E. Pargiter. <i>Ancient Indian Historical Tradition</i>. Oxford University Press, 1922.</li>
-      <li>Michael Witzel. "Early Sanskritization: Origins and Development of the Kuru State." <i>Electronic Journal of Vedic Studies</i> 1.4, 1995.</li>
-      <li>B. B. Lal. "Excavation at Hastinapura and Other Explorations." <i>Ancient India</i> 10–11, 1954–1955.</li>
-      <li>Romila Thapar. <i>Early India: From the Origins to AD 1300</i>. Penguin, 2002.</li>
-      <li>Upinder Singh. <i>A History of Ancient and Early Medieval India</i>. Pearson, 2008.</li>
-      <li>Wendy Doniger. <i>The Hindus: An Alternative History</i>. Penguin, 2009.</li>
-    </ol>
-  </section>
-</div>
+  <div class="fgroup">
+    <h2>Highlight</h2>
+    <div class="chips" id="markChips"></div>
+    <div class="chips" id="beingChips"></div>
+    <div class="chips" id="roleChips"></div>
+  </div>
+</section>
 
 <aside class="panel" id="panel" hidden aria-live="polite"></aside>
+
+<div class="zoom" aria-label="Zoom">
+  <button type="button" class="btn icon" id="zout" aria-label="Zoom out"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 7h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  <button type="button" class="btn" id="zfit">Fit</button>
+  <button type="button" class="btn icon" id="zin" aria-label="Zoom in"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 7h8M7 3v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+</div>
+
+<p class="hint" id="hint">Drag to move, scroll or pinch to zoom, click a name to open it. Press / to search.</p>
 
 <script src="data.js"></script>
 <script src="app.js"></script>

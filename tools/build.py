@@ -9,6 +9,8 @@ from pyshacl import validate
 from rdflib import RDF, RDFS, Graph, Namespace, URIRef
 from rdflib.namespace import DCTERMS
 
+from layout import layout as place
+
 ROOT = Path(__file__).resolve().parent.parent
 YC = Namespace('https://w3id.org/yugachakra#')
 SCHEMA = Namespace('https://schema.org/')
@@ -40,11 +42,10 @@ def check(data, shapes, layout):
     terms = {s for s in vocab.subjects() if isinstance(s, URIRef)}
     entries = set(data.subjects(YC.period, None))
     errors += [f'entry id clashes with a vocabulary term: {local(e)}' for e in entries & terms]
-    ids = {local(e) for e in entries}
-    pos = set(layout['positions'])
-    errors += [f'no position in layout.json: {i}' for i in sorted(ids - pos)]
-    errors += [f'position for unknown entry: {i}' for i in sorted(pos - ids)]
-    errors += [f'labelRight names unknown entry: {i}' for i in layout['labelRight'] if i not in ids]
+    key = {s: str(o) for s, o in data.subject_objects(YC.key)}
+    placed = {b['period'] for b in layout['bands']} | {layout['rail']['period']}
+    used = {key[p] for p in data.objects(None, YC.period)}
+    errors += [f'layout.json has no band for period: {p}' for p in sorted(used - placed)]
     return errors
 
 
@@ -57,7 +58,6 @@ def cite_key(c):
 def to_json(data, layout):
     key = {s: str(o) for s, o in data.subject_objects(YC.key)}
     relations = set(data.subjects(RDF.type, YC.Relation))
-    pos, right = layout['positions'], set(layout['labelRight'])
     nodes = []
     for e in sorted(data.subjects(YC.period, None), key=local):
         types = set(data.objects(e, RDF.type))
@@ -69,9 +69,9 @@ def to_json(data, layout):
         i = local(e)
         nodes.append({
             'id': i, 'label': str(data.value(e, RDFS.label)), 'yuga': period,
-            'x': pos[i][0], 'y': pos[i][1], 'kind': key[next(k for k in KINDS if k in types)],
+            'kind': key[next(k for k in KINDS if k in types)],
             'desc': str(data.value(e, RDFS.comment)),
-            'later': tier in ('purana', 'folk'), 'right': i in right,
+            'later': tier in ('purana', 'folk'),
             'tier': 'history' if period == 'history' else tier,
             'span': bool(types & {YC.SpansYugas, YC.Chiranjivi}), 'chiranjivi': YC.Chiranjivi in types,
             'catastrophe': YC.Catastrophe in types,
@@ -93,9 +93,11 @@ def to_json(data, layout):
                 e[k] = str(v)
         edges.append(e)
     edges.sort(key=lambda e: (e['f'], e['type'], e['t']))
-    return {'layout': {**layout['canvas'], 'BANDS': layout['bands'], 'HISTORY': layout['history'],
-                       'CAPTIONS': layout['captions'], 'ERAS': layout['eras']},
-            'nodes': nodes, 'edges': edges}
+    placed = place(nodes, edges, layout)
+    pos = placed.pop('positions')
+    for n in nodes:
+        n['x'], n['y'] = pos[n['id']]
+    return {'layout': placed, 'nodes': nodes, 'edges': edges}
 
 
 def materialize(data):
@@ -128,20 +130,25 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('command', choices=['check', 'build'])
     ap.add_argument('--out', type=Path, default=ROOT / 'dist')
+    ap.add_argument('--quick', action='store_true', help='skip SHACL and the RDF exports (dev server)')
     args = ap.parse_args()
     data, shapes, layout = load()
-    errors = check(data, shapes, layout)
-    if errors:
-        print('\n'.join(errors), file=sys.stderr)
-        sys.exit(1)
-    n_entries = len(set(data.subjects(YC.period, None)))
-    print(f'ok: {n_entries} entries, {len(data)} triples')
+    if not args.quick:
+        errors = check(data, shapes, layout)
+        if errors:
+            print('\n'.join(errors), file=sys.stderr)
+            sys.exit(1)
+        n_entries = len(set(data.subjects(YC.period, None)))
+        print(f'ok: {n_entries} entries, {len(data)} triples')
     if args.command == 'check':
         return
     g = to_json(data, layout)
     args.out.mkdir(exist_ok=True)
     (args.out / 'graph.json').write_text(json.dumps(g, ensure_ascii=False, indent=1) + '\n')
     (args.out / 'index.html').write_text(page(g))
+    if args.quick:
+        print(f"built {args.out} (quick): {len(g['nodes'])} nodes, {len(g['edges'])} edges")
+        return
     full = materialize(data)
     full.serialize(args.out / 'yugachakra.ttl', format='turtle')
     full.serialize(args.out / 'yugachakra.jsonld', format='json-ld', auto_compact=True)
