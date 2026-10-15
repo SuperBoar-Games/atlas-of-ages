@@ -1,6 +1,6 @@
 # Atlas of Ages
 
-[![Check and deploy](https://github.com/SuperBoar-Games/atlas-of-ages/actions/workflows/pages.yml/badge.svg)](https://github.com/SuperBoar-Games/atlas-of-ages/actions/workflows/pages.yml)
+[![Check and deploy](https://github.com/SuperBoar-Games/atlas-of-ages/actions/workflows/pages.yml/badge.svg?branch=dev)](https://github.com/SuperBoar-Games/atlas-of-ages/actions/workflows/pages.yml?query=branch%3Adev)
 
 Indian sacred history from creation to 1947, as a graph of who is linked to whom and a map of where they were.
 The data is RDF in `graph/`; the site is built from it.
