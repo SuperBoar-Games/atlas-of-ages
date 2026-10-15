@@ -1,0 +1,101 @@
+@prefix yc: <https://w3id.org/yugachakra#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://w3id.org/yugachakra> a owl:Ontology ;
+    rdfs:label "Yugachakra vocabulary"@en ;
+    dcterms:description "Figures, events and typed links of Indian sacred history, from creation through the four yugas to 1947."@en .
+
+yc:key a owl:AnnotationProperty ;
+    rdfs:label "key"@en ;
+    rdfs:comment "Short identifier the web page uses for this term."@en .
+
+yc:Entry a owl:Class ; rdfs:label "Entry"@en .
+yc:Figure a owl:Class ; rdfs:subClassOf yc:Entry ; rdfs:label "Figure"@en .
+yc:Occurrence a owl:Class ; rdfs:subClassOf yc:Entry ; rdfs:label "Occurrence"@en .
+
+yc:Deva a owl:Class ; rdfs:subClassOf yc:Figure ; rdfs:label "Deva"@en ; yc:key "deva" .
+yc:Avatar a owl:Class ; rdfs:subClassOf yc:Figure ; rdfs:label "Avatar"@en ; yc:key "avatar" .
+yc:Sage a owl:Class ; rdfs:subClassOf yc:Figure ; rdfs:label "Sage"@en ; yc:key "sage" .
+yc:Person a owl:Class ; rdfs:subClassOf yc:Figure ; rdfs:label "Person"@en ; yc:key "person" .
+yc:Event a owl:Class ; rdfs:subClassOf yc:Occurrence ; rdfs:label "Event"@en ; yc:key "event" .
+yc:Story a owl:Class ; rdfs:subClassOf yc:Occurrence ; rdfs:label "Storyline step"@en ; yc:key "story" .
+
+yc:Chiranjivi a owl:Class ; rdfs:subClassOf yc:SpansYugas ; rdfs:label "Chiranjivi"@en ;
+    rdfs:comment "One of the traditional immortals."@en .
+yc:SpansYugas a owl:Class ; rdfs:subClassOf yc:Figure ; rdfs:label "Lives across yugas"@en .
+yc:Catastrophe a owl:Class ; rdfs:subClassOf yc:Entry ; rdfs:label "Catastrophe"@en ;
+    rdfs:comment "A world-ending or world-changing disaster."@en .
+
+yc:Link a owl:Class ; rdfs:label "Link"@en ;
+    rdfs:comment "A relation instance that carries its own tier, wording or sources (W3C n-ary relation pattern)."@en .
+yc:Citation a owl:Class ; rdfs:label "Citation"@en .
+
+yc:from a owl:ObjectProperty ; rdfs:domain yc:Link ; rdfs:range yc:Entry ; rdfs:label "from"@en .
+yc:to a owl:ObjectProperty ; rdfs:domain yc:Link ; rdfs:range yc:Entry ; rdfs:label "to"@en .
+yc:relation a owl:ObjectProperty ; rdfs:domain yc:Link ; rdfs:label "relation"@en .
+yc:forwardLabel a owl:DatatypeProperty ; rdfs:range xsd:string ; rdfs:label "forward label"@en .
+yc:reverseLabel a owl:DatatypeProperty ; rdfs:range xsd:string ; rdfs:label "reverse label"@en .
+
+yc:period a owl:ObjectProperty ; rdfs:domain yc:Entry ; rdfs:range skos:Concept ; rdfs:label "period"@en .
+yc:tier a owl:ObjectProperty ; rdfs:range skos:Concept ; rdfs:label "source tier"@en .
+yc:being a owl:ObjectProperty ; rdfs:domain yc:Figure ; rdfs:range skos:Concept ; rdfs:label "class of being"@en .
+yc:role a owl:ObjectProperty ; rdfs:domain yc:Figure ; rdfs:range skos:Concept ; rdfs:label "role"@en .
+
+yc:Relation a owl:Class ; rdfs:subClassOf owl:ObjectProperty ; rdfs:label "Relation type"@en .
+
+yc:parentOf a yc:Relation ; rdfs:label "Lineage"@en ; yc:key "line" ; yc:forwardLabel "Parent of" ; yc:reverseLabel "Child of" .
+yc:ancestorOf a yc:Relation ; rdfs:label "Many generations"@en ; yc:key "gap" ; yc:forwardLabel "Ancestor of" ; yc:reverseLabel "Descendant of" .
+yc:kinOf a yc:Relation ; rdfs:label "Marriage & kin"@en ; yc:key "bond" ; yc:forwardLabel "Related to" ; yc:reverseLabel "Related to" .
+yc:rebornAs a yc:Relation ; rdfs:label "Rebirth"@en ; yc:key "reborn" ; yc:forwardLabel "Reborn as" ; yc:reverseLabel "Previous life" .
+yc:linkedWith a yc:Relation ; rdfs:label "Crossover"@en ; yc:key "cross" ; yc:forwardLabel "Linked with" ; yc:reverseLabel "Linked with" .
+yc:kills a yc:Relation ; rdfs:label "Slayings"@en ; yc:key "kill" ; yc:forwardLabel "Kills" ; yc:reverseLabel "Killed by" .
+yc:divineOriginOf a yc:Relation ; rdfs:label "Divine origin"@en ; yc:key "deva" ; yc:forwardLabel "Divine father of" ; yc:reverseLabel "Son of" .
+yc:tells a yc:Relation ; rdfs:label "Narration"@en ; yc:key "tell" ; yc:forwardLabel "Tells" ; yc:reverseLabel "Hears" .
+yc:succeededBy a yc:Relation ; rdfs:label "Rule & succession"@en ; yc:key "reign" ; yc:forwardLabel "Succeeded by" ; yc:reverseLabel "Succeeds" .
+yc:leadsTo a yc:Relation ; rdfs:label "Storyline"@en ; yc:key "story" ; yc:forwardLabel "Leads to" ; yc:reverseLabel "Follows" .
+yc:meets a yc:Relation ; rdfs:label "Storylines meet"@en ; yc:key "meet" ; yc:forwardLabel "Meets" ; yc:reverseLabel "Meets" .
+yc:involves a yc:Relation ; rdfs:label "Takes part"@en ; yc:key "part" ; yc:forwardLabel "Involves" ; yc:reverseLabel "Takes part in" .
+
+yc:Periods a skos:ConceptScheme ; rdfs:label "Periods"@en .
+yc:period-origins a skos:Concept ; skos:inScheme yc:Periods ; skos:prefLabel "Origins"@en ; yc:key "origins" .
+yc:period-satya a skos:Concept ; skos:inScheme yc:Periods ; skos:prefLabel "Satya Yuga"@en ; yc:key "satya" .
+yc:period-treta a skos:Concept ; skos:inScheme yc:Periods ; skos:prefLabel "Treta Yuga"@en ; yc:key "treta" .
+yc:period-dvapara a skos:Concept ; skos:inScheme yc:Periods ; skos:prefLabel "Dvapara Yuga"@en ; yc:key "dvapara" .
+yc:period-kali a skos:Concept ; skos:inScheme yc:Periods ; skos:prefLabel "Kali Yuga"@en ; yc:key "kali" .
+yc:period-deva a skos:Concept ; skos:inScheme yc:Periods ; skos:prefLabel "The gods, outside the yugas"@en ; yc:key "deva" .
+yc:period-history a skos:Concept ; skos:inScheme yc:Periods ; skos:prefLabel "Recorded history"@en ; yc:key "history" .
+
+yc:Tiers a skos:ConceptScheme ; rdfs:label "Source tiers, most to least canonical"@en .
+yc:tier-core a skos:Concept ; skos:inScheme yc:Tiers ; yc:key "core" ;
+    skos:prefLabel "Critical text"@en ; skos:definition "Main narrative of the critical editions (Pune Mahabharata, Baroda Valmiki Ramayana)."@en .
+yc:tier-layer a skos:Concept ; skos:inScheme yc:Tiers ; yc:key "layer" ;
+    skos:prefLabel "Critical text, later layer"@en ; skos:definition "Inside the critical texts but a later layer: Bala and Uttara Kandas, the Harivamsa appendix, the Shanti and Anushasana parvas."@en .
+yc:tier-vulgate a skos:Concept ; skos:inScheme yc:Tiers ; yc:key "vulgate" ;
+    skos:prefLabel "Popular versions only"@en ; skos:definition "In popular recensions but cut from the critical edition."@en .
+yc:tier-purana a skos:Concept ; skos:inScheme yc:Tiers ; yc:key "purana" ;
+    skos:prefLabel "Purana or later work"@en ; skos:definition "Puranas and later Sanskrit works."@en .
+yc:tier-folk a skos:Concept ; skos:inScheme yc:Tiers ; yc:key "folk" ;
+    skos:prefLabel "Folk or other tradition"@en ; skos:definition "Folk, Jain or sectarian tradition."@en .
+
+yc:Beings a skos:ConceptScheme ; rdfs:label "Classes of being"@en .
+yc:being-god a skos:Concept ; skos:inScheme yc:Beings ; skos:prefLabel "Devas and avatars"@en ; yc:key "god" .
+yc:being-asura a skos:Concept ; skos:inScheme yc:Beings ; skos:prefLabel "Asuras"@en ; yc:key "asura" .
+yc:being-rakshasa a skos:Concept ; skos:inScheme yc:Beings ; skos:prefLabel "Rakshasas"@en ; yc:key "rakshasa" .
+yc:being-naga a skos:Concept ; skos:inScheme yc:Beings ; skos:prefLabel "Nagas"@en ; yc:key "naga" .
+yc:being-yaksha a skos:Concept ; skos:inScheme yc:Beings ; skos:prefLabel "Yakshas"@en ; yc:key "yaksha" .
+yc:being-gandharva a skos:Concept ; skos:inScheme yc:Beings ; skos:prefLabel "Gandharvas"@en ; yc:key "gandharva" .
+yc:being-apsara a skos:Concept ; skos:inScheme yc:Beings ; skos:prefLabel "Apsaras"@en ; yc:key "apsara" .
+yc:being-vanara a skos:Concept ; skos:inScheme yc:Beings ; skos:prefLabel "Vanaras"@en ; yc:key "vanara" .
+yc:being-riksha a skos:Concept ; skos:inScheme yc:Beings ; skos:prefLabel "Rikshas (bears)"@en ; yc:key "riksha" .
+yc:being-beast a skos:Concept ; skos:inScheme yc:Beings ; skos:prefLabel "Divine birds and beasts"@en ; yc:key "beast" .
+yc:being-sage a skos:Concept ; skos:inScheme yc:Beings ; skos:prefLabel "Rishis and sages"@en ; yc:key "sage" .
+yc:being-human a skos:Concept ; skos:inScheme yc:Beings ; skos:prefLabel "Humans"@en ; yc:key "human" .
+
+yc:Roles a skos:ConceptScheme ; rdfs:label "Roles"@en .
+yc:role-king a skos:Concept ; skos:inScheme yc:Roles ; skos:prefLabel "Kings"@en ; yc:key "king" .
+yc:role-woman a skos:Concept ; skos:inScheme yc:Roles ; skos:prefLabel "Women and goddesses"@en ; yc:key "women" .

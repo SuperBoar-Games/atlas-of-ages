@@ -1,0 +1,1071 @@
+# Recorded history, c. 3300 BCE to 1947 CE
+
+@prefix : <https://w3id.org/yugachakra#> .
+@prefix yc: <https://w3id.org/yugachakra#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+
+:afzal a yc:Person ;
+    rdfs:label "Afzal Khan" ;
+    rdfs:comment "Bijapur general killed by Shivaji at their meeting at Pratapgad in 1659." ;
+    yc:period yc:period-history .
+
+:aitareya a yc:Event ;
+    rdfs:label "Aitareya Brahmana" ;
+    rdfs:comment "Brahmana that tells of Harishchandra, his son Rohita, and the boy Shunahshepa saved by Vishvamitra. It also names Bharata and Janamejaya among anointed kings." ;
+    yc:period yc:period-history .
+
+:ajanta a yc:Event ;
+    rdfs:label "Ajanta murals" ;
+    rdfs:comment "Buddhist caves whose 5th-century murals paint the Jataka tales." ;
+    yc:period yc:period-history .
+
+:ajatashatru a yc:Person ;
+    rdfs:label "Ajatashatru" ;
+    rdfs:comment "Bimbisara's son, who imprisons his father and expands Magadha." ;
+    yc:period yc:period-history .
+
+:akbar a yc:Person ;
+    rdfs:label "Akbar" ;
+    rdfs:comment "Mughal emperor (1556–1605). Has the Mahabharata translated into Persian as the Razmnama, and the Ramayana too." ;
+    yc:period yc:period-history .
+
+:alexander a yc:Person ;
+    rdfs:label "Alexander" ;
+    rdfs:comment "Macedonian king who reaches the Punjab in 326 BCE and defeats Porus at the Hydaspes." ;
+    yc:period yc:period-history .
+
+:ambedkar a yc:Person ;
+    rdfs:label "B. R. Ambedkar" ;
+    rdfs:comment "Chairs the committee that drafts India's constitution, adopted in 1949." ;
+    yc:period yc:period-history .
+
+:aryabhata a yc:Sage ;
+    rdfs:label "Aryabhata" ;
+    rdfs:comment "Astronomer. Writing in 499 CE, he fixes the start of the Kali Yuga at 3102 BCE, the date the tradition still uses." ;
+    yc:period yc:period-history .
+
+:ashoka a yc:Person ;
+    rdfs:label "Ashoka" ;
+    rdfs:comment "Chandragupta's grandson. After the Kalinga war he spreads the Buddha's teaching across Asia." ;
+    yc:period yc:period-history .
+
+:ashvalayana a yc:Event ;
+    rdfs:label "Ashvalayana Sutra" ;
+    rdfs:comment "Grihya Sutra that lists a Bharata and a Mahabharata among texts to be honoured, among the earliest mentions of the epic by name." ;
+    yc:period yc:period-history .
+
+:atharvaveda a yc:Event ;
+    rdfs:label "Atharvaveda" ;
+    rdfs:comment "The fourth Veda of spells, healing and kingship (c. 1000 BCE). One of its hymns praises the Kuru king Parikshit." ;
+    yc:period yc:period-history .
+
+:aurangzeb a yc:Person ;
+    rdfs:label "Aurangzeb" ;
+    rdfs:comment "Mughal emperor (1658–1707) whose long wars with the Marathas and others overstretch the empire." ;
+    yc:period yc:period-history .
+
+:aurobindo a yc:Sage ;
+    rdfs:label "Sri Aurobindo" ;
+    rdfs:comment "Revolutionary turned yogi. His Essays on the Gita appear from 1916." ;
+    yc:period yc:period-history .
+
+:babur a yc:Person ;
+    rdfs:label "Babur" ;
+    rdfs:comment "Founds the Mughal empire after defeating Ibrahim Lodi at Panipat in 1526." ;
+    yc:period yc:period-history .
+
+:badami a yc:Event ;
+    rdfs:label "Badami caves" ;
+    rdfs:comment "Chalukya cave temples (578 CE) with reliefs of Vishnu as Narasimha and Varaha." ;
+    yc:period yc:period-history .
+
+:bahadurshah a yc:Person ;
+    rdfs:label "Bahadur Shah Zafar" ;
+    rdfs:comment "Last Mughal emperor, proclaimed leader of the 1857 revolt and exiled to Rangoon." ;
+    yc:period yc:period-history .
+
+:balauttara a yc:Event ;
+    rdfs:label "Bala & Uttara Kandas" ;
+    rdfs:comment "The Ramayana's first and last books, with the bow contest, Rama's divinity and Sita's final exile, usually dated after the core books, by about the 1st century CE." ;
+    yc:period yc:period-history .
+
+:bankim a yc:Person ;
+    rdfs:label "Bankim Chandra" ;
+    rdfs:comment "Bengali novelist. His Krishnacharitra (1886) reads Krishna as a historical figure. Author of \"Vande Mataram\"." ;
+    yc:period yc:period-history .
+
+:bharavi a yc:Sage ;
+    rdfs:label "Bharavi" ;
+    rdfs:comment "Poet of the Kiratarjuniya (6th century) on Arjuna's fight with Shiva disguised as a hunter." ;
+    yc:period yc:period-history .
+
+:bhasa a yc:Sage ;
+    rdfs:label "Bhasa" ;
+    rdfs:comment "Early Sanskrit dramatist. His plays include Urubhanga on Duryodhana's death, Dutavakya on Krishna's peace mission, and Svapnavasavadatta on Udayana." ;
+    yc:period yc:period-history .
+
+:bimbisara a yc:Person ;
+    rdfs:label "Bimbisara" ;
+    rdfs:comment "King of Magadha and patron of the Buddha." ;
+    yc:period yc:period-history ;
+    yc:parentOf :ajatashatru .
+
+:bindusara a yc:Person ;
+    rdfs:label "Bindusara" ;
+    rdfs:comment "Second Maurya emperor, son of Chandragupta and father of Ashoka." ;
+    yc:period yc:period-history ;
+    yc:parentOf :ashoka .
+
+:bori a yc:Event ;
+    rdfs:label "Critical edition" ;
+    rdfs:comment "The Bhandarkar Institute in Pune begins the critical edition of the Mahabharata in 1919 under V. S. Sukthankar, comparing over a thousand manuscripts. Completed in 1966." ;
+    yc:period yc:period-history .
+
+:bose a yc:Person ;
+    rdfs:label "Subhas Bose" ;
+    rdfs:comment "Nationalist leader who heads the Indian National Army against British rule." ;
+    yc:period yc:period-history .
+
+:brihadaranyaka a yc:Event ;
+    rdfs:label "Brihadaranyaka Upanishad" ;
+    rdfs:comment "Upanishad in which Janaka of Videha hosts debates at his court and Yajnavalkya teaches." ;
+    yc:period yc:period-history .
+
+:buddha a yc:Sage ;
+    rdfs:label "Gautama Buddha" ;
+    rdfs:comment "Siddhartha of the Shakyas. The Dasaratha Jataka tells the Rama story as one of his past lives, and later Puranas count him as an avatar of Vishnu." ;
+    yc:period yc:period-history ;
+    yc:parentOf :rahula .
+
+:chaitanya a yc:Sage ;
+    rdfs:label "Chaitanya" ;
+    rdfs:comment "Bengali saint (1486–1534) who spreads Krishna devotion through congregational singing. His followers see him as Radha and Krishna in one." ;
+    yc:period yc:period-history .
+
+:chanakya a yc:Sage ;
+    rdfs:label "Chanakya" ;
+    rdfs:comment "Kautilya, Chandragupta's adviser, traditionally the author of the Arthashastra." ;
+    yc:period yc:period-history .
+
+:chandogya a yc:Event ;
+    rdfs:label "Chandogya Upanishad" ;
+    rdfs:comment "Mentions a Krishna, son of Devaki, taught by the sage Ghora Angirasa. Often read as the earliest reference to Krishna." ;
+    yc:period yc:period-history .
+
+:chandragupta a yc:Person ;
+    rdfs:label "Chandragupta Maurya" ;
+    rdfs:comment "Founds the Maurya empire around 322 BCE." ;
+    yc:period yc:period-history ;
+    yc:parentOf :bindusara .
+
+:chandragupta2 a yc:Person ;
+    rdfs:label "Chandragupta II" ;
+    rdfs:comment "Gupta emperor (c. 380–415 CE), whom tradition links with Kalidasa." ;
+    yc:period yc:period-history .
+
+:darius a yc:Person ;
+    rdfs:label "Darius I" ;
+    rdfs:comment "Achaemenid emperor who annexes Gandhara and the Indus region around 518 BCE." ;
+    yc:period yc:period-history .
+
+:deogarh a yc:Event ;
+    rdfs:label "Deogarh temple" ;
+    rdfs:comment "Dashavatara temple (c. 500 CE), one of the earliest stone temples, with panels of Nara–Narayana and Vishnu resting on Shesha." ;
+    yc:period yc:period-history .
+
+:dhananda a yc:Person ;
+    rdfs:label "Dhana Nanda" ;
+    rdfs:comment "Last Nanda king of Magadha, overthrown by Chandragupta." ;
+    yc:period yc:period-history .
+
+:divodasa a yc:Person ;
+    rdfs:label "Divodasa" ;
+    rdfs:comment "Bharata king in the Rigveda and father of Sudas." ;
+    yc:period yc:period-history ;
+    yc:parentOf :sudas .
+
+:eic a yc:Event ;
+    rdfs:label "East India Company" ;
+    rdfs:comment "British trading company that takes Bengal after Plassey and much of India by 1857." ;
+    yc:period yc:period-history .
+
+:gandhi a yc:Person ;
+    rdfs:label "Gandhi" ;
+    rdfs:comment "Leader of the independence movement. Reads the Gita daily as his guide and holds up Ram Rajya as the ideal of just rule." ;
+    yc:period yc:period-history .
+
+:ghori a yc:Person ;
+    rdfs:label "Muhammad of Ghor" ;
+    rdfs:comment "Ghurid ruler who defeats Prithviraj in 1192. His general Qutb ud-Din Aibak founds the Delhi Sultanate in 1206." ;
+    yc:period yc:period-history .
+
+:gobindsingh a yc:Sage ;
+    rdfs:label "Guru Gobind Singh" ;
+    rdfs:comment "Tenth Sikh Guru. The Dasam Granth, attributed to him, retells the avatar stories of Rama and Krishna." ;
+    yc:period yc:period-history .
+
+:h_1857 a yc:Story ;
+    rdfs:label "Revolt of 1857" ;
+    rdfs:comment "Soldiers and rulers rise against Company rule. After its defeat the Crown takes over in 1858." ;
+    yc:period yc:period-history ;
+    yc:leadsTo :h_bori ;
+    yc:involves :bahadurshah, :eic, :lakshmibai, :raj .
+
+:h_1947 a yc:Story ;
+    rdfs:label "Independence and Partition" ;
+    rdfs:comment "15 August 1947. British rule ends, and India and Pakistan are partitioned." ;
+    yc:period yc:period-history ;
+    yc:involves :ambedkar, :bose, :gandhi, :jinnah, :nehru, :patel, :raj .
+
+:h_bori a yc:Story ;
+    rdfs:label "Critical edition begun" ;
+    rdfs:comment "1919. Scholars in Pune set out to reconstruct the oldest recoverable Mahabharata text." ;
+    yc:period yc:period-history ;
+    yc:leadsTo :h_1947 ;
+    yc:involves :bori, :vyasa .
+
+:h_buddha a yc:Story ;
+    rdfs:label "Buddha and Mahavira" ;
+    rdfs:comment "c. 5th century BCE. New teachings arise in Magadha under Bimbisara and Ajatashatru." ;
+    yc:period yc:period-history ;
+    yc:leadsTo :h_maurya ;
+    yc:involves :ajatashatru, :bimbisara, :buddha, :janapadas, :jatakas, :mahavira, :prasenajit, :shuddhodana, :udayana .
+
+:h_flood a yc:Story, yc:Catastrophe ;
+    rdfs:label "Hastinapura washed away" ;
+    rdfs:comment "The Ganga floods Hastinapura in Nichakshu's reign and the Kurus move to Kaushambi (Puranic account)." ;
+    yc:period yc:period-history ;
+    yc:leadsTo :h_buddha ;
+    yc:involves :janamejaya, :nichakshu, :shatanika .
+
+:h_gupta a yc:Story ;
+    rdfs:label "Gupta age" ;
+    rdfs:comment "c. 320–550 CE. The Puranas take shape, the first stone temples rise, and Kalidasa writes." ;
+    yc:period yc:period-history ;
+    yc:leadsTo :h_sultanate ;
+    yc:involves :aryabhata, :chandragupta2, :deogarh, :kalidasa, :samudragupta, :udayagiri, :vishnupurana .
+
+:h_helio a yc:Story ;
+    rdfs:label "Heliodorus pillar" ;
+    rdfs:comment "c. 110 BCE. The first known inscription by a devotee of Vasudeva-Krishna." ;
+    yc:period yc:period-history ;
+    yc:leadsTo :h_text ;
+    yc:involves :heliodorus, :krishna, :morawell, :patanjali, :satakarni .
+
+:h_indus a yc:Story ;
+    rdfs:label "Indus civilisation" ;
+    rdfs:comment "c. 3300–1300 BCE. The first cities of South Asia. Nothing in them can yet be tied to the epics." ;
+    yc:period yc:period-history ;
+    yc:leadsTo :h_ten ;
+    yc:involves :harappa .
+
+:h_kuru a yc:Story ;
+    rdfs:label "Kuru kingdom" ;
+    rdfs:comment "The first large state of the Vedic age, around Kurukshetra. The Atharvaveda praises King Parikshit, and the Shatapatha Brahmana names Janamejaya performing the horse sacrifice." ;
+    yc:period yc:period-history ;
+    yc:leadsTo :h_flood ;
+    yc:involves :aitareya, :brihadaranyaka, :chandogya, :janakav, :pgw, :shatapatha, :yajnavalkya .
+
+:h_maratha a yc:Story ;
+    rdfs:label "Maratha kingdom" ;
+    rdfs:comment "1674. Shivaji is crowned after years of war with Bijapur and the Mughals." ;
+    yc:period yc:period-history ;
+    yc:leadsTo :h_plassey ;
+    yc:involves :afzal, :aurangzeb, :ramdas, :sambhaji, :shivaji .
+
+:h_maurya a yc:Story ;
+    rdfs:label "Maurya empire" ;
+    rdfs:comment "c. 322 BCE. Chandragupta and Chanakya overthrow the Nandas. Ashoka later carries the Buddha's teaching abroad." ;
+    yc:period yc:period-history ;
+    yc:leadsTo :h_helio ;
+    yc:involves :alexander, :ashoka, :bindusara, :chanakya, :chandragupta, :dhananda, :megasthenes, :porus .
+
+:h_panipat a yc:Story ;
+    rdfs:label "First Battle of Panipat" ;
+    rdfs:comment "1526. Babur defeats Ibrahim Lodi and Mughal rule begins." ;
+    yc:period yc:period-history ;
+    yc:leadsTo :h_razm ;
+    yc:involves :babur, :ibrahimlodi .
+
+:h_plassey a yc:Story ;
+    rdfs:label "Battle of Plassey" ;
+    rdfs:comment "1757. The East India Company defeats Siraj ud-Daulah and takes Bengal." ;
+    yc:period yc:period-history ;
+    yc:leadsTo :h_1857 ;
+    yc:involves :eic, :siraj .
+
+:h_razm a yc:Story ;
+    rdfs:label "Razmnama" ;
+    rdfs:comment "c. 1584–86. Akbar's court translates the Mahabharata into Persian, with richly illustrated copies." ;
+    yc:period yc:period-history ;
+    yc:leadsTo :h_maratha ;
+    yc:involves :akbar, :vyasa .
+
+:h_sultanate a yc:Story ;
+    rdfs:label "Delhi Sultanate" ;
+    rdfs:comment "1192–1206. Prithviraj falls at Tarain, and the Sultanate is founded in Delhi." ;
+    yc:period yc:period-history ;
+    yc:leadsTo :h_vijaya ;
+    yc:involves :ghori, :prithviraj .
+
+:h_ten a yc:Story ;
+    rdfs:label "Battle of the Ten Kings" ;
+    rdfs:comment "The Rigveda's battle on the Parushni river, where the Bharatas under Sudas defeat a confederacy that includes the Purus." ;
+    yc:period yc:period-history ;
+    yc:leadsTo :h_kuru ;
+    yc:involves :divodasa, :rigveda, :sarasvati, :sudas .
+
+:h_text a yc:Story ;
+    rdfs:label "Epics take final form" ;
+    rdfs:comment "c. 400 BCE–400 CE. The Mahabharata grows to about 100,000 verses and the Ramayana gains its first and last books." ;
+    yc:period yc:period-history ;
+    yc:leadsTo :h_gupta ;
+    yc:involves :balauttara, :bhasa, :harivamsat, :mbhcore, :ramcore, :valmiki, :vyasa .
+
+:h_vijaya a yc:Story ;
+    rdfs:label "Vijayanagara" ;
+    rdfs:comment "1336. Harihara and Bukka found the empire at Hampi, the traditional Kishkindha." ;
+    yc:period yc:period-history ;
+    yc:leadsTo :h_panipat ;
+    yc:involves :harihara, :krishnadevaraya .
+
+:harappa a yc:Event ;
+    rdfs:label "Harappan cities" ;
+    rdfs:comment "Harappa, Mohenjo-daro, Dholavira and Lothal flourish in the northwest. The script is undeciphered, so no link to the epics can be read from it." ;
+    yc:period yc:period-history .
+
+:harihara a yc:Person ;
+    rdfs:label "Harihara & Bukka" ;
+    rdfs:comment "Brothers who found the Vijayanagara empire in 1336. Its capital Hampi is traditionally identified with Kishkindha." ;
+    yc:period yc:period-history .
+
+:harivamsat a yc:Event ;
+    rdfs:label "Harivamsa composed" ;
+    rdfs:comment "Appendix to the Mahabharata telling Krishna's life and the Yadava line, usually dated to the 1st–3rd centuries CE." ;
+    yc:period yc:period-history .
+
+:heliodorus a yc:Person ;
+    rdfs:label "Heliodorus" ;
+    rdfs:comment "Greek ambassador who raises a pillar at Vidisha around 110 BCE calling himself a devotee of Vasudeva." ;
+    yc:period yc:period-history .
+
+:ibrahimlodi a yc:Person ;
+    rdfs:label "Ibrahim Lodi" ;
+    rdfs:comment "Last Delhi sultan of the Lodi dynasty, killed at the first battle of Panipat in 1526." ;
+    yc:period yc:period-history .
+
+:janakav a yc:Person ;
+    rdfs:label "Janaka of Videha" ;
+    rdfs:comment "Learned king of Videha in the Upanishads. Janaka is a dynastic title, and Sita's father bears the same name in the Ramayana." ;
+    yc:period yc:period-history .
+
+:janapadas a yc:Event ;
+    rdfs:label "Sixteen Mahajanapadas" ;
+    rdfs:comment "The great kingdoms of the Buddha's time include Kuru, Panchala, Matsya, Shurasena, Kosala, Kashi, Anga, Chedi, Avanti and Gandhara, all kingdoms of the epics." ;
+    yc:period yc:period-history .
+
+:jatakas a yc:Event ;
+    rdfs:label "Jatakas" ;
+    rdfs:comment "Buddhist birth stories. The Dasaratha Jataka tells a Rama story, and the Ghata Jataka tells of Kamsa and Vasudeva's sons, a Buddhist version of Krishna's family." ;
+    yc:period yc:period-history .
+
+:jayadeva a yc:Sage ;
+    rdfs:label "Jayadeva" ;
+    rdfs:comment "Poet of the Gita Govinda (12th century), which makes Radha central to Krishna devotion." ;
+    yc:period yc:period-history .
+
+:jinnah a yc:Person ;
+    rdfs:label "M. A. Jinnah" ;
+    rdfs:comment "Leader of the Muslim League and first governor-general of Pakistan in 1947." ;
+    yc:period yc:period-history .
+
+:kabir a yc:Sage ;
+    rdfs:label "Kabir" ;
+    rdfs:comment "Weaver-poet (15th century) whose songs centre on the name of Rama, beyond any image." ;
+    yc:period yc:period-history .
+
+:kalidasa a yc:Sage ;
+    rdfs:label "Kalidasa" ;
+    rdfs:comment "Classical poet. His play Shakuntala retells Dushyanta and Shakuntala, and his Raghuvamsha tells the kings from Dilipa to Rama." ;
+    yc:period yc:period-history .
+
+:kamban a yc:Sage ;
+    rdfs:label "Kamban" ;
+    rdfs:comment "Tamil poet of the Ramavataram (12th century), known as the Kamba Ramayanam." ;
+    yc:period yc:period-history .
+
+:kanishka a yc:Person ;
+    rdfs:label "Kanishka" ;
+    rdfs:comment "Kushana emperor (2nd century CE). Kushana Mathura produces early images of Vasudeva and Samkarshana." ;
+    yc:period yc:period-history .
+
+:krishnadevaraya a yc:Person ;
+    rdfs:label "Krishnadevaraya" ;
+    rdfs:comment "Vijayanagara emperor (1509–1529) and patron of Telugu and Kannada poetry." ;
+    yc:period yc:period-history .
+
+:krittivasa a yc:Sage ;
+    rdfs:label "Krittivasa" ;
+    rdfs:comment "Bengali poet of the Krittivasi Ramayana (15th century)." ;
+    yc:period yc:period-history .
+
+:kshemaka a yc:Person ;
+    rdfs:label "Kshemaka" ;
+    rdfs:comment "Named in the Puranas as the last king of the Kuru line." ;
+    yc:period yc:period-history ;
+    yc:tier yc:tier-purana .
+
+:lakshmibai a yc:Person ;
+    rdfs:label "Rani Lakshmibai" ;
+    rdfs:comment "Rani of Jhansi, killed fighting Company forces in 1858." ;
+    yc:period yc:period-history .
+
+:madhva a yc:Sage ;
+    rdfs:label "Madhvacharya" ;
+    rdfs:comment "Philosopher of Dvaita (13th century). His followers hold him to be the third incarnation of Vayu, after Hanuman and Bhima." ;
+    yc:period yc:period-history .
+
+:mahavira a yc:Sage ;
+    rdfs:label "Mahavira" ;
+    rdfs:comment "Twenty-fourth Jain tirthankara and a contemporary of the Buddha." ;
+    yc:period yc:period-history .
+
+:mbhcore a yc:Event ;
+    rdfs:label "Bharata core" ;
+    rdfs:comment "A shorter epic of the war, the Bharata, is thought to underlie the Mahabharata, which grows from about the 4th century BCE." ;
+    yc:period yc:period-history .
+
+:megasthenes a yc:Person ;
+    rdfs:label "Megasthenes" ;
+    rdfs:comment "Greek envoy at Chandragupta's court. Describes the Sourasenoi of Mathura worshipping a god he calls Heracles, usually taken to be Krishna." ;
+    yc:period yc:period-history .
+
+:mirabai a yc:Sage ;
+    rdfs:label "Mirabai" ;
+    rdfs:comment "Rajput princess and poet (16th century) devoted to Krishna." ;
+    yc:period yc:period-history .
+
+:morawell a yc:Event ;
+    rdfs:label "Mora well inscription" ;
+    rdfs:comment "Inscription near Mathura (1st century CE) honouring five Vrishni heroes: Samkarshana, Vasudeva, Pradyumna, Samba and Aniruddha." ;
+    yc:period yc:period-history .
+
+:nanak a yc:Sage ;
+    rdfs:label "Guru Nanak" ;
+    rdfs:comment "Founder of Sikhism (1469–1539)." ;
+    yc:period yc:period-history .
+
+:nannaya a yc:Sage ;
+    rdfs:label "Nannaya" ;
+    rdfs:comment "Begins the Telugu Mahabharata in the 11th century, later completed by Tikkana and Errana." ;
+    yc:period yc:period-history .
+
+:nehru a yc:Person ;
+    rdfs:label "Jawaharlal Nehru" ;
+    rdfs:comment "First prime minister of India, from 15 August 1947." ;
+    yc:period yc:period-history .
+
+:nichakshu a yc:Person ;
+    rdfs:label "Nichakshu" ;
+    rdfs:comment "Later Kuru king. When the Ganga washes away Hastinapura, he moves the capital to Kaushambi (Vishnu Purana)." ;
+    yc:period yc:period-history ;
+    yc:tier yc:tier-purana .
+
+:pampa a yc:Sage ;
+    rdfs:label "Pampa" ;
+    rdfs:comment "Kannada poet. His Vikramarjuna Vijaya (941 CE) retells the Mahabharata with Arjuna as hero." ;
+    yc:period yc:period-history .
+
+:panini a yc:Sage ;
+    rdfs:label "Panini" ;
+    rdfs:comment "Grammarian (c. 4th century BCE). His grammar already names Vasudeva and Arjuna as objects of devotion." ;
+    yc:period yc:period-history .
+
+:patanjali a yc:Sage ;
+    rdfs:label "Patanjali" ;
+    rdfs:comment "Grammarian (c. 150 BCE). His Mahabhashya mentions performances of the killing of Kamsa and the binding of Bali." ;
+    yc:period yc:period-history .
+
+:patel a yc:Person ;
+    rdfs:label "Sardar Patel" ;
+    rdfs:comment "Congress leader who becomes deputy prime minister and integrates the princely states." ;
+    yc:period yc:period-history .
+
+:pgw a yc:Event ;
+    rdfs:label "Painted Grey Ware sites" ;
+    rdfs:comment "Iron Age culture of the Kuru-Panchala region (c. 1200–600 BCE). Its sites include Hastinapura, Indraprastha and Mathura. Excavations at Hastinapura in the 1950s found a settlement cut by a Ganga flood." ;
+    yc:period yc:period-history .
+
+:porus a yc:Person ;
+    rdfs:label "Porus" ;
+    rdfs:comment "King on the Jhelum who fights Alexander in 326 BCE. His name is often linked with the Puru tribe." ;
+    yc:period yc:period-history .
+
+:prasenajit a yc:Person ;
+    rdfs:label "Prasenajit" ;
+    rdfs:comment "King of Kosala and patron of the Buddha. The Puranas place him in Rama's Ikshvaku line." ;
+    yc:period yc:period-history .
+
+:prithviraj a yc:Person ;
+    rdfs:label "Prithviraj Chauhan" ;
+    rdfs:comment "Chahamana king of Ajmer and Delhi, defeated at the second battle of Tarain in 1192." ;
+    yc:period yc:period-history .
+
+:pushyamitra a yc:Person ;
+    rdfs:label "Pushyamitra Shunga" ;
+    rdfs:comment "Maurya general who kills the last Maurya king around 185 BCE and founds the Shunga dynasty." ;
+    yc:period yc:period-history .
+
+:rahula a yc:Person ;
+    rdfs:label "Rahula" ;
+    rdfs:comment "The Buddha's son, later a monk. The Puranas list him in the Ikshvaku line." ;
+    yc:period yc:period-history .
+
+:raj a yc:Event ;
+    rdfs:label "British Crown" ;
+    rdfs:comment "Takes over the rule of India from the East India Company in 1858." ;
+    yc:period yc:period-history .
+
+:ramanuja a yc:Sage ;
+    rdfs:label "Ramanuja" ;
+    rdfs:comment "Philosopher of Vishishtadvaita (11th–12th century) who writes a Gita commentary centred on devotion to Vishnu." ;
+    yc:period yc:period-history .
+
+:ramcore a yc:Event ;
+    rdfs:label "Ramayana core" ;
+    rdfs:comment "Books 2 to 6 of Valmiki's Ramayana, from Rama's exile to the war, usually dated to around the 5th–4th centuries BCE." ;
+    yc:period yc:period-history .
+
+:ramdas a yc:Sage ;
+    rdfs:label "Samarth Ramdas" ;
+    rdfs:comment "Marathi saint and devotee of Hanuman who founds Maruti shrines across Maharashtra. Tradition makes him Shivaji's guide." ;
+    yc:period yc:period-history .
+
+:ravivarma a yc:Person ;
+    rdfs:label "Raja Ravi Varma" ;
+    rdfs:comment "Painter (1848–1906) whose oil paintings of Shakuntala, Damayanti and the epic heroes shape how many Indians picture them." ;
+    yc:period yc:period-history .
+
+:rigveda a yc:Event ;
+    rdfs:label "Rigveda" ;
+    rdfs:comment "The oldest Indian text. It already names Pururavas and Urvashi, Nahusha, Yayati, Mandhata, Ikshvaku, the Yadu and Puru tribes and the Bharatas, long before the epics take shape." ;
+    yc:period yc:period-history .
+
+:ripunjaya a yc:Person ;
+    rdfs:label "Ripunjaya" ;
+    rdfs:comment "Last king of Jarasandha's Brihadratha line in Magadha, overthrown by his own minister in the Puranic lists." ;
+    yc:period yc:period-history ;
+    yc:tier yc:tier-purana .
+
+:samaveda a yc:Event ;
+    rdfs:label "Samaveda" ;
+    rdfs:comment "The Veda of chants, mostly Rigvedic verses set to melody for the soma rite (c. 1200–1000 BCE)." ;
+    yc:period yc:period-history .
+
+:sambhaji a yc:Person ;
+    rdfs:label "Sambhaji" ;
+    rdfs:comment "Shivaji's son, captured and executed on Aurangzeb's orders in 1689." ;
+    yc:period yc:period-history .
+
+:samudragupta a yc:Person ;
+    rdfs:label "Samudragupta" ;
+    rdfs:comment "Gupta emperor (c. 335–375 CE) whose Allahabad pillar inscription records his conquests." ;
+    yc:period yc:period-history ;
+    yc:parentOf :chandragupta2 .
+
+:sangam a yc:Event ;
+    rdfs:label "Sangam poems" ;
+    rdfs:comment "Early Tamil poetry. One poem describes monkeys wearing the jewels Sita dropped, and another praises a Chera king for feeding both armies in the great war." ;
+    yc:period yc:period-history .
+
+:sarasvati a yc:Event ;
+    rdfs:label "Sarasvati river" ;
+    rdfs:comment "River the Rigveda praises as the greatest of rivers. In the Mahabharata it has already sunk into the sand at Vinashana, where Balarama follows it on pilgrimage. Many identify it with the Ghaggar-Hakra." ;
+    yc:period yc:period-history .
+
+:satakarni a yc:Person ;
+    rdfs:label "Gautamiputra Satakarni" ;
+    rdfs:comment "Satavahana king (2nd century CE). His mother's inscription at Nashik compares him to Rama, Keshava, Arjuna and Bhimasena." ;
+    yc:period yc:period-history .
+
+:shankara a yc:Sage ;
+    rdfs:label "Adi Shankara" ;
+    rdfs:comment "Philosopher of Advaita (c. 8th century). His commentary on the Bhagavad Gita is the oldest that survives." ;
+    yc:period yc:period-history .
+
+:shatapatha a yc:Event ;
+    rdfs:label "Shatapatha Brahmana" ;
+    rdfs:comment "Brahmana that first tells Manu's flood with the fish, gives the full story of Pururavas and Urvashi, records the horse sacrifices of Bharata son of Dushyanta, and names Janamejaya." ;
+    yc:period yc:period-history .
+
+:shivaji a yc:Person ;
+    rdfs:label "Shivaji" ;
+    rdfs:comment "Founds the Maratha kingdom and is crowned in 1674." ;
+    yc:period yc:period-history ;
+    yc:parentOf :sambhaji ;
+    yc:kills :afzal .
+
+:shuddhodana a yc:Person ;
+    rdfs:label "Shuddhodana" ;
+    rdfs:comment "Shakya chief and the Buddha's father. The Puranas count the Shakyas in the Ikshvaku line." ;
+    yc:period yc:period-history ;
+    yc:parentOf :buddha .
+
+:siraj a yc:Person ;
+    rdfs:label "Siraj ud-Daulah" ;
+    rdfs:comment "Nawab of Bengal, defeated by Robert Clive at Plassey in 1757." ;
+    yc:period yc:period-history .
+
+:sudas a yc:Person ;
+    rdfs:label "Sudas" ;
+    rdfs:comment "Bharata king in the Rigveda who wins the Battle of the Ten Kings. Vishvamitra and later Vashishtha serve as his priests." ;
+    yc:period yc:period-history .
+
+:surdas a yc:Sage ;
+    rdfs:label "Surdas" ;
+    rdfs:comment "Poet of the Sursagar, songs of Krishna's childhood in Vraja (16th century)." ;
+    yc:period yc:period-history .
+
+:tagore a yc:Person ;
+    rdfs:label "Rabindranath Tagore" ;
+    rdfs:comment "Poet. His \"Karna-Kunti Samvad\" (1900) retells Kunti's meeting with Karna before the war." ;
+    yc:period yc:period-history .
+
+:teghbahadur a yc:Sage ;
+    rdfs:label "Guru Tegh Bahadur" ;
+    rdfs:comment "Ninth Sikh Guru, executed in Delhi in 1675 on Aurangzeb's orders." ;
+    yc:period yc:period-history ;
+    yc:parentOf :gobindsingh .
+
+:tilak a yc:Person ;
+    rdfs:label "Bal Gangadhar Tilak" ;
+    rdfs:comment "Nationalist leader. Writes Gita Rahasya (1915) in Mandalay prison, reading the Gita as a call to action." ;
+    yc:period yc:period-history .
+
+:tipu a yc:Person ;
+    rdfs:label "Tipu Sultan" ;
+    rdfs:comment "Ruler of Mysore, killed defending Srirangapatna against the East India Company in 1799." ;
+    yc:period yc:period-history .
+
+:tulsidas a yc:Sage ;
+    rdfs:label "Tulsidas" ;
+    rdfs:comment "Poet of the Ramcharitmanas (1574) in Awadhi, the most widely read Ramayana in north India." ;
+    yc:period yc:period-history .
+
+:udayagiri a yc:Event ;
+    rdfs:label "Udayagiri Varaha" ;
+    rdfs:comment "Cave shrine near Vidisha (c. 401 CE) with a colossal relief of Vishnu as Varaha lifting the earth." ;
+    yc:period yc:period-history .
+
+:udayana a yc:Person ;
+    rdfs:label "Udayana" ;
+    rdfs:comment "King of Vatsa at Kaushambi and a contemporary of the Buddha. The Puranas place him in the Kuru line. Hero of Bhasa's plays." ;
+    yc:period yc:period-history .
+
+:udiyan a yc:Person ;
+    rdfs:label "Udiyan Cheralathan" ;
+    rdfs:comment "Chera king of the Sangam poems (Purananuru 2), praised for feeding both armies at the great war." ;
+    yc:period yc:period-history .
+
+:vimalasuri a yc:Sage ;
+    rdfs:label "Vimalasuri" ;
+    rdfs:comment "Jain poet of the Paumachariya, a Jain Ramayana in which Lakshmana, not Rama, kills Ravana." ;
+    yc:period yc:period-history .
+
+:vishnupurana a yc:Event ;
+    rdfs:label "Vishnu Purana" ;
+    rdfs:comment "Purana (c. 4th–5th century CE) whose king lists carry the Kuru, Ikshvaku and Magadha lines into the Kali Yuga." ;
+    yc:period yc:period-history .
+
+:vivekananda a yc:Sage ;
+    rdfs:label "Vivekananda" ;
+    rdfs:comment "Monk (1863–1902) who brings Vedanta and the Gita to audiences in the West." ;
+    yc:period yc:period-history .
+
+:wilkins a yc:Person ;
+    rdfs:label "Charles Wilkins" ;
+    rdfs:comment "Publishes the first English translation of the Bhagavad Gita in 1785." ;
+    yc:period yc:period-history .
+
+:yajnavalkya a yc:Sage ;
+    rdfs:label "Yajnavalkya" ;
+    rdfs:comment "Sage at Janaka's court and the central teacher of the Brihadaranyaka Upanishad." ;
+    yc:period yc:period-history .
+
+:yajurveda a yc:Event ;
+    rdfs:label "Yajurveda" ;
+    rdfs:comment "The Veda of sacrificial formulas (c. 1200–800 BCE), in a Black and a White recension. Tradition makes Vaishampayana its first keeper and Yajnavalkya the seer of the White Yajus." ;
+    yc:period yc:period-history .
+
+[] a yc:Link ;
+    yc:from :ajatashatru ;
+    yc:relation yc:linkedWith ;
+    yc:to :bimbisara ;
+    yc:forwardLabel "Imprisons his father" ;
+    yc:reverseLabel "Imprisoned by his son" .
+
+[] a yc:Link ;
+    yc:from :ajatashatru ;
+    yc:relation yc:succeededBy ;
+    yc:to :dhananda ;
+    yc:forwardLabel "Magadha passes, via the Shishunagas, to" ;
+    yc:reverseLabel "Inherits Magadha from the line of" .
+
+[] a yc:Link ;
+    yc:from :akbar ;
+    yc:relation yc:ancestorOf ;
+    yc:to :aurangzeb ;
+    yc:forwardLabel "Great-grandfather of" ;
+    yc:reverseLabel "Great-grandson of" .
+
+[] a yc:Link ;
+    yc:from :alexander ;
+    yc:relation yc:linkedWith ;
+    yc:to :porus ;
+    yc:forwardLabel "Defeats at the Hydaspes, then reinstates" ;
+    yc:reverseLabel "Defeated by" .
+
+[] a yc:Link ;
+    yc:from :ambedkar ;
+    yc:relation yc:linkedWith ;
+    yc:to :gandhi ;
+    yc:forwardLabel "Debates (Poona Pact, 1932)" ;
+    yc:reverseLabel "Debates" .
+
+[] a yc:Link ;
+    yc:from :aryabhata ;
+    yc:relation yc:linkedWith ;
+    yc:to :e_mausala ;
+    yc:forwardLabel "Dates the start of Kali, after this, to 3102 BCE" ;
+    yc:reverseLabel "Dated by" .
+
+[] a yc:Link ;
+    yc:from :ashoka ;
+    yc:relation yc:linkedWith ;
+    yc:to :buddha ;
+    yc:forwardLabel "Spreads the teaching of" ;
+    yc:reverseLabel "Teaching spread by" .
+
+[] a yc:Link ;
+    yc:from :ashoka ;
+    yc:relation yc:succeededBy ;
+    yc:to :pushyamitra ;
+    yc:forwardLabel "Maurya line later overthrown by" ;
+    yc:reverseLabel "Overthrows the line of" .
+
+[] a yc:Link ;
+    yc:from :aurangzeb ;
+    yc:relation yc:linkedWith ;
+    yc:to :shivaji ;
+    yc:forwardLabel "At war with" ;
+    yc:reverseLabel "At war with" .
+
+[] a yc:Link ;
+    yc:from :aurangzeb ;
+    yc:relation yc:ancestorOf ;
+    yc:to :bahadurshah ;
+    yc:forwardLabel "Ancestor of" ;
+    yc:reverseLabel "Descendant of" .
+
+[] a yc:Link ;
+    yc:from :aurangzeb ;
+    yc:relation yc:kills ;
+    yc:to :sambhaji ;
+    yc:forwardLabel "Has executed" ;
+    yc:reverseLabel "Executed on the orders of" .
+
+[] a yc:Link ;
+    yc:from :aurangzeb ;
+    yc:relation yc:kills ;
+    yc:to :teghbahadur ;
+    yc:forwardLabel "Has executed" ;
+    yc:reverseLabel "Executed on the orders of" .
+
+[] a yc:Link ;
+    yc:from :babur ;
+    yc:relation yc:ancestorOf ;
+    yc:to :akbar ;
+    yc:forwardLabel "Grandfather of" ;
+    yc:reverseLabel "Grandson of" .
+
+[] a yc:Link ;
+    yc:from :babur ;
+    yc:relation yc:kills ;
+    yc:to :ibrahimlodi ;
+    yc:forwardLabel "Defeats; Ibrahim dies in battle" ;
+    yc:reverseLabel "Dies in battle against" .
+
+[] a yc:Link ;
+    yc:from :bahadurshah ;
+    yc:relation yc:succeededBy ;
+    yc:to :raj ;
+    yc:forwardLabel "Deposed and exiled by" ;
+    yc:reverseLabel "Deposes" .
+
+[] a yc:Link ;
+    yc:from :bimbisara ;
+    yc:relation yc:linkedWith ;
+    yc:to :buddha ;
+    yc:forwardLabel "Patron of" ;
+    yc:reverseLabel "Supported by" .
+
+[] a yc:Link ;
+    yc:from :bose ;
+    yc:relation yc:linkedWith ;
+    yc:to :gandhi ;
+    yc:forwardLabel "Breaks with" ;
+    yc:reverseLabel "Opposed by" .
+
+[] a yc:Link ;
+    yc:from :chanakya ;
+    yc:relation yc:linkedWith ;
+    yc:to :chandragupta ;
+    yc:forwardLabel "Guides" ;
+    yc:reverseLabel "Guided by" .
+
+[] a yc:Link ;
+    yc:from :chandragupta2 ;
+    yc:relation yc:linkedWith ;
+    yc:to :kalidasa ;
+    yc:forwardLabel "Traditionally the patron of" ;
+    yc:reverseLabel "Traditionally at the court of" .
+
+[] a yc:Link ;
+    yc:from :dhananda ;
+    yc:relation yc:succeededBy ;
+    yc:to :chandragupta ;
+    yc:forwardLabel "Overthrown by" ;
+    yc:reverseLabel "Overthrows" .
+
+[] a yc:Link ;
+    yc:from :eic ;
+    yc:relation yc:kills ;
+    yc:to :lakshmibai ;
+    yc:forwardLabel "Kills in battle (1858)" ;
+    yc:reverseLabel "Killed in battle by" .
+
+[] a yc:Link ;
+    yc:from :eic ;
+    yc:relation yc:kills ;
+    yc:to :tipu ;
+    yc:forwardLabel "Kills in battle (1799)" ;
+    yc:reverseLabel "Killed in battle by" .
+
+[] a yc:Link ;
+    yc:from :eic ;
+    yc:relation yc:succeededBy ;
+    yc:to :raj ;
+    yc:forwardLabel "Rule passes to" ;
+    yc:reverseLabel "Takes over rule from" .
+
+[] a yc:Link ;
+    yc:from :gandhi ;
+    yc:relation yc:linkedWith ;
+    yc:to :nehru ;
+    yc:forwardLabel "Mentor of" ;
+    yc:reverseLabel "Follows" .
+
+[] a yc:Link ;
+    yc:from :gandhi ;
+    yc:relation yc:linkedWith ;
+    yc:to :patel ;
+    yc:forwardLabel "Mentor of" ;
+    yc:reverseLabel "Follows" .
+
+[] a yc:Link ;
+    yc:from :ghori ;
+    yc:relation yc:kills ;
+    yc:to :prithviraj ;
+    yc:forwardLabel "Defeats and has killed" ;
+    yc:reverseLabel "Killed after defeat by" .
+
+[] a yc:Link ;
+    yc:from :harihara ;
+    yc:relation yc:linkedWith ;
+    yc:to :t_kish ;
+    yc:forwardLabel "Capital Hampi, the traditional site of" ;
+    yc:reverseLabel "Site claimed by" .
+
+[] a yc:Link ;
+    yc:from :harihara ;
+    yc:relation yc:succeededBy ;
+    yc:to :krishnadevaraya ;
+    yc:forwardLabel "Empire later ruled by" ;
+    yc:reverseLabel "Rules the empire founded by" .
+
+[] a yc:Link ;
+    yc:from :ibrahimlodi ;
+    yc:relation yc:succeededBy ;
+    yc:to :babur ;
+    yc:forwardLabel "Delhi taken by" ;
+    yc:reverseLabel "Takes Delhi from" .
+
+[] a yc:Link ;
+    yc:from :janakav ;
+    yc:relation yc:tells ;
+    yc:to :brihadaranyaka ;
+    yc:forwardLabel "Holds debates in" ;
+    yc:reverseLabel "Features" .
+
+[] a yc:Link ;
+    yc:from :jatakas ;
+    yc:relation yc:tells ;
+    yc:to :ajanta ;
+    yc:forwardLabel "Painted at" ;
+    yc:reverseLabel "Paints" .
+
+[] a yc:Link ;
+    yc:from :jinnah ;
+    yc:relation yc:linkedWith ;
+    yc:to :nehru ;
+    yc:forwardLabel "Negotiates Partition with" ;
+    yc:reverseLabel "Negotiates with" .
+
+[] a yc:Link ;
+    yc:from :kanishka ;
+    yc:relation yc:linkedWith ;
+    yc:to :morawell ;
+    yc:forwardLabel "Rules Mathura in the age of" ;
+    yc:reverseLabel "Dated to the age of" .
+
+[] a yc:Link ;
+    yc:from :megasthenes ;
+    yc:relation yc:linkedWith ;
+    yc:to :chandragupta ;
+    yc:forwardLabel "Envoy at the court of" ;
+    yc:reverseLabel "Hosts the envoy" .
+
+[] a yc:Link ;
+    yc:from :nanak ;
+    yc:relation yc:ancestorOf ;
+    yc:to :teghbahadur ;
+    yc:forwardLabel "First Guru of the line of" ;
+    yc:reverseLabel "Ninth Guru in the line of" .
+
+[] a yc:Link ;
+    yc:from :nichakshu ;
+    yc:relation yc:linkedWith ;
+    yc:to :pgw ;
+    yc:forwardLabel "Flood story matched by a flood layer at Hastinapura" ;
+    yc:reverseLabel "Flood layer matches the story of" .
+
+[] a yc:Link ;
+    yc:from :nichakshu ;
+    yc:relation yc:ancestorOf ;
+    yc:to :udayana ;
+    yc:tier yc:tier-purana .
+
+[] a yc:Link ;
+    yc:from :nichakshu ;
+    yc:relation yc:tells ;
+    yc:to :vishnupurana ;
+    yc:forwardLabel "Recorded in" ;
+    yc:reverseLabel "Records" .
+
+[] a yc:Link ;
+    yc:from :prasenajit ;
+    yc:relation yc:linkedWith ;
+    yc:to :buddha ;
+    yc:forwardLabel "Patron of" ;
+    yc:reverseLabel "Supported by" .
+
+[] a yc:Link ;
+    yc:from :ramdas ;
+    yc:relation yc:linkedWith ;
+    yc:to :shivaji ;
+    yc:forwardLabel "Guide of, by tradition" ;
+    yc:reverseLabel "Guided by, by tradition" .
+
+[] a yc:Link ;
+    yc:from :ripunjaya ;
+    yc:relation yc:succeededBy ;
+    yc:to :bimbisara ;
+    yc:tier yc:tier-purana ;
+    yc:forwardLabel "Magadha passes, via the Pradyotas, to" ;
+    yc:reverseLabel "Inherits Magadha from the line of" .
+
+[] a yc:Link ;
+    yc:from :ripunjaya ;
+    yc:relation yc:tells ;
+    yc:to :vishnupurana ;
+    yc:forwardLabel "Recorded in" ;
+    yc:reverseLabel "Records" .
+
+[] a yc:Link ;
+    yc:from :sangam ;
+    yc:relation yc:tells ;
+    yc:to :udiyan ;
+    yc:forwardLabel "Praises" ;
+    yc:reverseLabel "Praised in" .
+
+[] a yc:Link ;
+    yc:from :sarasvati ;
+    yc:relation yc:tells ;
+    yc:to :rigveda ;
+    yc:forwardLabel "Praised in the" ;
+    yc:reverseLabel "Praises" .
+
+[] a yc:Link ;
+    yc:from :shatapatha ;
+    yc:relation yc:tells ;
+    yc:to :matsya ;
+    yc:forwardLabel "Tells the fish story of" ;
+    yc:reverseLabel "First told in" .
+
+[] a yc:Link ;
+    yc:from :siraj ;
+    yc:relation yc:succeededBy ;
+    yc:to :eic ;
+    yc:forwardLabel "Bengal taken by" ;
+    yc:reverseLabel "Takes Bengal from" .
+
+[] a yc:Link ;
+    yc:from :udayana ;
+    yc:relation yc:ancestorOf ;
+    yc:to :kshemaka ;
+    yc:tier yc:tier-purana .
+
+[] a yc:Link ;
+    yc:from :udayana ;
+    yc:relation yc:tells ;
+    yc:to :bhasa ;
+    yc:forwardLabel "Hero of Svapnavasavadatta by" ;
+    yc:reverseLabel "Writes about" .
+
+[] a yc:Link ;
+    yc:from :udiyan ;
+    yc:relation yc:linkedWith ;
+    yc:to :e_war ;
+    yc:forwardLabel "Feeds both armies at (Sangam poems)" ;
+    yc:reverseLabel "Both armies fed by" .
+
+[] a yc:Link ;
+    yc:from :yajnavalkya ;
+    yc:relation yc:linkedWith ;
+    yc:to :janakav ;
+    yc:forwardLabel "Teaches at the court of" ;
+    yc:reverseLabel "Hosts" .
+
+[] a yc:Link ;
+    yc:from :yajnavalkya ;
+    yc:relation yc:linkedWith ;
+    yc:to :vaishampayana ;
+    yc:tier yc:tier-purana ;
+    yc:forwardLabel "Quarrels with his teacher and gives back the Yajus" ;
+    yc:reverseLabel "Takes back the Yajus from" .
+
+[] a yc:Link ;
+    yc:from :yajnavalkya ;
+    yc:relation yc:tells ;
+    yc:to :brihadaranyaka ;
+    yc:forwardLabel "Teaches in" ;
+    yc:reverseLabel "Features" .
+
+[] a yc:Link ;
+    yc:from :yajnavalkya ;
+    yc:relation yc:tells ;
+    yc:to :yajurveda ;
+    yc:forwardLabel "Seer of the White recension of" ;
+    yc:reverseLabel "Recension of" .

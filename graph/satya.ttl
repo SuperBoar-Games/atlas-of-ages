@@ -1,0 +1,554 @@
+# Satya Yuga
+
+@prefix : <https://w3id.org/yugachakra#> .
+@prefix yc: <https://w3id.org/yugachakra#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+
+:aruna a yc:Person ;
+    rdfs:label "Aruna" ;
+    rdfs:comment "Vinata's elder son and Surya's charioteer. Father of Jatayu and Sampati." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-beast ;
+    yc:parentOf :jatayu, :sampati ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Aranya 3.14" ; schema:url <https://valmikiramayan.net/aranya/sarga14/aranya_14_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.58" ; schema:url <https://valmikiramayan.net/kish/sarga58/kishkindha_58_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.16; MBh 1.66" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.16" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.66" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvi> ] .
+
+:atri a yc:Sage ;
+    rdfs:label "Atri" ;
+    rdfs:comment "Mind-born son of Brahma and one of the Saptarishis. Father of Chandra." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-sage ;
+    yc:parentOf :dattatreya ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.65; MBh 1.66" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 4.1" ; schema:url <https://vedabase.io/en/library/sb/4/1/> ] .
+
+:budha a yc:Deva ;
+    rdfs:label "Budha" ;
+    rdfs:comment "Son of Chandra and Tara, lord of Mercury. Marries Ila." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-god .
+
+:chandra a yc:Deva ;
+    rdfs:label "Chandra (Soma)" ;
+    rdfs:comment "The Moon, born of Atri. The Chandravamsha, the Lunar dynasty of both Kurus and Yadavas, is named after him." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-god ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.19" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xix> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.66; MBh 1.75" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.66" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.67" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 9.35" ; schema:url <https://sacred-texts.com/hin/m09/m09035.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 6.6" ; schema:url <https://vedabase.io/en/library/sb/6/6/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 8.9" ; schema:url <https://vedabase.io/en/library/sb/8/9/> ] .
+
+:dattatreya a yc:Sage ;
+    rdfs:label "Dattatreya" ;
+    rdfs:comment "Son of Atri and Anasuya, the teacher of many teachers, honoured as a partial avatar of Vishnu." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-sage ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bhagavata 1.3, 4.1" ; schema:url <https://vedabase.io/en/library/sb/4/1/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 4.1" ; schema:url <https://vedabase.io/en/library/sb/4/1/> ] .
+
+:dhanvantari a yc:Deva ;
+    rdfs:label "Dhanvantari" ;
+    rdfs:comment "Physician of the gods, who rises from the churned ocean holding the pot of amrita." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-god ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.18" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xviii> ] .
+
+:garuda a yc:Person, yc:SpansYugas ;
+    rdfs:label "Garuda" ;
+    rdfs:comment "King of birds, son of Vinata. Steals the amrita to free his mother and becomes Vishnu's mount. Enemy of the Nagas." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-beast ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.16; MBh 1.33; MBh 1.34" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.16; MBh 1.23" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.16; MBh 1.66" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.33" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxxiii> ] ,
+        [ a yc:Citation ; rdfs:label "Harivamsa 2.11" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485548.html> ] .
+
+:hiranyakashipu a yc:Person ;
+    rdfs:label "Hiranyakashipu" ;
+    rdfs:comment "Daitya king, Kashyapa's son by Diti and Jaya's first birth. Killed by Vishnu as Narasimha to protect his son Prahlada." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-asura ;
+    yc:role yc:role-king ;
+    yc:parentOf :prahlada ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.65; MBh 1.66" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.67" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 3.17, 7.1, 7.8" ; schema:url <https://vedabase.io/en/library/sb/7/1/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 3.17" ; schema:url <https://vedabase.io/en/library/sb/3/17/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 3.17, 6.18" ; schema:url <https://vedabase.io/en/library/sb/6/18/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 7.1" ; schema:url <https://vedabase.io/en/library/sb/7/1/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 7.8" ; schema:url <https://vedabase.io/en/library/sb/7/8/> ] .
+
+:hiranyaksha a yc:Person ;
+    rdfs:label "Hiranyaksha" ;
+    rdfs:comment "Asura brother of Hiranyakashipu, killed by Vishnu as Varaha raising the earth from the ocean." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-asura ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bhagavata 3.17-3.19, 7.1" ; schema:url <https://vedabase.io/en/library/sb/3/18/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 3.17" ; schema:url <https://vedabase.io/en/library/sb/3/17/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 3.17, 6.18" ; schema:url <https://vedabase.io/en/library/sb/6/18/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 3.19" ; schema:url <https://vedabase.io/en/library/sb/3/19/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 7.1" ; schema:url <https://vedabase.io/en/library/sb/7/1/> ] .
+
+:ikshvaku a yc:Person ;
+    rdfs:label "Ikshvaku" ;
+    rdfs:comment "Son of Manu and first king of Ayodhya. Founder of the Solar dynasty (Suryavamsha), Rama's line." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:ancestorOf :anaranya, :mahabhisha ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.70" ; schema:url <https://valmikiramayan.net/baala/sarga70/bala_70_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.110" ; schema:url <https://valmikiramayan.net/ayodhya/sarga110/ayodhya_110_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.19" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424780.html> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.75" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.96" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcvi> ] .
+
+:ila a yc:Person ;
+    rdfs:label "Ila" ;
+    rdfs:comment "Child of Manu who lived as both man and woman. Mother of Pururavas, which ties the Lunar line to Manu." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    yc:parentOf :pururavas ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.75" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] .
+
+:jayavijaya a yc:Person ;
+    rdfs:label "Jaya & Vijaya" ;
+    rdfs:comment "Gatekeepers of Vaikuntha, cursed by the Sanaka Kumaras to be born three times as Vishnu's enemies (Bhagavata). The yuga of each birth comes from later commentary." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-purana ;
+    yc:being yc:being-human ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bhagavata 3.16, 7.1" ; schema:url <https://vedabase.io/en/library/sb/7/1/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 3.16" ; schema:url <https://vedabase.io/en/library/sb/3/16/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 7.1" ; schema:url <https://vedabase.io/en/library/sb/7/1/> ] .
+
+:kadru a yc:Person ;
+    rdfs:label "Kadru" ;
+    rdfs:comment "Kashyapa's wife and mother of the thousand Nagas. Cheats her sister Vinata in a wager and curses the sons who refused to help her to burn in a future sacrifice." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-god ;
+    yc:role yc:role-woman ;
+    yc:parentOf :kaliya, :shesha, :takshaka, :vasuki ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.16; MBh 1.20; MBh 1.22; MBh 1.23" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.16" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.20" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xx> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.20; MBh 1.23" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xx> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.21" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.35; MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.35" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 6.6" ; schema:url <https://vedabase.io/en/library/sb/6/6/> ] .
+
+:kurma a yc:Avatar ;
+    rdfs:label "Kurma" ;
+    rdfs:comment "Second avatar, the tortoise who bears Mount Mandara on his back at the churning of the ocean." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-god ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.18" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xviii> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 8.7" ; schema:url <https://vedabase.io/en/library/sb/8/7/> ] .
+
+:manthan a yc:Event ;
+    rdfs:label "Samudra Manthan" ;
+    rdfs:comment "Devas and asuras churn the Ocean of Milk with Mount Mandara and Vasuki, Vishnu bearing the mountain as Kurma and Shiva drinking the poison. Retold in the Adi Parva." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:involves :airavata, :bali, :dhanvantari, :halahala, :indra, :kamadhenu, :kurma, :lakshmi, :mohini, :parijata, :rahu, :shiva, :uchchaihshravas, :vasuki ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.18" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xviii> ] .
+
+:manu a yc:Person ;
+    rdfs:label "Vaivasvata Manu" ;
+    rdfs:comment "Son of the sun god Vivasvan. Saved from the great flood by Matsya. His children Ila and Ikshvaku start the Lunar and Solar dynasties." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:parentOf :ikshvaku, :ila ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.75" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.186" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-clxxxvi> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 8.13, 8.24, 9.1" ; schema:url <https://vedabase.io/en/library/sb/9/1/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 8.13" ; schema:url <https://vedabase.io/en/library/sb/8/13/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 8.24" ; schema:url <https://vedabase.io/en/library/sb/8/24/> ] .
+
+:mohini a yc:Avatar ;
+    rdfs:label "Mohini" ;
+    rdfs:comment "Vishnu as an enchantress at the churning. She draws the asuras' eyes away and gives the amrita to the devas." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-god ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.19" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xix> ] .
+
+:naranarayana a yc:Avatar ;
+    rdfs:label "Nara–Narayana" ;
+    rdfs:comment "Twin sages doing penance at Badari, partial forms of Vishnu. The epic identifies them with Arjuna and Krishna." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-god ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.67; MBh 1.19" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.67" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] .
+
+:narasimha a yc:Avatar ;
+    rdfs:label "Narasimha" ;
+    rdfs:comment "Fourth avatar, the man-lion who bursts from a pillar at dusk and kills Hiranyakashipu to protect Prahlada." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-god ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bhagavata 1.3" ; schema:url <https://vedabase.io/en/library/sb/1/3/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 7.8" ; schema:url <https://vedabase.io/en/library/sb/7/8/> ] .
+
+:prahlada a yc:Person ;
+    rdfs:label "Prahlada" ;
+    rdfs:comment "Son of Hiranyakashipu and devotee of Vishnu, saved by Narasimha. Grandfather of Bali." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-asura ;
+    yc:ancestorOf :bali ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 6.18, 7.8" ; schema:url <https://vedabase.io/en/library/sb/6/18/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 6.18" ; schema:url <https://vedabase.io/en/library/sb/6/18/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 7.8" ; schema:url <https://vedabase.io/en/library/sb/7/8/> ] .
+
+:revati a yc:Person, yc:SpansYugas ;
+    rdfs:label "Revati" ;
+    rdfs:comment "Daughter of King Kakudmi. He takes her to Brahma to ask about a husband, and while they wait whole yugas pass on earth. She marries Balarama in the Dvapara." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-purana ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Harivamsa 1.10" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485487.html> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 9.3" ; schema:url <https://vedabase.io/en/library/sb/9/3/> ] .
+
+:varaha a yc:Avatar ;
+    rdfs:label "Varaha" ;
+    rdfs:comment "Third avatar, the boar who lifts the earth out of the ocean and kills Hiranyaksha." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-god ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bhagavata 1.3" ; schema:url <https://vedabase.io/en/library/sb/1/3/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 3.18-3.19" ; schema:url <https://vedabase.io/en/library/sb/3/19/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 3.18; Vishnu Purana 5.29" ; schema:url <https://vedabase.io/en/library/sb/3/18/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 3.19" ; schema:url <https://vedabase.io/en/library/sb/3/19/> ] ,
+        [ a yc:Citation ; rdfs:label "Vishnu P. 5.29" ; schema:url <https://sacred-texts.com/hin/vp/vp146.htm> ] .
+
+:vasuki a yc:Person, yc:SpansYugas ;
+    rdfs:label "Vasuki" ;
+    rdfs:comment "Naga king, son of Kadru. The rope at the churning of the ocean. In the Adi Parva the Nagas revive the poisoned Bhima. His sister bears Astika." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-naga ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.16; MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.35; MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.38; MBh 1.48" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxxviii> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.65; MBh 1.18; MBh 1.38; MBh 1.48" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.128" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-cxxviii> ] .
+
+:vinata a yc:Person ;
+    rdfs:label "Vinata" ;
+    rdfs:comment "Kadru's sister and Kashyapa's wife. Mother of Aruna and Garuda. Loses the wager and becomes Kadru's slave." ;
+    yc:period yc:period-satya ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-god ;
+    yc:role yc:role-woman ;
+    yc:parentOf :aruna, :garuda ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.16; MBh 1.21; MBh 1.23" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.16; MBh 1.66" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.16" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.20; MBh 1.23" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xx> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.21" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 6.6" ; schema:url <https://vedabase.io/en/library/sb/6/6/> ] .
+
+[] a yc:Link ;
+    yc:from :atri ;
+    yc:relation yc:parentOf ;
+    yc:to :chandra ;
+    yc:tier yc:tier-purana .
+
+[] a yc:Link ;
+    yc:from :atri ;
+    yc:relation yc:tells ;
+    yc:to :rigveda ;
+    yc:forwardLabel "Seer of hymns in" ;
+    yc:reverseLabel "Hymns by" .
+
+[] a yc:Link ;
+    yc:from :budha ;
+    yc:relation yc:kinOf ;
+    yc:to :ila ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :budha ;
+    yc:relation yc:parentOf ;
+    yc:to :pururavas ;
+    yc:tier yc:tier-purana .
+
+[] a yc:Link ;
+    yc:from :chandra ;
+    yc:relation yc:kinOf ;
+    yc:to :nakshatras ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :chandra ;
+    yc:relation yc:divineOriginOf ;
+    yc:to :abhimanyu ;
+    yc:forwardLabel "His son Varcas is born as (Adi Parva)" ;
+    yc:reverseLabel "Varcas, son of Chandra, born as" .
+
+[] a yc:Link ;
+    yc:from :chandra ;
+    yc:relation yc:parentOf ;
+    yc:to :budha ;
+    yc:tier yc:tier-purana .
+
+[] a yc:Link ;
+    yc:from :garuda ;
+    yc:relation yc:linkedWith ;
+    yc:to :kaliya ;
+    yc:tier yc:tier-purana ;
+    yc:forwardLabel "Drives to the Yamuna" ;
+    yc:reverseLabel "Flees from" .
+
+[] a yc:Link ;
+    yc:from :garuda ;
+    yc:relation yc:linkedWith ;
+    yc:to :vishnu ;
+    yc:forwardLabel "Becomes the mount of" ;
+    yc:reverseLabel "Rides" .
+
+[] a yc:Link ;
+    yc:from :hiranyakashipu ;
+    yc:relation yc:rebornAs ;
+    yc:to :ravana ;
+    yc:tier yc:tier-purana .
+
+[] a yc:Link ;
+    yc:from :hiranyakashipu ;
+    yc:relation yc:rebornAs ;
+    yc:to :shishupala ;
+    yc:forwardLabel "Is born in part as (Adi Parva)" ;
+    yc:reverseLabel "Hiranyakashipu in a previous life" .
+
+[] a yc:Link ;
+    yc:from :hiranyaksha ;
+    yc:relation yc:rebornAs ;
+    yc:to :kumbhakarna ;
+    yc:tier yc:tier-purana .
+
+[] a yc:Link ;
+    yc:from :ikshvaku ;
+    yc:relation yc:ancestorOf ;
+    yc:to :trishanku ;
+    yc:forwardLabel "Ancestor of, through Kukshi, Anaranya and Prithu (Valmiki 1.70)" ;
+    yc:reverseLabel "Descendant of" .
+
+[] a yc:Link ;
+    yc:from :ikshvaku ;
+    yc:relation yc:tells ;
+    yc:to :rigveda ;
+    yc:forwardLabel "Named in the" ;
+    yc:reverseLabel "Names" .
+
+[] a yc:Link ;
+    yc:from :jayavijaya ;
+    yc:relation yc:rebornAs ;
+    yc:to :hiranyakashipu ;
+    yc:tier yc:tier-purana ;
+    yc:forwardLabel "Jaya is born as" ;
+    yc:reverseLabel "Jaya's first birth" .
+
+[] a yc:Link ;
+    yc:from :jayavijaya ;
+    yc:relation yc:rebornAs ;
+    yc:to :hiranyaksha ;
+    yc:tier yc:tier-purana ;
+    yc:forwardLabel "Vijaya is born as" ;
+    yc:reverseLabel "Vijaya's first birth" .
+
+[] a yc:Link ;
+    yc:from :kadru ;
+    yc:relation yc:kinOf ;
+    yc:to :vinata ;
+    yc:forwardLabel "Sister of" ;
+    yc:reverseLabel "Sister of" .
+
+[] a yc:Link ;
+    yc:from :kadru ;
+    yc:relation yc:linkedWith ;
+    yc:to :janamejaya ;
+    yc:forwardLabel "Her curse is fulfilled at the sacrifice of" ;
+    yc:reverseLabel "Snake sacrifice fulfils Kadru's curse" .
+
+[] a yc:Link ;
+    yc:from :kadru ;
+    yc:relation yc:linkedWith ;
+    yc:to :sarpasatra ;
+    yc:forwardLabel "Her curse is fulfilled in" ;
+    yc:reverseLabel "Fulfils the curse of" .
+
+[] a yc:Link ;
+    yc:from :kadru ;
+    yc:relation yc:linkedWith ;
+    yc:to :vinata ;
+    yc:forwardLabel "Wins a wager and enslaves" ;
+    yc:reverseLabel "Enslaved by" .
+
+[] a yc:Link ;
+    yc:from :manu ;
+    yc:relation yc:ancestorOf ;
+    yc:to :ambarisha ;
+    yc:forwardLabel "Ancestor of, through Nabhaga" ;
+    yc:reverseLabel "Descendant of, through Nabhaga" .
+
+[] a yc:Link ;
+    yc:from :manu ;
+    yc:relation yc:tells ;
+    yc:to :shatapatha ;
+    yc:forwardLabel "Flood story first told in" ;
+    yc:reverseLabel "Tells the flood of" .
+
+[] a yc:Link ;
+    yc:from :naranarayana ;
+    yc:relation yc:linkedWith ;
+    yc:to :sahasrakavacha ;
+    yc:tier yc:tier-folk ;
+    yc:forwardLabel "Fights" ;
+    yc:reverseLabel "Fought by" .
+
+[] a yc:Link ;
+    yc:from :naranarayana ;
+    yc:relation yc:rebornAs ;
+    yc:to :arjuna ;
+    yc:forwardLabel "Nara is reborn as" ;
+    yc:reverseLabel "Nara in a previous life" .
+
+[] a yc:Link ;
+    yc:from :naranarayana ;
+    yc:relation yc:rebornAs ;
+    yc:to :krishna ;
+    yc:forwardLabel "Narayana is reborn as" ;
+    yc:reverseLabel "Narayana in a previous life" .
+
+[] a yc:Link ;
+    yc:from :naranarayana ;
+    yc:relation yc:tells ;
+    yc:to :deogarh ;
+    yc:forwardLabel "Carved at" ;
+    yc:reverseLabel "Carves" .
+
+[] a yc:Link ;
+    yc:from :narasimha ;
+    yc:relation yc:linkedWith ;
+    yc:to :prahlada ;
+    yc:forwardLabel "Protects" ;
+    yc:reverseLabel "Protected by" .
+
+[] a yc:Link ;
+    yc:from :narasimha ;
+    yc:relation yc:kills ;
+    yc:to :hiranyakashipu ;
+    yc:tier yc:tier-layer .
+
+[] a yc:Link ;
+    yc:from :narasimha ;
+    yc:relation yc:tells ;
+    yc:to :badami ;
+    yc:forwardLabel "Carved at" ;
+    yc:reverseLabel "Carves" .
+
+[] a yc:Link ;
+    yc:from :varaha ;
+    yc:relation yc:linkedWith ;
+    yc:to :bhudevi ;
+    yc:forwardLabel "Raises from the ocean" ;
+    yc:reverseLabel "Raised by" .
+
+[] a yc:Link ;
+    yc:from :varaha ;
+    yc:relation yc:kills ;
+    yc:to :hiranyaksha ;
+    yc:tier yc:tier-layer .
+
+[] a yc:Link ;
+    yc:from :varaha ;
+    yc:relation yc:parentOf ;
+    yc:to :narakasura ;
+    yc:tier yc:tier-purana ;
+    yc:forwardLabel "Father, with Bhudevi, of" ;
+    yc:reverseLabel "Son of Varaha and Bhudevi" .
+
+[] a yc:Link ;
+    yc:from :varaha ;
+    yc:relation yc:tells ;
+    yc:to :badami ;
+    yc:forwardLabel "Carved at" ;
+    yc:reverseLabel "Carves" .
+
+[] a yc:Link ;
+    yc:from :varaha ;
+    yc:relation yc:tells ;
+    yc:to :udayagiri ;
+    yc:forwardLabel "Carved at" ;
+    yc:reverseLabel "Carves" .
+
+[] a yc:Link ;
+    yc:from :vasuki ;
+    yc:relation yc:kinOf ;
+    yc:to :astika ;
+    yc:forwardLabel "Uncle of" ;
+    yc:reverseLabel "Nephew of" .
+
+[] a yc:Link ;
+    yc:from :vasuki ;
+    yc:relation yc:linkedWith ;
+    yc:to :bhima ;
+    yc:forwardLabel "The Nagas revive and strengthen" ;
+    yc:reverseLabel "Revived by the Nagas" .

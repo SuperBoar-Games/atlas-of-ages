@@ -1,0 +1,12 @@
+[project]
+name = "yugachakra"
+version = "0.1.0"
+description = "A connected graph of Indian sacred history, from creation through the four yugas to 1947, in RDF."
+requires-python = ">=3.11"
+dependencies = [
+    "rdflib>=7.1",
+    "pyshacl>=0.30",
+]
+
+[tool.uv]
+package = false

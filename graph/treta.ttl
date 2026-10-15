@@ -1,0 +1,3079 @@
+# Treta Yuga
+
+@prefix : <https://w3id.org/yugachakra#> .
+@prefix yc: <https://w3id.org/yugachakra#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+
+:agastya a yc:Sage, yc:SpansYugas ;
+    rdfs:label "Agastya" ;
+    rdfs:comment "Sage who curses Nahusha into a python. In the Ramayana he gives Rama divine weapons." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-sage ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Aranya 3.12" ; schema:url <https://valmikiramayan.net/aranya/sarga12/aranya_12_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.108" ; schema:url <https://valmikiramayan.net/yuddha/sarga108/yuddha_108_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.104-105" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.104" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-civ> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.178" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-clxxviii> ] .
+
+:agastyaocean a yc:Event, yc:Catastrophe ;
+    rdfs:label "Agastya drinks the ocean" ;
+    rdfs:comment "The Kalakeya demons hide in the ocean after Vritra's death. Agastya drinks the whole sea so the gods can reach them (Vana Parva)." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 3.100-101" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-ci> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.101, 3.104-105" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.104-105" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cv> ] .
+
+:ahalya a yc:Person ;
+    rdfs:label "Ahalya" ;
+    rdfs:comment "Gautama's wife, cursed after Indra's deception and freed by Rama's visit." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.48" ; schema:url <https://valmikiramayan.net/baala/sarga48/bala_48_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.49" ; schema:url <https://valmikiramayan.net/baala/sarga49/bala_49_frame.htm> ] .
+
+:ahiravana a yc:Person ;
+    rdfs:label "Ahiravana" ;
+    rdfs:comment "Ravana's brother in later tellings, king of the underworld, who kidnaps Rama and Lakshmana. Hanuman kills him in his five-faced form." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-folk ;
+    yc:being yc:being-rakshasa .
+
+:aja a yc:Person ;
+    rdfs:label "Aja" ;
+    rdfs:comment "Father of Dasharatha. In Valmiki's king list he is the son of Nabhaga, about eleven generations after Raghu; Kalidasa makes him Raghu's son." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:parentOf :dasharatha ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.70" ; schema:url <https://valmikiramayan.net/baala/sarga70/bala_70_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.110" ; schema:url <https://valmikiramayan.net/ayodhya/sarga110/ayodhya_110_prose.htm> ] .
+
+:akshayakumara a yc:Person ;
+    rdfs:label "Aksha" ;
+    rdfs:comment "Aksha, Ravana's son, killed by Hanuman at the Ashoka grove." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-rakshasa ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Sundara 5.47" ; schema:url <https://valmikiramayan.net/sundara/sarga47/sundara_47_prose.htm> ] .
+
+:ambarisha a yc:Person ;
+    rdfs:label "Ambarisha" ;
+    rdfs:comment "Devout king of Manu's line through Nabhaga. When Durvasa curses him, Vishnu's Sudarshana disc chases the sage until he begs Ambarisha's pardon (Bhagavata)." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-purana ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king .
+
+:amshuman a yc:Person ;
+    rdfs:label "Amshuman" ;
+    rdfs:comment "Sagara's grandson. Finds the horse at Kapila's hermitage and learns that only Ganga can free his uncles." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:parentOf :dilipa ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.38" ; schema:url <https://valmikiramayan.net/baala/sarga38/bala_38_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.41" ; schema:url <https://valmikiramayan.net/baala/sarga41/bala_41_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.42" ; schema:url <https://valmikiramayan.net/baala/sarga42/bala_42_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.110" ; schema:url <https://valmikiramayan.net/ayodhya/sarga110/ayodhya_110_prose.htm> ] .
+
+:anaranya a yc:Person ;
+    rdfs:label "Anaranya" ;
+    rdfs:comment "Ikshvaku king killed by Ravana. Dying, he curses Ravana to fall to a man of his line." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.70" ; schema:url <https://valmikiramayan.net/baala/sarga70/bala_70_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.110" ; schema:url <https://valmikiramayan.net/ayodhya/sarga110/ayodhya_110_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.60" ; schema:url <https://valmikiramayan.net/yuddha/sarga60/yuddha_60_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.19" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424780.html> ] .
+
+:angada a yc:Person ;
+    rdfs:label "Angada" ;
+    rdfs:comment "Vali's son, made crown prince by Rama. Rama's envoy to Ravana's court." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-vanara ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.26" ; schema:url <https://valmikiramayan.net/kish/sarga26/kishkindha_26_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.58" ; schema:url <https://valmikiramayan.net/kish/sarga58/kishkindha_58_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.41" ; schema:url <https://valmikiramayan.net/yuddha/sarga41/yuddha_41_frame.htm> ] .
+
+:anjana a yc:Person ;
+    rdfs:label "Anjana" ;
+    rdfs:comment "Apsara born as a vanara under a curse. Mother of Hanuman by Vayu." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-vanara ;
+    yc:role yc:role-woman ;
+    yc:parentOf :hanuman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.66" ; schema:url <https://valmikiramayan.net/kish/sarga66/kishkindha_66_frame.htm> ] .
+
+:asamanja a yc:Person ;
+    rdfs:label "Asamanja" ;
+    rdfs:comment "Sagara's cruel son, banished by his father. Father of Amshuman." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:parentOf :amshuman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.38" ; schema:url <https://valmikiramayan.net/baala/sarga38/bala_38_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.110" ; schema:url <https://valmikiramayan.net/ayodhya/sarga110/ayodhya_110_prose.htm> ] .
+
+:atikaya a yc:Person ;
+    rdfs:label "Atikaya" ;
+    rdfs:comment "Ravana's giant son, killed by Lakshmana with a weapon of Brahma." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-rakshasa ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Yuddha 6.71" ; schema:url <https://valmikiramayan.net/yuddha/sarga71/yuddha_71_frame.htm> ] .
+
+:ayu a yc:Person ;
+    rdfs:label "Ayu" ;
+    rdfs:comment "Son of Pururavas and Urvashi." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:parentOf :nahusha ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.75" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] .
+
+:bali a yc:Person, yc:Chiranjivi ;
+    rdfs:label "Bali" ;
+    rdfs:comment "Asura king, Prahlada's grandson. Vishnu as Vamana takes back the three worlds from him in three steps. Father of Bana." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-asura ;
+    yc:role yc:role-king ;
+    yc:parentOf :bana ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
+        [ a yc:Citation ; rdfs:label "Harivamsa 2.117" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485658.html> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 6.18, 8.19-8.20, 10.62" ; schema:url <https://vedabase.io/en/library/sb/8/20/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 6.18" ; schema:url <https://vedabase.io/en/library/sb/6/18/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 8.19-8.20" ; schema:url <https://vedabase.io/en/library/sb/8/20/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 10.62" ; schema:url <https://vedabase.io/en/library/sb/10/62/> ] .
+
+:bhagiratha a yc:Person ;
+    rdfs:label "Bhagiratha" ;
+    rdfs:comment "Dilipa's son, whose penance finally brings Ganga down from heaven to free the souls of Sagara's sons. One of the Mahabharata's sixteen great kings." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:ancestorOf :raghu ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.42" ; schema:url <https://valmikiramayan.net/baala/sarga42/bala_42_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.70" ; schema:url <https://valmikiramayan.net/baala/sarga70/bala_70_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.110" ; schema:url <https://valmikiramayan.net/ayodhya/sarga110/ayodhya_110_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.108-109" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cix> ] .
+
+:bharadvaja a yc:Sage ;
+    rdfs:label "Bharadvaja" ;
+    rdfs:comment "Sage whom the Puranas say Bharata adopted. Rama visits his hermitage at Prayaga. Father of Drona." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-sage ;
+    yc:parentOf :drona ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.54" ; schema:url <https://valmikiramayan.net/ayodhya/sarga54/ayodhya_54_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.131" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-cxxxi> ] .
+
+:bharata a yc:Person ;
+    rdfs:label "Bharata" ;
+    rdfs:comment "Son of Dushyanta and Shakuntala. The Bharata race takes its name from him, and with it the epic's title. Later tradition names Bharatavarsha after him." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:ancestorOf :hasti ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.74; MBh 1.94" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxiv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.74" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxiv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.95" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcv> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 5.4" ; schema:url <https://vedabase.io/en/library/sb/5/4/> ] .
+
+:bharatar a yc:Person ;
+    rdfs:label "Bharata of Ayodhya" ;
+    rdfs:comment "Rama's half-brother, Kaikeyi's son. Refuses the throne and rules with Rama's sandals on it." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.18" ; schema:url <https://valmikiramayan.net/baala/sarga18/bala_18_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.73" ; schema:url <https://valmikiramayan.net/baala/sarga73/bala_73_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.72" ; schema:url <https://valmikiramayan.net/ayodhya/sarga72/ayodhya_72_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.73" ; schema:url <https://valmikiramayan.net/ayodhya/sarga73/ayodhya_73_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.115" ; schema:url <https://valmikiramayan.net/ayodhya/sarga115/ayodhya_115_prose.htm> ] .
+
+:damayanti a yc:Person ;
+    rdfs:label "Damayanti" ;
+    rdfs:comment "Princess of Vidarbha who picks Nala over the gods at her svayamvara and finds him again after their separation." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 3.53, 3.57, 3.77" ; schema:url <https://www.sacred-texts.com/hin/m03/m03057.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.57" ; schema:url <https://www.sacred-texts.com/hin/m03/m03057.htm> ] .
+
+:dasharatha a yc:Person ;
+    rdfs:label "Dasharatha" ;
+    rdfs:comment "King of Ayodhya. Bound by Kaikeyi's boons, he exiles Rama and dies of grief, as the father of the boy he shot had cursed." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:parentOf :bharatar, :lakshmana, :rama, :shatrughna ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.11" ; schema:url <https://valmikiramayan.net/baala/sarga11/bala_11_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.15" ; schema:url <https://valmikiramayan.net/baala/sarga15/bala_15_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.16" ; schema:url <https://valmikiramayan.net/baala/sarga16/bala_16_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.18" ; schema:url <https://valmikiramayan.net/baala/sarga18/bala_18_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.70" ; schema:url <https://valmikiramayan.net/baala/sarga70/bala_70_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.11" ; schema:url <https://valmikiramayan.net/ayodhya/sarga11/ayodhya_11_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.40" ; schema:url <https://valmikiramayan.net/ayodhya/sarga40/ayodhya_5F40_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.63" ; schema:url <https://valmikiramayan.net/ayodhya/sarga63/ayodhya_63_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.64" ; schema:url <https://valmikiramayan.net/ayodhya/sarga64/ayodhya_64_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.72" ; schema:url <https://valmikiramayan.net/ayodhya/sarga72/ayodhya_72_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.78" ; schema:url <https://valmikiramayan.net/ayodhya/sarga78/ayodhya_78_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.110" ; schema:url <https://valmikiramayan.net/ayodhya/sarga110/ayodhya_110_prose.htm> ] .
+
+:devayani a yc:Person ;
+    rdfs:label "Devayani" ;
+    rdfs:comment "Shukracharya's daughter. Rejected by Kacha, she marries Yayati and makes the princess Sharmishtha her servant. Mother of Yadu." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    yc:parentOf :yadu ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.75" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.76" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.77; MBh 1.80; MBh 1.75" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxvii> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.77" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxvii> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.80" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxx> ] ,
+        [ a yc:Citation ; rdfs:label "Harivamsa 1.30" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485507.html> ] .
+
+:dilipa a yc:Person ;
+    rdfs:label "Dilipa" ;
+    rdfs:comment "Amshuman's son, who also tries and fails to bring Ganga down. Father of Bhagiratha." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:parentOf :bhagiratha ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.42" ; schema:url <https://valmikiramayan.net/baala/sarga42/bala_42_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.110" ; schema:url <https://valmikiramayan.net/ayodhya/sarga110/ayodhya_110_prose.htm> ] .
+
+:dushyanta a yc:Person ;
+    rdfs:label "Dushyanta" ;
+    rdfs:comment "Puru-line king who marries Shakuntala. When she brings their son to court he pretends not to know her, to protect her name, until a voice from heaven confirms the boy. In Kalidasa's play he forgets her under a curse." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:parentOf :bharata ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.68; MBh 1.74" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxviii> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.73; MBh 1.74" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxiii> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.74" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxiv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.95" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcv> ] .
+
+:dvivida a yc:Person ;
+    rdfs:label "Dvivida" ;
+    rdfs:comment "Vanara in Rama's army. In the Bhagavata he lives on into the Dvapara, turns rogue, and is killed by Balarama." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-vanara ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Harivamsa 2.116" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485657.html> ] .
+
+:gautama a yc:Sage ;
+    rdfs:label "Gautama" ;
+    rdfs:comment "Sage who curses his wife Ahalya after Indra seduces her. Grandfather of Kripa and Kripi through Sharadvan." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    yc:being yc:being-sage ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.48" ; schema:url <https://valmikiramayan.net/baala/sarga48/bala_48_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.130" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-cxxx> ] .
+
+:guha a yc:Person ;
+    rdfs:label "Guha" ;
+    rdfs:comment "Nishada chief and Rama's friend, who ferries him across the Ganga." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.52" ; schema:url <https://valmikiramayan.net/ayodhya/sarga52/ayodhya_52_prose.htm> ] .
+
+:hanuman a yc:Person, yc:Chiranjivi ;
+    rdfs:label "Hanuman" ;
+    rdfs:comment "Son of Vayu and one of the chiranjivis. Finds Sita in Lanka. Meets his half-brother Bhima in the Vana Parva and rides on Arjuna's flag at Kurukshetra." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-vanara ;
+    yc:kills :akshayakumara, :simhika ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.3" ; schema:url <https://valmikiramayan.net/kish/sarga3/kishkindha_3_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.66" ; schema:url <https://valmikiramayan.net/kish/sarga66/kishkindha_66_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Sundara 5.1" ; schema:url <https://valmikiramayan.net/sundara/sarga1/sundara_1_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Sundara 5.3" ; schema:url <https://valmikiramayan.net/sundara/sarga3/sundara_3_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Sundara 5.15" ; schema:url <https://valmikiramayan.net/sundara/sarga15/sundara_15_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Sundara 5.35" ; schema:url <https://valmikiramayan.net/sundara/sarga35/sundara_35_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Sundara 5.47" ; schema:url <https://valmikiramayan.net/sundara/sarga47/sundara_47_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Sundara 5.54" ; schema:url <https://valmikiramayan.net/sundara/sarga54/sundara_54_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.74" ; schema:url <https://valmikiramayan.net/yuddha/sarga74/yuddha_74_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.35" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424801.html> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.146" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cxlvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.150" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cl> ] .
+
+:harishchandra a yc:Person ;
+    rdfs:label "Harishchandra" ;
+    rdfs:comment "Ikshvaku king famed for never breaking his word. He is not in Valmiki's king list; the Aitareya Brahmana tells of him and his son Rohita, and the Puranas make him Trishanku's son. The Markandeya Purana has Vishvamitra take his kingdom." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:parentOf :rohita .
+
+:hasti a yc:Person ;
+    rdfs:label "Hasti" ;
+    rdfs:comment "Descendant of Bharata. Founds Hastinapura, the Kuru capital." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:ancestorOf :samvarana ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.95" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcv> ] .
+
+:indrajit a yc:Person ;
+    rdfs:label "Indrajit" ;
+    rdfs:comment "Meghanada, son of Ravana and Mandodari, called the conqueror of Indra. Killed by Lakshmana." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-rakshasa ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Sundara 5.48" ; schema:url <https://valmikiramayan.net/sundara/sarga48/sundara_48_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.90" ; schema:url <https://valmikiramayan.net/yuddha/sarga90/yuddha_90_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.92" ; schema:url <https://valmikiramayan.net/yuddha/sarga92/yuddha_92_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.111" ; schema:url <https://valmikiramayan.net/yuddha/sarga111/yuddha_111_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.12" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424773.html> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.29" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424795.html> ] .
+
+:indumati a yc:Person ;
+    rdfs:label "Indumati" ;
+    rdfs:comment "Princess of Vidarbha who chooses Aja at her svayamvara. Her early death leaves him heartbroken (Kalidasa's Raghuvamsha)." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-purana ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    yc:parentOf :dasharatha .
+
+:jahnu a yc:Event, yc:Catastrophe ;
+    rdfs:label "Jahnu swallows the Ganga" ;
+    rdfs:comment "The descending Ganga floods the sage Jahnu's sacrifice, so he drinks her up. When the gods and sages appease him he lets her out from his ears, and she is called Jahnavi." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.43" ; schema:url <https://valmikiramayan.net/baala/sarga43/bala_43_frame.htm> ] .
+
+:jamadagni a yc:Sage ;
+    rdfs:label "Jamadagni" ;
+    rdfs:comment "Sage of the Bhrigu line, father of Parashurama. Kartavirya takes the calf of the cow that gives his sacrificial butter, and Kartavirya's sons later kill him (Vana Parva)." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-sage ;
+    yc:parentOf :parashurama ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.75" ; schema:url <https://valmikiramayan.net/baala/sarga75/bala_75_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.66" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.116" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cxvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.116-117" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cxvi> ] .
+
+:jambavan a yc:Person, yc:SpansYugas ;
+    rdfs:label "Jambavan" ;
+    rdfs:comment "Son of Brahma and an elder of Rama's army, usually shown as king of the bears. Reminds Hanuman of his powers. In the Dvapara he fights Krishna over the Syamantaka gem." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-riksha ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.41" ; schema:url <https://valmikiramayan.net/kish/sarga41/kishkindha_41_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.66" ; schema:url <https://valmikiramayan.net/kish/sarga66/kishkindha_66_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Harivamsa 1.38" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485515.html> ] .
+
+:janaka a yc:Person ;
+    rdfs:label "Janaka" ;
+    rdfs:comment "King of Videha who finds Sita in a furrow. Sets Shiva's bow as the test for her hand." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:parentOf :urmila ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.66" ; schema:url <https://valmikiramayan.net/baala/sarga66/bala_66_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.71" ; schema:url <https://valmikiramayan.net/baala/sarga71/bala_71_frame.htm> ] .
+
+:jatayu a yc:Person ;
+    rdfs:label "Jatayu" ;
+    rdfs:comment "Vulture king, son of Aruna. Fights Ravana to stop Sita's abduction and is cut down." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-beast ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Aranya 3.14" ; schema:url <https://valmikiramayan.net/aranya/sarga14/aranya_14_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Aranya 3.51" ; schema:url <https://valmikiramayan.net/aranya/sarga51/aranya_51_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.58" ; schema:url <https://valmikiramayan.net/kish/sarga58/kishkindha_58_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.66" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvi> ] .
+
+:kabandha a yc:Person ;
+    rdfs:label "Kabandha" ;
+    rdfs:comment "Headless demon with a mouth in his belly. Freed by Rama, he sends him to Sugriva." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-rakshasa ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Aranya 3.72" ; schema:url <https://valmikiramayan.net/aranya/sarga72/aranya_72_frame.htm> ] .
+
+:kacha a yc:Person ;
+    rdfs:label "Kacha" ;
+    rdfs:comment "Son of Brihaspati. The gods send him to learn the Sanjivani art from Shukracharya. Devayani loves him, and when he refuses her they curse each other (Adi Parva)." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.76; MBh 1.77" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.76" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.77" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxvii> ] .
+
+:kaikasi a yc:Person ;
+    rdfs:label "Kaikasi" ;
+    rdfs:comment "Sumali's daughter and Vishrava's wife. Mother of Ravana, Kumbhakarna, Vibhishana and Shurpanakha." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    yc:being yc:being-rakshasa ;
+    yc:role yc:role-woman ;
+    yc:parentOf :kumbhakarna, :ravana, :shurpanakha, :vibhishana ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Uttara 7.9" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424770.html> ] .
+
+:kaikeyi a yc:Person ;
+    rdfs:label "Kaikeyi" ;
+    rdfs:comment "Dasharatha's queen. Uses two old boons to make her son Bharata king and send Rama into exile." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    yc:parentOf :bharatar ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.16" ; schema:url <https://valmikiramayan.net/baala/sarga16/bala_16_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.18" ; schema:url <https://valmikiramayan.net/baala/sarga18/bala_18_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.9" ; schema:url <https://valmikiramayan.net/ayodhya/sarga9/ayodhya_9_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.11" ; schema:url <https://valmikiramayan.net/ayodhya/sarga11/ayodhya_11_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.73" ; schema:url <https://valmikiramayan.net/ayodhya/sarga73/ayodhya_73_prose.htm> ] .
+
+:kailasa a yc:Event ;
+    rdfs:label "Lifting Kailasa" ;
+    rdfs:comment "Ravana tries to lift Shiva's mountain. Shiva presses it down with a toe and pins him for a thousand years. His roar gives him the name Ravana, and Shiva gives him the sword Chandrahasa." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Uttara 7.16" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424777.html> ] .
+
+:kalidemon a yc:Person ;
+    rdfs:label "Kali (demon)" ;
+    rdfs:comment "Spirit of the Kali Yuga, who possesses Nala out of jealousy." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-asura ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.67" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.58-59" ; schema:url <https://www.sacred-texts.com/hin/m03/m03058.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.59" ; schema:url <https://www.sacred-texts.com/hin/m03/m03059.htm> ] .
+
+:kapila a yc:Sage ;
+    rdfs:label "Kapila" ;
+    rdfs:comment "Sage counted as an avatar of Vishnu and teacher of Samkhya. Burns Sagara's sons to ash with a single sound." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-sage ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.40" ; schema:url <https://valmikiramayan.net/baala/sarga40/bala_5F40_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.41" ; schema:url <https://valmikiramayan.net/baala/sarga41/bala_41_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 1.3, 3.24" ; schema:url <https://vedabase.io/en/library/sb/1/3/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 3.24" ; schema:url <https://vedabase.io/en/library/sb/3/24/> ] .
+
+:kartavirya a yc:Person ;
+    rdfs:label "Kartavirya Arjuna" ;
+    rdfs:comment "Thousand-armed Haihaya king of Yadu's line. Once holds Ravana captive. Seizes Jamadagni's cow and is killed by Parashurama." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.75" ; schema:url <https://valmikiramayan.net/baala/sarga75/bala_75_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.116" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cxvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.116-117" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cxvi> ] ,
+        [ a yc:Citation ; rdfs:label "Harivamsa 1.33" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485510.html> ] .
+
+:kausalya a yc:Person ;
+    rdfs:label "Kausalya" ;
+    rdfs:comment "Dasharatha's chief queen and Rama's mother." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    yc:parentOf :rama ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.16" ; schema:url <https://valmikiramayan.net/baala/sarga16/bala_16_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.18" ; schema:url <https://valmikiramayan.net/baala/sarga18/bala_18_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.20" ; schema:url <https://valmikiramayan.net/ayodhya/sarga20/ayodhya_20_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.64" ; schema:url <https://valmikiramayan.net/ayodhya/sarga64/ayodhya_64_prose.htm> ] .
+
+:kesari a yc:Person ;
+    rdfs:label "Kesari" ;
+    rdfs:comment "Vanara chief and Anjana's husband. Hanuman, Vayu's son, is called Kesari's son through his wife." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-vanara ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.66" ; schema:url <https://valmikiramayan.net/kish/sarga66/kishkindha_66_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Sundara 5.35" ; schema:url <https://valmikiramayan.net/sundara/sarga35/sundara_35_prose.htm> ] .
+
+:khara a yc:Person ;
+    rdfs:label "Khara & Dushana" ;
+    rdfs:comment "Shurpanakha's brothers, killed with their army of 14,000 by Rama at Janasthana." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-rakshasa ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Aranya 3.17" ; schema:url <https://valmikiramayan.net/aranya/sarga17/aranya_17_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Aranya 3.30" ; schema:url <https://valmikiramayan.net/aranya/sarga30/aranya_30_frame.htm> ] .
+
+:kshatriya21 a yc:Event, yc:Catastrophe ;
+    rdfs:label "Kshatriyas wiped out 21 times" ;
+    rdfs:comment "After Kartavirya's sons kill Jamadagni, Parashurama clears the earth of kshatriyas thrice seven times and fills five lakes with their blood at Samantapanchaka, later Kurukshetra." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.75" ; schema:url <https://valmikiramayan.net/baala/sarga75/bala_75_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.116-117" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cxvii> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.117" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cxvii> ] .
+
+:kumbhakarna a yc:Person ;
+    rdfs:label "Kumbhakarna" ;
+    rdfs:comment "Ravana's giant brother. Brahma curses him to sleep six months at a time; the Uttara Kanda tells it as a boon twisted by Saraswati. Vijaya's second birth in the Bhagavata. Killed by Rama." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-rakshasa ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Aranya 3.17" ; schema:url <https://valmikiramayan.net/aranya/sarga17/aranya_17_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.61" ; schema:url <https://valmikiramayan.net/yuddha/sarga61/yuddha_61_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.67" ; schema:url <https://valmikiramayan.net/yuddha/sarga67/yuddha_67_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.9" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424770.html> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.10" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424771.html> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 7.1" ; schema:url <https://vedabase.io/en/library/sb/7/1/> ] .
+
+:kuru a yc:Person ;
+    rdfs:label "Kuru" ;
+    rdfs:comment "Son of Samvarana and Tapati. Kurukshetra, made holy by his austerities, takes his name, and so do the Kurus and the Kauravas." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:ancestorOf :pratipa ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.94" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xciv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.94; MBh 1.95" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xciv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.95" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcv> ] .
+
+:lakshmana a yc:Person ;
+    rdfs:label "Lakshmana" ;
+    rdfs:comment "Rama's brother and companion in exile, Shesha incarnate in the Puranas. Kills Indrajit." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:kills :atikaya, :indrajit ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.18" ; schema:url <https://valmikiramayan.net/baala/sarga18/bala_18_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.73" ; schema:url <https://valmikiramayan.net/baala/sarga73/bala_73_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.40" ; schema:url <https://valmikiramayan.net/ayodhya/sarga40/ayodhya_5F40_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Aranya 3.18" ; schema:url <https://valmikiramayan.net/aranya/sarga18/aranya_18_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.71" ; schema:url <https://valmikiramayan.net/yuddha/sarga71/yuddha_71_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.90" ; schema:url <https://valmikiramayan.net/yuddha/sarga90/yuddha_90_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.101" ; schema:url <https://valmikiramayan.net/yuddha/sarga101/yuddha_101_frame.htm> ] .
+
+:lankaburn a yc:Event, yc:Catastrophe ;
+    rdfs:label "Lanka burned" ;
+    rdfs:comment "Ravana has Hanuman's tail set alight. Hanuman leaps across the roofs and burns the city." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Sundara 5.53" ; schema:url <https://valmikiramayan.net/sundara/sarga53/sundara_53_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Sundara 5.54" ; schema:url <https://valmikiramayan.net/sundara/sarga54/sundara_54_prose.htm> ] .
+
+:lankini a yc:Person ;
+    rdfs:label "Lankini" ;
+    rdfs:comment "The city of Lanka in her own form, guarding the gate. Later tellings call her Lankini. Hanuman knocks her down and she lets him in." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-rakshasa ;
+    yc:role yc:role-woman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Sundara 5.3" ; schema:url <https://valmikiramayan.net/sundara/sarga3/sundara_3_prose.htm> ] .
+
+:lavakusha a yc:Person ;
+    rdfs:label "Lava & Kusha" ;
+    rdfs:comment "Twin sons of Rama and Sita, born in Valmiki's hermitage. They sing the Ramayana at Rama's court." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    yc:being yc:being-human ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.4" ; schema:url <https://valmikiramayan.net/baala/sarga4/bala_4_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.66" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424840.html> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.93" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424868.html> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.94" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424869.html> ] .
+
+:mahabhisha a yc:Person ;
+    rdfs:label "Mahabhisha" ;
+    rdfs:comment "Ikshvaku king who reached heaven. Brahma curses him to be reborn for gazing at Ganga, and he returns as Shantanu (Adi Parva). His yuga is not specified." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:rebornAs :shantanu ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.96; MBh 1.97" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.96" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcvi> ] .
+
+:mandavi a yc:Person ;
+    rdfs:label "Mandavi" ;
+    rdfs:comment "Bharata's wife, a niece of Janaka." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.72" ; schema:url <https://valmikiramayan.net/baala/sarga72/bala_72_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.73" ; schema:url <https://valmikiramayan.net/baala/sarga73/bala_73_frame.htm> ] .
+
+:mandhata a yc:Person ;
+    rdfs:label "Mandhata" ;
+    rdfs:comment "Ikshvaku emperor, son of Yuvanashva. In Valmiki he comes after Trishanku and Dhundhumara, and his son is Susandhi. One of the sixteen great kings the Mahabharata lists. The Harivamsa makes Muchukunda his son." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:parentOf :muchukunda ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.70" ; schema:url <https://valmikiramayan.net/baala/sarga70/bala_70_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.110" ; schema:url <https://valmikiramayan.net/ayodhya/sarga110/ayodhya_110_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Harivamsa 1.12" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485489.html> ] .
+
+:mandodari a yc:Person ;
+    rdfs:label "Mandodari" ;
+    rdfs:comment "Ravana's chief queen and mother of Indrajit. She calls herself Sumali's granddaughter; the Uttara Kanda names her father as Maya." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-rakshasa ;
+    yc:role yc:role-woman ;
+    yc:parentOf :indrajit ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Sundara 5.10" ; schema:url <https://valmikiramayan.net/sundara/sarga10/sundara_10_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.111" ; schema:url <https://valmikiramayan.net/yuddha/sarga111/yuddha_111_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.12" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424773.html> ] .
+
+:manthara a yc:Person ;
+    rdfs:label "Manthara" ;
+    rdfs:comment "Kaikeyi's hunchbacked maid, who persuades her to claim her two boons." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.7" ; schema:url <https://valmikiramayan.net/ayodhya/sarga7/ayodhya_7_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.9" ; schema:url <https://valmikiramayan.net/ayodhya/sarga9/ayodhya_9_prose.htm> ] .
+
+:maricha a yc:Person ;
+    rdfs:label "Maricha" ;
+    rdfs:comment "Tataka's son. Rama spares him at Vishvamitra's sacrifice, hurling him into the ocean. Later he becomes the golden deer that draws Rama away, and Rama kills him." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-rakshasa ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.25" ; schema:url <https://valmikiramayan.net/baala/sarga25/bala_5F25_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.30" ; schema:url <https://valmikiramayan.net/baala/sarga30/bala_30_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Aranya 3.38" ; schema:url <https://valmikiramayan.net/aranya/sarga38/aranya_38_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Aranya 3.44" ; schema:url <https://valmikiramayan.net/aranya/sarga44/aranya_44_frame.htm> ] .
+
+:mayasura a yc:Person, yc:SpansYugas ;
+    rdfs:label "Mayasura" ;
+    rdfs:comment "Architect of the asuras and father of Mandodari. In the Dvapara, Arjuna spares him in the Khandava fire, and he builds the Pandavas' Maya Sabha." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-asura ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Yuddha 6.111" ; schema:url <https://valmikiramayan.net/yuddha/sarga111/yuddha_111_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.12" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424773.html> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.230; MBh 2.1" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-ccxxx> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.230; 2.1" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-ccxxx> ] .
+
+:menaka a yc:Person ;
+    rdfs:label "Menaka" ;
+    rdfs:comment "Apsara sent by Indra to break Vishvamitra's penance. Mother of Shakuntala." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-apsara ;
+    yc:role yc:role-woman ;
+    yc:parentOf :shakuntala ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.71; MBh 1.72" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.71" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.72" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxii> ] .
+
+:muchukunda a yc:Person, yc:SpansYugas ;
+    rdfs:label "Muchukunda" ;
+    rdfs:comment "Son of Mandhata. After fighting for the devas he asks for undisturbed sleep, and whoever wakes him burns. He sleeps into the Dvapara, when Krishna leads Kalayavana into his cave." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Harivamsa 1.12" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485489.html> ] ,
+        [ a yc:Citation ; rdfs:label "Harivamsa 2.58" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485599.html> ] .
+
+:nahusha a yc:Person ;
+    rdfs:label "Nahusha" ;
+    rdfs:comment "Son of Ayu. Rules heaven as Indra for a time, until Agastya curses him into a python. In the Vana Parva he seizes Bhima, and Yudhishthira's answers free him." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:parentOf :yayati ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.75" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.178, 3.180" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-clxxviii> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.178" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-clxxviii> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.180" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-clxxx> ] .
+
+:nala a yc:Person ;
+    rdfs:label "Nala (vanara)" ;
+    rdfs:comment "Son of Vishvakarma, who leads the building of the bridge to Lanka." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-vanara ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Yuddha 6.22" ; schema:url <https://valmikiramayan.net/yuddha/sarga22/yuddha_22_frame.htm> ] .
+
+:nalak a yc:Person ;
+    rdfs:label "Nala" ;
+    rdfs:comment "King of Nishadha who loses everything at dice when the demon Kali possesses him. His story is told to Yudhishthira, another king ruined by dice." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 3.52, 3.59" ; schema:url <https://www.sacred-texts.com/hin/m03/m03052.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.52" ; schema:url <https://www.sacred-texts.com/hin/m03/m03052.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.57" ; schema:url <https://www.sacred-texts.com/hin/m03/m03057.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.59" ; schema:url <https://www.sacred-texts.com/hin/m03/m03059.htm> ] .
+
+:nalakuvara a yc:Person ;
+    rdfs:label "Nalakuvara" ;
+    rdfs:comment "Kubera's son. After Ravana assaults his wife Rambha, he curses Ravana that his head will split if he forces any unwilling woman." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    yc:being yc:being-yaksha ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Yuddha 6.60" ; schema:url <https://valmikiramayan.net/yuddha/sarga60/yuddha_60_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.26" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424792.html> ] .
+
+:nandi a yc:Person ;
+    rdfs:label "Nandi" ;
+    rdfs:comment "Shiva's attendant. When Ravana mocks his monkey face, Nandi curses him that monkeys will ruin his kingdom." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    yc:being yc:being-beast ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Yuddha 6.60" ; schema:url <https://valmikiramayan.net/yuddha/sarga60/yuddha_60_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.16" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424777.html> ] .
+
+:narada a yc:Sage, yc:SpansYugas ;
+    rdfs:label "Narada" ;
+    rdfs:comment "Wandering divine sage. Tells Valmiki the story of Rama and turns up throughout the Mahabharata with advice and news." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-sage ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.1" ; schema:url <https://valmikiramayan.net/baala/sarga1/bala_1_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.211-214" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-ccxi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 2.5" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-2-sabha-parva/section-v> ] .
+
+:nila a yc:Person ;
+    rdfs:label "Nila" ;
+    rdfs:comment "Son of Agni and commander of Rama's army. Kills Prahasta." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-vanara ;
+    yc:kills :prahasta ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.41" ; schema:url <https://valmikiramayan.net/kish/sarga41/kishkindha_41_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.30" ; schema:url <https://valmikiramayan.net/yuddha/sarga30/yuddha_30_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.58" ; schema:url <https://valmikiramayan.net/yuddha/sarga58/yuddha_58_frame.htm> ] .
+
+:parashurama a yc:Avatar, yc:Chiranjivi ;
+    rdfs:label "Parashurama" ;
+    rdfs:comment "Sixth avatar of Vishnu. Kills Kartavirya and clears the earth of kshatriyas 21 times. Yields to Rama, and lives on into the Dvapara to teach Bhishma, Drona and Karna." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-god ;
+    yc:kills :kartavirya ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.75" ; schema:url <https://valmikiramayan.net/baala/sarga75/bala_75_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.76" ; schema:url <https://valmikiramayan.net/baala/sarga76/bala_76_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.66" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.131" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-cxxxi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.116" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cxvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.117" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cxvii> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 5.181; MBh 5.188" ; schema:url <https://sacred-texts.com/hin/m05/m05181.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 12.3" ; schema:url <https://sacred-texts.com/hin/m12/m12a003.htm> ] .
+
+:prahasta a yc:Person ;
+    rdfs:label "Prahasta" ;
+    rdfs:comment "Ravana's commander-in-chief, killed by Nila." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-rakshasa ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Yuddha 6.58" ; schema:url <https://valmikiramayan.net/yuddha/sarga58/yuddha_58_frame.htm> ] .
+
+:puru a yc:Person ;
+    rdfs:label "Puru" ;
+    rdfs:comment "Youngest son of Yayati. Takes his father's old age and inherits the kingdom. Ancestor of the Kurus." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:ancestorOf :dushyanta ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.75; MBh 1.83" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.84; MBh 1.85; MBh 1.95" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxxiv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.95" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcv> ] .
+
+:pururavas a yc:Person ;
+    rdfs:label "Pururavas" ;
+    rdfs:comment "Son of Budha and Ila, husband of the apsara Urvashi. The Bhagavata Purana credits him with the three sacred fires that open the Treta Yuga." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:parentOf :ayu ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.75" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] .
+
+:pushpaka a yc:Event ;
+    rdfs:label "Pushpaka" ;
+    rdfs:comment "Flying chariot Vishvakarma made for Kubera. Ravana seizes it, and Rama flies home to Ayodhya in it." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Aranya 3.48" ; schema:url <https://valmikiramayan.net/aranya/sarga48/aranya_48_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Sundara 5.8" ; schema:url <https://valmikiramayan.net/sundara/sarga8/sundara_8_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.121" ; schema:url <https://valmikiramayan.net/yuddha/sarga121/yuddha_121_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.122" ; schema:url <https://valmikiramayan.net/yuddha/sarga122/yuddha_122_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.3" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424764.html> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.15" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424776.html> ] .
+
+:raghu a yc:Person ;
+    rdfs:label "Raghu" ;
+    rdfs:comment "Conquering king. Rama's line, the Raghuvamsha, is named after him." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.70" ; schema:url <https://valmikiramayan.net/baala/sarga70/bala_70_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.110" ; schema:url <https://valmikiramayan.net/ayodhya/sarga110/ayodhya_110_prose.htm> ] .
+
+:rama a yc:Avatar ;
+    rdfs:label "Rama" ;
+    rdfs:comment "Seventh avatar of Vishnu. In the Vana Parva the sage Markandeya tells his whole story (the Ramopakhyana) to Yudhishthira." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-god ;
+    yc:role yc:role-king ;
+    yc:parentOf :lavakusha ;
+    yc:kills :kumbhakarna, :maricha, :ravana, :tataka, :viradha ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.4" ; schema:url <https://valmikiramayan.net/baala/sarga4/bala_4_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.16" ; schema:url <https://valmikiramayan.net/baala/sarga16/bala_16_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.18" ; schema:url <https://valmikiramayan.net/baala/sarga18/bala_18_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.26" ; schema:url <https://valmikiramayan.net/baala/sarga26/bala_26_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.27" ; schema:url <https://valmikiramayan.net/baala/sarga27/bala_27_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.30" ; schema:url <https://valmikiramayan.net/baala/sarga30/bala_30_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.49" ; schema:url <https://valmikiramayan.net/baala/sarga49/bala_49_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.73" ; schema:url <https://valmikiramayan.net/baala/sarga73/bala_73_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.76" ; schema:url <https://valmikiramayan.net/baala/sarga76/bala_76_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.11" ; schema:url <https://valmikiramayan.net/ayodhya/sarga11/ayodhya_11_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.20" ; schema:url <https://valmikiramayan.net/ayodhya/sarga20/ayodhya_20_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.40" ; schema:url <https://valmikiramayan.net/ayodhya/sarga40/ayodhya_5F40_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.52" ; schema:url <https://valmikiramayan.net/ayodhya/sarga52/ayodhya_52_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.54" ; schema:url <https://valmikiramayan.net/ayodhya/sarga54/ayodhya_54_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.110" ; schema:url <https://valmikiramayan.net/ayodhya/sarga110/ayodhya_110_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.111" ; schema:url <https://valmikiramayan.net/ayodhya/sarga111/ayodhya_111_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Aranya 3.4" ; schema:url <https://valmikiramayan.net/aranya/sarga4/aranya_4_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Aranya 3.12" ; schema:url <https://valmikiramayan.net/aranya/sarga12/aranya_12_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Aranya 3.30" ; schema:url <https://valmikiramayan.net/aranya/sarga30/aranya_30_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Aranya 3.44" ; schema:url <https://valmikiramayan.net/aranya/sarga44/aranya_44_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Aranya 3.72" ; schema:url <https://valmikiramayan.net/aranya/sarga72/aranya_72_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Aranya 3.74" ; schema:url <https://valmikiramayan.net/aranya/sarga74/aranya_74_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.5" ; schema:url <https://valmikiramayan.net/kish/sarga5/kishkindha_5_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.17" ; schema:url <https://valmikiramayan.net/kish/sarga17/kishkindha_17_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.17" ; schema:url <https://valmikiramayan.net/yuddha/sarga17/yuddha_17_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.67" ; schema:url <https://valmikiramayan.net/yuddha/sarga67/yuddha_67_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.108" ; schema:url <https://valmikiramayan.net/yuddha/sarga108/yuddha_108_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.117" ; schema:url <https://valmikiramayan.net/yuddha/sarga117/yuddha_117_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.122" ; schema:url <https://valmikiramayan.net/yuddha/sarga122/yuddha_122_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.66" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424840.html> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.94" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424869.html> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.272" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cclxxii> ] .
+
+:ravana a yc:Person ;
+    rdfs:label "Ravana" ;
+    rdfs:comment "Rakshasa king of Lanka and Jaya's second birth. Abducts Sita and is killed by Rama." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-rakshasa ;
+    yc:role yc:role-king ;
+    yc:parentOf :akshayakumara, :atikaya, :indrajit ;
+    yc:kills :anaranya ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Aranya 3.17" ; schema:url <https://valmikiramayan.net/aranya/sarga17/aranya_17_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Aranya 3.48" ; schema:url <https://valmikiramayan.net/aranya/sarga48/aranya_48_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Aranya 3.49" ; schema:url <https://valmikiramayan.net/aranya/sarga49/aranya_49_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Aranya 3.51" ; schema:url <https://valmikiramayan.net/aranya/sarga51/aranya_51_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.17" ; schema:url <https://valmikiramayan.net/kish/sarga17/kishkindha_17_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Sundara 5.10" ; schema:url <https://valmikiramayan.net/sundara/sarga10/sundara_10_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Sundara 5.47" ; schema:url <https://valmikiramayan.net/sundara/sarga47/sundara_47_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Sundara 5.48" ; schema:url <https://valmikiramayan.net/sundara/sarga48/sundara_48_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Sundara 5.52" ; schema:url <https://valmikiramayan.net/sundara/sarga52/sundara_52_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Sundara 5.53" ; schema:url <https://valmikiramayan.net/sundara/sarga53/sundara_53_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.19" ; schema:url <https://valmikiramayan.net/yuddha/sarga19/yuddha_19_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.41" ; schema:url <https://valmikiramayan.net/yuddha/sarga41/yuddha_41_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.60" ; schema:url <https://valmikiramayan.net/yuddha/sarga60/yuddha_60_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.67" ; schema:url <https://valmikiramayan.net/yuddha/sarga67/yuddha_67_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.71" ; schema:url <https://valmikiramayan.net/yuddha/sarga71/yuddha_71_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.92" ; schema:url <https://valmikiramayan.net/yuddha/sarga92/yuddha_92_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.108" ; schema:url <https://valmikiramayan.net/yuddha/sarga108/yuddha_108_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.111" ; schema:url <https://valmikiramayan.net/yuddha/sarga111/yuddha_111_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.121" ; schema:url <https://valmikiramayan.net/yuddha/sarga121/yuddha_121_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.9" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424770.html> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.10" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424771.html> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.12" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424773.html> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.15" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424776.html> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.16" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424777.html> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.19" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424780.html> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.22" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424783.html> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.26" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424792.html> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 7.1" ; schema:url <https://vedabase.io/en/library/sb/7/1/> ] .
+
+:renuka a yc:Person ;
+    rdfs:label "Renuka" ;
+    rdfs:comment "Jamadagni's wife. On his order Parashurama beheads her, then asks for and receives her life back." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    yc:parentOf :parashurama ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 3.116" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cxvi> ] .
+
+:rishyashringa a yc:Sage ;
+    rdfs:label "Rishyashringa" ;
+    rdfs:comment "Sage raised in the forest who has never seen a woman. Brought to Anga to end a drought, he marries Shanta and later performs Dasharatha's sacrifice for sons. Told in both epics." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-sage ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.10" ; schema:url <https://valmikiramayan.net/baala/sarga10/bala_10_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.15" ; schema:url <https://valmikiramayan.net/baala/sarga15/bala_15_frame.htm> ] .
+
+:rohita a yc:Person ;
+    rdfs:label "Rohita" ;
+    rdfs:comment "Harishchandra's son, promised to Varuna as a sacrifice and saved." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.70" ; schema:url <https://valmikiramayan.net/baala/sarga70/bala_70_frame.htm> ] .
+
+:ruma a yc:Person ;
+    rdfs:label "Ruma" ;
+    rdfs:comment "Sugriva's wife, seized by Vali." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-vanara ;
+    yc:role yc:role-woman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.10" ; schema:url <https://valmikiramayan.net/kish/sarga10/kishkindha_10_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.18" ; schema:url <https://valmikiramayan.net/kish/sarga18/kishkindha_18_frame.htm> ] .
+
+:sagara a yc:Person ;
+    rdfs:label "Sagara" ;
+    rdfs:comment "Son of Asita, born with poison. Indra steals his Ashvamedha horse in a demon's form, and his 60,000 sons dig up the earth looking for it." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:parentOf :asamanja, :sagarasons ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.38" ; schema:url <https://valmikiramayan.net/baala/sarga38/bala_38_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.39" ; schema:url <https://valmikiramayan.net/baala/sarga39/bala_39_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.70" ; schema:url <https://valmikiramayan.net/baala/sarga70/bala_70_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.110" ; schema:url <https://valmikiramayan.net/ayodhya/sarga110/ayodhya_110_prose.htm> ] .
+
+:sagarasons a yc:Person, yc:Catastrophe ;
+    rdfs:label "Sagara's 60,000 sons" ;
+    rdfs:comment "They accuse Kapila of stealing the horse and are burned to ash by a single sound from him. Only Ganga's water can free their souls, which is why Bhagiratha brings her down." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.38" ; schema:url <https://valmikiramayan.net/baala/sarga38/bala_38_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.40" ; schema:url <https://valmikiramayan.net/baala/sarga40/bala_5F40_frame.htm> ] .
+
+:sahasrakavacha a yc:Person ;
+    rdfs:label "Sahasrakavacha" ;
+    rdfs:comment "The demon Dambhodbhava with a thousand armours from Surya. Nara and Narayana break 999 of them. Folk tradition says he is reborn as Karna wearing the last." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-folk ;
+    yc:being yc:being-asura .
+
+:sampati a yc:Person ;
+    rdfs:label "Sampati" ;
+    rdfs:comment "Jatayu's elder brother, whose wings burned when he shielded Jatayu from the sun. He tells the vanaras that Sita is in Lanka." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-beast ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Aranya 3.14" ; schema:url <https://valmikiramayan.net/aranya/sarga14/aranya_14_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.58" ; schema:url <https://valmikiramayan.net/kish/sarga58/kishkindha_58_frame.htm> ] .
+
+:samvarana a yc:Person ;
+    rdfs:label "Samvarana" ;
+    rdfs:comment "Puru-line king who marries Tapati with Vashishtha's help." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:parentOf :kuru ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.94; MBh 1.175" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xciv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.94; MBh 1.95" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xciv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.95" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.175" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-clxxv> ] .
+
+:sanjeevani a yc:Event ;
+    rdfs:label "Sanjeevani mountain" ;
+    rdfs:comment "Hanuman flies to the Himalaya twice: first for four healing herbs when Indrajit's weapon fells Rama, Lakshmana and the army, then for a whole mountain when Ravana's spear fells Lakshmana and Sushena treats him." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Yuddha 6.74" ; schema:url <https://valmikiramayan.net/yuddha/sarga74/yuddha_74_frame.htm> ] .
+
+:sarama a yc:Person ;
+    rdfs:label "Sarama" ;
+    rdfs:comment "Rakshasi who guards Sita for Ravana and comforts her. Commentators call her Vibhishana's wife." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-rakshasa ;
+    yc:role yc:role-woman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Yuddha 6.33" ; schema:url <https://valmikiramayan.net/yuddha/sarga33/yuddha_33_frame.htm> ] .
+
+:satyavan a yc:Person ;
+    rdfs:label "Satyavan" ;
+    rdfs:comment "Savitri's husband, fated to die within a year of marriage." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 3.292" ; schema:url <https://www.sacred-texts.com/hin/m03/m03292.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.293" ; schema:url <https://www.sacred-texts.com/hin/m03/m03293.htm> ] .
+
+:savitri a yc:Person ;
+    rdfs:label "Savitri" ;
+    rdfs:comment "Princess who follows Yama as he takes her husband Satyavan's life, and wins it back with her answers." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 3.292" ; schema:url <https://www.sacred-texts.com/hin/m03/m03292.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.293" ; schema:url <https://www.sacred-texts.com/hin/m03/m03293.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.295" ; schema:url <https://www.sacred-texts.com/hin/m03/m03295.htm> ] .
+
+:shabari a yc:Person ;
+    rdfs:label "Shabari" ;
+    rdfs:comment "Ascetic woman at Lake Pampa who has waited years for Rama. She welcomes him, shows him the Matanga forest, and enters the fire." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Aranya 3.74" ; schema:url <https://valmikiramayan.net/aranya/sarga74/aranya_74_frame.htm> ] .
+
+:shakuntala a yc:Person ;
+    rdfs:label "Shakuntala" ;
+    rdfs:comment "Daughter of Vishvamitra and Menaka, raised in Kanva's hermitage." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    yc:parentOf :bharata ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.72" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxii> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.73; MBh 1.74" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxiii> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.74" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxiv> ] .
+
+:shanta a yc:Person ;
+    rdfs:label "Shanta" ;
+    rdfs:comment "Daughter of King Romapada of Anga and wife of Rishyashringa. Later tradition makes her Dasharatha's daughter, adopted by Romapada." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.10" ; schema:url <https://valmikiramayan.net/baala/sarga10/bala_10_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.11" ; schema:url <https://valmikiramayan.net/baala/sarga11/bala_11_frame.htm> ] .
+
+:sharmishtha a yc:Person ;
+    rdfs:label "Sharmishtha" ;
+    rdfs:comment "Asura princess made Devayani's servant. Secretly bears Yayati three sons, the youngest of them Puru." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-asura ;
+    yc:role yc:role-woman ;
+    yc:parentOf :puru ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.75; MBh 1.83" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.80; MBh 1.83" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxx> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.80" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxx> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.83" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxxiii> ] .
+
+:shatrughna a yc:Person ;
+    rdfs:label "Shatrughna" ;
+    rdfs:comment "Lakshmana's twin, who stays by Bharata. Kills the demon Lavana and founds Mathura, the city where Krishna is later born." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.18" ; schema:url <https://valmikiramayan.net/baala/sarga18/bala_18_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.73" ; schema:url <https://valmikiramayan.net/baala/sarga73/bala_73_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.78" ; schema:url <https://valmikiramayan.net/ayodhya/sarga78/ayodhya_78_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.115" ; schema:url <https://valmikiramayan.net/ayodhya/sarga115/ayodhya_115_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.69" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424843.html> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.70" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424844.html> ] .
+
+:shibi a yc:Person ;
+    rdfs:label "Shibi" ;
+    rdfs:comment "King who offers his own flesh to save a dove from a hawk. The birds are Agni and Indra, testing him." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 3.196 (also 3.131)" ; schema:url <https://www.sacred-texts.com/hin/m03/m03196.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.196" ; schema:url <https://www.sacred-texts.com/hin/m03/m03196.htm> ] .
+
+:shravana a yc:Person ;
+    rdfs:label "Shravana" ;
+    rdfs:comment "Young ascetic fetching water for his blind, aged parents. Valmiki leaves him unnamed; later tradition calls him Shravana. Dasharatha shoots him by mistake, and the father curses Dasharatha to die grieving for a son." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.63" ; schema:url <https://valmikiramayan.net/ayodhya/sarga63/ayodhya_63_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.64" ; schema:url <https://valmikiramayan.net/ayodhya/sarga64/ayodhya_64_prose.htm> ] .
+
+:shrutakirti a yc:Person ;
+    rdfs:label "Shrutakirti" ;
+    rdfs:comment "Shatrughna's wife, a niece of Janaka." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.72" ; schema:url <https://valmikiramayan.net/baala/sarga72/bala_72_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.73" ; schema:url <https://valmikiramayan.net/baala/sarga73/bala_73_frame.htm> ] .
+
+:shukra a yc:Sage ;
+    rdfs:label "Shukracharya" ;
+    rdfs:comment "Guru of the asuras, master of the Sanjivani revival art. Curses Yayati with old age for secretly taking Sharmishtha." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-sage ;
+    yc:parentOf :devayani ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.66" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.76; MBh 1.83" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.76" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.83" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxxiii> ] .
+
+:shurpanakha a yc:Person ;
+    rdfs:label "Shurpanakha" ;
+    rdfs:comment "Ravana's sister. Lakshmana cuts off her ears and nose when she attacks Sita, and she urges Ravana to take revenge." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-rakshasa ;
+    yc:role yc:role-woman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Aranya 3.17" ; schema:url <https://valmikiramayan.net/aranya/sarga17/aranya_17_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Aranya 3.18" ; schema:url <https://valmikiramayan.net/aranya/sarga18/aranya_18_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.9" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424770.html> ] .
+
+:simhika a yc:Person ;
+    rdfs:label "Simhika" ;
+    rdfs:comment "Sea demoness who seizes shadows. Hanuman kills her on his leap. The Mahabharata names her the mother of Rahu." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-rakshasa ;
+    yc:role yc:role-woman ;
+    yc:parentOf :rahu ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Sundara 5.1" ; schema:url <https://valmikiramayan.net/sundara/sarga1/sundara_1_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 6.6" ; schema:url <https://vedabase.io/en/library/sb/6/6/> ] .
+
+:sita a yc:Person ;
+    rdfs:label "Sita" ;
+    rdfs:comment "Found in a furrow by Janaka and won by Rama. Some Puranas say a shadow-Sita is reborn as Draupadi." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    yc:parentOf :lavakusha ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.4" ; schema:url <https://valmikiramayan.net/baala/sarga4/bala_4_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.66" ; schema:url <https://valmikiramayan.net/baala/sarga66/bala_66_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.73" ; schema:url <https://valmikiramayan.net/baala/sarga73/bala_73_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Aranya 3.49" ; schema:url <https://valmikiramayan.net/aranya/sarga49/aranya_49_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Sundara 5.15" ; schema:url <https://valmikiramayan.net/sundara/sarga15/sundara_15_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Sundara 5.27" ; schema:url <https://valmikiramayan.net/sundara/sarga27/sundara_27_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.33" ; schema:url <https://valmikiramayan.net/yuddha/sarga33/yuddha_33_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.48" ; schema:url <https://valmikiramayan.net/yuddha/sarga48/yuddha_48_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.117" ; schema:url <https://valmikiramayan.net/yuddha/sarga117/yuddha_117_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.17" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424778.html> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.66" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424840.html> ] ,
+        [ a yc:Citation ; rdfs:label "Vishnu P. 1.9" ; schema:url <https://sacred-texts.com/hin/vp/vp044.htm> ] .
+
+:sugriva a yc:Person ;
+    rdfs:label "Sugriva" ;
+    rdfs:comment "Vanara prince, son of Surya. Allies with Rama to win back his kingdom from Vali." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-vanara ;
+    yc:role yc:role-king ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.5" ; schema:url <https://valmikiramayan.net/kish/sarga5/kishkindha_5_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.8" ; schema:url <https://valmikiramayan.net/kish/sarga8/kishkindha_8_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.16" ; schema:url <https://valmikiramayan.net/kish/sarga16/kishkindha_16_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.18" ; schema:url <https://valmikiramayan.net/kish/sarga18/kishkindha_18_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.33" ; schema:url <https://valmikiramayan.net/kish/sarga33/kishkindha_33_frame.htm> ] .
+
+:sumali a yc:Person ;
+    rdfs:label "Sumali" ;
+    rdfs:comment "Rakshasa chief driven out of Lanka by Vishnu. He marries his daughter Kaikasi to Vishrava for grandsons as mighty as Kubera, and later urges Ravana to take Lanka back." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    yc:being yc:being-rakshasa ;
+    yc:parentOf :kaikasi ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Uttara 7.9" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424770.html> ] .
+
+:sumantra a yc:Person ;
+    rdfs:label "Sumantra" ;
+    rdfs:comment "Dasharatha's charioteer and minister, who drives Rama into exile." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.40" ; schema:url <https://valmikiramayan.net/ayodhya/sarga40/ayodhya_5F40_prose.htm> ] .
+
+:sumitra a yc:Person ;
+    rdfs:label "Sumitra" ;
+    rdfs:comment "Dasharatha's queen, mother of Lakshmana and Shatrughna." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    yc:parentOf :lakshmana, :shatrughna ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.16" ; schema:url <https://valmikiramayan.net/baala/sarga16/bala_16_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.18" ; schema:url <https://valmikiramayan.net/baala/sarga18/bala_18_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.40" ; schema:url <https://valmikiramayan.net/ayodhya/sarga40/ayodhya_5F40_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.64" ; schema:url <https://valmikiramayan.net/ayodhya/sarga64/ayodhya_64_prose.htm> ] .
+
+:sundaupasunda a yc:Person, yc:Catastrophe ;
+    rdfs:label "Sunda & Upasunda" ;
+    rdfs:comment "Asura brothers who conquer the three worlds, then kill each other over the apsara Tilottama. Narada tells their story to the Pandavas so they agree a rule for sharing Draupadi." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-asura ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.211-214" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-ccxiv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.214" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-ccxiv> ] .
+
+:surasa a yc:Person ;
+    rdfs:label "Surasa" ;
+    rdfs:comment "Mother of serpents, sent to test Hanuman mid-leap. He shrinks, enters her mouth and slips out." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-naga ;
+    yc:role yc:role-woman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Sundara 5.1" ; schema:url <https://valmikiramayan.net/sundara/sarga1/sundara_1_prose.htm> ] .
+
+:sushena a yc:Person ;
+    rdfs:label "Sushena" ;
+    rdfs:comment "Vanara physician and Tara's father, who revives Lakshmana with the herbs Hanuman brings." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-vanara ;
+    yc:parentOf :tara ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.22" ; schema:url <https://valmikiramayan.net/kish/sarga22/kishkindha_22_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.42" ; schema:url <https://valmikiramayan.net/kish/sarga42/kishkindha_42_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.101" ; schema:url <https://valmikiramayan.net/yuddha/sarga101/yuddha_101_frame.htm> ] .
+
+:t_abduct a yc:Story ;
+    rdfs:label "Sita abducted" ;
+    rdfs:comment "Maricha lures Rama away as a golden deer. Ravana carries Sita off and cuts down Jatayu." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:leadsTo :t_kish ;
+    yc:involves :jatayu, :maricha, :rama, :ravana, :sita ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Aranya 3.49" ; schema:url <https://valmikiramayan.net/aranya/sarga49/aranya_49_frame.htm> ] .
+
+:t_ahalya a yc:Story ;
+    rdfs:label "Tataka & Ahalya" ;
+    rdfs:comment "Rama guards Vishvamitra's sacrifice, kills Tataka, and frees Ahalya on the way to Mithila." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    yc:leadsTo :t_bow ;
+    yc:involves :ahalya, :gautama, :lakshmana, :rama, :tataka, :vishvamitra ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.49" ; schema:url <https://valmikiramayan.net/baala/sarga49/bala_49_frame.htm> ] .
+
+:t_bow a yc:Story ;
+    rdfs:label "Bow of Shiva" ;
+    rdfs:comment "Rama breaks Shiva's bow at Janaka's court and wins Sita. Parashurama confronts him and yields." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    yc:leadsTo :t_exile ;
+    yc:involves :janaka, :parashurama, :rama, :shiva, :sita, :vishvamitra ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.67" ; schema:url <https://valmikiramayan.net/baala/sarga67/bala_67_frame.htm> ] .
+
+:t_exile a yc:Story ;
+    rdfs:label "Exile" ;
+    rdfs:comment "Kaikeyi's boons send Rama, Sita and Lakshmana to the forest for fourteen years. Bharata rules in his name." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:leadsTo :t_panch ;
+    yc:involves :bharatar, :dasharatha, :guha, :kaikeyi, :kausalya, :lakshmana, :manthara, :rama, :shatrughna, :sita, :sumantra, :sumitra, :urmila ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.11" ; schema:url <https://valmikiramayan.net/ayodhya/sarga11/ayodhya_11_prose.htm> ] .
+
+:t_kish a yc:Story ;
+    rdfs:label "Kishkindha pact" ;
+    rdfs:comment "Rama kills Vali and makes Sugriva king. The vanaras search for Sita." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:leadsTo :t_leap ;
+    yc:involves :angada, :hanuman, :kabandha, :rama, :ruma, :shabari, :sugriva, :tara, :vali ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.26" ; schema:url <https://valmikiramayan.net/kish/sarga26/kishkindha_26_frame.htm> ] .
+
+:t_lanka a yc:Story ;
+    rdfs:label "War in Lanka" ;
+    rdfs:comment "The bridge is built. Indrajit, Kumbhakarna and Ravana fall, and Vibhishana is crowned." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:leadsTo :t_return ;
+    yc:involves :angada, :atikaya, :dvivida, :hanuman, :indrajit, :jambavan, :kumbhakarna, :lakshmana, :mandodari, :nala, :nila, :prahasta, :rama, :ravana, :sanjeevani, :sarama, :sushena, :vibhishana ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Yuddha 6.22" ; schema:url <https://valmikiramayan.net/yuddha/sarga22/yuddha_22_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.112" ; schema:url <https://valmikiramayan.net/yuddha/sarga112/yuddha_112_frame.htm> ] .
+
+:t_leap a yc:Story ;
+    rdfs:label "Hanuman's leap" ;
+    rdfs:comment "Reminded of his strength by Jambavan, Hanuman leaps to Lanka, finds Sita and burns the city." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:leadsTo :t_lanka ;
+    yc:involves :akshayakumara, :hanuman, :indrajit, :jambavan, :lankaburn, :lankini, :ravana, :sampati, :simhika, :sita, :surasa, :trijata ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.66" ; schema:url <https://valmikiramayan.net/kish/sarga66/kishkindha_66_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Sundara 5.1" ; schema:url <https://valmikiramayan.net/sundara/sarga1/sundara_1_prose.htm> ] .
+
+:t_panch a yc:Story ;
+    rdfs:label "Panchavati" ;
+    rdfs:comment "Lakshmana cuts off Shurpanakha's nose, and she goes to Ravana for revenge." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:leadsTo :t_abduct ;
+    yc:involves :khara, :lakshmana, :rama, :ravana, :shurpanakha, :viradha ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Aranya 3.18" ; schema:url <https://valmikiramayan.net/aranya/sarga18/aranya_18_frame.htm> ] .
+
+:t_return a yc:Story ;
+    rdfs:label "Return & Uttara Kanda" ;
+    rdfs:comment "Rama is crowned. Later Sita is exiled, Lava and Kusha sing the Ramayana, and Sita returns to the earth." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    yc:involves :bharatar, :lavakusha, :pushpaka, :rama, :sita, :valmiki ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Yuddha 6.128" ; schema:url <https://valmikiramayan.net/yuddha/sarga128/yuddha_128_frame.htm> ] .
+
+:tapati a yc:Person ;
+    rdfs:label "Tapati" ;
+    rdfs:comment "Daughter of Surya. A gandharva tells her story to Arjuna and calls him Tapatya, her descendant." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    yc:parentOf :kuru ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.94; MBh 1.95" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xciv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.94; MBh 1.175" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xciv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.173; MBh 1.175" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-clxxiii> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.175" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-clxxv> ] .
+
+:tara a yc:Person ;
+    rdfs:label "Tara" ;
+    rdfs:comment "Vali's wise wife, daughter of Sushena. After Vali's death she marries Sugriva." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-vanara ;
+    yc:role yc:role-woman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.19" ; schema:url <https://valmikiramayan.net/kish/sarga19/kishkindha_19_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.22" ; schema:url <https://valmikiramayan.net/kish/sarga22/kishkindha_22_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.33" ; schema:url <https://valmikiramayan.net/kish/sarga33/kishkindha_33_frame.htm> ] .
+
+:tataka a yc:Person ;
+    rdfs:label "Tataka" ;
+    rdfs:comment "Yakshi, daughter of Suketu, turned into a rakshasi. Mother of Maricha. Rama kills her on Vishvamitra's word." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    yc:being yc:being-rakshasa ;
+    yc:role yc:role-woman ;
+    yc:parentOf :maricha ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.25" ; schema:url <https://valmikiramayan.net/baala/sarga25/bala_5F25_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.26" ; schema:url <https://valmikiramayan.net/baala/sarga26/bala_26_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Aranya 3.38" ; schema:url <https://valmikiramayan.net/aranya/sarga38/aranya_38_frame.htm> ] .
+
+:tilottama a yc:Person ;
+    rdfs:label "Tilottama" ;
+    rdfs:comment "Apsara Vishvakarma makes from the finest part of everything, to divide Sunda and Upasunda." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-apsara ;
+    yc:role yc:role-woman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.213" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-ccxiii> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.214" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-ccxiv> ] .
+
+:trijata a yc:Person ;
+    rdfs:label "Trijata" ;
+    rdfs:comment "Rakshasi guard who dreams of Ravana's fall and befriends Sita." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-rakshasa ;
+    yc:role yc:role-woman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Sundara 5.27" ; schema:url <https://valmikiramayan.net/sundara/sarga27/sundara_27_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.48" ; schema:url <https://valmikiramayan.net/yuddha/sarga48/yuddha_48_frame.htm> ] .
+
+:trishanku a yc:Person ;
+    rdfs:label "Trishanku" ;
+    rdfs:comment "King who wants to enter heaven in his body. Vashishtha refuses, so Vishvamitra sends him up himself. The devas push him back, and he hangs upside down in a heaven of his own." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.57" ; schema:url <https://valmikiramayan.net/baala/sarga57/bala_57_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.60" ; schema:url <https://valmikiramayan.net/baala/sarga60/bala_60_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.110" ; schema:url <https://valmikiramayan.net/ayodhya/sarga110/ayodhya_110_prose.htm> ] .
+
+:urmila a yc:Person ;
+    rdfs:label "Urmila" ;
+    rdfs:comment "Sita's sister and Lakshmana's wife, who stays in Ayodhya through the exile." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.71" ; schema:url <https://valmikiramayan.net/baala/sarga71/bala_71_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.73" ; schema:url <https://valmikiramayan.net/baala/sarga73/bala_73_frame.htm> ] .
+
+:urvashi a yc:Person, yc:SpansYugas ;
+    rdfs:label "Urvashi" ;
+    rdfs:comment "Apsara who lives with Pururavas on conditions the Gandharvas trick him into breaking. Mother of Ayu. In the Dvapara she curses Arjuna to live as a eunuch, and Indra limits the curse to one year." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-apsara ;
+    yc:role yc:role-woman ;
+    yc:parentOf :ayu ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.75" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 3.46" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-xlvi> ] .
+
+:vali a yc:Person ;
+    rdfs:label "Vali" ;
+    rdfs:comment "Vanara king, son of Indra. Rama kills him from hiding while he fights Sugriva. In the Uttara Kanda he once humbled Ravana." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-vanara ;
+    yc:role yc:role-king ;
+    yc:parentOf :angada ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.8" ; schema:url <https://valmikiramayan.net/kish/sarga8/kishkindha_8_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.10" ; schema:url <https://valmikiramayan.net/kish/sarga10/kishkindha_10_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.16" ; schema:url <https://valmikiramayan.net/kish/sarga16/kishkindha_16_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.17" ; schema:url <https://valmikiramayan.net/kish/sarga17/kishkindha_17_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.19" ; schema:url <https://valmikiramayan.net/kish/sarga19/kishkindha_19_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Kishkindha 4.26" ; schema:url <https://valmikiramayan.net/kish/sarga26/kishkindha_26_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.41" ; schema:url <https://valmikiramayan.net/yuddha/sarga41/yuddha_41_frame.htm> ] .
+
+:valmiki a yc:Sage ;
+    rdfs:label "Valmiki" ;
+    rdfs:comment "Sage-poet who composes the Ramayana. Shelters Sita in her exile and teaches the poem to Lava and Kusha." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-sage ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.1" ; schema:url <https://valmikiramayan.net/baala/sarga1/bala_1_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.4" ; schema:url <https://valmikiramayan.net/baala/sarga4/bala_4_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.93" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424868.html> ] .
+
+:vamana a yc:Avatar ;
+    rdfs:label "Vamana" ;
+    rdfs:comment "Fifth avatar, the dwarf brahmin who asks Bali for three steps of land and covers the three worlds." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-god ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 1.3" ; schema:url <https://vedabase.io/en/library/sb/1/3/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 6.18" ; schema:url <https://vedabase.io/en/library/sb/6/18/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 8.19-8.20" ; schema:url <https://vedabase.io/en/library/sb/8/19/> ] ,
+        [ a yc:Citation ; rdfs:label "Bhagavata 8.21" ; schema:url <https://vedabase.io/en/library/sb/8/21/> ] .
+
+:vashishtha a yc:Sage, yc:SpansYugas ;
+    rdfs:label "Vashishtha" ;
+    rdfs:comment "Mind-born son of Brahma and priest of the Ikshvakus. Old rival of Vishvamitra. His curse sends the eight Vasus into human birth. Great-grandfather of Vyasa." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-sage ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.18" ; schema:url <https://valmikiramayan.net/baala/sarga18/bala_18_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.56" ; schema:url <https://valmikiramayan.net/baala/sarga56/bala_56_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.57" ; schema:url <https://valmikiramayan.net/baala/sarga57/bala_57_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.70" ; schema:url <https://valmikiramayan.net/baala/sarga70/bala_70_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Ayodhya 2.111" ; schema:url <https://valmikiramayan.net/ayodhya/sarga111/ayodhya_111_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.96; MBh 1.99" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcvi> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.99; MBh 1.177" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcix> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.175" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-clxxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.179; MBh 1.180" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-clxxix> ] .
+
+:vedavati a yc:Person ;
+    rdfs:label "Vedavati" ;
+    rdfs:comment "Woman doing penance to marry Vishnu. Ravana molests her, and she enters the fire vowing to cause his death. Reborn as Sita (Uttara Kanda)." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-layer ;
+    yc:being yc:being-human ;
+    yc:role yc:role-woman ;
+    yc:rebornAs :sita ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Uttara 7.17" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424778.html> ] .
+
+:vibhishana a yc:Person, yc:Chiranjivi ;
+    rdfs:label "Vibhishana" ;
+    rdfs:comment "Ravana's brother who joins Rama and becomes king of Lanka. One of the chiranjivis." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-rakshasa ;
+    yc:role yc:role-king ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Aranya 3.17" ; schema:url <https://valmikiramayan.net/aranya/sarga17/aranya_17_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Sundara 5.52" ; schema:url <https://valmikiramayan.net/sundara/sarga52/sundara_52_prose.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.17" ; schema:url <https://valmikiramayan.net/yuddha/sarga17/yuddha_17_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.19" ; schema:url <https://valmikiramayan.net/yuddha/sarga19/yuddha_19_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.33" ; schema:url <https://valmikiramayan.net/yuddha/sarga33/yuddha_33_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Yuddha 6.112" ; schema:url <https://valmikiramayan.net/yuddha/sarga112/yuddha_112_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.9" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424770.html> ] ,
+        [ a yc:Citation ; rdfs:label "Uttara 7.10" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424771.html> ] .
+
+:vindhya a yc:Event, yc:Catastrophe ;
+    rdfs:label "Vindhya bows" ;
+    rdfs:comment "The Vindhya mountain grows until it blocks the sun. Agastya asks it to stop growing until he returns from the south, and he never returns." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 3.104" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-civ> ] .
+
+:viradha a yc:Person ;
+    rdfs:label "Viradha" ;
+    rdfs:comment "Rakshasa who seizes Sita as they enter the Dandaka forest. Rama and Lakshmana kill and bury him, freeing a cursed gandharva." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-rakshasa ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Aranya 3.4" ; schema:url <https://valmikiramayan.net/aranya/sarga4/aranya_4_frame.htm> ] .
+
+:vishvamitra a yc:Sage ;
+    rdfs:label "Vishvamitra" ;
+    rdfs:comment "King turned brahmarshi, rival of Vashishtha over the cow Shabala. Father of Shakuntala by Menaka in the Mahabharata. Takes young Rama and Lakshmana to guard his sacrifice and leads them to Janaka's bow at Mithila." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-sage ;
+    yc:parentOf :shakuntala ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "Bala 1.27" ; schema:url <https://valmikiramayan.net/baala/sarga27/bala_27_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.56" ; schema:url <https://valmikiramayan.net/baala/sarga56/bala_56_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.60" ; schema:url <https://valmikiramayan.net/baala/sarga60/bala_60_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "Bala 1.63" ; schema:url <https://valmikiramayan.net/baala/sarga63/bala_63_frame.htm> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.72" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxii> ] .
+
+:yadu a yc:Person ;
+    rdfs:label "Yadu" ;
+    rdfs:comment "Eldest son of Yayati. Refuses the exchange and loses the throne. Ancestor of the Yadavas." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:ancestorOf :kartavirya, :shura, :ugrasena ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.75; MBh 1.84" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.75" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.84; MBh 1.85" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxxiv> ] ,
+        [ a yc:Citation ; rdfs:label "Harivamsa 1.30" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485507.html> ] ,
+        [ a yc:Citation ; rdfs:label "Harivamsa 1.33" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485510.html> ] ,
+        [ a yc:Citation ; rdfs:label "Harivamsa 1.34" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485511.html> ] ,
+        [ a yc:Citation ; rdfs:label "Harivamsa 1.37" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485514.html> ] .
+
+:yayati a yc:Person ;
+    rdfs:label "Yayati" ;
+    rdfs:comment "Son of Nahusha. Cursed with old age, he asks his sons to take it. Only Puru agrees." ;
+    yc:period yc:period-treta ;
+    yc:tier yc:tier-core ;
+    yc:being yc:being-human ;
+    yc:role yc:role-king ;
+    yc:parentOf :puru, :yadu ;
+    dcterms:source
+        [ a yc:Citation ; rdfs:label "MBh 1.75; MBh 1.84" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.75" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.75; MBh 1.83" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] ,
+        [ a yc:Citation ; rdfs:label "MBh 1.83" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxxiii> ] ,
+        [ a yc:Citation ; rdfs:label "Harivamsa 1.30" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485507.html> ] .
+
+[] a yc:Link ;
+    yc:from :agastya ;
+    yc:relation yc:linkedWith ;
+    yc:to :agastyaocean ;
+    yc:forwardLabel "Drinks the ocean" ;
+    yc:reverseLabel "Done by" .
+
+[] a yc:Link ;
+    yc:from :agastya ;
+    yc:relation yc:linkedWith ;
+    yc:to :nahusha ;
+    yc:forwardLabel "Curses into a python" ;
+    yc:reverseLabel "Cursed into a python by" .
+
+[] a yc:Link ;
+    yc:from :agastya ;
+    yc:relation yc:linkedWith ;
+    yc:to :rama ;
+    yc:forwardLabel "Gives divine weapons to" ;
+    yc:reverseLabel "Receives weapons from" .
+
+[] a yc:Link ;
+    yc:from :agastya ;
+    yc:relation yc:linkedWith ;
+    yc:to :vindhya ;
+    yc:forwardLabel "Tells the mountain to stop growing" ;
+    yc:reverseLabel "Stops growing for" .
+
+[] a yc:Link ;
+    yc:from :agastya ;
+    yc:relation yc:tells ;
+    yc:to :rigveda ;
+    yc:forwardLabel "Seer of hymns in" ;
+    yc:reverseLabel "Hymns by" .
+
+[] a yc:Link ;
+    yc:from :aja ;
+    yc:relation yc:kinOf ;
+    yc:to :indumati ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :amshuman ;
+    yc:relation yc:linkedWith ;
+    yc:to :kapila ;
+    yc:forwardLabel "Finds the horse near the ashes, at the hermitage of" ;
+    yc:reverseLabel "Lets him take the horse" .
+
+[] a yc:Link ;
+    yc:from :anaranya ;
+    yc:relation yc:linkedWith ;
+    yc:to :ravana ;
+    yc:forwardLabel "Curses to fall to a man of his line" ;
+    yc:reverseLabel "Cursed by" .
+
+[] a yc:Link ;
+    yc:from :angada ;
+    yc:relation yc:linkedWith ;
+    yc:to :ravana ;
+    yc:forwardLabel "Envoy to" ;
+    yc:reverseLabel "Receives as envoy" .
+
+[] a yc:Link ;
+    yc:from :anjana ;
+    yc:relation yc:kinOf ;
+    yc:to :kesari ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :bali ;
+    yc:relation yc:tells ;
+    yc:to :patanjali ;
+    yc:forwardLabel "Binding staged in plays noted by" ;
+    yc:reverseLabel "Notes plays of" .
+
+[] a yc:Link ;
+    yc:from :bhagiratha ;
+    yc:relation yc:linkedWith ;
+    yc:to :ganga ;
+    yc:forwardLabel "Brings down to earth" ;
+    yc:reverseLabel "Brought to earth by" .
+
+[] a yc:Link ;
+    yc:from :bhagiratha ;
+    yc:relation yc:linkedWith ;
+    yc:to :jahnu ;
+    yc:forwardLabel "Waits while the gods and sages appease Jahnu" ;
+    yc:reverseLabel "Appeased by the gods for" .
+
+[] a yc:Link ;
+    yc:from :bharadvaja ;
+    yc:relation yc:linkedWith ;
+    yc:to :rama ;
+    yc:forwardLabel "Hosts at Prayaga" ;
+    yc:reverseLabel "Visits the hermitage of" .
+
+[] a yc:Link ;
+    yc:from :bharadvaja ;
+    yc:relation yc:tells ;
+    yc:to :rigveda ;
+    yc:forwardLabel "Seer of hymns in" ;
+    yc:reverseLabel "Hymns by" .
+
+[] a yc:Link ;
+    yc:from :bharata ;
+    yc:relation yc:linkedWith ;
+    yc:to :sudas ;
+    yc:forwardLabel "Gives his name to the tribe of" ;
+    yc:reverseLabel "King of the tribe named for" .
+
+[] a yc:Link ;
+    yc:from :bharata ;
+    yc:relation yc:parentOf ;
+    yc:to :bharadvaja ;
+    yc:tier yc:tier-purana ;
+    yc:forwardLabel "Adopts (Puranas; in the Adi Parva Bharadvaja blesses him with a son)" ;
+    yc:reverseLabel "Adopted by" .
+
+[] a yc:Link ;
+    yc:from :bharata ;
+    yc:relation yc:tells ;
+    yc:to :shatapatha ;
+    yc:forwardLabel "Horse sacrifices recorded in" ;
+    yc:reverseLabel "Records" .
+
+[] a yc:Link ;
+    yc:from :bharatar ;
+    yc:relation yc:kinOf ;
+    yc:to :mandavi ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :dasharatha ;
+    yc:relation yc:kinOf ;
+    yc:to :kaikeyi ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :dasharatha ;
+    yc:relation yc:kinOf ;
+    yc:to :kausalya ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :dasharatha ;
+    yc:relation yc:kinOf ;
+    yc:to :sumitra ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :dasharatha ;
+    yc:relation yc:kills ;
+    yc:to :shravana ;
+    yc:forwardLabel "Shoots by mistake" ;
+    yc:reverseLabel "Shot by mistake by" .
+
+[] a yc:Link ;
+    yc:from :dasharatha ;
+    yc:relation yc:parentOf ;
+    yc:to :shanta ;
+    yc:tier yc:tier-purana ;
+    yc:forwardLabel "Father of (later tradition; Valmiki calls her Romapada's daughter)" .
+
+[] a yc:Link ;
+    yc:from :devayani ;
+    yc:relation yc:linkedWith ;
+    yc:to :sharmishtha ;
+    yc:forwardLabel "Makes her servant" ;
+    yc:reverseLabel "Made servant to" .
+
+[] a yc:Link ;
+    yc:from :dushyanta ;
+    yc:relation yc:kinOf ;
+    yc:to :shakuntala ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :gautama ;
+    yc:relation yc:kinOf ;
+    yc:to :ahalya ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :gautama ;
+    yc:relation yc:linkedWith ;
+    yc:to :ahalya ;
+    yc:forwardLabel "Curses" ;
+    yc:reverseLabel "Cursed by" .
+
+[] a yc:Link ;
+    yc:from :gautama ;
+    yc:relation yc:ancestorOf ;
+    yc:to :kripa ;
+    yc:forwardLabel "Grandfather of" ;
+    yc:reverseLabel "Grandson of" .
+
+[] a yc:Link ;
+    yc:from :gautama ;
+    yc:relation yc:ancestorOf ;
+    yc:to :kripi ;
+    yc:forwardLabel "Grandfather of" ;
+    yc:reverseLabel "Granddaughter of" .
+
+[] a yc:Link ;
+    yc:from :guha ;
+    yc:relation yc:linkedWith ;
+    yc:to :rama ;
+    yc:forwardLabel "Ferries across the Ganga" ;
+    yc:reverseLabel "Ferried by" .
+
+[] a yc:Link ;
+    yc:from :hanuman ;
+    yc:relation yc:linkedWith ;
+    yc:to :arjuna ;
+    yc:forwardLabel "Rides on the chariot flag of" ;
+    yc:reverseLabel "Carries Hanuman on his flag" .
+
+[] a yc:Link ;
+    yc:from :hanuman ;
+    yc:relation yc:linkedWith ;
+    yc:to :bhima ;
+    yc:forwardLabel "Meets his half-brother" ;
+    yc:reverseLabel "Meets his half-brother Hanuman" .
+
+[] a yc:Link ;
+    yc:from :hanuman ;
+    yc:relation yc:linkedWith ;
+    yc:to :lankaburn ;
+    yc:forwardLabel "Sets fire to Lanka with his burning tail" ;
+    yc:reverseLabel "Started by" .
+
+[] a yc:Link ;
+    yc:from :hanuman ;
+    yc:relation yc:linkedWith ;
+    yc:to :lankini ;
+    yc:forwardLabel "Knocks down" ;
+    yc:reverseLabel "Knocked down by" .
+
+[] a yc:Link ;
+    yc:from :hanuman ;
+    yc:relation yc:linkedWith ;
+    yc:to :sanjeevani ;
+    yc:forwardLabel "Carries" ;
+    yc:reverseLabel "Carried by" .
+
+[] a yc:Link ;
+    yc:from :hanuman ;
+    yc:relation yc:linkedWith ;
+    yc:to :sita ;
+    yc:forwardLabel "Finds in Lanka" ;
+    yc:reverseLabel "Found by" .
+
+[] a yc:Link ;
+    yc:from :hanuman ;
+    yc:relation yc:linkedWith ;
+    yc:to :surasa ;
+    yc:forwardLabel "Outwits" ;
+    yc:reverseLabel "Outwitted by" .
+
+[] a yc:Link ;
+    yc:from :hanuman ;
+    yc:relation yc:kills ;
+    yc:to :ahiravana ;
+    yc:tier yc:tier-folk .
+
+[] a yc:Link ;
+    yc:from :hanuman ;
+    yc:relation yc:tells ;
+    yc:to :ramdas ;
+    yc:forwardLabel "Worshipped in Maruti shrines by" ;
+    yc:reverseLabel "Worships" .
+
+[] a yc:Link ;
+    yc:from :harishchandra ;
+    yc:relation yc:tells ;
+    yc:to :aitareya ;
+    yc:forwardLabel "Story told in" ;
+    yc:reverseLabel "Tells the story of" .
+
+[] a yc:Link ;
+    yc:from :hasti ;
+    yc:relation yc:linkedWith ;
+    yc:to :pgw ;
+    yc:forwardLabel "His city is a Painted Grey Ware site" ;
+    yc:reverseLabel "Includes the city of" .
+
+[] a yc:Link ;
+    yc:from :indrajit ;
+    yc:relation yc:linkedWith ;
+    yc:to :indra ;
+    yc:tier yc:tier-layer ;
+    yc:forwardLabel "Defeats and captures" ;
+    yc:reverseLabel "Captured by" .
+
+[] a yc:Link ;
+    yc:from :jamadagni ;
+    yc:relation yc:kinOf ;
+    yc:to :renuka ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :jambavan ;
+    yc:relation yc:linkedWith ;
+    yc:to :hanuman ;
+    yc:forwardLabel "Reminds of his powers" ;
+    yc:reverseLabel "Reminded of his powers by" .
+
+[] a yc:Link ;
+    yc:from :jambavan ;
+    yc:relation yc:linkedWith ;
+    yc:to :krishna ;
+    yc:tier yc:tier-layer ;
+    yc:forwardLabel "Fights over the Syamantaka gem" ;
+    yc:reverseLabel "Fights, then marries Jambavati" .
+
+[] a yc:Link ;
+    yc:from :jambavan ;
+    yc:relation yc:parentOf ;
+    yc:to :jambavati ;
+    yc:tier yc:tier-layer .
+
+[] a yc:Link ;
+    yc:from :janaka ;
+    yc:relation yc:linkedWith ;
+    yc:to :janakav ;
+    yc:forwardLabel "Shares the dynastic title of" ;
+    yc:reverseLabel "Shares the dynastic title of" .
+
+[] a yc:Link ;
+    yc:from :janaka ;
+    yc:relation yc:parentOf ;
+    yc:to :sita ;
+    yc:forwardLabel "Foster father of" ;
+    yc:reverseLabel "Found and raised by" .
+
+[] a yc:Link ;
+    yc:from :kacha ;
+    yc:relation yc:linkedWith ;
+    yc:to :devayani ;
+    yc:forwardLabel "Refuses; they curse each other" ;
+    yc:reverseLabel "Loves; they curse each other" .
+
+[] a yc:Link ;
+    yc:from :kaikeyi ;
+    yc:relation yc:linkedWith ;
+    yc:to :rama ;
+    yc:forwardLabel "Has exiled" ;
+    yc:reverseLabel "Exiled by" .
+
+[] a yc:Link ;
+    yc:from :kailasa ;
+    yc:relation yc:linkedWith ;
+    yc:to :nandi ;
+    yc:forwardLabel "Follows Ravana's insult to" ;
+    yc:reverseLabel "Curses after" .
+
+[] a yc:Link ;
+    yc:from :kalidemon ;
+    yc:relation yc:linkedWith ;
+    yc:to :nalak ;
+    yc:forwardLabel "Possesses" ;
+    yc:reverseLabel "Possessed by" .
+
+[] a yc:Link ;
+    yc:from :kalidemon ;
+    yc:relation yc:divineOriginOf ;
+    yc:to :duryodhana ;
+    yc:forwardLabel "Incarnates in part as (Adi Parva)" ;
+    yc:reverseLabel "Partial incarnation of" .
+
+[] a yc:Link ;
+    yc:from :kapila ;
+    yc:relation yc:kills ;
+    yc:to :sagarasons ;
+    yc:forwardLabel "Burns to ash with a single sound" ;
+    yc:reverseLabel "Burned by" .
+
+[] a yc:Link ;
+    yc:from :kartavirya ;
+    yc:relation yc:linkedWith ;
+    yc:to :jamadagni ;
+    yc:forwardLabel "Steals the cow of" ;
+    yc:reverseLabel "Robbed by" .
+
+[] a yc:Link ;
+    yc:from :kartavirya ;
+    yc:relation yc:linkedWith ;
+    yc:to :kshatriya21 ;
+    yc:forwardLabel "His sons' killing of Jamadagni triggers" ;
+    yc:reverseLabel "Triggered by" .
+
+[] a yc:Link ;
+    yc:from :kartavirya ;
+    yc:relation yc:linkedWith ;
+    yc:to :ravana ;
+    yc:tier yc:tier-layer ;
+    yc:forwardLabel "Holds captive" ;
+    yc:reverseLabel "Captured by" .
+
+[] a yc:Link ;
+    yc:from :kartavirya ;
+    yc:relation yc:kills ;
+    yc:to :jamadagni ;
+    yc:forwardLabel "Kills (Valmiki); his sons do it in the Mahabharata" ;
+    yc:reverseLabel "Killed by" .
+
+[] a yc:Link ;
+    yc:from :kesari ;
+    yc:relation yc:parentOf ;
+    yc:to :hanuman ;
+    yc:forwardLabel "Father of, through his wife (Hanuman is Vayu's son)" ;
+    yc:reverseLabel "Son of, through his mother" .
+
+[] a yc:Link ;
+    yc:from :kumbhakarna ;
+    yc:relation yc:rebornAs ;
+    yc:to :dantavakra ;
+    yc:tier yc:tier-purana .
+
+[] a yc:Link ;
+    yc:from :kuru ;
+    yc:relation yc:linkedWith ;
+    yc:to :h_kuru ;
+    yc:forwardLabel "Gives his name to" ;
+    yc:reverseLabel "Named for" .
+
+[] a yc:Link ;
+    yc:from :kuru ;
+    yc:relation yc:linkedWith ;
+    yc:to :janapadas ;
+    yc:forwardLabel "Kingdom lives on as a mahajanapada" ;
+    yc:reverseLabel "Includes the kingdom of" .
+
+[] a yc:Link ;
+    yc:from :lakshmana ;
+    yc:relation yc:kinOf ;
+    yc:to :shatrughna ;
+    yc:forwardLabel "Twin of" ;
+    yc:reverseLabel "Twin of" .
+
+[] a yc:Link ;
+    yc:from :lakshmana ;
+    yc:relation yc:kinOf ;
+    yc:to :urmila ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :lakshmana ;
+    yc:relation yc:linkedWith ;
+    yc:to :shurpanakha ;
+    yc:forwardLabel "Cuts off the ears and nose of" ;
+    yc:reverseLabel "Disfigured by" .
+
+[] a yc:Link ;
+    yc:from :lavakusha ;
+    yc:relation yc:ancestorOf ;
+    yc:to :brihadbala ;
+    yc:forwardLabel "Ancestor of, through Kusha" ;
+    yc:reverseLabel "Descendant of Kusha" .
+
+[] a yc:Link ;
+    yc:from :lavakusha ;
+    yc:relation yc:tells ;
+    yc:to :balauttara ;
+    yc:forwardLabel "Story told in" ;
+    yc:reverseLabel "Tells of" .
+
+[] a yc:Link ;
+    yc:from :lavakusha ;
+    yc:relation yc:tells ;
+    yc:to :rama ;
+    yc:forwardLabel "Sing the Ramayana to" ;
+    yc:reverseLabel "Hears the Ramayana from" .
+
+[] a yc:Link ;
+    yc:from :mahabhisha ;
+    yc:relation yc:linkedWith ;
+    yc:to :ganga ;
+    yc:forwardLabel "Gazes at, and is cursed" ;
+    yc:reverseLabel "Gazed at by" .
+
+[] a yc:Link ;
+    yc:from :mandhata ;
+    yc:relation yc:ancestorOf ;
+    yc:to :sagara ;
+    yc:forwardLabel "Ancestor of, through Susandhi, Bharata and Asita" ;
+    yc:reverseLabel "Descendant of" .
+
+[] a yc:Link ;
+    yc:from :mandhata ;
+    yc:relation yc:tells ;
+    yc:to :rigveda ;
+    yc:forwardLabel "Named in the" ;
+    yc:reverseLabel "Names" .
+
+[] a yc:Link ;
+    yc:from :manthara ;
+    yc:relation yc:linkedWith ;
+    yc:to :kaikeyi ;
+    yc:forwardLabel "Persuades" ;
+    yc:reverseLabel "Persuaded by" .
+
+[] a yc:Link ;
+    yc:from :mayasura ;
+    yc:relation yc:linkedWith ;
+    yc:to :arjuna ;
+    yc:forwardLabel "Spared by, builds the Maya Sabha" ;
+    yc:reverseLabel "Spares in the Khandava fire" .
+
+[] a yc:Link ;
+    yc:from :mayasura ;
+    yc:relation yc:parentOf ;
+    yc:to :mandodari ;
+    yc:tier yc:tier-layer .
+
+[] a yc:Link ;
+    yc:from :muchukunda ;
+    yc:relation yc:kills ;
+    yc:to :kalayavana ;
+    yc:tier yc:tier-layer ;
+    yc:forwardLabel "Burns to ash with a glance" ;
+    yc:reverseLabel "Burned by" .
+
+[] a yc:Link ;
+    yc:from :nahusha ;
+    yc:relation yc:linkedWith ;
+    yc:to :indra ;
+    yc:forwardLabel "Rules heaven in place of" ;
+    yc:reverseLabel "Replaced for a time by" .
+
+[] a yc:Link ;
+    yc:from :nahusha ;
+    yc:relation yc:linkedWith ;
+    yc:to :yudhishthira ;
+    yc:forwardLabel "Freed from the python curse by" ;
+    yc:reverseLabel "Frees Nahusha from the python curse" .
+
+[] a yc:Link ;
+    yc:from :nahusha ;
+    yc:relation yc:tells ;
+    yc:to :rigveda ;
+    yc:forwardLabel "Named in the" ;
+    yc:reverseLabel "Names" .
+
+[] a yc:Link ;
+    yc:from :nalak ;
+    yc:relation yc:kinOf ;
+    yc:to :damayanti ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :nalak ;
+    yc:relation yc:tells ;
+    yc:to :yudhishthira ;
+    yc:forwardLabel "Story told by Brihadashva to" ;
+    yc:reverseLabel "Hears the story of" .
+
+[] a yc:Link ;
+    yc:from :nalakuvara ;
+    yc:relation yc:linkedWith ;
+    yc:to :ravana ;
+    yc:forwardLabel "Curses: his head will burst if he forces a woman" ;
+    yc:reverseLabel "Cursed by" .
+
+[] a yc:Link ;
+    yc:from :nandi ;
+    yc:relation yc:linkedWith ;
+    yc:to :ravana ;
+    yc:forwardLabel "Curses: monkeys will ruin his kingdom" ;
+    yc:reverseLabel "Cursed by" .
+
+[] a yc:Link ;
+    yc:from :narada ;
+    yc:relation yc:linkedWith ;
+    yc:to :yudhishthira ;
+    yc:forwardLabel "Advises" ;
+    yc:reverseLabel "Advised by" .
+
+[] a yc:Link ;
+    yc:from :narada ;
+    yc:relation yc:tells ;
+    yc:to :sundaupasunda ;
+    yc:forwardLabel "Tells the story to the Pandavas" ;
+    yc:reverseLabel "Story told by" .
+
+[] a yc:Link ;
+    yc:from :narada ;
+    yc:relation yc:tells ;
+    yc:to :valmiki ;
+    yc:tier yc:tier-layer ;
+    yc:forwardLabel "Tells the Rama story to" ;
+    yc:reverseLabel "Hears the Rama story from" .
+
+[] a yc:Link ;
+    yc:from :parashurama ;
+    yc:relation yc:linkedWith ;
+    yc:to :bhishma ;
+    yc:forwardLabel "Teaches, later fights" ;
+    yc:reverseLabel "Student and opponent of" .
+
+[] a yc:Link ;
+    yc:from :parashurama ;
+    yc:relation yc:linkedWith ;
+    yc:to :drona ;
+    yc:forwardLabel "Gives his weapons to" ;
+    yc:reverseLabel "Receives weapons from" .
+
+[] a yc:Link ;
+    yc:from :parashurama ;
+    yc:relation yc:linkedWith ;
+    yc:to :karna ;
+    yc:forwardLabel "Teaches, then curses" ;
+    yc:reverseLabel "Student of" .
+
+[] a yc:Link ;
+    yc:from :parashurama ;
+    yc:relation yc:linkedWith ;
+    yc:to :kshatriya21 ;
+    yc:forwardLabel "Carries out" ;
+    yc:reverseLabel "Carried out by" .
+
+[] a yc:Link ;
+    yc:from :parashurama ;
+    yc:relation yc:linkedWith ;
+    yc:to :rama ;
+    yc:tier yc:tier-layer ;
+    yc:forwardLabel "Confronts, then yields to" ;
+    yc:reverseLabel "Faces after breaking the bow" .
+
+[] a yc:Link ;
+    yc:from :parashurama ;
+    yc:relation yc:kills ;
+    yc:to :renuka ;
+    yc:forwardLabel "Beheads on his father's order, then restores" ;
+    yc:reverseLabel "Beheaded, then restored by" .
+
+[] a yc:Link ;
+    yc:from :puru ;
+    yc:relation yc:linkedWith ;
+    yc:to :porus ;
+    yc:forwardLabel "Name often linked with" ;
+    yc:reverseLabel "Name often linked with" .
+
+[] a yc:Link ;
+    yc:from :puru ;
+    yc:relation yc:tells ;
+    yc:to :rigveda ;
+    yc:forwardLabel "His tribe is named in the" ;
+    yc:reverseLabel "Names the tribe of" .
+
+[] a yc:Link ;
+    yc:from :pururavas ;
+    yc:relation yc:kinOf ;
+    yc:to :urvashi ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :pururavas ;
+    yc:relation yc:tells ;
+    yc:to :rigveda ;
+    yc:forwardLabel "Named in the" ;
+    yc:reverseLabel "Names" .
+
+[] a yc:Link ;
+    yc:from :pururavas ;
+    yc:relation yc:tells ;
+    yc:to :shatapatha ;
+    yc:forwardLabel "Full story told in" ;
+    yc:reverseLabel "Tells the story of" .
+
+[] a yc:Link ;
+    yc:from :raghu ;
+    yc:relation yc:ancestorOf ;
+    yc:to :aja ;
+    yc:forwardLabel "Ancestor of, about eleven generations on (Valmiki 1.70)" ;
+    yc:reverseLabel "Descendant of" .
+
+[] a yc:Link ;
+    yc:from :raghu ;
+    yc:relation yc:parentOf ;
+    yc:to :aja ;
+    yc:tier yc:tier-purana ;
+    yc:forwardLabel "Father of (Kalidasa's Raghuvamsha)" ;
+    yc:reverseLabel "Son of (Kalidasa)" .
+
+[] a yc:Link ;
+    yc:from :raghu ;
+    yc:relation yc:tells ;
+    yc:to :kalidasa ;
+    yc:forwardLabel "Line retold in the Raghuvamsha by" ;
+    yc:reverseLabel "Retells the line of" .
+
+[] a yc:Link ;
+    yc:from :rama ;
+    yc:relation yc:kinOf ;
+    yc:to :sita ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :rama ;
+    yc:relation yc:linkedWith ;
+    yc:to :ahalya ;
+    yc:forwardLabel "Frees" ;
+    yc:reverseLabel "Freed by" .
+
+[] a yc:Link ;
+    yc:from :rama ;
+    yc:relation yc:linkedWith ;
+    yc:to :buddha ;
+    yc:forwardLabel "Told as a past life of (Dasaratha Jataka)" ;
+    yc:reverseLabel "Past life told as" .
+
+[] a yc:Link ;
+    yc:from :rama ;
+    yc:relation yc:linkedWith ;
+    yc:to :janapadas ;
+    yc:forwardLabel "Kosala lives on as a mahajanapada" ;
+    yc:reverseLabel "Includes Kosala of" .
+
+[] a yc:Link ;
+    yc:from :rama ;
+    yc:relation yc:linkedWith ;
+    yc:to :kabandha ;
+    yc:forwardLabel "Frees; told to seek Sugriva" ;
+    yc:reverseLabel "Freed by" .
+
+[] a yc:Link ;
+    yc:from :rama ;
+    yc:relation yc:linkedWith ;
+    yc:to :pushpaka ;
+    yc:forwardLabel "Flies home in" ;
+    yc:reverseLabel "Carries home" .
+
+[] a yc:Link ;
+    yc:from :rama ;
+    yc:relation yc:linkedWith ;
+    yc:to :yudhishthira ;
+    yc:forwardLabel "Story told to (Ramopakhyana)" ;
+    yc:reverseLabel "Hears the Rama story from Markandeya" .
+
+[] a yc:Link ;
+    yc:from :rama ;
+    yc:relation yc:kills ;
+    yc:to :khara ;
+    yc:forwardLabel "Kills at Janasthana" ;
+    yc:reverseLabel "Killed by" .
+
+[] a yc:Link ;
+    yc:from :rama ;
+    yc:relation yc:kills ;
+    yc:to :vali ;
+    yc:forwardLabel "Kills from hiding" ;
+    yc:reverseLabel "Killed from hiding by" .
+
+[] a yc:Link ;
+    yc:from :rama ;
+    yc:relation yc:tells ;
+    yc:to :gandhi ;
+    yc:forwardLabel "Ram Rajya held up as an ideal by" ;
+    yc:reverseLabel "Holds up Ram Rajya" .
+
+[] a yc:Link ;
+    yc:from :rama ;
+    yc:relation yc:tells ;
+    yc:to :gobindsingh ;
+    yc:forwardLabel "Retold in the Dasam Granth" ;
+    yc:reverseLabel "Retells" .
+
+[] a yc:Link ;
+    yc:from :rama ;
+    yc:relation yc:tells ;
+    yc:to :jatakas ;
+    yc:forwardLabel "Retold in the Dasaratha Jataka" ;
+    yc:reverseLabel "Retells" .
+
+[] a yc:Link ;
+    yc:from :rama ;
+    yc:relation yc:tells ;
+    yc:to :kabir ;
+    yc:forwardLabel "Name sung by" ;
+    yc:reverseLabel "Sings the name of" .
+
+[] a yc:Link ;
+    yc:from :rama ;
+    yc:relation yc:tells ;
+    yc:to :satakarni ;
+    yc:forwardLabel "Named as a model in the inscription of" ;
+    yc:reverseLabel "Compared to" .
+
+[] a yc:Link ;
+    yc:from :ravana ;
+    yc:relation yc:kinOf ;
+    yc:to :ahiravana ;
+    yc:tier yc:tier-folk ;
+    yc:forwardLabel "Brother of" ;
+    yc:reverseLabel "Brother of" .
+
+[] a yc:Link ;
+    yc:from :ravana ;
+    yc:relation yc:kinOf ;
+    yc:to :kumbhakarna ;
+    yc:forwardLabel "Brother of" ;
+    yc:reverseLabel "Brother of" .
+
+[] a yc:Link ;
+    yc:from :ravana ;
+    yc:relation yc:kinOf ;
+    yc:to :mandodari ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :ravana ;
+    yc:relation yc:kinOf ;
+    yc:to :shurpanakha ;
+    yc:forwardLabel "Brother of" ;
+    yc:reverseLabel "Sister of" .
+
+[] a yc:Link ;
+    yc:from :ravana ;
+    yc:relation yc:kinOf ;
+    yc:to :vibhishana ;
+    yc:forwardLabel "Brother of" ;
+    yc:reverseLabel "Brother of" .
+
+[] a yc:Link ;
+    yc:from :ravana ;
+    yc:relation yc:linkedWith ;
+    yc:to :kailasa ;
+    yc:forwardLabel "Tries to lift" ;
+    yc:reverseLabel "Pins down" .
+
+[] a yc:Link ;
+    yc:from :ravana ;
+    yc:relation yc:linkedWith ;
+    yc:to :lankaburn ;
+    yc:forwardLabel "Orders Hanuman's tail set alight" ;
+    yc:reverseLabel "Provoked by" .
+
+[] a yc:Link ;
+    yc:from :ravana ;
+    yc:relation yc:linkedWith ;
+    yc:to :pushpaka ;
+    yc:forwardLabel "Seizes" ;
+    yc:reverseLabel "Seized by" .
+
+[] a yc:Link ;
+    yc:from :ravana ;
+    yc:relation yc:linkedWith ;
+    yc:to :sita ;
+    yc:forwardLabel "Abducts" ;
+    yc:reverseLabel "Abducted by" .
+
+[] a yc:Link ;
+    yc:from :ravana ;
+    yc:relation yc:linkedWith ;
+    yc:to :yama ;
+    yc:forwardLabel "Fights; Yama withdraws at Brahma's request" ;
+    yc:reverseLabel "Fights" .
+
+[] a yc:Link ;
+    yc:from :ravana ;
+    yc:relation yc:kills ;
+    yc:to :jatayu ;
+    yc:forwardLabel "Cuts down" ;
+    yc:reverseLabel "Cut down by" .
+
+[] a yc:Link ;
+    yc:from :ravana ;
+    yc:relation yc:rebornAs ;
+    yc:to :shishupala ;
+    yc:tier yc:tier-purana .
+
+[] a yc:Link ;
+    yc:from :ravana ;
+    yc:relation yc:tells ;
+    yc:to :chanakya ;
+    yc:forwardLabel "Cited as a warning in the Arthashastra of" ;
+    yc:reverseLabel "Cites as a warning" .
+
+[] a yc:Link ;
+    yc:from :rishyashringa ;
+    yc:relation yc:kinOf ;
+    yc:to :shanta ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :rishyashringa ;
+    yc:relation yc:linkedWith ;
+    yc:to :dasharatha ;
+    yc:forwardLabel "Performs the sacrifice for sons for" ;
+    yc:reverseLabel "Has the sacrifice performed by" .
+
+[] a yc:Link ;
+    yc:from :rohita ;
+    yc:relation yc:linkedWith ;
+    yc:to :varuna ;
+    yc:forwardLabel "Promised in sacrifice to" ;
+    yc:reverseLabel "Claims" .
+
+[] a yc:Link ;
+    yc:from :rohita ;
+    yc:relation yc:ancestorOf ;
+    yc:to :sagara ;
+    yc:tier yc:tier-purana ;
+    yc:forwardLabel "Ancestor of (Puranas; Valmiki derives Sagara from Asita)" .
+
+[] a yc:Link ;
+    yc:from :rohita ;
+    yc:relation yc:tells ;
+    yc:to :aitareya ;
+    yc:forwardLabel "Story told in" ;
+    yc:reverseLabel "Tells the story of" .
+
+[] a yc:Link ;
+    yc:from :sahasrakavacha ;
+    yc:relation yc:rebornAs ;
+    yc:to :karna ;
+    yc:tier yc:tier-folk .
+
+[] a yc:Link ;
+    yc:from :sampati ;
+    yc:relation yc:kinOf ;
+    yc:to :jatayu ;
+    yc:forwardLabel "Brother of" ;
+    yc:reverseLabel "Brother of" .
+
+[] a yc:Link ;
+    yc:from :sampati ;
+    yc:relation yc:linkedWith ;
+    yc:to :angada ;
+    yc:forwardLabel "Tells where Sita is to" ;
+    yc:reverseLabel "Told by" .
+
+[] a yc:Link ;
+    yc:from :samvarana ;
+    yc:relation yc:kinOf ;
+    yc:to :tapati ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :sarama ;
+    yc:relation yc:linkedWith ;
+    yc:to :sita ;
+    yc:forwardLabel "Comforts" ;
+    yc:reverseLabel "Comforted by" .
+
+[] a yc:Link ;
+    yc:from :savitri ;
+    yc:relation yc:kinOf ;
+    yc:to :satyavan ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :shabari ;
+    yc:relation yc:linkedWith ;
+    yc:to :rama ;
+    yc:forwardLabel "Welcomes, then enters the fire" ;
+    yc:reverseLabel "Welcomed by" .
+
+[] a yc:Link ;
+    yc:from :shakuntala ;
+    yc:relation yc:tells ;
+    yc:to :kalidasa ;
+    yc:forwardLabel "Story dramatised by" ;
+    yc:reverseLabel "Dramatises the story of" .
+
+[] a yc:Link ;
+    yc:from :shakuntala ;
+    yc:relation yc:tells ;
+    yc:to :ravivarma ;
+    yc:forwardLabel "Painted by" ;
+    yc:reverseLabel "Paints" .
+
+[] a yc:Link ;
+    yc:from :shatrughna ;
+    yc:relation yc:kinOf ;
+    yc:to :shrutakirti ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :shatrughna ;
+    yc:relation yc:linkedWith ;
+    yc:to :krishna ;
+    yc:tier yc:tier-layer ;
+    yc:forwardLabel "Founds Mathura, later his birthplace" ;
+    yc:reverseLabel "Born in the city founded by" .
+
+[] a yc:Link ;
+    yc:from :shravana ;
+    yc:relation yc:linkedWith ;
+    yc:to :dasharatha ;
+    yc:forwardLabel "His parents curse" ;
+    yc:reverseLabel "Cursed by Shravana's parents" .
+
+[] a yc:Link ;
+    yc:from :shukra ;
+    yc:relation yc:linkedWith ;
+    yc:to :kacha ;
+    yc:forwardLabel "Teaches the Sanjivani art to" ;
+    yc:reverseLabel "Learns the Sanjivani art from" .
+
+[] a yc:Link ;
+    yc:from :shukra ;
+    yc:relation yc:linkedWith ;
+    yc:to :yayati ;
+    yc:forwardLabel "Curses with old age" ;
+    yc:reverseLabel "Cursed with old age by" .
+
+[] a yc:Link ;
+    yc:from :shurpanakha ;
+    yc:relation yc:kinOf ;
+    yc:to :khara ;
+    yc:forwardLabel "Sister of" ;
+    yc:reverseLabel "Brother of" .
+
+[] a yc:Link ;
+    yc:from :sita ;
+    yc:relation yc:rebornAs ;
+    yc:to :draupadi ;
+    yc:tier yc:tier-purana ;
+    yc:forwardLabel "Shadow-Sita is reborn as" ;
+    yc:reverseLabel "Shadow-Sita in a previous life" .
+
+[] a yc:Link ;
+    yc:from :sita ;
+    yc:relation yc:tells ;
+    yc:to :sangam ;
+    yc:forwardLabel "Dropped jewels sung of in" ;
+    yc:reverseLabel "Sings of" .
+
+[] a yc:Link ;
+    yc:from :sugriva ;
+    yc:relation yc:kinOf ;
+    yc:to :ruma ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :sugriva ;
+    yc:relation yc:kinOf ;
+    yc:to :tara ;
+    yc:forwardLabel "Marries after Vali's death" ;
+    yc:reverseLabel "Marries after Vali's death" .
+
+[] a yc:Link ;
+    yc:from :sugriva ;
+    yc:relation yc:linkedWith ;
+    yc:to :rama ;
+    yc:forwardLabel "Allies with" ;
+    yc:reverseLabel "Allies with" .
+
+[] a yc:Link ;
+    yc:from :sumantra ;
+    yc:relation yc:linkedWith ;
+    yc:to :rama ;
+    yc:forwardLabel "Drives into exile" ;
+    yc:reverseLabel "Driven into exile by" .
+
+[] a yc:Link ;
+    yc:from :sundaupasunda ;
+    yc:relation yc:linkedWith ;
+    yc:to :draupadi ;
+    yc:forwardLabel "Told as a warning for the Pandavas sharing" ;
+    yc:reverseLabel "Warning told about" .
+
+[] a yc:Link ;
+    yc:from :sushena ;
+    yc:relation yc:linkedWith ;
+    yc:to :lakshmana ;
+    yc:forwardLabel "Revives" ;
+    yc:reverseLabel "Revived by" .
+
+[] a yc:Link ;
+    yc:from :tilottama ;
+    yc:relation yc:linkedWith ;
+    yc:to :sundaupasunda ;
+    yc:forwardLabel "Sets the brothers against each other" ;
+    yc:reverseLabel "Destroyed over" .
+
+[] a yc:Link ;
+    yc:from :trijata ;
+    yc:relation yc:linkedWith ;
+    yc:to :sita ;
+    yc:forwardLabel "Befriends and comforts" ;
+    yc:reverseLabel "Comforted by" .
+
+[] a yc:Link ;
+    yc:from :trishanku ;
+    yc:relation yc:ancestorOf ;
+    yc:to :mandhata ;
+    yc:forwardLabel "Ancestor of, through Dhundhumara and Yuvanashva" ;
+    yc:reverseLabel "Descendant of" .
+
+[] a yc:Link ;
+    yc:from :trishanku ;
+    yc:relation yc:parentOf ;
+    yc:to :harishchandra ;
+    yc:tier yc:tier-purana ;
+    yc:forwardLabel "Father of (Puranas; not in Valmiki)" .
+
+[] a yc:Link ;
+    yc:from :urvashi ;
+    yc:relation yc:linkedWith ;
+    yc:to :arjuna ;
+    yc:forwardLabel "Curses to live as a eunuch; Indra limits it to a year" ;
+    yc:reverseLabel "Cursed by" .
+
+[] a yc:Link ;
+    yc:from :urvashi ;
+    yc:relation yc:tells ;
+    yc:to :rigveda ;
+    yc:forwardLabel "Named in the" ;
+    yc:reverseLabel "Names" .
+
+[] a yc:Link ;
+    yc:from :vali ;
+    yc:relation yc:kinOf ;
+    yc:to :sugriva ;
+    yc:forwardLabel "Brother of" ;
+    yc:reverseLabel "Brother of" .
+
+[] a yc:Link ;
+    yc:from :vali ;
+    yc:relation yc:kinOf ;
+    yc:to :tara ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :vali ;
+    yc:relation yc:linkedWith ;
+    yc:to :ravana ;
+    yc:tier yc:tier-layer ;
+    yc:forwardLabel "Defeats" ;
+    yc:reverseLabel "Defeated by" .
+
+[] a yc:Link ;
+    yc:from :vali ;
+    yc:relation yc:linkedWith ;
+    yc:to :ruma ;
+    yc:forwardLabel "Seizes" ;
+    yc:reverseLabel "Seized by" .
+
+[] a yc:Link ;
+    yc:from :vali ;
+    yc:relation yc:rebornAs ;
+    yc:to :jara ;
+    yc:tier yc:tier-folk .
+
+[] a yc:Link ;
+    yc:from :valmiki ;
+    yc:relation yc:tells ;
+    yc:to :balauttara ;
+    yc:forwardLabel "Text extended by" ;
+    yc:reverseLabel "Adds to the text of" .
+
+[] a yc:Link ;
+    yc:from :valmiki ;
+    yc:relation yc:tells ;
+    yc:to :kamban ;
+    yc:forwardLabel "Retold in Tamil by" ;
+    yc:reverseLabel "Retells" .
+
+[] a yc:Link ;
+    yc:from :valmiki ;
+    yc:relation yc:tells ;
+    yc:to :krittivasa ;
+    yc:forwardLabel "Retold in Bengali by" ;
+    yc:reverseLabel "Retells" .
+
+[] a yc:Link ;
+    yc:from :valmiki ;
+    yc:relation yc:tells ;
+    yc:to :lavakusha ;
+    yc:forwardLabel "Teaches the Ramayana to" ;
+    yc:reverseLabel "Learn the Ramayana from" .
+
+[] a yc:Link ;
+    yc:from :valmiki ;
+    yc:relation yc:tells ;
+    yc:to :ramcore ;
+    yc:forwardLabel "Composes" ;
+    yc:reverseLabel "Composed by" .
+
+[] a yc:Link ;
+    yc:from :valmiki ;
+    yc:relation yc:tells ;
+    yc:to :tulsidas ;
+    yc:forwardLabel "Retold in Awadhi by" ;
+    yc:reverseLabel "Retells" .
+
+[] a yc:Link ;
+    yc:from :valmiki ;
+    yc:relation yc:tells ;
+    yc:to :vimalasuri ;
+    yc:forwardLabel "Retold in Jain form by" ;
+    yc:reverseLabel "Retells" .
+
+[] a yc:Link ;
+    yc:from :vamana ;
+    yc:relation yc:linkedWith ;
+    yc:to :bali ;
+    yc:tier yc:tier-layer ;
+    yc:forwardLabel "Takes the three worlds in three steps from" ;
+    yc:reverseLabel "Gives three steps of land to" .
+
+[] a yc:Link ;
+    yc:from :vamana ;
+    yc:relation yc:linkedWith ;
+    yc:to :ganga ;
+    yc:tier yc:tier-purana ;
+    yc:forwardLabel "Ganga flows from his foot" ;
+    yc:reverseLabel "Flows from the foot of" .
+
+[] a yc:Link ;
+    yc:from :vashishtha ;
+    yc:relation yc:linkedWith ;
+    yc:to :rama ;
+    yc:forwardLabel "Family priest of" ;
+    yc:reverseLabel "Guided by" .
+
+[] a yc:Link ;
+    yc:from :vashishtha ;
+    yc:relation yc:linkedWith ;
+    yc:to :samvarana ;
+    yc:forwardLabel "Helps win Tapati for" ;
+    yc:reverseLabel "Helped by" .
+
+[] a yc:Link ;
+    yc:from :vashishtha ;
+    yc:relation yc:linkedWith ;
+    yc:to :sudas ;
+    yc:forwardLabel "Priest of (Rigveda)" ;
+    yc:reverseLabel "Served by" .
+
+[] a yc:Link ;
+    yc:from :vashishtha ;
+    yc:relation yc:linkedWith ;
+    yc:to :trishanku ;
+    yc:forwardLabel "Refuses to send to heaven" ;
+    yc:reverseLabel "Refused by" .
+
+[] a yc:Link ;
+    yc:from :vashishtha ;
+    yc:relation yc:linkedWith ;
+    yc:to :vasus ;
+    yc:forwardLabel "Curses" ;
+    yc:reverseLabel "Cursed by" .
+
+[] a yc:Link ;
+    yc:from :vashishtha ;
+    yc:relation yc:ancestorOf ;
+    yc:to :parashara ;
+    yc:forwardLabel "Grandfather of" ;
+    yc:reverseLabel "Grandson of" .
+
+[] a yc:Link ;
+    yc:from :vashishtha ;
+    yc:relation yc:tells ;
+    yc:to :rigveda ;
+    yc:forwardLabel "Seer of hymns in" ;
+    yc:reverseLabel "Hymns by" .
+
+[] a yc:Link ;
+    yc:from :vibhishana ;
+    yc:relation yc:kinOf ;
+    yc:to :sarama ;
+    yc:tier yc:tier-purana ;
+    yc:forwardLabel "Married to, say commentators" ;
+    yc:reverseLabel "Married to, say commentators" .
+
+[] a yc:Link ;
+    yc:from :vibhishana ;
+    yc:relation yc:linkedWith ;
+    yc:to :rama ;
+    yc:forwardLabel "Defects to" ;
+    yc:reverseLabel "Welcomes" .
+
+[] a yc:Link ;
+    yc:from :vishvamitra ;
+    yc:relation yc:linkedWith ;
+    yc:to :harishchandra ;
+    yc:tier yc:tier-purana ;
+    yc:forwardLabel "Tests, takes his kingdom" ;
+    yc:reverseLabel "Tested by" .
+
+[] a yc:Link ;
+    yc:from :vishvamitra ;
+    yc:relation yc:linkedWith ;
+    yc:to :rama ;
+    yc:tier yc:tier-layer ;
+    yc:forwardLabel "Teacher of" ;
+    yc:reverseLabel "Trained by" .
+
+[] a yc:Link ;
+    yc:from :vishvamitra ;
+    yc:relation yc:linkedWith ;
+    yc:to :sudas ;
+    yc:forwardLabel "Priest of (Rigveda)" ;
+    yc:reverseLabel "Served by" .
+
+[] a yc:Link ;
+    yc:from :vishvamitra ;
+    yc:relation yc:linkedWith ;
+    yc:to :trishanku ;
+    yc:forwardLabel "Sends bodily to heaven" ;
+    yc:reverseLabel "Sent to heaven by" .
+
+[] a yc:Link ;
+    yc:from :vishvamitra ;
+    yc:relation yc:linkedWith ;
+    yc:to :vashishtha ;
+    yc:forwardLabel "Old rival of" ;
+    yc:reverseLabel "Old rival of" .
+
+[] a yc:Link ;
+    yc:from :vishvamitra ;
+    yc:relation yc:tells ;
+    yc:to :aitareya ;
+    yc:forwardLabel "Saves Shunahshepa in" ;
+    yc:reverseLabel "Tells of" .
+
+[] a yc:Link ;
+    yc:from :vishvamitra ;
+    yc:relation yc:tells ;
+    yc:to :rigveda ;
+    yc:forwardLabel "Seer of hymns in" ;
+    yc:reverseLabel "Hymns by" .
+
+[] a yc:Link ;
+    yc:from :yadu ;
+    yc:relation yc:tells ;
+    yc:to :rigveda ;
+    yc:forwardLabel "His tribe is named in the" ;
+    yc:reverseLabel "Names the tribe of" .
+
+[] a yc:Link ;
+    yc:from :yayati ;
+    yc:relation yc:kinOf ;
+    yc:to :devayani ;
+    yc:forwardLabel "Married to" ;
+    yc:reverseLabel "Married to" .
+
+[] a yc:Link ;
+    yc:from :yayati ;
+    yc:relation yc:kinOf ;
+    yc:to :sharmishtha ;
+    yc:forwardLabel "Secretly takes" ;
+    yc:reverseLabel "Secret wife of" .
+
+[] a yc:Link ;
+    yc:from :yayati ;
+    yc:relation yc:tells ;
+    yc:to :rigveda ;
+    yc:forwardLabel "Named in the" ;
+    yc:reverseLabel "Names" .
