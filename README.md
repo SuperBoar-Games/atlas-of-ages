@@ -11,7 +11,7 @@ dynasties and sages, the Vedas, the two epics and recorded history. The graph is
 | `shapes/yc-shapes.ttl` | SHACL shapes every change must pass |
 | `graph/*.ttl` | The data, one file per period. A figure's block also holds its plain outgoing links |
 | `layout/layout.json` | Layout rules by type only (bands per period, which link types set layers, spacing); never per entry |
-| `web/` | Page markup, styles and the Canvas renderer; reads the built `DATA` |
+| `web/` | `index.html`, `style.css` and ES modules in `js/`: `app.js` (start-up), `common.js` (graph model: tiers, filters, highlights, search), `theme.js` (palette, light/dark), `page_graph.js` (the graph view). The page loads `data.json` from the build |
 | `tools/build.py` | Validates, lays out, then writes `dist/` |
 | `tools/layout.py` | The layout: period bands, lineage layers, barycentre ordering, rows wrapped at a fixed width |
 | `tools/perf.py` | Frame-time test in headless Chromium |
@@ -40,9 +40,9 @@ Namespace: `https://w3id.org/yugachakra#`.
 
 ```sh
 uv run python tools/build.py check          # SHACL validation and layout consistency
-uv run python tools/build.py build          # check, then dist/index.html (single file), graph.json, yugachakra.ttl, yugachakra.jsonld
+uv run python tools/build.py build          # check, then dist/: the site (web/ + data.json), yugachakra.ttl, yugachakra.jsonld
 uv run python tools/dev.py                  # dev server on http://127.0.0.1:8000: quick rebuild on change (no SHACL), reloads the browser
-uv run python tools/perf.py -v              # frame times for pan, zoom and selection; fails if draw p95 > 8 ms
+uv run python tools/perf.py                 # frame cost and smoothness for scroll, zoom, drag, selection; --shot PATH saves a screenshot
 ```
 
 A new entry needs only its block in the right `graph/*.ttl`; the layout places it.

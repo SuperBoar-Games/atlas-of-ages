@@ -5,7 +5,7 @@
   --surface-2: #2c2820;
   --star: #ece6d6;
   --dim: #a39b88;
-  --rule: rgb(236 230 214 / .14);
+  --rule: rgba(236, 230, 214, .14);
   --gold: #e2b85c;
   --focus: #f2c66d;
   --shadow: 0 18px 48px rgba(0, 0, 0, .5);

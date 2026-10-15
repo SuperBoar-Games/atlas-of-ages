@@ -2,6 +2,7 @@
 import argparse
 import json
 import re
+import shutil
 import sys
 from pathlib import Path
 
@@ -110,20 +111,9 @@ def materialize(data):
     return out
 
 
-def page(graph_json):
-    web = ROOT / 'web'
-    html = (web / 'index.html').read_text()
-    blob = json.dumps(graph_json, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
-    parts = {
-        '<link rel="stylesheet" href="style.css">': f"<style>\n{(web / 'style.css').read_text()}</style>",
-        '<script src="data.js"></script>': f'<script>const DATA = {blob};</script>',
-        '<script src="app.js"></script>': f"<script>\n{(web / 'app.js').read_text()}</script>",
-    }
-    for tag, inline in parts.items():
-        if tag not in html:
-            sys.exit(f'web/index.html is missing {tag}')
-        html = html.replace(tag, inline)
-    return html
+def site(graph_json, out):
+    shutil.copytree(ROOT / 'web', out, dirs_exist_ok=True)
+    (out / 'data.json').write_text(json.dumps(graph_json, ensure_ascii=False, separators=(',', ':')))
 
 
 def main():
@@ -144,8 +134,7 @@ def main():
         return
     g = to_json(data, layout)
     args.out.mkdir(exist_ok=True)
-    (args.out / 'graph.json').write_text(json.dumps(g, ensure_ascii=False, indent=1) + '\n')
-    (args.out / 'index.html').write_text(page(g))
+    site(g, args.out)
     if args.quick:
         print(f"built {args.out} (quick): {len(g['nodes'])} nodes, {len(g['edges'])} edges")
         return

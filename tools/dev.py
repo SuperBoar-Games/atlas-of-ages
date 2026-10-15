@@ -51,11 +51,14 @@ class Handler(SimpleHTTPRequestHandler):
     def log_message(self, *args):
         pass
 
+    def end_headers(self):
+        self.send_header('Cache-Control', 'no-store')
+        super().end_headers()
+
     def do_GET(self):
         if self.path == '/__reload':
             self.send_response(200)
             self.send_header('Content-Type', 'text/event-stream')
-            self.send_header('Cache-Control', 'no-cache')
             self.end_headers()
             with changed:
                 start = version
@@ -69,7 +72,6 @@ class Handler(SimpleHTTPRequestHandler):
             body = (ROOT / 'dist' / 'index.html').read_bytes().replace(b'</body>', RELOAD + b'</body>')
             self.send_response(200)
             self.send_header('Content-Type', 'text/html; charset=utf-8')
-            self.send_header('Cache-Control', 'no-store')
             self.end_headers()
             self.wfile.write(body)
             return
