@@ -6,12 +6,13 @@
  "pull": { "line": 1, "gap": 1, "reign": 1, "story": 1, "bond": 0.8, "part": 0.15, "*": 0.3 },
  "looseOrder": ["story", "event", "avatar", "deva", "sage", "person"],
  "bands": [
-  { "period": "origins", "name": "Origins", "note": "Creation, the Manus and the flood" },
-  { "period": "satya", "name": "Satya Yuga", "note": "The age of truth", "years": 1728000 },
-  { "period": "treta", "name": "Treta Yuga", "note": "The age of the three fires", "years": 1296000 },
-  { "period": "dvapara", "name": "Dvapara Yuga", "note": "The age of doubt", "years": 864000 },
-  { "period": "kali", "name": "Kali Yuga", "note": "The age of strife, from 3102 BCE by tradition", "years": 432000 },
-  { "period": "history", "name": "Recorded history", "tab": "History", "note": "c. 3300 BCE to 1947 CE, a separate timeline from the epic" }
+  { "period": "origins", "name": "Origins", "note": "Creation, the Manus and the flood · about 1.96 billion to 3.89 million years ago by tradition" },
+  { "period": "satya", "name": "Satya Yuga", "note": "The age of truth · 3,891,102 to 2,163,102 BCE by tradition", "years": 1728000 },
+  { "period": "treta", "name": "Treta Yuga", "note": "The age of the three fires · 2,163,102 to 867,102 BCE by tradition", "years": 1296000 },
+  { "period": "dvapara", "name": "Dvapara Yuga", "note": "The age of doubt · 867,102 to 3102 BCE by tradition", "years": 864000 },
+  { "period": "kali", "name": "Kali Yuga", "note": "The age of strife · from 3102 BCE by tradition; History lies within it", "years": 432000 },
+  { "period": "history", "name": "History", "tab": "History", "note": "A separate timeline from the epic · c. 3300 BCE to 1947 CE" },
+  { "period": "kali", "name": "Kali Yuga, continued", "tab": "Kali's end", "closeWith": "endkali", "note": "The close of the age, after History · to 428,899 CE by tradition" }
  ],
  "rail": { "period": "deva", "name": "The gods", "width": 240, "gap": 64 }
 }

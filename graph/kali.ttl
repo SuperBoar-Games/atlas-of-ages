@@ -1,268 +1,304 @@
 # Kali Yuga
 
-@prefix : <https://w3id.org/yugachakra#> .
-@prefix yc: <https://w3id.org/yugachakra#> .
+@prefix : <https://w3id.org/atlas-of-ages#> .
+@prefix aoa: <https://w3id.org/atlas-of-ages#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix schema: <https://schema.org/> .
 
-:astika a yc:Sage ;
+:astika a aoa:Sage ;
     rdfs:label "Astika" ;
     rdfs:comment "Son of the sage Jaratkaru and Vasuki's sister. Persuades Janamejaya to end the snake sacrifice." ;
-    yc:period yc:period-kali ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-sage ;
+    aoa:period aoa:period-kali ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-sage ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 1.38; MBh 1.48" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxxviii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.48; MBh 1.58" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xlviii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.58" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lviii> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 1.38; MBh 1.48" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxxviii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.48; MBh 1.58" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xlviii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.58" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lviii> ] .
 
-:dvarakasinks a yc:Event, yc:Catastrophe ;
+:dvarakasinks a aoa:Event, aoa:Catastrophe ;
     rdfs:label "Sea swallows Dvaraka" ;
     rdfs:comment "After Krishna's death the ocean rises and swallows Dvaraka as Arjuna leads the survivors away (Mausala Parva)." ;
-    yc:period yc:period-kali ;
-    yc:tier yc:tier-core ;
+    aoa:period aoa:period-kali ;
+    aoa:tier aoa:tier-core ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 16.7" ; schema:url <https://sacred-texts.com/hin/m16/m16007.htm> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 16.7" ; schema:url <https://sacred-texts.com/hin/m16/m16007.htm> ] .
 
-:e_final a yc:Story ;
+:e_final a aoa:Story ;
     rdfs:label "Final journey" ;
     rdfs:comment "The Pandavas and Draupadi walk toward the Himalaya and fall one by one. Only Yudhishthira and a dog, who is Dharma, reach the end." ;
-    yc:period yc:period-kali ;
-    yc:tier yc:tier-core ;
-    yc:leadsTo :e_heaven ;
-    yc:involves :arjuna, :bhima, :draupadi, :twins, :yama, :yudhishthira ;
+    aoa:period aoa:period-kali ;
+    aoa:tier aoa:tier-core ;
+    aoa:leadsTo :e_heaven ;
+    aoa:involves :arjuna, :bhima, :draupadi, :twins, :yama, :yudhishthira ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 17.2" ; schema:url <https://sacred-texts.com/hin/m17/m17002.htm> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 17.2" ; schema:url <https://sacred-texts.com/hin/m17/m17002.htm> ] .
 
-:e_heaven a yc:Story ;
+:e_heaven a aoa:Story ;
     rdfs:label "Ascent to heaven" ;
     rdfs:comment "Yudhishthira finds Duryodhana in heaven and his brothers seemingly in hell, a final test of dharma (Svargarohana Parva)." ;
-    yc:period yc:period-kali ;
-    yc:tier yc:tier-core ;
-    yc:involves :duryodhana, :karna, :yudhishthira ;
+    aoa:period aoa:period-kali ;
+    aoa:tier aoa:tier-core ;
+    aoa:involves :duryodhana, :karna, :yudhishthira ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 18.3" ; schema:url <https://sacred-texts.com/hin/m18/m18003.htm> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 18.3" ; schema:url <https://sacred-texts.com/hin/m18/m18003.htm> ] .
 
-:endkali a yc:Event, yc:Catastrophe ;
+:endkali a aoa:Event, aoa:Catastrophe ;
     rdfs:label "End of the Kali Yuga" ;
     rdfs:comment "Markandeya foretells the end of the age: dharma fails, the rains stop, fire and flood sweep the world, and Kalki restores a new age of truth (Vana Parva)." ;
-    yc:period yc:period-kali ;
-    yc:tier yc:tier-core ;
+    aoa:period aoa:period-kali ;
+    aoa:tier aoa:tier-core ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 3.189-190" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-clxxxix> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 3.189" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-clxxxix> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 12.2" ; schema:url <https://vedabase.io/en/library/sb/12/2/> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 3.189-190" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-clxxxix> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 3.189" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-clxxxix> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 12.2" ; schema:url <https://vedabase.io/en/library/sb/12/2/> ] .
 
-:janamejaya a yc:Person ;
+:h_flood a aoa:Story, aoa:Catastrophe ;
+    rdfs:label "Hastinapura washed away" ;
+    rdfs:comment "The Ganga floods Hastinapura in Nichakshu's reign and the Kurus move to Kaushambi." ;
+    aoa:period aoa:period-kali ;
+    aoa:tier aoa:tier-purana ;
+    aoa:leadsTo :h_buddha ;
+    aoa:involves :janamejaya, :nichakshu, :shatanika ;
+    dcterms:source [ a aoa:Citation ; rdfs:label "Vishnu P. 4.21" ; schema:url <https://sacred-texts.com/hin/vp/vp114.htm> ] .
+
+:janamejaya a aoa:Person ;
     rdfs:label "Janamejaya" ;
     rdfs:comment "Son of Parikshit. Holds the snake sacrifice to avenge his father, and the epic is first recited there." ;
-    yc:period yc:period-kali ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-human ;
-    yc:role yc:role-king ;
-    yc:parentOf :shatanika ;
+    aoa:period aoa:period-kali ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-human ;
+    aoa:role aoa:role-king ;
+    aoa:parentOf :shatanika ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 1.20" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xx> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.44; MBh 1.50; MBh 1.60" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xliv> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.50; MBh 1.58" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-l> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.50; MBh 1.52" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-l> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.60" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lx> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.95; MBh 1.44" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcv> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.95" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcv> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 1.20" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xx> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.44; MBh 1.50; MBh 1.60" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xliv> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.50; MBh 1.58" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-l> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.50; MBh 1.52" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-l> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.60" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lx> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.95; MBh 1.44" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcv> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.95" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcv> ] .
 
-:jara a yc:Person ;
+:jara a aoa:Person ;
     rdfs:label "Jara" ;
     rdfs:comment "Hunter who mistakes Krishna, lying in yoga, for a deer and pierces his heel. Folk tradition makes him Vali reborn." ;
-    yc:period yc:period-kali ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-human ;
+    aoa:period aoa:period-kali ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-human ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 16.4" ; schema:url <https://sacred-texts.com/hin/m16/m16004.htm> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 16.4" ; schema:url <https://sacred-texts.com/hin/m16/m16004.htm> ] .
 
-:kalki a yc:Avatar ;
+:kalki a aoa:Avatar ;
     rdfs:label "Kalki" ;
     rdfs:comment "Tenth avatar, foretold to come at the end of the Kali Yuga and restore the age of truth (Vana Parva). The Bhagavata mounts him on the horse Devadatta." ;
-    yc:period yc:period-kali ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
+    aoa:period aoa:period-kali ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 3.189-190" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-clxxxix> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 3.189" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-clxxxix> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 1.3, 12.2" ; schema:url <https://vedabase.io/en/library/sb/1/3/> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 12.2, 1.3" ; schema:url <https://vedabase.io/en/library/sb/12/2/> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 12.2" ; schema:url <https://vedabase.io/en/library/sb/12/2/> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 3.189-190" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-clxxxix> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 3.189" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-clxxxix> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 1.3, 12.2" ; schema:url <https://vedabase.io/en/library/sb/1/3/> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 12.2, 1.3" ; schema:url <https://vedabase.io/en/library/sb/12/2/> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 12.2" ; schema:url <https://vedabase.io/en/library/sb/12/2/> ] .
 
-:sarpasatra a yc:Event, yc:Catastrophe ;
+:kshemaka a aoa:Person ;
+    rdfs:label "Kshemaka" ;
+    rdfs:comment "Named in the Puranas as the last king of the Kuru line." ;
+    aoa:period aoa:period-kali ;
+    aoa:tier aoa:tier-purana ;
+    aoa:being aoa:being-human ;
+    aoa:role aoa:role-king ;
+    dcterms:source [ a aoa:Citation ; rdfs:label "Vishnu P. 4.21" ; schema:url <https://sacred-texts.com/hin/vp/vp114.htm> ] .
+
+:nichakshu a aoa:Person ;
+    rdfs:label "Nichakshu" ;
+    rdfs:comment "Later Kuru king. When the Ganga washes away Hastinapura, he moves the capital to Kaushambi." ;
+    aoa:period aoa:period-kali ;
+    aoa:tier aoa:tier-purana ;
+    aoa:being aoa:being-human ;
+    aoa:role aoa:role-king ;
+    dcterms:source [ a aoa:Citation ; rdfs:label "Vishnu P. 4.21" ; schema:url <https://sacred-texts.com/hin/vp/vp114.htm> ] .
+
+:ripunjaya a aoa:Person ;
+    rdfs:label "Ripunjaya" ;
+    rdfs:comment "Last king of Jarasandha's Brihadratha line in Magadha, overthrown by his own minister in the Puranic lists." ;
+    aoa:period aoa:period-kali ;
+    aoa:tier aoa:tier-purana ;
+    aoa:being aoa:being-human ;
+    aoa:role aoa:role-king ;
+    dcterms:source [ a aoa:Citation ; rdfs:label "Vishnu P. 4.23-4.24" ; schema:url <https://sacred-texts.com/hin/vp/vp116.htm> ] .
+
+:sarpasatra a aoa:Event, aoa:Catastrophe ;
     rdfs:label "Snake sacrifice" ;
     rdfs:comment "Janamejaya's rite draws the Nagas into the fire by the thousand until Astika stops it. The epic is first recited during its pauses." ;
-    yc:period yc:period-kali ;
-    yc:tier yc:tier-core ;
+    aoa:period aoa:period-kali ;
+    aoa:tier aoa:tier-core ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 1.1; MBh 1.60" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-i> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.20" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xx> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.50; MBh 1.52" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-l> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.52; MBh 1.58; MBh 1.1" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.58" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lviii> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 1.1; MBh 1.60" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-i> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.20" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xx> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.50; MBh 1.52" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-l> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.52; MBh 1.58; MBh 1.1" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.58" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lviii> ] .
 
-:sauti a yc:Sage ;
+:sauti a aoa:Sage ;
     rdfs:label "Sauti (Ugrashravas)" ;
     rdfs:comment "The bard who heard Vaishampayana and retells the epic to Shaunaka's sages in the Naimisha forest. The text opens here, Adi Parva 1.1." ;
-    yc:period yc:period-kali ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-sage ;
+    aoa:period aoa:period-kali ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-sage ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 1.1" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-i> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 1.1" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-i> ] .
 
-:shatanika a yc:Person ;
+:shatanika a aoa:Person ;
     rdfs:label "Shatanika" ;
     rdfs:comment "Son of Janamejaya and father of Ashvamedhadatta, named in the Adi Parva." ;
-    yc:period yc:period-kali ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-human ;
-    yc:role yc:role-king ;
+    aoa:period aoa:period-kali ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-human ;
+    aoa:role aoa:role-king ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 1.95" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcv> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 1.95" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcv> ] .
 
-:shringi a yc:Sage ;
+:shringi a aoa:Sage ;
     rdfs:label "Shringi" ;
     rdfs:comment "Son of the sage Shamika. Curses Parikshit to die by Takshaka's bite within seven days, after Parikshit drapes a dead snake on his father." ;
-    yc:period yc:period-kali ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-sage ;
+    aoa:period aoa:period-kali ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-sage ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 1.40; MBh 1.41; MBh 1.42" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xl> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.41" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xli> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 1.40; MBh 1.41; MBh 1.42" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xl> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.41" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xli> ] .
 
-:takshaka a yc:Person, yc:SpansYugas ;
+:takshaka a aoa:Person, aoa:SpansYugas ;
     rdfs:label "Takshaka" ;
     rdfs:comment "Naga king, son of Kadru. Kills Parikshit. Hunted by Janamejaya's sacrifice, he is saved when Astika stops it." ;
-    yc:period yc:period-kali ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-naga ;
-    yc:parentOf :ashvasena ;
-    yc:kills :parikshit ;
+    aoa:period aoa:period-kali ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-naga ;
+    aoa:parentOf :ashvasena ;
+    aoa:kills :parikshit ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 1.35; MBh 1.43; MBh 1.58" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxxv> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.35; MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxxv> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.43" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xliii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.50; MBh 1.58" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-l> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.58" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lviii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.229" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-ccxxix> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 1.35; MBh 1.43; MBh 1.58" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxxv> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.35; MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxxv> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.43" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xliii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.50; MBh 1.58" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-l> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.58" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lviii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.229" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-ccxxix> ] .
 
-:vaishampayana a yc:Sage ;
+:vaishampayana a aoa:Sage ;
     rdfs:label "Vaishampayana" ;
     rdfs:comment "Disciple of Vyasa. First reciter of the epic, at Janamejaya's snake sacrifice." ;
-    yc:period yc:period-kali ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-sage ;
+    aoa:period aoa:period-kali ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-sage ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 1.1" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-i> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.1; MBh 1.60" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-i> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.60; MBh 1.1" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lx> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.60; MBh 1.63" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lx> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.60" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lx> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 1.1" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-i> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.1; MBh 1.60" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-i> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.60; MBh 1.1" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lx> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.60; MBh 1.63" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lx> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.60" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lx> ] .
 
-[] a yc:Link ;
-    yc:from :astika ;
-    yc:relation yc:linkedWith ;
-    yc:to :sarpasatra ;
-    yc:forwardLabel "Stops" ;
-    yc:reverseLabel "Stopped by" .
+[] a aoa:Link ;
+    aoa:from :astika ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :sarpasatra ;
+    aoa:forwardLabel "Stops" ;
+    aoa:reverseLabel "Stopped by" .
 
-[] a yc:Link ;
-    yc:from :astika ;
-    yc:relation yc:linkedWith ;
-    yc:to :takshaka ;
-    yc:forwardLabel "Saves" ;
-    yc:reverseLabel "Saved by" .
+[] a aoa:Link ;
+    aoa:from :astika ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :takshaka ;
+    aoa:forwardLabel "Saves" ;
+    aoa:reverseLabel "Saved by" .
 
-[] a yc:Link ;
-    yc:from :janamejaya ;
-    yc:relation yc:linkedWith ;
-    yc:to :h_kuru ;
-    yc:forwardLabel "Named in the Shatapatha Brahmana" ;
-    yc:reverseLabel "Names Janamejaya" .
+[] a aoa:Link ;
+    aoa:from :janamejaya ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :h_kuru ;
+    aoa:forwardLabel "Named in the Shatapatha Brahmana" ;
+    aoa:reverseLabel "Names Janamejaya" .
 
-[] a yc:Link ;
-    yc:from :janamejaya ;
-    yc:relation yc:linkedWith ;
-    yc:to :sarpasatra ;
-    yc:forwardLabel "Holds" ;
-    yc:reverseLabel "Held by" .
+[] a aoa:Link ;
+    aoa:from :janamejaya ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :sarpasatra ;
+    aoa:forwardLabel "Holds" ;
+    aoa:reverseLabel "Held by" .
 
-[] a yc:Link ;
-    yc:from :janamejaya ;
-    yc:relation yc:linkedWith ;
-    yc:to :takshaka ;
-    yc:forwardLabel "Hunts with the snake sacrifice" ;
-    yc:reverseLabel "Hunted by" .
+[] a aoa:Link ;
+    aoa:from :janamejaya ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :takshaka ;
+    aoa:forwardLabel "Hunts with the snake sacrifice" ;
+    aoa:reverseLabel "Hunted by" .
 
-[] a yc:Link ;
-    yc:from :janamejaya ;
-    yc:relation yc:tells ;
-    yc:to :shatapatha ;
-    yc:forwardLabel "Named in" ;
-    yc:reverseLabel "Names" .
+[] a aoa:Link ;
+    aoa:from :janamejaya ;
+    aoa:relation aoa:tells ;
+    aoa:to :shatapatha ;
+    aoa:forwardLabel "Named in" ;
+    aoa:reverseLabel "Names" .
 
-[] a yc:Link ;
-    yc:from :jara ;
-    yc:relation yc:kills ;
-    yc:to :krishna ;
-    yc:forwardLabel "Kills by mistake" ;
-    yc:reverseLabel "Killed by" .
+[] a aoa:Link ;
+    aoa:from :jara ;
+    aoa:relation aoa:kills ;
+    aoa:to :krishna ;
+    aoa:forwardLabel "Kills by mistake" ;
+    aoa:reverseLabel "Killed by" .
 
-[] a yc:Link ;
-    yc:from :kalki ;
-    yc:relation yc:linkedWith ;
-    yc:to :endkali ;
-    yc:forwardLabel "Comes at" ;
-    yc:reverseLabel "Brings" .
+[] a aoa:Link ;
+    aoa:from :kalki ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :endkali ;
+    aoa:forwardLabel "Comes at" ;
+    aoa:reverseLabel "Brings" .
 
-[] a yc:Link ;
-    yc:from :shatanika ;
-    yc:relation yc:ancestorOf ;
-    yc:to :nichakshu ;
-    yc:tier yc:tier-purana .
+[] a aoa:Link ;
+    aoa:from :shatanika ;
+    aoa:relation aoa:ancestorOf ;
+    aoa:to :nichakshu ;
+    aoa:tier aoa:tier-purana .
 
-[] a yc:Link ;
-    yc:from :shringi ;
-    yc:relation yc:linkedWith ;
-    yc:to :parikshit ;
-    yc:forwardLabel "Curses" ;
-    yc:reverseLabel "Cursed by" .
+[] a aoa:Link ;
+    aoa:from :shringi ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :parikshit ;
+    aoa:forwardLabel "Curses" ;
+    aoa:reverseLabel "Cursed by" .
 
-[] a yc:Link ;
-    yc:from :takshaka ;
-    yc:relation yc:linkedWith ;
-    yc:to :sarpasatra ;
-    yc:forwardLabel "Escapes" ;
-    yc:reverseLabel "Escaped by" .
+[] a aoa:Link ;
+    aoa:from :takshaka ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :sarpasatra ;
+    aoa:forwardLabel "Escapes" ;
+    aoa:reverseLabel "Escaped by" .
 
-[] a yc:Link ;
-    yc:from :vaishampayana ;
-    yc:relation yc:tells ;
-    yc:to :janamejaya ;
-    yc:forwardLabel "Recites the epic to" ;
-    yc:reverseLabel "Hears the epic from" .
+[] a aoa:Link ;
+    aoa:from :vaishampayana ;
+    aoa:relation aoa:tells ;
+    aoa:to :janamejaya ;
+    aoa:forwardLabel "Recites the epic to" ;
+    aoa:reverseLabel "Hears the epic from" .
 
-[] a yc:Link ;
-    yc:from :vaishampayana ;
-    yc:relation yc:tells ;
-    yc:to :sarpasatra ;
-    yc:forwardLabel "Recites the epic during" ;
-    yc:reverseLabel "Hears the epic" .
+[] a aoa:Link ;
+    aoa:from :vaishampayana ;
+    aoa:relation aoa:tells ;
+    aoa:to :sarpasatra ;
+    aoa:forwardLabel "Recites the epic during" ;
+    aoa:reverseLabel "Hears the epic" .
 
-[] a yc:Link ;
-    yc:from :vaishampayana ;
-    yc:relation yc:tells ;
-    yc:to :sauti ;
-    yc:forwardLabel "Overheard by" ;
-    yc:reverseLabel "Hears the recital of" .
+[] a aoa:Link ;
+    aoa:from :vaishampayana ;
+    aoa:relation aoa:tells ;
+    aoa:to :sauti ;
+    aoa:forwardLabel "Overheard by" ;
+    aoa:reverseLabel "Hears the recital of" .
 
-[] a yc:Link ;
-    yc:from :vaishampayana ;
-    yc:relation yc:tells ;
-    yc:to :yajurveda ;
-    yc:forwardLabel "Keeper of" ;
-    yc:reverseLabel "Kept by" .
+[] a aoa:Link ;
+    aoa:from :vaishampayana ;
+    aoa:relation aoa:tells ;
+    aoa:to :yajurveda ;
+    aoa:forwardLabel "Keeper of" ;
+    aoa:reverseLabel "Kept by" .

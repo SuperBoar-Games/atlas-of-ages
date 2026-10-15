@@ -1,0 +1,167 @@
+@prefix aoa: <https://w3id.org/atlas-of-ages#> .
+@prefix aoash: <https://w3id.org/atlas-of-ages/shapes#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+aoash: sh:declare [ sh:prefix "aoa" ; sh:namespace "https://w3id.org/atlas-of-ages#"^^xsd:anyURI ] .
+
+aoash:EntryShape a sh:NodeShape ;
+    sh:targetClass aoa:Entry ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ] ;
+    sh:property [ sh:path rdfs:comment ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ; sh:minLength 1 ] ;
+    sh:property [ sh:path aoa:period ; sh:minCount 1 ; sh:maxCount 1 ;
+        sh:in ( aoa:period-origins aoa:period-satya aoa:period-treta aoa:period-dvapara aoa:period-kali aoa:period-deva aoa:period-history ) ] ;
+    sh:property [ sh:path aoa:tier ; sh:maxCount 1 ; sh:in ( aoa:tier-core aoa:tier-layer aoa:tier-vulgate aoa:tier-purana aoa:tier-folk ) ] ;
+    sh:property [ sh:path dcterms:source ; sh:node aoash:CitationShape ] ;
+    sh:property [ sh:path aoa:era ; sh:maxCount 1 ; sh:in ( aoa:era-creation aoa:era-svayambhuva aoa:era-later-manus aoa:era-flood aoa:era-vaivasvata ) ] ;
+    sh:sparql [
+        sh:message "Every entry outside recorded history needs a source tier" ;
+        sh:prefixes aoash: ;
+        sh:select """SELECT $this WHERE {
+            $this aoa:period ?p . FILTER (?p != aoa:period-history)
+            FILTER NOT EXISTS { $this aoa:tier ?t }
+        }""" ] ;
+    sh:sparql [
+        sh:message "Every entry has exactly one kind: Deva, Avatar, Sage, Person, Event or Story" ;
+        sh:prefixes aoash: ;
+        sh:select """SELECT $this WHERE {
+            { SELECT $this (COUNT(DISTINCT ?k) AS ?n) WHERE {
+                $this a ?k . FILTER (?k IN (aoa:Deva, aoa:Avatar, aoa:Sage, aoa:Person, aoa:Event, aoa:Story))
+              } GROUP BY $this }
+            FILTER (?n != 1)
+        }""" ] .
+
+aoash:FigureShape a sh:NodeShape ;
+    sh:targetClass aoa:Figure ;
+    sh:property [ sh:path aoa:being ; sh:maxCount 1 ;
+        sh:in ( aoa:being-god aoa:being-asura aoa:being-rakshasa aoa:being-naga aoa:being-yaksha aoa:being-gandharva
+                aoa:being-apsara aoa:being-vanara aoa:being-riksha aoa:being-beast aoa:being-sage aoa:being-human ) ] ;
+    sh:property [ sh:path aoa:role ; sh:in ( aoa:role-king aoa:role-woman ) ] ;
+    sh:sparql [
+        sh:message "Every figure outside recorded history has a class of being" ;
+        sh:prefixes aoash: ;
+        sh:select """SELECT $this WHERE {
+            $this aoa:period ?p . FILTER (?p != aoa:period-history)
+            FILTER NOT EXISTS { $this aoa:being ?b }
+        }""" ] .
+
+aoash:CitationShape a sh:NodeShape ;
+    sh:class aoa:Citation ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+    sh:property [ sh:path schema:url ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] .
+
+aoash:LinkShape a sh:NodeShape ;
+    sh:targetClass aoa:Link ;
+    sh:property [ sh:path aoa:from ; sh:minCount 1 ; sh:maxCount 1 ; sh:class aoa:Entry ] ;
+    sh:property [ sh:path aoa:to ; sh:minCount 1 ; sh:maxCount 1 ; sh:class aoa:Entry ] ;
+    sh:property [ sh:path aoa:relation ; sh:minCount 1 ; sh:maxCount 1 ; sh:class aoa:Relation ] ;
+    sh:property [ sh:path aoa:tier ; sh:maxCount 1 ; sh:in ( aoa:tier-layer aoa:tier-vulgate aoa:tier-purana aoa:tier-folk ) ] ;
+    sh:property [ sh:path aoa:forwardLabel ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+    sh:property [ sh:path aoa:reverseLabel ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+    sh:property [ sh:path dcterms:source ; sh:node aoash:CitationShape ] ;
+    sh:sparql [
+        sh:message "A Link must add a tier, a label or a source; otherwise write the plain triple" ;
+        sh:prefixes aoash: ;
+        sh:select """SELECT $this WHERE {
+            FILTER NOT EXISTS { $this aoa:tier|aoa:forwardLabel|aoa:reverseLabel|<http://purl.org/dc/terms/source> ?x }
+        }""" ] ;
+    sh:sparql [
+        sh:message "The same link is also written as a plain triple" ;
+        sh:prefixes aoash: ;
+        sh:select """SELECT $this WHERE {
+            $this aoa:from ?f ; aoa:relation ?r ; aoa:to ?t . ?f ?r ?t .
+        }""" ] .
+
+aoash:RelationEndsShape a sh:NodeShape ;
+    sh:targetSubjectsOf aoa:parentOf, aoa:ancestorOf, aoa:kinOf, aoa:rebornAs, aoa:linkedWith, aoa:kills,
+        aoa:divineOriginOf, aoa:tells, aoa:succeededBy, aoa:leadsTo, aoa:meets, aoa:involves ;
+    sh:class aoa:Entry ;
+    sh:property [ sh:path aoa:parentOf ; sh:class aoa:Entry ] ;
+    sh:property [ sh:path aoa:ancestorOf ; sh:class aoa:Entry ] ;
+    sh:property [ sh:path aoa:kinOf ; sh:class aoa:Entry ] ;
+    sh:property [ sh:path aoa:rebornAs ; sh:class aoa:Entry ] ;
+    sh:property [ sh:path aoa:linkedWith ; sh:class aoa:Entry ] ;
+    sh:property [ sh:path aoa:kills ; sh:class aoa:Entry ] ;
+    sh:property [ sh:path aoa:divineOriginOf ; sh:class aoa:Entry ] ;
+    sh:property [ sh:path aoa:tells ; sh:class aoa:Entry ] ;
+    sh:property [ sh:path aoa:succeededBy ; sh:class aoa:Entry ] ;
+    sh:property [ sh:path aoa:leadsTo ; sh:class aoa:Occurrence ] ;
+    sh:property [ sh:path aoa:meets ; sh:class aoa:Occurrence ] ;
+    sh:property [ sh:path aoa:involves ; sh:class aoa:Entry ] .
+
+aoash:WhenShape a sh:NodeShape ;
+    sh:targetObjectsOf aoa:when ;
+    sh:class time:Interval ;
+    sh:property [ sh:path time:hasBeginning ; sh:maxCount 1 ; sh:node aoash:InstantShape ] ;
+    sh:property [ sh:path time:hasEnd ; sh:maxCount 1 ; sh:node aoash:InstantShape ] ;
+    sh:property [ sh:path aoa:circa ; sh:maxCount 1 ; sh:datatype xsd:boolean ] ;
+    sh:or ( [ sh:path time:hasBeginning ; sh:minCount 1 ] [ sh:path time:hasEnd ; sh:minCount 1 ] ) .
+
+aoash:InstantShape a sh:NodeShape ;
+    sh:class time:Instant ;
+    sh:property [ sh:path time:inXSDgYear ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:gYear ] .
+
+aoash:PlaceShape a sh:NodeShape ;
+    sh:targetClass aoa:Place ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+    sh:property [ sh:path aoa:placeKind ; sh:minCount 1 ; sh:maxCount 1 ;
+        sh:in ( aoa:place-city aoa:place-site aoa:place-river aoa:place-mountain aoa:place-forest aoa:place-lake aoa:place-region aoa:place-realm ) ] ;
+    sh:property [ sh:path aoa:identification ; sh:minCount 1 ; sh:maxCount 1 ; sh:in ( aoa:id-established aoa:id-traditional aoa:id-uncertain ) ] ;
+    sh:property [ sh:path aoa:locatedIn ; sh:class aoa:Polity ] ;
+    sh:property [ sh:path geo:hasGeometry ; sh:maxCount 1 ; sh:node aoash:GeometryShape ] ;
+    sh:property [ sh:path aoa:modernName ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+    sh:property [ sh:path skos:exactMatch ; sh:nodeKind sh:IRI ] ;
+    sh:property [ sh:path dcterms:source ; sh:node aoash:CitationShape ] .
+
+aoash:PlaceNameShape a sh:NodeShape ;
+    sh:targetObjectsOf aoa:nameDuring ;
+    sh:class aoa:PlaceName ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+    sh:property [ sh:path aoa:period ; sh:in ( aoa:period-origins aoa:period-satya aoa:period-treta aoa:period-dvapara aoa:period-kali ) ] ;
+    sh:property [ sh:path aoa:when ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aoa:tier ; sh:maxCount 1 ; sh:in ( aoa:tier-core aoa:tier-layer aoa:tier-vulgate aoa:tier-purana aoa:tier-folk ) ] ;
+    sh:or ( [ sh:path aoa:period ; sh:minCount 1 ] [ sh:path aoa:when ; sh:minCount 1 ] ) .
+
+aoash:GeometryShape a sh:NodeShape ;
+    sh:property [ sh:path geo:asWKT ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype geo:wktLiteral ] ;
+    sh:property [ sh:path dcterms:source ; sh:node aoash:CitationShape ] .
+
+aoash:PolityShape a sh:NodeShape ;
+    sh:targetClass aoa:Polity ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+    sh:property [ sh:path skos:exactMatch ; sh:nodeKind sh:IRI ] ;
+    sh:property [ sh:path aoa:period ; sh:in ( aoa:period-origins aoa:period-satya aoa:period-treta aoa:period-dvapara aoa:period-kali ) ] ;
+    sh:property [ sh:path aoa:when ; sh:maxCount 1 ] ;
+    sh:property [ sh:path geo:hasGeometry ; sh:maxCount 1 ; sh:node aoash:GeometryShape ] ;
+    sh:or ( [ sh:path aoa:period ; sh:minCount 1 ] [ sh:path aoa:when ; sh:minCount 1 ] [ sh:path skos:exactMatch ; sh:minCount 1 ] ) ;
+    sh:sparql [
+        sh:message "A polity needs at least one place in its territory (aoa:locatedIn)" ;
+        sh:prefixes aoash: ;
+        sh:select """SELECT $this WHERE { FILTER NOT EXISTS { ?p aoa:locatedIn $this } }""" ] .
+
+aoash:DynastyShape a sh:NodeShape ;
+    sh:targetClass aoa:Dynasty ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] .
+
+aoash:MemberShape a sh:NodeShape ;
+    sh:targetSubjectsOf aoa:memberOf ;
+    sh:property [ sh:path aoa:memberOf ; sh:class aoa:Dynasty ] .
+
+aoash:AttestationShape a sh:NodeShape ;
+    sh:targetClass aoa:Attestation ;
+    sh:property [ sh:path aoa:who ; sh:minCount 1 ; sh:maxCount 1 ;
+        sh:or ( [ sh:class aoa:Entry ] [ sh:class aoa:Polity ] [ sh:class aoa:Dynasty ] ) ] ;
+    sh:property [ sh:path aoa:does ; sh:minCount 1 ; sh:maxCount 1 ;
+        sh:in ( aoa:at-born aoa:at-died aoa:at-ruled aoa:at-lived aoa:at-visited aoa:at-occurred aoa:at-founded aoa:at-capital aoa:at-composed ) ] ;
+    sh:property [ sh:path aoa:where ; sh:minCount 1 ; sh:maxCount 1 ; sh:or ( [ sh:class aoa:Place ] [ sh:class aoa:Polity ] ) ] ;
+    sh:property [ sh:path aoa:period ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aoa:when ; sh:maxCount 1 ] ;
+    sh:property [ sh:path aoa:tier ; sh:maxCount 1 ; sh:in ( aoa:tier-core aoa:tier-layer aoa:tier-vulgate aoa:tier-purana aoa:tier-folk ) ] ;
+    sh:property [ sh:path dcterms:source ; sh:node aoash:CitationShape ] .

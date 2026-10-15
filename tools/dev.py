@@ -9,7 +9,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-WATCH = ['graph', 'ontology', 'shapes', 'layout', 'web', 'tools/build.py']
+WATCH = ['graph', 'ontology', 'shapes', 'layout', 'web', 'basemap', 'tools/build.py', 'tools/layout.py']
 RELOAD = b"<script>new EventSource('/__reload').onmessage = () => location.reload();</script>"
 version = 0
 changed = threading.Condition()

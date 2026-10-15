@@ -1,0 +1,46 @@
+# Approximate years for history entries Wikidata gives none for; most are the dates their descriptions already state.
+# Vedic texts after Witzel, "The Development of the Vedic Canon" (1997); the Upanishads after Olivelle, "The Early Upanishads" (1998).
+
+@prefix : <https://w3id.org/atlas-of-ages#> .
+@prefix aoa: <https://w3id.org/atlas-of-ages#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:harappa aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-2599"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-1899"^^xsd:gYear ] ] .
+:sarasvati aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-1499"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-1199"^^xsd:gYear ] ] .
+:sudas aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-1399"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-1399"^^xsd:gYear ] ] .
+:pgw aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-1199"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0599"^^xsd:gYear ] ] .
+:aitareya aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0799"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0599"^^xsd:gYear ] ] .
+:shatapatha aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0799"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0599"^^xsd:gYear ] ] .
+:brihadaranyaka aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0699"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0599"^^xsd:gYear ] ] .
+:chandogya aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0699"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0599"^^xsd:gYear ] ] .
+:janakav aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0699"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0699"^^xsd:gYear ] ] .
+:janapadas aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0599"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0344"^^xsd:gYear ] ] .
+:h_buddha aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0499"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0400"^^xsd:gYear ] ] .
+:prasenajit aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0499"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0459"^^xsd:gYear ] ] .
+:udayana aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0499"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0459"^^xsd:gYear ] ] .
+:rahula aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0479"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0420"^^xsd:gYear ] ] .
+:ashvalayana aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0499"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0299"^^xsd:gYear ] ] .
+:ramcore aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0499"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0300"^^xsd:gYear ] ] .
+:mbhcore aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0399"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0300"^^xsd:gYear ] ] .
+:panini aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0399"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0300"^^xsd:gYear ] ] .
+:h_text aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0399"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "0400"^^xsd:gYear ] ] .
+:dhananda aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0328"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0320"^^xsd:gYear ] ] .
+:porus aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0325"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0316"^^xsd:gYear ] ] .
+:jatakas aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0299"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "0400"^^xsd:gYear ] ] .
+:sangam aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0299"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "0300"^^xsd:gYear ] ] .
+:patanjali aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0149"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0149"^^xsd:gYear ] ] .
+:heliodorus aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0109"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "-0109"^^xsd:gYear ] ] .
+:morawell aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "0001"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "0100"^^xsd:gYear ] ] .
+:balauttara aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "0001"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "0100"^^xsd:gYear ] ] .
+:udiyan aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "0001"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "0200"^^xsd:gYear ] ] .
+:harivamsat aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "0001"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "0300"^^xsd:gYear ] ] .
+:vimalasuri aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "0300"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "0500"^^xsd:gYear ] ] .
+:kalidasa aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "0350"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "0450"^^xsd:gYear ] ] .
+:udayagiri aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "0401"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "0401"^^xsd:gYear ] ] .
+:badami aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "0578"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "0578"^^xsd:gYear ] ] .
+:nannaya aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "1000"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "1100"^^xsd:gYear ] ] .
+:ramanuja aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "1017"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "1137"^^xsd:gYear ] ] .
+:afzal aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "1659"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "1659"^^xsd:gYear ] ] .
+:h_bori aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "1919"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "1919"^^xsd:gYear ] ] .
+:bori aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "1919"^^xsd:gYear ] ; time:hasEnd [ a time:Instant ; time:inXSDgYear "1966"^^xsd:gYear ] ] .

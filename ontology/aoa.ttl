@@ -1,0 +1,184 @@
+@prefix aoa: <https://w3id.org/atlas-of-ages#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+<https://w3id.org/atlas-of-ages> a owl:Ontology ;
+    rdfs:label "Atlas of Ages vocabulary"@en ;
+    dcterms:description "Figures, events and typed links of Indian sacred history, from creation through the four yugas to 1947."@en .
+
+aoa:key a owl:AnnotationProperty ;
+    rdfs:label "key"@en ;
+    rdfs:comment "Short identifier the web page uses for this term."@en .
+
+aoa:Entry a owl:Class ; rdfs:label "Entry"@en .
+aoa:Figure a owl:Class ; rdfs:subClassOf aoa:Entry ; rdfs:label "Figure"@en .
+aoa:Occurrence a owl:Class ; rdfs:subClassOf aoa:Entry ; rdfs:label "Occurrence"@en .
+
+aoa:Deva a owl:Class ; rdfs:subClassOf aoa:Figure ; rdfs:label "Deva"@en ; aoa:key "deva" .
+aoa:Avatar a owl:Class ; rdfs:subClassOf aoa:Figure ; rdfs:label "Avatar"@en ; aoa:key "avatar" .
+aoa:Sage a owl:Class ; rdfs:subClassOf aoa:Figure ; rdfs:label "Sage"@en ; aoa:key "sage" .
+aoa:Person a owl:Class ; rdfs:subClassOf aoa:Figure ; rdfs:label "Person"@en ; aoa:key "person" .
+aoa:Event a owl:Class ; rdfs:subClassOf aoa:Occurrence ; rdfs:label "Event"@en ; aoa:key "event" .
+aoa:Story a owl:Class ; rdfs:subClassOf aoa:Occurrence ; rdfs:label "Storyline step"@en ; aoa:key "story" .
+
+aoa:Chiranjivi a owl:Class ; rdfs:subClassOf aoa:SpansYugas ; rdfs:label "Chiranjivi"@en ;
+    rdfs:comment "One of the traditional immortals."@en .
+aoa:SpansYugas a owl:Class ; rdfs:subClassOf aoa:Figure ; rdfs:label "Lives across yugas"@en .
+aoa:Text a owl:Class ; rdfs:subClassOf aoa:Entry ; rdfs:label "Text"@en ;
+    rdfs:comment "An entry that is a text or a stage of one."@en .
+aoa:Catastrophe a owl:Class ; rdfs:subClassOf aoa:Entry ; rdfs:label "Catastrophe"@en ;
+    rdfs:comment "A world-ending or world-changing disaster."@en .
+
+aoa:Link a owl:Class ; rdfs:label "Link"@en ;
+    rdfs:comment "A relation instance that carries its own tier, wording or sources (W3C n-ary relation pattern)."@en .
+aoa:Citation a owl:Class ; rdfs:label "Citation"@en .
+
+aoa:from a owl:ObjectProperty ; rdfs:domain aoa:Link ; rdfs:range aoa:Entry ; rdfs:label "from"@en .
+aoa:to a owl:ObjectProperty ; rdfs:domain aoa:Link ; rdfs:range aoa:Entry ; rdfs:label "to"@en .
+aoa:relation a owl:ObjectProperty ; rdfs:domain aoa:Link ; rdfs:label "relation"@en .
+aoa:forwardLabel a owl:DatatypeProperty ; rdfs:range xsd:string ; rdfs:label "forward label"@en .
+aoa:reverseLabel a owl:DatatypeProperty ; rdfs:range xsd:string ; rdfs:label "reverse label"@en .
+
+aoa:period a owl:ObjectProperty ; rdfs:range skos:Concept ; rdfs:label "period"@en ;
+    rdfs:comment "The age an entry belongs to, an attestation happens in, or a polity exists in."@en .
+aoa:tier a owl:ObjectProperty ; rdfs:range skos:Concept ; rdfs:label "source tier"@en .
+aoa:being a owl:ObjectProperty ; rdfs:domain aoa:Figure ; rdfs:range skos:Concept ; rdfs:label "class of being"@en .
+aoa:role a owl:ObjectProperty ; rdfs:domain aoa:Figure ; rdfs:range skos:Concept ; rdfs:label "role"@en .
+
+aoa:Relation a owl:Class ; rdfs:subClassOf owl:ObjectProperty ; rdfs:label "Relation type"@en .
+
+aoa:parentOf a aoa:Relation ; rdfs:label "Lineage"@en ; aoa:key "line" ; aoa:forwardLabel "Parent of" ; aoa:reverseLabel "Child of" .
+aoa:ancestorOf a aoa:Relation ; rdfs:label "Many generations"@en ; aoa:key "gap" ; aoa:forwardLabel "Ancestor of" ; aoa:reverseLabel "Descendant of" .
+aoa:kinOf a aoa:Relation ; rdfs:label "Marriage & kin"@en ; aoa:key "bond" ; aoa:forwardLabel "Related to" ; aoa:reverseLabel "Related to" .
+aoa:rebornAs a aoa:Relation ; rdfs:label "Rebirth"@en ; aoa:key "reborn" ; aoa:forwardLabel "Reborn as" ; aoa:reverseLabel "Previous life" .
+aoa:linkedWith a aoa:Relation ; rdfs:label "Crossover"@en ; aoa:key "cross" ; aoa:forwardLabel "Linked with" ; aoa:reverseLabel "Linked with" .
+aoa:kills a aoa:Relation ; rdfs:label "Slayings"@en ; aoa:key "kill" ; aoa:forwardLabel "Kills" ; aoa:reverseLabel "Killed by" .
+aoa:divineOriginOf a aoa:Relation ; rdfs:label "Divine origin"@en ; aoa:key "deva" ; aoa:forwardLabel "Divine father of" ; aoa:reverseLabel "Son of" .
+aoa:tells a aoa:Relation ; rdfs:label "Narration"@en ; aoa:key "tell" ; aoa:forwardLabel "Tells" ; aoa:reverseLabel "Hears" .
+aoa:succeededBy a aoa:Relation ; rdfs:label "Rule & succession"@en ; aoa:key "reign" ; aoa:forwardLabel "Succeeded by" ; aoa:reverseLabel "Succeeds" .
+aoa:leadsTo a aoa:Relation ; rdfs:label "Storyline"@en ; aoa:key "story" ; aoa:forwardLabel "Leads to" ; aoa:reverseLabel "Follows" .
+aoa:meets a aoa:Relation ; rdfs:label "Storylines meet"@en ; aoa:key "meet" ; aoa:forwardLabel "Meets" ; aoa:reverseLabel "Meets" .
+aoa:involves a aoa:Relation ; rdfs:label "Takes part"@en ; aoa:key "part" ; aoa:forwardLabel "Involves" ; aoa:reverseLabel "Takes part in" .
+
+aoa:Periods a skos:ConceptScheme ; rdfs:label "Periods"@en .
+aoa:period-origins a skos:Concept ; skos:inScheme aoa:Periods ; skos:prefLabel "Origins"@en ; aoa:key "origins" .
+aoa:period-satya a skos:Concept ; skos:inScheme aoa:Periods ; skos:prefLabel "Satya Yuga"@en ; aoa:key "satya" .
+aoa:period-treta a skos:Concept ; skos:inScheme aoa:Periods ; skos:prefLabel "Treta Yuga"@en ; aoa:key "treta" .
+aoa:period-dvapara a skos:Concept ; skos:inScheme aoa:Periods ; skos:prefLabel "Dvapara Yuga"@en ; aoa:key "dvapara" .
+aoa:period-kali a skos:Concept ; skos:inScheme aoa:Periods ; skos:prefLabel "Kali Yuga"@en ; aoa:key "kali" .
+aoa:period-deva a skos:Concept ; skos:inScheme aoa:Periods ; skos:prefLabel "The gods, outside the yugas"@en ; aoa:key "deva" .
+aoa:period-history a skos:Concept ; skos:inScheme aoa:Periods ; skos:prefLabel "History"@en ; aoa:key "history" .
+
+aoa:Tiers a skos:ConceptScheme ; rdfs:label "Source tiers, most to least canonical"@en .
+aoa:tier-core a skos:Concept ; skos:inScheme aoa:Tiers ; aoa:key "core" ;
+    skos:prefLabel "Critical text"@en ; skos:definition "Main narrative of the critical editions (Pune Mahabharata, Baroda Valmiki Ramayana)."@en .
+aoa:tier-layer a skos:Concept ; skos:inScheme aoa:Tiers ; aoa:key "layer" ;
+    skos:prefLabel "Critical text, later layer"@en ; skos:definition "Inside the critical texts but a later layer: Bala and Uttara Kandas, the Harivamsa appendix, the Shanti and Anushasana parvas."@en .
+aoa:tier-vulgate a skos:Concept ; skos:inScheme aoa:Tiers ; aoa:key "vulgate" ;
+    skos:prefLabel "Popular versions only"@en ; skos:definition "In popular recensions but cut from the critical edition."@en .
+aoa:tier-purana a skos:Concept ; skos:inScheme aoa:Tiers ; aoa:key "purana" ;
+    skos:prefLabel "Purana or later work"@en ; skos:definition "Puranas and later Sanskrit works."@en .
+aoa:tier-folk a skos:Concept ; skos:inScheme aoa:Tiers ; aoa:key "folk" ;
+    skos:prefLabel "Folk or other tradition"@en ; skos:definition "Folk, Jain or sectarian tradition."@en .
+
+aoa:Beings a skos:ConceptScheme ; rdfs:label "Classes of being"@en .
+aoa:being-god a skos:Concept ; skos:inScheme aoa:Beings ; skos:prefLabel "Devas and avatars"@en ; aoa:key "god" .
+aoa:being-asura a skos:Concept ; skos:inScheme aoa:Beings ; skos:prefLabel "Asuras"@en ; aoa:key "asura" .
+aoa:being-rakshasa a skos:Concept ; skos:inScheme aoa:Beings ; skos:prefLabel "Rakshasas"@en ; aoa:key "rakshasa" .
+aoa:being-naga a skos:Concept ; skos:inScheme aoa:Beings ; skos:prefLabel "Nagas"@en ; aoa:key "naga" .
+aoa:being-yaksha a skos:Concept ; skos:inScheme aoa:Beings ; skos:prefLabel "Yakshas"@en ; aoa:key "yaksha" .
+aoa:being-gandharva a skos:Concept ; skos:inScheme aoa:Beings ; skos:prefLabel "Gandharvas"@en ; aoa:key "gandharva" .
+aoa:being-apsara a skos:Concept ; skos:inScheme aoa:Beings ; skos:prefLabel "Apsaras"@en ; aoa:key "apsara" .
+aoa:being-vanara a skos:Concept ; skos:inScheme aoa:Beings ; skos:prefLabel "Vanaras"@en ; aoa:key "vanara" .
+aoa:being-riksha a skos:Concept ; skos:inScheme aoa:Beings ; skos:prefLabel "Rikshas (bears)"@en ; aoa:key "riksha" .
+aoa:being-beast a skos:Concept ; skos:inScheme aoa:Beings ; skos:prefLabel "Divine birds and beasts"@en ; aoa:key "beast" .
+aoa:being-sage a skos:Concept ; skos:inScheme aoa:Beings ; skos:prefLabel "Rishis and sages"@en ; aoa:key "sage" .
+aoa:being-human a skos:Concept ; skos:inScheme aoa:Beings ; skos:prefLabel "Humans"@en ; aoa:key "human" .
+
+aoa:Roles a skos:ConceptScheme ; rdfs:label "Roles"@en .
+aoa:role-king a skos:Concept ; skos:inScheme aoa:Roles ; skos:prefLabel "Kings"@en ; aoa:key "king" .
+aoa:role-woman a skos:Concept ; skos:inScheme aoa:Roles ; skos:prefLabel "Women and goddesses"@en ; aoa:key "women" .
+
+# Places, polities and time (GeoSPARQL 1.1, W3C OWL-Time).
+
+aoa:Place a owl:Class ; rdfs:subClassOf geo:Feature ; rdfs:label "Place"@en .
+aoa:Polity a owl:Class ; rdfs:subClassOf geo:Feature ; rdfs:label "Polity"@en ;
+    rdfs:comment "A kingdom, janapada, republic or empire."@en .
+aoa:Dynasty a owl:Class ; rdfs:label "Dynasty"@en .
+aoa:Attestation a owl:Class ; rdfs:label "Attestation"@en ;
+    rdfs:comment "Someone or something at a place, in a period or a span of years, on a source tier (W3C n-ary relation pattern)."@en .
+
+aoa:placeKind a owl:ObjectProperty ; rdfs:domain aoa:Place ; rdfs:range skos:Concept ; rdfs:label "kind of place"@en .
+aoa:identification a owl:ObjectProperty ; rdfs:domain geo:Feature ; rdfs:range skos:Concept ; rdfs:label "identification"@en ;
+    rdfs:comment "How firmly the named place is identified with the location given."@en .
+aoa:locatedIn a owl:ObjectProperty ; rdfs:domain aoa:Place ; rdfs:range aoa:Polity ; rdfs:label "located in"@en ;
+    rdfs:comment "The place lies in the polity's territory; a place can belong to several polities over time."@en .
+aoa:era a owl:ObjectProperty ; rdfs:range skos:Concept ; rdfs:label "era"@en ;
+    rdfs:comment "For entries before the present cycle of ages: the Manu's era (manvantara) tradition places them in."@en .
+aoa:yearsAgoFrom a owl:DatatypeProperty ; rdfs:range xsd:decimal ; rdfs:label "from, years ago"@en .
+aoa:yearsAgoTo a owl:DatatypeProperty ; rdfs:range xsd:decimal ; rdfs:label "to, years ago"@en .
+
+# Traditional reckoning (Vishnu Purana I.3; Surya Siddhanta I): a kalpa is 1,000 cycles of the four ages
+# (4.32 billion years), a manvantara 71 cycles (306.72 million years). This kalpa began about 1.956 billion years
+# ago; the present, Vaivasvata Manu's era, is in its 28th cycle.
+aoa:Eras a skos:ConceptScheme ; rdfs:label "Eras before the present cycle"@en .
+aoa:era-creation a skos:Concept ; skos:inScheme aoa:Eras ; aoa:key "creation" ; skos:prefLabel "Creation of this kalpa"@en ;
+    aoa:yearsAgoFrom 1955885000 ; aoa:yearsAgoTo 1950000000 .
+aoa:era-svayambhuva a skos:Concept ; skos:inScheme aoa:Eras ; aoa:key "svayambhuva" ; skos:prefLabel "Svayambhuva Manu's era"@en ;
+    aoa:yearsAgoFrom 1950000000 ; aoa:yearsAgoTo 1649000000 .
+aoa:era-later-manus a skos:Concept ; skos:inScheme aoa:Eras ; aoa:key "later-manus" ; skos:prefLabel "The second to sixth Manus"@en ;
+    aoa:yearsAgoFrom 1649000000 ; aoa:yearsAgoTo 120530000 .
+aoa:era-flood a skos:Concept ; skos:inScheme aoa:Eras ; aoa:key "flood" ; skos:prefLabel "The flood, opening Vaivasvata Manu's era"@en ;
+    aoa:yearsAgoFrom 120530000 ; aoa:yearsAgoTo 120000000 .
+aoa:era-vaivasvata a skos:Concept ; skos:inScheme aoa:Eras ; aoa:key "vaivasvata" ; skos:prefLabel "Vaivasvata Manu's era, before this cycle"@en ;
+    aoa:yearsAgoFrom 120000000 ; aoa:yearsAgoTo 3893000 .
+
+aoa:PlaceName a owl:Class ; rdfs:label "Place name"@en ;
+    rdfs:comment "A name a place bore in an age or span of years; its rdfs:label is the name."@en .
+aoa:nameDuring a owl:ObjectProperty ; rdfs:domain aoa:Place ; rdfs:range aoa:PlaceName ; rdfs:label "name during"@en .
+
+aoa:modernName a owl:DatatypeProperty ; rdfs:domain aoa:Place ; rdfs:range xsd:string ; rdfs:label "modern name"@en ;
+    rdfs:comment "Today's name of the place the location comes from, taken from its Wikidata item."@en .
+aoa:memberOf a owl:ObjectProperty ; rdfs:domain aoa:Figure ; rdfs:range aoa:Dynasty ; rdfs:label "member of"@en .
+aoa:who a owl:ObjectProperty ; rdfs:domain aoa:Attestation ; rdfs:label "who or what"@en .
+aoa:does a owl:ObjectProperty ; rdfs:domain aoa:Attestation ; rdfs:range skos:Concept ; rdfs:label "does"@en .
+aoa:where a owl:ObjectProperty ; rdfs:domain aoa:Attestation ; rdfs:range geo:Feature ; rdfs:label "where"@en .
+aoa:when a owl:ObjectProperty ; rdfs:range time:Interval ; rdfs:label "when"@en ;
+    rdfs:comment "Span of years, on an entry (its life, reign or duration) or on an attestation."@en .
+aoa:circa a owl:DatatypeProperty ; rdfs:domain time:Interval ; rdfs:range xsd:boolean ; rdfs:label "circa"@en .
+
+aoa:PlaceKinds a skos:ConceptScheme ; rdfs:label "Kinds of place"@en .
+aoa:place-city a skos:Concept ; skos:inScheme aoa:PlaceKinds ; skos:prefLabel "City or town"@en ; aoa:key "city" .
+aoa:place-site a skos:Concept ; skos:inScheme aoa:PlaceKinds ; skos:prefLabel "Sacred or archaeological site"@en ; aoa:key "site" .
+aoa:place-river a skos:Concept ; skos:inScheme aoa:PlaceKinds ; skos:prefLabel "River"@en ; aoa:key "river" .
+aoa:place-mountain a skos:Concept ; skos:inScheme aoa:PlaceKinds ; skos:prefLabel "Mountain"@en ; aoa:key "mountain" .
+aoa:place-forest a skos:Concept ; skos:inScheme aoa:PlaceKinds ; skos:prefLabel "Forest"@en ; aoa:key "forest" .
+aoa:place-lake a skos:Concept ; skos:inScheme aoa:PlaceKinds ; skos:prefLabel "Lake"@en ; aoa:key "lake" .
+aoa:place-region a skos:Concept ; skos:inScheme aoa:PlaceKinds ; skos:prefLabel "Region"@en ; aoa:key "region" .
+aoa:place-realm a skos:Concept ; skos:inScheme aoa:PlaceKinds ; skos:prefLabel "Realm beyond the earth"@en ; aoa:key "realm" ;
+    skos:definition "A heaven or underworld of the texts; it has no coordinates."@en .
+
+aoa:Identifications a skos:ConceptScheme ; rdfs:label "Identifications"@en .
+aoa:id-established a skos:Concept ; skos:inScheme aoa:Identifications ; aoa:key "established" ;
+    skos:prefLabel "Established"@en ; skos:definition "Continuously inhabited or excavated and accepted by historians."@en .
+aoa:id-traditional a skos:Concept ; skos:inScheme aoa:Identifications ; aoa:key "traditional" ;
+    skos:prefLabel "Traditional"@en ; skos:definition "Identified by later tradition with a present-day place; not established by evidence."@en .
+aoa:id-uncertain a skos:Concept ; skos:inScheme aoa:Identifications ; aoa:key "uncertain" ;
+    skos:prefLabel "Uncertain"@en ; skos:definition "Several competing identifications; the location shown is one of them."@en .
+
+aoa:PlaceRelations a skos:ConceptScheme ; rdfs:label "Relations to a place"@en .
+aoa:at-born a skos:Concept ; skos:inScheme aoa:PlaceRelations ; skos:prefLabel "Born at"@en ; aoa:key "born" .
+aoa:at-died a skos:Concept ; skos:inScheme aoa:PlaceRelations ; skos:prefLabel "Died at"@en ; aoa:key "died" .
+aoa:at-ruled a skos:Concept ; skos:inScheme aoa:PlaceRelations ; skos:prefLabel "Ruled from"@en ; aoa:key "ruled" .
+aoa:at-lived a skos:Concept ; skos:inScheme aoa:PlaceRelations ; skos:prefLabel "Lived at"@en ; aoa:key "lived" .
+aoa:at-visited a skos:Concept ; skos:inScheme aoa:PlaceRelations ; skos:prefLabel "Went to"@en ; aoa:key "visited" .
+aoa:at-occurred a skos:Concept ; skos:inScheme aoa:PlaceRelations ; skos:prefLabel "Took place at"@en ; aoa:key "occurred" .
+aoa:at-founded a skos:Concept ; skos:inScheme aoa:PlaceRelations ; skos:prefLabel "Founded"@en ; aoa:key "founded" .
+aoa:at-capital a skos:Concept ; skos:inScheme aoa:PlaceRelations ; skos:prefLabel "Had its capital at"@en ; aoa:key "capital" .
+aoa:at-composed a skos:Concept ; skos:inScheme aoa:PlaceRelations ; skos:prefLabel "Composed in"@en ; aoa:key "composed" .

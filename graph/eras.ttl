@@ -1,0 +1,65 @@
+# The era each Origins entry belongs to, by Puranic tradition (Vishnu Purana I.7-15; Bhagavata III-IV, VIII).
+# Daksha's daughters wed Kashyapa when Daksha is reborn in Chakshusha's era, so Kashyapa's line belongs to Vaivasvata's.
+
+@prefix : <https://w3id.org/atlas-of-ages#> .
+@prefix aoa: <https://w3id.org/atlas-of-ages#> .
+
+:creation aoa:era aoa:era-creation .
+:cosmictime aoa:era aoa:era-creation .
+:hiranyagarbha aoa:era aoa:era-creation .
+:purusha aoa:era aoa:era-creation .
+:vedas aoa:era aoa:era-creation .
+:manus aoa:era aoa:era-creation .
+:dissolution aoa:era aoa:era-creation .
+:angiras aoa:era aoa:era-creation .
+:bhrigu aoa:era aoa:era-creation .
+:marichi aoa:era aoa:era-creation .
+:pulastya aoa:era aoa:era-creation .
+:pulaha aoa:era aoa:era-creation .
+:kratu aoa:era aoa:era-creation .
+:sanaka aoa:era aoa:era-creation .
+
+:svayambhuva aoa:era aoa:era-svayambhuva .
+:devahuti aoa:era aoa:era-svayambhuva .
+:priyavrata aoa:era aoa:era-svayambhuva .
+:uttanapada aoa:era aoa:era-svayambhuva .
+:dhruva aoa:era aoa:era-svayambhuva .
+:vena aoa:era aoa:era-svayambhuva .
+:prithu aoa:era aoa:era-svayambhuva .
+:rishabha aoa:era aoa:era-svayambhuva .
+:bharatajain aoa:era aoa:era-svayambhuva .
+:daksha aoa:era aoa:era-svayambhuva .
+:prasuti aoa:era aoa:era-svayambhuva .
+:sati aoa:era aoa:era-svayambhuva .
+:dakshayajna aoa:era aoa:era-svayambhuva .
+
+:nakshatras aoa:era aoa:era-later-manus .
+
+:pralaya aoa:era aoa:era-flood .
+:matsya aoa:era aoa:era-flood .
+:hayagriva aoa:era aoa:era-flood .
+:markandeya aoa:era aoa:era-flood .
+
+:kashyapa aoa:era aoa:era-vaivasvata .
+:aditi aoa:era aoa:era-vaivasvata .
+:diti aoa:era aoa:era-vaivasvata .
+:danu aoa:era aoa:era-vaivasvata .
+:maruts aoa:era aoa:era-vaivasvata .
+:rahu aoa:era aoa:era-vaivasvata .
+:brihaspati aoa:era aoa:era-vaivasvata .
+:chyavana aoa:era aoa:era-vaivasvata .
+:vishrava aoa:era aoa:era-vaivasvata .
+:saptarishis aoa:era aoa:era-vaivasvata .
+:dashavatara aoa:era aoa:era-vaivasvata .
+:halahala aoa:era aoa:era-vaivasvata .
+:kamadhenu aoa:era aoa:era-vaivasvata .
+:airavata aoa:era aoa:era-vaivasvata .
+:uchchaihshravas aoa:era aoa:era-vaivasvata .
+:parijata aoa:era aoa:era-vaivasvata .
+:vritra aoa:era aoa:era-vaivasvata .
+:vishvarupa aoa:era aoa:era-vaivasvata .
+:dadhichi aoa:era aoa:era-vaivasvata .
+:taraka aoa:era aoa:era-vaivasvata .
+:tripura aoa:era aoa:era-vaivasvata .
+:kamadahana aoa:era aoa:era-vaivasvata .
+:himavan aoa:era aoa:era-vaivasvata .

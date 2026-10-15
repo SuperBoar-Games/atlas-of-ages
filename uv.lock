@@ -7,6 +7,28 @@ resolution-markers = [
 ]
 
 [[package]]
+name = "atlas-of-ages"
+source = { editable = "." }
+dependencies = [
+    { name = "pyshacl" },
+    { name = "rdflib" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "playwright" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "pyshacl", specifier = ">=0.30" },
+    { name = "rdflib", specifier = ">=7.1" },
+]
+
+[package.metadata.requires-dev]
+dev = [{ name = "playwright", specifier = ">=1.64.0" }]
+
+[[package]]
 name = "greenlet"
 version = "3.5.6"
 source = { registry = "https://pypi.org/simple" }
@@ -273,29 +295,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/0c/48/1a308a86a833fd12ff7a08d0d2491ff4a72c8a92d12f5ead8317630f771e/wcwidth-0.9.2-cp315-cp315t-win_arm64.whl", hash = "sha256:48719a9bc76c2f84238693fe5013571fa5beffa3621cf228f1f3a9e30dae84b8", size = 605885, upload-time = "2026-10-05T00:23:54.274Z" },
     { url = "https://files.pythonhosted.org/packages/9c/b4/0bfa065af506540d9d558e3e5548cff00bc1f9b24e6e2a8512498e8628de/wcwidth-0.9.2-py3-none-any.whl", hash = "sha256:89ca642c5bf0101157a09366be69fad0379db1f700ae39a920e103234573670e", size = 301667, upload-time = "2026-10-05T00:23:21.097Z" },
 ]
-
-[[package]]
-name = "yugachakra"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "pyshacl" },
-    { name = "rdflib" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "playwright" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "pyshacl", specifier = ">=0.30" },
-    { name = "rdflib", specifier = ">=7.1" },
-]
-
-[package.metadata.requires-dev]
-dev = [{ name = "playwright", specifier = ">=1.64.0" }]
 
 [[package]]
 name = "zipp"

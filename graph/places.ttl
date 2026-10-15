@@ -1,0 +1,246 @@
+# Places, and who or what is attested at them. Coordinates come from tools/wikidata.py fetch (graph/wikidata.ttl).
+# Epic places carry the modern site tradition identifies them with as skos:closeMatch.
+
+@prefix : <https://w3id.org/atlas-of-ages#> .
+@prefix aoa: <https://w3id.org/atlas-of-ages#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+
+:p_ayodhya a aoa:Place ; rdfs:label "Ayodhya" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q186040 .
+:p_mithila a aoa:Place ; rdfs:label "Mithila" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q378649 .
+:p_chitrakuta a aoa:Place ; rdfs:label "Chitrakuta" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q2341590 .
+:p_panchavati a aoa:Place ; rdfs:label "Panchavati" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q200235 .
+:p_kishkindha a aoa:Place ; rdfs:label "Kishkindha" ; aoa:placeKind aoa:place-region ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q26732 .
+:p_pampa a aoa:Place ; rdfs:label "Lake Pampa" ; aoa:placeKind aoa:place-lake ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q2763469 .
+:p_lanka a aoa:Place ; rdfs:label "Lanka" ; aoa:placeKind aoa:place-region ; aoa:identification aoa:id-uncertain ; skos:closeMatch wd:Q854 .
+:p_setu a aoa:Place ; rdfs:label "Setu, the bridge to Lanka" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q1435144 .
+:p_prayaga a aoa:Place ; rdfs:label "Prayaga" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q162442 .
+:p_badari a aoa:Place ; rdfs:label "Badari" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q588804 .
+:p_kailasa a aoa:Place ; rdfs:label "Mount Kailasa" ; aoa:placeKind aoa:place-mountain ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q229107 .
+:p_himalaya a aoa:Place ; rdfs:label "Himalaya" ; aoa:placeKind aoa:place-mountain ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q5451 .
+:p_vindhya a aoa:Place ; rdfs:label "Vindhya" ; aoa:placeKind aoa:place-mountain ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q271435 .
+:p_ganga a aoa:Place ; rdfs:label "Ganga" ; aoa:placeKind aoa:place-river ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q5089 .
+:p_yamuna a aoa:Place ; rdfs:label "Yamuna" ; aoa:placeKind aoa:place-river ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q132726 .
+:p_sarayu a aoa:Place ; rdfs:label "Sarayu" ; aoa:placeKind aoa:place-river ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q3241461 .
+:p_godavari a aoa:Place ; rdfs:label "Godavari" ; aoa:placeKind aoa:place-river ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q191314 .
+:p_narmada a aoa:Place ; rdfs:label "Narmada" ; aoa:placeKind aoa:place-river ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q234004 .
+:p_sarasvati a aoa:Place ; rdfs:label "Sarasvati" ; aoa:placeKind aoa:place-river ; aoa:identification aoa:id-uncertain ; skos:closeMatch wd:Q177321 .
+
+:p_hastinapura a aoa:Place ; rdfs:label "Hastinapura" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q459714 .
+:p_indraprastha a aoa:Place ; rdfs:label "Indraprastha" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q1975540 .
+:p_kurukshetra a aoa:Place ; rdfs:label "Kurukshetra" ; aoa:placeKind aoa:place-region ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q593256 .
+:p_mathura a aoa:Place ; rdfs:label "Mathura" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q200311 .
+:p_vrindavan a aoa:Place ; rdfs:label "Vrindavana" ; aoa:placeKind aoa:place-forest ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q688281 .
+:p_gokula a aoa:Place ; rdfs:label "Gokula" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q12424362 .
+:p_govardhana a aoa:Place ; rdfs:label "Govardhana" ; aoa:placeKind aoa:place-mountain ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q1027764 .
+:p_dvaraka a aoa:Place ; rdfs:label "Dvaraka" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q817247 .
+:p_prabhasa a aoa:Place ; rdfs:label "Prabhasa" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q7237228 .
+:p_kampilya a aoa:Place ; rdfs:label "Kampilya" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q2544221 .
+:p_ahichchhatra a aoa:Place ; rdfs:label "Ahichchhatra" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q2827417 .
+:p_viratanagara a aoa:Place ; rdfs:label "Viratanagara" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q2544533 .
+:p_kashi a aoa:Place ; rdfs:label "Kashi" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q79980 .
+:p_ujjayini a aoa:Place ; rdfs:label "Ujjayini" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q200119 .
+:p_kundina a aoa:Place ; rdfs:label "Kundina" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q28173301 .
+:p_girivraja a aoa:Place ; rdfs:label "Girivraja" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q863683 .
+:p_champa a aoa:Place ; rdfs:label "Champa" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q5069932 .
+:p_pragjyotisha a aoa:Place ; rdfs:label "Pragjyotisha" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q199605 .
+
+:p_harappa a aoa:Place ; rdfs:label "Harappa" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q185562 .
+:p_mohenjodaro a aoa:Place ; rdfs:label "Mohenjo-daro" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q5725 .
+:p_pataliputra a aoa:Place ; rdfs:label "Pataliputra" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q389755 ; skos:closeMatch wd:Q80484 .
+:p_kapilavastu a aoa:Place ; rdfs:label "Kapilavastu" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-uncertain ; skos:closeMatch wd:Q30610827 .
+:p_lumbini a aoa:Place ; rdfs:label "Lumbini" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q9213 .
+:p_bodhgaya a aoa:Place ; rdfs:label "Bodh Gaya" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q176767 .
+:p_sarnath a aoa:Place ; rdfs:label "Sarnath" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q324394 .
+:p_kushinagar a aoa:Place ; rdfs:label "Kushinagara" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q825673 .
+:p_taxila a aoa:Place ; rdfs:label "Takshashila" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q156093 .
+:p_sanchi a aoa:Place ; rdfs:label "Sanchi" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q181123 .
+:p_vidisha a aoa:Place ; rdfs:label "Vidisha" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q1637471 .
+:p_udayagiri a aoa:Place ; rdfs:label "Udayagiri caves" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q4250472 .
+:p_deogarh a aoa:Place ; rdfs:label "Deogarh" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q1171865 .
+:p_ajanta a aoa:Place ; rdfs:label "Ajanta" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q184427 .
+:p_badami a aoa:Place ; rdfs:label "Badami" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q825236 .
+:p_vijayanagara a aoa:Place ; rdfs:label "Vijayanagara" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q26732 .
+:p_panipat a aoa:Place ; rdfs:label "Panipat" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q139706 .
+:p_plassey a aoa:Place ; rdfs:label "Plassey" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q3346548 .
+:p_tarain a aoa:Place ; rdfs:label "Tarain" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q944133 .
+:p_delhi a aoa:Place ; rdfs:label "Delhi" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q1353 .
+:p_raigad a aoa:Place ; rdfs:label "Raigad" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q3626515 .
+:p_jhansi a aoa:Place ; rdfs:label "Jhansi" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q242995 .
+:p_pune a aoa:Place ; rdfs:label "Pune" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q1538 .
+:p_kolkata a aoa:Place ; rdfs:label "Kolkata" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q1348 .
+
+:p_kankhal a aoa:Place ; rdfs:label "Kanakhala" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q6363729 .
+:p_multan a aoa:Place ; rdfs:label "Mulasthana" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-uncertain ; skos:closeMatch wd:Q185453 .
+:p_ahobilam a aoa:Place ; rdfs:label "Ahobila" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q2267486 .
+:p_mandara a aoa:Place ; rdfs:label "Mount Mandara" ; aoa:placeKind aoa:place-mountain ; aoa:identification aoa:id-uncertain ; skos:closeMatch wd:Q6747828 .
+:p_prithudaka a aoa:Place ; rdfs:label "Prithudaka" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q2451134 .
+:p_gangotri a aoa:Place ; rdfs:label "Gangotri" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q818612 .
+:p_shravasti a aoa:Place ; rdfs:label "Shravasti" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-established ; skos:exactMatch wd:Q2594448 .
+:p_brahmavarta a aoa:Place ; rdfs:label "Brahmavarta" ; aoa:placeKind aoa:place-region ; aoa:identification aoa:id-uncertain ; skos:closeMatch wd:Q861837 .
+:p_bindusaras a aoa:Place ; rdfs:label "Bindu Sarovara" ; aoa:placeKind aoa:place-lake ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q2572203 .
+:p_madhuvana a aoa:Place ; rdfs:label "Madhuvana" ; aoa:placeKind aoa:place-forest ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q200311 .
+:p_kashmira a aoa:Place ; rdfs:label "Kashmira" ; aoa:placeKind aoa:place-region ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q2361576 .
+:p_naimisha a aoa:Place ; rdfs:label "Naimisharanya" ; aoa:placeKind aoa:place-forest ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q2544307 .
+:p_shambhala a aoa:Place ; rdfs:label "Shambhala" ; aoa:placeKind aoa:place-city ; aoa:identification aoa:id-uncertain ; skos:closeMatch wd:Q247248 .
+:p_saptasindhu a aoa:Place ; rdfs:label "Sapta Sindhu" ; aoa:placeKind aoa:place-region ; aoa:identification aoa:id-established ; skos:closeMatch wd:Q169132 .
+:p_misrikh a aoa:Place ; rdfs:label "Mishrikh" ; aoa:placeKind aoa:place-site ; aoa:identification aoa:id-traditional ; skos:closeMatch wd:Q2544307 .
+
+:p_vaikuntha a aoa:Place ; rdfs:label "Vaikuntha" ; aoa:placeKind aoa:place-realm ; aoa:identification aoa:id-traditional .
+:p_svarga a aoa:Place ; rdfs:label "Svarga" ; aoa:placeKind aoa:place-realm ; aoa:identification aoa:id-traditional .
+:p_brahmaloka a aoa:Place ; rdfs:label "Brahmaloka" ; aoa:placeKind aoa:place-realm ; aoa:identification aoa:id-traditional .
+:p_yamaloka a aoa:Place ; rdfs:label "Yama's realm" ; aoa:placeKind aoa:place-realm ; aoa:identification aoa:id-traditional .
+:p_patala a aoa:Place ; rdfs:label "Patala" ; aoa:placeKind aoa:place-realm ; aoa:identification aoa:id-traditional .
+
+[] a aoa:Attestation ; aoa:who :vishnu ; aoa:does aoa:at-lived ; aoa:where :p_vaikuntha ; aoa:tier aoa:tier-purana ;
+    dcterms:source [ a aoa:Citation ; rdfs:label "Bhagavata 3.15" ; schema:url <https://vedabase.io/en/library/sb/3/15/> ] .
+[] a aoa:Attestation ; aoa:who :lakshmi ; aoa:does aoa:at-lived ; aoa:where :p_vaikuntha ; aoa:tier aoa:tier-purana ;
+    dcterms:source [ a aoa:Citation ; rdfs:label "Bhagavata 3.15" ; schema:url <https://vedabase.io/en/library/sb/3/15/> ] .
+[] a aoa:Attestation ; aoa:who :indra ; aoa:does aoa:at-ruled ; aoa:where :p_svarga ;
+    dcterms:source [ a aoa:Citation ; rdfs:label "MBh 2.7; 3.43" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-xliii> ] .
+[] a aoa:Attestation ; aoa:who :brahma ; aoa:does aoa:at-lived ; aoa:where :p_brahmaloka ;
+    dcterms:source [ a aoa:Citation ; rdfs:label "MBh 2.11" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-2-sabha-parva/section-xi> ] .
+[] a aoa:Attestation ; aoa:who :yama ; aoa:does aoa:at-ruled ; aoa:where :p_yamaloka ;
+    dcterms:source [ a aoa:Citation ; rdfs:label "MBh 2.8" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-2-sabha-parva/section-viii> ] .
+[] a aoa:Attestation ; aoa:who :shesha ; aoa:does aoa:at-lived ; aoa:where :p_patala ; aoa:tier aoa:tier-purana ;
+    dcterms:source [ a aoa:Citation ; rdfs:label "Bhagavata 5.25" ; schema:url <https://vedabase.io/en/library/sb/5/25/> ] .
+[] a aoa:Attestation ; aoa:who :svayambhuva ; aoa:does aoa:at-ruled ; aoa:where :p_brahmavarta ; aoa:tier aoa:tier-purana .
+[] a aoa:Attestation ; aoa:who :devahuti ; aoa:does aoa:at-lived ; aoa:where :p_bindusaras ; aoa:tier aoa:tier-purana .
+[] a aoa:Attestation ; aoa:who :dhruva ; aoa:does aoa:at-visited ; aoa:where :p_madhuvana ; aoa:tier aoa:tier-purana .
+[] a aoa:Attestation ; aoa:who :pralaya ; aoa:does aoa:at-occurred ; aoa:where :p_himalaya .
+[] a aoa:Attestation ; aoa:who :matsya ; aoa:does aoa:at-visited ; aoa:where :p_himalaya .
+[] a aoa:Attestation ; aoa:who :kashyapa ; aoa:does aoa:at-lived ; aoa:where :p_kashmira ; aoa:tier aoa:tier-purana .
+[] a aoa:Attestation ; aoa:who :dadhichi ; aoa:does aoa:at-lived ; aoa:where :p_misrikh ; aoa:tier aoa:tier-folk .
+[] a aoa:Attestation ; aoa:who :himavan ; aoa:does aoa:at-lived ; aoa:where :p_himalaya .
+[] a aoa:Attestation ; aoa:who :dvarakasinks ; aoa:does aoa:at-occurred ; aoa:where :p_dvaraka .
+[] a aoa:Attestation ; aoa:who :e_final ; aoa:does aoa:at-occurred ; aoa:where :p_himalaya .
+[] a aoa:Attestation ; aoa:who :jara ; aoa:does aoa:at-visited ; aoa:where :p_prabhasa .
+[] a aoa:Attestation ; aoa:who :janamejaya ; aoa:does aoa:at-ruled ; aoa:where :p_hastinapura .
+[] a aoa:Attestation ; aoa:who :sauti ; aoa:does aoa:at-visited ; aoa:where :p_naimisha .
+[] a aoa:Attestation ; aoa:who :kalki ; aoa:does aoa:at-born ; aoa:where :p_shambhala ; aoa:tier aoa:tier-purana .
+[] a aoa:Attestation ; aoa:who :daksha ; aoa:does aoa:at-lived ; aoa:where :p_kankhal ; aoa:tier aoa:tier-purana .
+[] a aoa:Attestation ; aoa:who :dakshayajna ; aoa:does aoa:at-occurred ; aoa:where :p_kankhal ; aoa:tier aoa:tier-purana .
+[] a aoa:Attestation ; aoa:who :sati ; aoa:does aoa:at-died ; aoa:where :p_kankhal ; aoa:tier aoa:tier-purana .
+[] a aoa:Attestation ; aoa:who :prithu ; aoa:does aoa:at-visited ; aoa:where :p_prithudaka ; aoa:tier aoa:tier-purana .
+[] a aoa:Attestation ; aoa:who :manu ; aoa:does aoa:at-founded ; aoa:where :p_ayodhya ; aoa:tier aoa:tier-layer .
+[] a aoa:Attestation ; aoa:who :ikshvaku ; aoa:does aoa:at-ruled ; aoa:where :p_ayodhya ; aoa:tier aoa:tier-layer .
+[] a aoa:Attestation ; aoa:who :hiranyakashipu ; aoa:does aoa:at-ruled ; aoa:where :p_multan ; aoa:tier aoa:tier-folk .
+[] a aoa:Attestation ; aoa:who :prahlada ; aoa:does aoa:at-lived ; aoa:where :p_multan ; aoa:tier aoa:tier-folk .
+[] a aoa:Attestation ; aoa:who :narasimha ; aoa:does aoa:at-visited ; aoa:where :p_ahobilam ; aoa:tier aoa:tier-folk .
+[] a aoa:Attestation ; aoa:who :manthan ; aoa:does aoa:at-occurred ; aoa:where :p_mandara ; aoa:tier aoa:tier-folk .
+[] a aoa:Attestation ; aoa:who :revati ; aoa:does aoa:at-born ; aoa:where :p_dvaraka ; aoa:tier aoa:tier-purana .
+[] a aoa:Attestation ; aoa:who :bhagiratha ; aoa:does aoa:at-visited ; aoa:where :p_gangotri ; aoa:tier aoa:tier-folk .
+[] a aoa:Attestation ; aoa:who :rama ; aoa:does aoa:at-born ; aoa:where :p_ayodhya .
+[] a aoa:Attestation ; aoa:who :dasharatha ; aoa:does aoa:at-ruled ; aoa:where :p_ayodhya .
+[] a aoa:Attestation ; aoa:who :t_exile ; aoa:does aoa:at-occurred ; aoa:where :p_ayodhya .
+[] a aoa:Attestation ; aoa:who :janaka ; aoa:does aoa:at-ruled ; aoa:where :p_mithila .
+[] a aoa:Attestation ; aoa:who :t_bow ; aoa:does aoa:at-occurred ; aoa:where :p_mithila ; aoa:tier aoa:tier-layer .
+[] a aoa:Attestation ; aoa:who :rama ; aoa:does aoa:at-lived ; aoa:where :p_chitrakuta .
+[] a aoa:Attestation ; aoa:who :t_panch ; aoa:does aoa:at-occurred ; aoa:where :p_panchavati .
+[] a aoa:Attestation ; aoa:who :t_abduct ; aoa:does aoa:at-occurred ; aoa:where :p_panchavati .
+[] a aoa:Attestation ; aoa:who :sugriva ; aoa:does aoa:at-ruled ; aoa:where :p_kishkindha .
+[] a aoa:Attestation ; aoa:who :vali ; aoa:does aoa:at-ruled ; aoa:where :p_kishkindha .
+[] a aoa:Attestation ; aoa:who :t_kish ; aoa:does aoa:at-occurred ; aoa:where :p_kishkindha .
+[] a aoa:Attestation ; aoa:who :shabari ; aoa:does aoa:at-lived ; aoa:where :p_pampa .
+[] a aoa:Attestation ; aoa:who :ravana ; aoa:does aoa:at-ruled ; aoa:where :p_lanka .
+[] a aoa:Attestation ; aoa:who :vibhishana ; aoa:does aoa:at-ruled ; aoa:where :p_lanka .
+[] a aoa:Attestation ; aoa:who :t_lanka ; aoa:does aoa:at-occurred ; aoa:where :p_lanka .
+[] a aoa:Attestation ; aoa:who :hanuman ; aoa:does aoa:at-visited ; aoa:where :p_lanka .
+[] a aoa:Attestation ; aoa:who :rama ; aoa:does aoa:at-visited ; aoa:where :p_setu .
+[] a aoa:Attestation ; aoa:who :bharadvaja ; aoa:does aoa:at-lived ; aoa:where :p_prayaga .
+[] a aoa:Attestation ; aoa:who :naranarayana ; aoa:does aoa:at-lived ; aoa:where :p_badari .
+[] a aoa:Attestation ; aoa:who :shiva ; aoa:does aoa:at-lived ; aoa:where :p_kailasa ; aoa:tier aoa:tier-purana .
+
+[] a aoa:Attestation ; aoa:who :pandu ; aoa:does aoa:at-ruled ; aoa:where :p_hastinapura .
+[] a aoa:Attestation ; aoa:who :dhritarashtra ; aoa:does aoa:at-ruled ; aoa:where :p_hastinapura .
+[] a aoa:Attestation ; aoa:who :e_dice ; aoa:does aoa:at-occurred ; aoa:where :p_hastinapura .
+[] a aoa:Attestation ; aoa:who :yudhishthira ; aoa:does aoa:at-ruled ; aoa:where :p_indraprastha .
+[] a aoa:Attestation ; aoa:who :e_rajasuya ; aoa:does aoa:at-occurred ; aoa:where :p_indraprastha .
+[] a aoa:Attestation ; aoa:who :e_war ; aoa:does aoa:at-occurred ; aoa:where :p_kurukshetra .
+[] a aoa:Attestation ; aoa:who :e_gita ; aoa:does aoa:at-occurred ; aoa:where :p_kurukshetra .
+[] a aoa:Attestation ; aoa:who :kamsa ; aoa:does aoa:at-ruled ; aoa:where :p_mathura .
+[] a aoa:Attestation ; aoa:who :krishna ; aoa:does aoa:at-born ; aoa:where :p_mathura ; aoa:tier aoa:tier-layer .
+[] a aoa:Attestation ; aoa:who :k_birth ; aoa:does aoa:at-occurred ; aoa:where :p_mathura .
+[] a aoa:Attestation ; aoa:who :k_gokula ; aoa:does aoa:at-occurred ; aoa:where :p_gokula .
+[] a aoa:Attestation ; aoa:who :k_vraja ; aoa:does aoa:at-occurred ; aoa:where :p_vrindavan .
+[] a aoa:Attestation ; aoa:who :k_govardhana ; aoa:does aoa:at-occurred ; aoa:where :p_govardhana .
+[] a aoa:Attestation ; aoa:who :k_dvaraka ; aoa:does aoa:at-occurred ; aoa:where :p_dvaraka .
+[] a aoa:Attestation ; aoa:who :krishna ; aoa:does aoa:at-ruled ; aoa:where :p_dvaraka .
+[] a aoa:Attestation ; aoa:who :e_mausala ; aoa:does aoa:at-occurred ; aoa:where :p_prabhasa .
+[] a aoa:Attestation ; aoa:who :drupada ; aoa:does aoa:at-ruled ; aoa:where :p_kampilya .
+[] a aoa:Attestation ; aoa:who :e_svayam ; aoa:does aoa:at-occurred ; aoa:where :p_kampilya .
+[] a aoa:Attestation ; aoa:who :drona ; aoa:does aoa:at-ruled ; aoa:where :p_ahichchhatra .
+[] a aoa:Attestation ; aoa:who :virata ; aoa:does aoa:at-ruled ; aoa:where :p_viratanagara .
+[] a aoa:Attestation ; aoa:who :e_virata ; aoa:does aoa:at-occurred ; aoa:where :p_viratanagara .
+[] a aoa:Attestation ; aoa:who :jarasandha ; aoa:does aoa:at-ruled ; aoa:where :p_girivraja .
+[] a aoa:Attestation ; aoa:who :karna ; aoa:does aoa:at-ruled ; aoa:where :p_champa ; aoa:tier aoa:tier-purana .
+[] a aoa:Attestation ; aoa:who :bhagadatta ; aoa:does aoa:at-ruled ; aoa:where :p_pragjyotisha .
+[] a aoa:Attestation ; aoa:who :rukmini ; aoa:does aoa:at-born ; aoa:where :p_kundina ; aoa:tier aoa:tier-layer .
+[] a aoa:Attestation ; aoa:who :sandipani ; aoa:does aoa:at-lived ; aoa:where :p_ujjayini ; aoa:tier aoa:tier-layer .
+[] a aoa:Attestation ; aoa:who :k_school ; aoa:does aoa:at-occurred ; aoa:where :p_ujjayini .
+
+[] a aoa:Attestation ; aoa:who :h_indus ; aoa:does aoa:at-occurred ; aoa:where :p_harappa .
+[] a aoa:Attestation ; aoa:who :h_indus ; aoa:does aoa:at-occurred ; aoa:where :p_mohenjodaro .
+[] a aoa:Attestation ; aoa:who :harappa ; aoa:does aoa:at-occurred ; aoa:where :p_harappa .
+[] a aoa:Attestation ; aoa:who :buddha ; aoa:does aoa:at-born ; aoa:where :p_lumbini .
+[] a aoa:Attestation ; aoa:who :buddha ; aoa:does aoa:at-visited ; aoa:where :p_bodhgaya .
+[] a aoa:Attestation ; aoa:who :buddha ; aoa:does aoa:at-visited ; aoa:where :p_sarnath .
+[] a aoa:Attestation ; aoa:who :buddha ; aoa:does aoa:at-died ; aoa:where :p_kushinagar .
+[] a aoa:Attestation ; aoa:who :shuddhodana ; aoa:does aoa:at-ruled ; aoa:where :p_kapilavastu .
+[] a aoa:Attestation ; aoa:who :bimbisara ; aoa:does aoa:at-ruled ; aoa:where :p_girivraja .
+[] a aoa:Attestation ; aoa:who :ajatashatru ; aoa:does aoa:at-ruled ; aoa:where :p_girivraja .
+[] a aoa:Attestation ; aoa:who :prasenajit ; aoa:does aoa:at-ruled ; aoa:where :p_shravasti .
+[] a aoa:Attestation ; aoa:who :chandragupta ; aoa:does aoa:at-ruled ; aoa:where :p_pataliputra .
+[] a aoa:Attestation ; aoa:who :ashoka ; aoa:does aoa:at-ruled ; aoa:where :p_pataliputra .
+[] a aoa:Attestation ; aoa:who :ashoka ; aoa:does aoa:at-founded ; aoa:where :p_sanchi .
+[] a aoa:Attestation ; aoa:who :megasthenes ; aoa:does aoa:at-visited ; aoa:where :p_pataliputra .
+[] a aoa:Attestation ; aoa:who :chanakya ; aoa:does aoa:at-lived ; aoa:where :p_taxila .
+[] a aoa:Attestation ; aoa:who :alexander ; aoa:does aoa:at-visited ; aoa:where :p_taxila .
+[] a aoa:Attestation ; aoa:who :h_helio ; aoa:does aoa:at-occurred ; aoa:where :p_vidisha .
+[] a aoa:Attestation ; aoa:who :heliodorus ; aoa:does aoa:at-visited ; aoa:where :p_vidisha .
+[] a aoa:Attestation ; aoa:who :udayagiri ; aoa:does aoa:at-occurred ; aoa:where :p_udayagiri .
+[] a aoa:Attestation ; aoa:who :deogarh ; aoa:does aoa:at-occurred ; aoa:where :p_deogarh .
+[] a aoa:Attestation ; aoa:who :ajanta ; aoa:does aoa:at-occurred ; aoa:where :p_ajanta .
+[] a aoa:Attestation ; aoa:who :badami ; aoa:does aoa:at-occurred ; aoa:where :p_badami .
+[] a aoa:Attestation ; aoa:who :h_vijaya ; aoa:does aoa:at-occurred ; aoa:where :p_vijayanagara .
+[] a aoa:Attestation ; aoa:who :harihara ; aoa:does aoa:at-founded ; aoa:where :p_vijayanagara .
+[] a aoa:Attestation ; aoa:who :krishnadevaraya ; aoa:does aoa:at-ruled ; aoa:where :p_vijayanagara .
+[] a aoa:Attestation ; aoa:who :prithviraj ; aoa:does aoa:at-visited ; aoa:where :p_tarain .
+[] a aoa:Attestation ; aoa:who :ghori ; aoa:does aoa:at-visited ; aoa:where :p_tarain .
+[] a aoa:Attestation ; aoa:who :h_sultanate ; aoa:does aoa:at-capital ; aoa:where :p_delhi .
+[] a aoa:Attestation ; aoa:who :h_panipat ; aoa:does aoa:at-occurred ; aoa:where :p_panipat .
+[] a aoa:Attestation ; aoa:who :babur ; aoa:does aoa:at-visited ; aoa:where :p_panipat .
+[] a aoa:Attestation ; aoa:who :ibrahimlodi ; aoa:does aoa:at-died ; aoa:where :p_panipat .
+[] a aoa:Attestation ; aoa:who :h_plassey ; aoa:does aoa:at-occurred ; aoa:where :p_plassey .
+[] a aoa:Attestation ; aoa:who :siraj ; aoa:does aoa:at-visited ; aoa:where :p_plassey .
+[] a aoa:Attestation ; aoa:who :shivaji ; aoa:does aoa:at-ruled ; aoa:where :p_raigad .
+[] a aoa:Attestation ; aoa:who :lakshmibai ; aoa:does aoa:at-ruled ; aoa:where :p_jhansi .
+[] a aoa:Attestation ; aoa:who :h_1857 ; aoa:does aoa:at-occurred ; aoa:where :p_jhansi .
+[] a aoa:Attestation ; aoa:who :h_1857 ; aoa:does aoa:at-occurred ; aoa:where :p_delhi .
+[] a aoa:Attestation ; aoa:who :h_bori ; aoa:does aoa:at-occurred ; aoa:where :p_pune .
+[] a aoa:Attestation ; aoa:who :h_1947 ; aoa:does aoa:at-occurred ; aoa:where :p_delhi .
+[] a aoa:Attestation ; aoa:who :tagore ; aoa:does aoa:at-born ; aoa:where :p_kolkata .
+[] a aoa:Attestation ; aoa:who :vivekananda ; aoa:does aoa:at-born ; aoa:where :p_kolkata .
+
+# The Vedas where and when scholarship places their composition: the Rigveda in greater Punjab, the later Samhitas in the Kuru realm.
+[] a aoa:Attestation ; aoa:who :rigveda ; aoa:does aoa:at-composed ; aoa:where :p_saptasindhu ;
+    aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-1499"^^xsd:gYear ] ;
+                                time:hasEnd [ a time:Instant ; time:inXSDgYear "-1199"^^xsd:gYear ] ] ;
+    dcterms:source [ a aoa:Citation ; rdfs:label "Witzel 1995, Early Sanskritization" ; schema:url <https://hasp.ub.uni-heidelberg.de/journals/ejvs/article/download/823/913/1867> ] .
+[] a aoa:Attestation ; aoa:who :samaveda ; aoa:does aoa:at-composed ; aoa:where :p_kurukshetra ;
+    aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-1199"^^xsd:gYear ] ;
+                                time:hasEnd [ a time:Instant ; time:inXSDgYear "-0999"^^xsd:gYear ] ] ;
+    dcterms:source [ a aoa:Citation ; rdfs:label "Witzel 1997, The Development of the Vedic Canon" ; schema:url <https://fid4sa-repository.ub.uni-heidelberg.de/110/1/VedicCanon_1997.pdf> ] .
+[] a aoa:Attestation ; aoa:who :yajurveda ; aoa:does aoa:at-composed ; aoa:where :p_kurukshetra ;
+    aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-1199"^^xsd:gYear ] ;
+                                time:hasEnd [ a time:Instant ; time:inXSDgYear "-0799"^^xsd:gYear ] ] ;
+    dcterms:source [ a aoa:Citation ; rdfs:label "Witzel 1997, The Development of the Vedic Canon" ; schema:url <https://fid4sa-repository.ub.uni-heidelberg.de/110/1/VedicCanon_1997.pdf> ] .
+[] a aoa:Attestation ; aoa:who :atharvaveda ; aoa:does aoa:at-composed ; aoa:where :p_kurukshetra ;
+    aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-1199"^^xsd:gYear ] ;
+                                time:hasEnd [ a time:Instant ; time:inXSDgYear "-0999"^^xsd:gYear ] ] ;
+    dcterms:source [ a aoa:Citation ; rdfs:label "Witzel 1997, The Development of the Vedic Canon" ; schema:url <https://fid4sa-repository.ub.uni-heidelberg.de/110/1/VedicCanon_1997.pdf> ] .

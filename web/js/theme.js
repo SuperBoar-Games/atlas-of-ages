@@ -2,7 +2,7 @@ import { groupOf } from './common.js';
 
 // Canvas colours come from the CSS custom properties, so style.css stays the single source of the palette.
 export const PAL = {};
-const KEYS = ['night', 'band', 'star', 'dim', 'rule', 'gold', 'l-line', 'l-reborn', 'l-cross', 'l-kill', 'l-deva', 'l-tell', 'l-reign', 'l-story',
+const KEYS = ['night', 'band', 'land', 'star', 'dim', 'rule', 'gold', 'l-line', 'l-reborn', 'l-cross', 'l-kill', 'l-deva', 'l-tell', 'l-reign', 'l-story',
   'k-person', 'k-sage', 'k-avatar', 'k-deva', 'k-event', 'k-story'];
 
 function readPalette() {
@@ -23,10 +23,10 @@ export function initTheme(button, onChange) {
   };
   button.onclick = () => {
     const t = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
-    try { localStorage.setItem('yc-theme', t); } catch (_) {}
+    try { localStorage.setItem('aoa-theme', t); } catch (_) {}
     set(t);
   };
   let saved = null;
-  try { saved = localStorage.getItem('yc-theme'); } catch (_) {}
+  try { saved = localStorage.getItem('aoa-theme'); } catch (_) {}
   set(saved === 'light' ? 'light' : 'dark');
 }

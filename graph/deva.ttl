@@ -1,1058 +1,1058 @@
 # The gods, outside the yugas
 
-@prefix : <https://w3id.org/yugachakra#> .
-@prefix yc: <https://w3id.org/yugachakra#> .
+@prefix : <https://w3id.org/atlas-of-ages#> .
+@prefix aoa: <https://w3id.org/atlas-of-ages#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix schema: <https://schema.org/> .
 
-:agni a yc:Deva ;
+:agni a aoa:Deva ;
     rdfs:label "Agni" ;
     rdfs:comment "Fire god. Draupadi and Dhrishtadyumna rise from Drupada's fire altar. Agni consumes the Khandava forest." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
-    yc:parentOf :nila ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
+    aoa:parentOf :nila ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "Kishkindha 4.41" ; schema:url <https://valmikiramayan.net/kish/sarga41/kishkindha_41_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Yuddha 6.30" ; schema:url <https://valmikiramayan.net/yuddha/sarga30/yuddha_30_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.169; 1.225-230" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-clxix> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.169" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-clxix> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 3.196 (also 3.131)" ; schema:url <https://www.sacred-texts.com/hin/m03/m03196.htm> ] .
+        [ a aoa:Citation ; rdfs:label "Kishkindha 4.41" ; schema:url <https://valmikiramayan.net/kish/sarga41/kishkindha_41_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Yuddha 6.30" ; schema:url <https://valmikiramayan.net/yuddha/sarga30/yuddha_30_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.169; 1.225-230" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-clxix> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.169" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-clxix> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 3.196 (also 3.131)" ; schema:url <https://www.sacred-texts.com/hin/m03/m03196.htm> ] .
 
-:ashvins a yc:Deva ;
+:ashvins a aoa:Deva ;
     rdfs:label "Ashvins" ;
     rdfs:comment "Twin physician gods. Fathers of Nakula and Sahadeva." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 1.66; MBh 1.124" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvi> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.67; MBh 1.124" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 3.123" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cxxiii> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 1.66; MBh 1.124" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvi> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.67; MBh 1.124" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 3.123" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cxxiii> ] .
 
-:bhudevi a yc:Deva ;
+:bhudevi a aoa:Deva ;
     rdfs:label "Bhudevi" ;
     rdfs:comment "The earth goddess. Raised by Varaha and mother by him of Narakasura. Milked by Prithu, and Sita rises from her furrow." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
-    yc:role yc:role-woman ;
-    yc:parentOf :narakasura ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
+    aoa:role aoa:role-woman ;
+    aoa:parentOf :narakasura ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "Bala 1.66" ; schema:url <https://valmikiramayan.net/baala/sarga66/bala_66_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 8.90" ; schema:url <https://sacred-texts.com/hin/m08/m08090.htm> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 12.59" ; schema:url <https://sacred-texts.com/hin/m12/m12a058.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Harivamsa 2.64" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485605.html> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 3.18; Vishnu Purana 5.29, 1.13" ; schema:url <https://sacred-texts.com/hin/vp/vp146.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 3.18; Vishnu Purana 5.29" ; schema:url <https://vedabase.io/en/library/sb/3/18/> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 4.18; Vishnu Purana 1.13" ; schema:url <https://vedabase.io/en/library/sb/4/18/> ] ,
-        [ a yc:Citation ; rdfs:label "Vishnu P. 5.29; Bhagavata 10.59" ; schema:url <https://sacred-texts.com/hin/vp/vp146.htm> ] .
+        [ a aoa:Citation ; rdfs:label "Bala 1.66" ; schema:url <https://valmikiramayan.net/baala/sarga66/bala_66_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 8.90" ; schema:url <https://sacred-texts.com/hin/m08/m08090.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 12.59" ; schema:url <https://sacred-texts.com/hin/m12/m12a058.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Harivamsa 2.64" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485605.html> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 3.18; Vishnu Purana 5.29, 1.13" ; schema:url <https://sacred-texts.com/hin/vp/vp146.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 3.18; Vishnu Purana 5.29" ; schema:url <https://vedabase.io/en/library/sb/3/18/> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 4.18; Vishnu Purana 1.13" ; schema:url <https://vedabase.io/en/library/sb/4/18/> ] ,
+        [ a aoa:Citation ; rdfs:label "Vishnu P. 5.29; Bhagavata 10.59" ; schema:url <https://sacred-texts.com/hin/vp/vp146.htm> ] .
 
-:brahma a yc:Deva ;
+:brahma a aoa:Deva ;
     rdfs:label "Brahma" ;
     rdfs:comment "The creator god, born on the lotus from Vishnu's navel. In the Adi Parva his six mind-born sons are Marichi, Atri, Angiras, Pulastya, Pulaha and Kratu; Daksha springs from his toe and Bhrigu from his breast. The Puranas add Vashishtha, Narada and others." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
-    yc:parentOf :atri ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
+    aoa:parentOf :atri ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "Kishkindha 4.41" ; schema:url <https://valmikiramayan.net/kish/sarga41/kishkindha_41_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Yuddha 6.61" ; schema:url <https://valmikiramayan.net/yuddha/sarga61/yuddha_61_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Yuddha 6.92" ; schema:url <https://valmikiramayan.net/yuddha/sarga92/yuddha_92_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Uttara 7.2" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424763.html> ] ,
-        [ a yc:Citation ; rdfs:label "Uttara 7.10" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424771.html> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.65; MBh 1.66" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.66" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvi> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 3.8, 3.12; Vishnu Purana 1.7" ; schema:url <https://vedabase.io/en/library/sb/3/12/> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 3.12" ; schema:url <https://vedabase.io/en/library/sb/3/12/> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 3.12; Vishnu Purana 1.7" ; schema:url <https://vedabase.io/en/library/sb/3/12/> ] .
+        [ a aoa:Citation ; rdfs:label "Kishkindha 4.41" ; schema:url <https://valmikiramayan.net/kish/sarga41/kishkindha_41_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Yuddha 6.61" ; schema:url <https://valmikiramayan.net/yuddha/sarga61/yuddha_61_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Yuddha 6.92" ; schema:url <https://valmikiramayan.net/yuddha/sarga92/yuddha_92_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Uttara 7.2" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424763.html> ] ,
+        [ a aoa:Citation ; rdfs:label "Uttara 7.10" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424771.html> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.65; MBh 1.66" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.66" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvi> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 3.8, 3.12; Vishnu Purana 1.7" ; schema:url <https://vedabase.io/en/library/sb/3/12/> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 3.12" ; schema:url <https://vedabase.io/en/library/sb/3/12/> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 3.12; Vishnu Purana 1.7" ; schema:url <https://vedabase.io/en/library/sb/3/12/> ] .
 
-:ganesha a yc:Deva ;
+:ganesha a aoa:Deva ;
     rdfs:label "Ganesha" ;
     rdfs:comment "Elephant-headed son of Parvati and Shiva, remover of obstacles. Popular versions of the Mahabharata make him the scribe who writes it down as Vyasa dictates." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god .
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god .
 
-:indra a yc:Deva ;
+:indra a aoa:Deva ;
     rdfs:label "Indra" ;
     rdfs:comment "King of the devas, son of Kashyapa and Aditi. Father of Vali and Arjuna. Seduces Ahalya, and takes Karna's armour and earrings in exchange for a one-time spear." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
-    yc:kills :vishvarupa ;
-    yc:divineOriginOf :arjuna, :vali ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
+    aoa:kills :vishvarupa ;
+    aoa:divineOriginOf :arjuna, :vali ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "Bala 1.39" ; schema:url <https://valmikiramayan.net/baala/sarga39/bala_39_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Bala 1.48" ; schema:url <https://valmikiramayan.net/baala/sarga48/bala_48_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Kishkindha 4.16" ; schema:url <https://valmikiramayan.net/kish/sarga16/kishkindha_16_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Yuddha 6.92" ; schema:url <https://valmikiramayan.net/yuddha/sarga92/yuddha_92_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Uttara 7.29" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424795.html> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.18" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xviii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.65; MBh 1.66" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.67; MBh 1.123" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.71" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxi> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.75" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 3.100" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-c> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 3.101" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-ci> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 3.178" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-clxxviii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 3.196 (also 3.131)" ; schema:url <https://www.sacred-texts.com/hin/m03/m03196.htm> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 3.308" ; schema:url <https://www.sacred-texts.com/hin/m03/m03308.htm> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 5.10" ; schema:url <https://sacred-texts.com/hin/m05/m05010.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Harivamsa 2.18" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485557.html> ] ,
-        [ a yc:Citation ; rdfs:label "Harivamsa 2.58" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485599.html> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 6.18" ; schema:url <https://vedabase.io/en/library/sb/6/18/> ] .
+        [ a aoa:Citation ; rdfs:label "Bala 1.39" ; schema:url <https://valmikiramayan.net/baala/sarga39/bala_39_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Bala 1.48" ; schema:url <https://valmikiramayan.net/baala/sarga48/bala_48_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Kishkindha 4.16" ; schema:url <https://valmikiramayan.net/kish/sarga16/kishkindha_16_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Yuddha 6.92" ; schema:url <https://valmikiramayan.net/yuddha/sarga92/yuddha_92_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Uttara 7.29" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424795.html> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.18" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xviii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.65; MBh 1.66" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.67; MBh 1.123" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.71" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxi> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.75" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 3.100" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-c> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 3.101" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-ci> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 3.178" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-clxxviii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 3.196 (also 3.131)" ; schema:url <https://www.sacred-texts.com/hin/m03/m03196.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 3.308" ; schema:url <https://www.sacred-texts.com/hin/m03/m03308.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 5.10" ; schema:url <https://sacred-texts.com/hin/m05/m05010.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Harivamsa 2.18" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485557.html> ] ,
+        [ a aoa:Citation ; rdfs:label "Harivamsa 2.58" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485599.html> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 6.18" ; schema:url <https://vedabase.io/en/library/sb/6/18/> ] .
 
-:kama a yc:Deva ;
+:kama a aoa:Deva ;
     rdfs:label "Kama" ;
     rdfs:comment "God of desire, burned by Shiva's third eye. The Puranas have him reborn as Krishna's son Pradyumna." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "Harivamsa 2.105" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485646.html> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 10.55" ; schema:url <https://vedabase.io/en/library/sb/10/55/> ] .
+        [ a aoa:Citation ; rdfs:label "Harivamsa 2.105" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485646.html> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 10.55" ; schema:url <https://vedabase.io/en/library/sb/10/55/> ] .
 
-:kartikeya a yc:Deva ;
+:kartikeya a aoa:Deva ;
     rdfs:label "Kartikeya" ;
     rdfs:comment "Skanda, commander of the gods. In the Vana Parva he is born of Agni's seed, cast six times into a golden lake, and kills the demon Mahisha. The Puranas tell of Shiva's seed carried by Agni and Ganga to the six Krittikas, and of his killing Taraka." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 3.230" ; schema:url <https://www.sacred-texts.com/hin/m03/m03230.htm> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 3.230" ; schema:url <https://www.sacred-texts.com/hin/m03/m03230.htm> ] .
 
-:kubera a yc:Deva ;
+:kubera a aoa:Deva ;
     rdfs:label "Kubera" ;
     rdfs:comment "God of wealth and Vishrava's son. On his father's advice he gives Lanka up to Ravana and moves to Kailasa; Ravana later defeats him and takes his flying chariot Pushpaka." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
-    yc:parentOf :nalakuvara ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
+    aoa:parentOf :nalakuvara ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "Aranya 3.48" ; schema:url <https://valmikiramayan.net/aranya/sarga48/aranya_48_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Yuddha 6.121" ; schema:url <https://valmikiramayan.net/yuddha/sarga121/yuddha_121_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Uttara 7.3" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424764.html> ] ,
-        [ a yc:Citation ; rdfs:label "Uttara 7.11" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424772.html> ] ,
-        [ a yc:Citation ; rdfs:label "Uttara 7.15" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424776.html> ] ,
-        [ a yc:Citation ; rdfs:label "Uttara 7.26" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424792.html> ] .
+        [ a aoa:Citation ; rdfs:label "Aranya 3.48" ; schema:url <https://valmikiramayan.net/aranya/sarga48/aranya_48_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Yuddha 6.121" ; schema:url <https://valmikiramayan.net/yuddha/sarga121/yuddha_121_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Uttara 7.3" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424764.html> ] ,
+        [ a aoa:Citation ; rdfs:label "Uttara 7.11" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424772.html> ] ,
+        [ a aoa:Citation ; rdfs:label "Uttara 7.15" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424776.html> ] ,
+        [ a aoa:Citation ; rdfs:label "Uttara 7.26" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424792.html> ] .
 
-:lakshmi a yc:Deva ;
+:lakshmi a aoa:Deva ;
     rdfs:label "Lakshmi" ;
     rdfs:comment "Goddess of fortune who rises from the churned ocean and chooses Vishnu. The Puranas see Sita and Rukmini as her incarnations." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
-    yc:role yc:role-woman ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
+    aoa:role aoa:role-woman ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "Yuddha 6.117" ; schema:url <https://valmikiramayan.net/yuddha/sarga117/yuddha_117_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.18; MBh 1.67" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xviii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.67" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
-        [ a yc:Citation ; rdfs:label "Harivamsa 2.105" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485646.html> ] ,
-        [ a yc:Citation ; rdfs:label "Vishnu P. 1.8-1.9" ; schema:url <https://sacred-texts.com/hin/vp/vp044.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Vishnu P. 1.9" ; schema:url <https://sacred-texts.com/hin/vp/vp044.htm> ] .
+        [ a aoa:Citation ; rdfs:label "Yuddha 6.117" ; schema:url <https://valmikiramayan.net/yuddha/sarga117/yuddha_117_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.18; MBh 1.67" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xviii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.67" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
+        [ a aoa:Citation ; rdfs:label "Harivamsa 2.105" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485646.html> ] ,
+        [ a aoa:Citation ; rdfs:label "Vishnu P. 1.8-1.9" ; schema:url <https://sacred-texts.com/hin/vp/vp044.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Vishnu P. 1.9" ; schema:url <https://sacred-texts.com/hin/vp/vp044.htm> ] .
 
-:parvati a yc:Deva ;
+:parvati a aoa:Deva ;
     rdfs:label "Parvati" ;
     rdfs:comment "Daughter of Himavan and Sati reborn. Wins Shiva through penance. Mother of Kartikeya and Ganesha." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
-    yc:role yc:role-woman ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
+    aoa:role aoa:role-woman ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "Bhagavata 4.7; Vishnu Purana 1.8" ; schema:url <https://sacred-texts.com/hin/vp/vp042.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Vishnu P. 1.8" ; schema:url <https://sacred-texts.com/hin/vp/vp042.htm> ] .
+        [ a aoa:Citation ; rdfs:label "Bhagavata 4.7; Vishnu Purana 1.8" ; schema:url <https://sacred-texts.com/hin/vp/vp042.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Vishnu P. 1.8" ; schema:url <https://sacred-texts.com/hin/vp/vp042.htm> ] .
 
-:saraswati a yc:Deva ;
+:saraswati a aoa:Deva ;
     rdfs:label "Saraswati" ;
     rdfs:comment "Goddess of speech and learning, Brahma's consort, and the deified Sarasvati river." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
-    yc:role yc:role-woman ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
+    aoa:role aoa:role-woman ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "Yuddha 6.61" ; schema:url <https://valmikiramayan.net/yuddha/sarga61/yuddha_61_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Uttara 7.10" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424771.html> ] .
+        [ a aoa:Citation ; rdfs:label "Yuddha 6.61" ; schema:url <https://valmikiramayan.net/yuddha/sarga61/yuddha_61_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Uttara 7.10" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424771.html> ] .
 
-:shesha a yc:Deva ;
+:shesha a aoa:Deva ;
     rdfs:label "Shesha" ;
     rdfs:comment "Eldest of Kadru's Naga sons, the serpent Vishnu rests on. The Puranas make Lakshmana and Balarama his incarnations." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 1.35; MBh 1.36; MBh 1.67" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxxv> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.35; MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxxv> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.67" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 1.35; MBh 1.36; MBh 1.67" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxxv> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.35; MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxxv> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.67" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] .
 
-:shiva a yc:Deva ;
+:shiva a aoa:Deva ;
     rdfs:label "Shiva" ;
     rdfs:comment "Drinks the poison at the churning. His bow is broken by Rama. Grants Draupadi five husbands, fights Arjuna as a hunter and gives him the Pashupata. Ashwatthama is born of a portion of him." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
-    yc:parentOf :kartikeya ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
+    aoa:parentOf :kartikeya ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "Uttara 7.16" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424777.html> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.18" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xviii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.67" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.171; 1.199" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-clxxi> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 3.39-40" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-xl> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 3.109" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cix> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 3.230" ; schema:url <https://www.sacred-texts.com/hin/m03/m03230.htm> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 8.34" ; schema:url <https://sacred-texts.com/hin/m08/m08034.htm> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 12.284" ; schema:url <https://sacred-texts.com/hin/m12/m12b111.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 4.1" ; schema:url <https://vedabase.io/en/library/sb/4/1/> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 4.5" ; schema:url <https://vedabase.io/en/library/sb/4/5/> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 4.7; Vishnu Purana 1.8" ; schema:url <https://sacred-texts.com/hin/vp/vp042.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 10.55" ; schema:url <https://vedabase.io/en/library/sb/10/55/> ] .
+        [ a aoa:Citation ; rdfs:label "Uttara 7.16" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424777.html> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.18" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xviii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.67" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.171; 1.199" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-clxxi> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 3.39-40" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-xl> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 3.109" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-cix> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 3.230" ; schema:url <https://www.sacred-texts.com/hin/m03/m03230.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 8.34" ; schema:url <https://sacred-texts.com/hin/m08/m08034.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 12.284" ; schema:url <https://sacred-texts.com/hin/m12/m12b111.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 4.1" ; schema:url <https://vedabase.io/en/library/sb/4/1/> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 4.5" ; schema:url <https://vedabase.io/en/library/sb/4/5/> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 4.7; Vishnu Purana 1.8" ; schema:url <https://sacred-texts.com/hin/vp/vp042.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 10.55" ; schema:url <https://vedabase.io/en/library/sb/10/55/> ] .
 
-:surya a yc:Deva ;
+:surya a aoa:Deva ;
     rdfs:label "Surya" ;
     rdfs:comment "Sun god, son of Kashyapa and Aditi. Father of Manu (as Vivasvan), Tapati, Sugriva and Karna." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
-    yc:divineOriginOf :karna, :manu, :sugriva ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
+    aoa:divineOriginOf :karna, :manu, :sugriva ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "Kishkindha 4.16" ; schema:url <https://valmikiramayan.net/kish/sarga16/kishkindha_16_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.19" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xix> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.65; MBh 1.75; MBh 1.111; MBh 1.175" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.67; MBh 1.111" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.75" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.175" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-clxxv> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 3.3" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-iii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 5.141; MBh 5.145" ; schema:url <https://sacred-texts.com/hin/m05/m05145.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Harivamsa 1.38" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485515.html> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 6.6" ; schema:url <https://vedabase.io/en/library/sb/6/6/> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 8.9" ; schema:url <https://vedabase.io/en/library/sb/8/9/> ] .
+        [ a aoa:Citation ; rdfs:label "Kishkindha 4.16" ; schema:url <https://valmikiramayan.net/kish/sarga16/kishkindha_16_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.19" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xix> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.65; MBh 1.75; MBh 1.111; MBh 1.175" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.67; MBh 1.111" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.75" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxxv> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.175" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-clxxv> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 3.3" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-iii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 5.141; MBh 5.145" ; schema:url <https://sacred-texts.com/hin/m05/m05145.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Harivamsa 1.38" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485515.html> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 6.6" ; schema:url <https://vedabase.io/en/library/sb/6/6/> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 8.9" ; schema:url <https://vedabase.io/en/library/sb/8/9/> ] .
 
-:varuna a yc:Deva ;
+:varuna a aoa:Deva ;
     rdfs:label "Varuna" ;
     rdfs:comment "Aditya and lord of the waters. Rohita is promised to him in sacrifice, and through Agni he gives Arjuna the Gandiva bow." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.227" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-ccxxvii> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 6.18" ; schema:url <https://vedabase.io/en/library/sb/6/18/> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 1.65" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxv> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.227" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-ccxxvii> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 6.18" ; schema:url <https://vedabase.io/en/library/sb/6/18/> ] .
 
-:vasus a yc:Deva ;
+:vasus a aoa:Deva ;
     rdfs:label "The Vasus" ;
     rdfs:comment "Eight gods cursed by Vashishtha for stealing his cow Nandini. Dyaus, who led the theft, must live a full human life as Bhishma." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "MBh 1.67; MBh 1.99" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.96; MBh 1.99" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcvi> ] .
+        [ a aoa:Citation ; rdfs:label "MBh 1.67; MBh 1.99" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.96; MBh 1.99" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xcvi> ] .
 
-:vayu a yc:Deva ;
+:vayu a aoa:Deva ;
     rdfs:label "Vayu" ;
     rdfs:comment "Wind god. Father of Hanuman in the Treta and Bhima in the Dvapara." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
-    yc:divineOriginOf :bhima, :hanuman ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
+    aoa:divineOriginOf :bhima, :hanuman ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "Kishkindha 4.66" ; schema:url <https://valmikiramayan.net/kish/sarga66/kishkindha_66_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Sundara 5.35" ; schema:url <https://valmikiramayan.net/sundara/sarga35/sundara_35_prose.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Uttara 7.35" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424801.html> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.67; MBh 1.123" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.123" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-cxxiii> ] .
+        [ a aoa:Citation ; rdfs:label "Kishkindha 4.66" ; schema:url <https://valmikiramayan.net/kish/sarga66/kishkindha_66_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Sundara 5.35" ; schema:url <https://valmikiramayan.net/sundara/sarga35/sundara_35_prose.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Uttara 7.35" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424801.html> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.67; MBh 1.123" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.123" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-cxxiii> ] .
 
-:vishnu a yc:Deva ;
+:vishnu a aoa:Deva ;
     rdfs:label "Vishnu" ;
     rdfs:comment "The preserver. Sleeps on Shesha between creations, and Brahma is born from his navel lotus. Comes down as each avatar when dharma fails." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "Bala 1.16" ; schema:url <https://valmikiramayan.net/baala/sarga16/bala_16_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Bala 1.40" ; schema:url <https://valmikiramayan.net/baala/sarga40/bala_5F40_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Bala 1.75" ; schema:url <https://valmikiramayan.net/baala/sarga75/bala_75_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Yuddha 6.117" ; schema:url <https://valmikiramayan.net/yuddha/sarga117/yuddha_117_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.19" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xix> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.33" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxxiii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 3.187-188" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-clxxxviii> ] ,
-        [ a yc:Citation ; rdfs:label "Harivamsa 2.4" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485541.html> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 1.3" ; schema:url <https://vedabase.io/en/library/sb/1/3/> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 1.3, 12.2" ; schema:url <https://vedabase.io/en/library/sb/1/3/> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 1.3, 4.1" ; schema:url <https://vedabase.io/en/library/sb/1/3/> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 1.3, 3.24" ; schema:url <https://vedabase.io/en/library/sb/1/3/> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 1.3, 4.15" ; schema:url <https://vedabase.io/en/library/sb/1/3/> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 1.3, 5.4" ; schema:url <https://vedabase.io/en/library/sb/1/3/> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 3.8, 1.3" ; schema:url <https://vedabase.io/en/library/sb/3/8/> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 4.9; Vishnu Purana 1.12" ; schema:url <https://vedabase.io/en/library/sb/4/9/> ] ,
-        [ a yc:Citation ; rdfs:label "Bhagavata 8.9" ; schema:url <https://vedabase.io/en/library/sb/8/9/> ] ,
-        [ a yc:Citation ; rdfs:label "Vishnu P. 1.8-1.9" ; schema:url <https://sacred-texts.com/hin/vp/vp044.htm> ] .
+        [ a aoa:Citation ; rdfs:label "Bala 1.16" ; schema:url <https://valmikiramayan.net/baala/sarga16/bala_16_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Bala 1.40" ; schema:url <https://valmikiramayan.net/baala/sarga40/bala_5F40_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Bala 1.75" ; schema:url <https://valmikiramayan.net/baala/sarga75/bala_75_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Yuddha 6.117" ; schema:url <https://valmikiramayan.net/yuddha/sarga117/yuddha_117_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.19" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xix> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.33" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-xxxiii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 3.187-188" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-3-vana-parva/section-clxxxviii> ] ,
+        [ a aoa:Citation ; rdfs:label "Harivamsa 2.4" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485541.html> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 1.3" ; schema:url <https://vedabase.io/en/library/sb/1/3/> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 1.3, 12.2" ; schema:url <https://vedabase.io/en/library/sb/1/3/> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 1.3, 4.1" ; schema:url <https://vedabase.io/en/library/sb/1/3/> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 1.3, 3.24" ; schema:url <https://vedabase.io/en/library/sb/1/3/> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 1.3, 4.15" ; schema:url <https://vedabase.io/en/library/sb/1/3/> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 1.3, 5.4" ; schema:url <https://vedabase.io/en/library/sb/1/3/> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 3.8, 1.3" ; schema:url <https://vedabase.io/en/library/sb/3/8/> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 4.9; Vishnu Purana 1.12" ; schema:url <https://vedabase.io/en/library/sb/4/9/> ] ,
+        [ a aoa:Citation ; rdfs:label "Bhagavata 8.9" ; schema:url <https://vedabase.io/en/library/sb/8/9/> ] ,
+        [ a aoa:Citation ; rdfs:label "Vishnu P. 1.8-1.9" ; schema:url <https://sacred-texts.com/hin/vp/vp044.htm> ] .
 
-:vishvakarma a yc:Deva ;
+:vishvakarma a aoa:Deva ;
     rdfs:label "Vishvakarma" ;
     rdfs:comment "Divine architect, identified with Tvashtr. Father of Vishvarupa and maker of Vritra. Builds Dvaraka, and his son Nala builds Rama's bridge." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
-    yc:parentOf :nala, :vishvarupa ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
+    aoa:parentOf :nala, :vishvarupa ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "Sundara 5.8" ; schema:url <https://valmikiramayan.net/sundara/sarga8/sundara_8_prose.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Yuddha 6.22" ; schema:url <https://valmikiramayan.net/yuddha/sarga22/yuddha_22_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Yuddha 6.121" ; schema:url <https://valmikiramayan.net/yuddha/sarga121/yuddha_121_frame.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Uttara 7.15" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424776.html> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.213" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-ccxiii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 5.9" ; schema:url <https://sacred-texts.com/hin/m05/m05009.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Harivamsa 2.59" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485600.html> ] .
+        [ a aoa:Citation ; rdfs:label "Sundara 5.8" ; schema:url <https://valmikiramayan.net/sundara/sarga8/sundara_8_prose.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Yuddha 6.22" ; schema:url <https://valmikiramayan.net/yuddha/sarga22/yuddha_22_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Yuddha 6.121" ; schema:url <https://valmikiramayan.net/yuddha/sarga121/yuddha_121_frame.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Uttara 7.15" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424776.html> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.213" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-ccxiii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 5.9" ; schema:url <https://sacred-texts.com/hin/m05/m05009.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Harivamsa 2.59" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485600.html> ] .
 
-:yama a yc:Deva ;
+:yama a aoa:Deva ;
     rdfs:label "Yama (Dharma)" ;
     rdfs:comment "God of death and justice. Father of Yudhishthira and himself born as Vidura. Tests Yudhishthira as the Yaksha and as the dog." ;
-    yc:period yc:period-deva ;
-    yc:tier yc:tier-core ;
-    yc:being yc:being-god ;
-    yc:divineOriginOf :yudhishthira ;
+    aoa:period aoa:period-deva ;
+    aoa:tier aoa:tier-core ;
+    aoa:being aoa:being-god ;
+    aoa:divineOriginOf :yudhishthira ;
     dcterms:source
-        [ a yc:Citation ; rdfs:label "Uttara 7.22" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424783.html> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.67; MBh 1.108" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.67; MBh 1.123" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 1.108; MBh 1.123" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-cviii> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 3.295" ; schema:url <https://www.sacred-texts.com/hin/m03/m03295.htm> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 3.312" ; schema:url <https://www.sacred-texts.com/hin/m03/m03312.htm> ] ,
-        [ a yc:Citation ; rdfs:label "MBh 18.3" ; schema:url <https://sacred-texts.com/hin/m18/m18003.htm> ] ,
-        [ a yc:Citation ; rdfs:label "Harivamsa 2.33" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485574.html> ] .
-
-[] a yc:Link ;
-    yc:from :agni ;
-    yc:relation yc:linkedWith ;
-    yc:to :kartikeya ;
-    yc:forwardLabel "Fathers him (Vana Parva); carries Shiva's seed in the Puranas" ;
-    yc:reverseLabel "Born through" .
-
-[] a yc:Link ;
-    yc:from :agni ;
-    yc:relation yc:linkedWith ;
-    yc:to :shibi ;
-    yc:forwardLabel "Tests as a dove" ;
-    yc:reverseLabel "Tested by" .
-
-[] a yc:Link ;
-    yc:from :agni ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :dhrishtadyumna ;
-    yc:forwardLabel "Gives birth from the altar to" ;
-    yc:reverseLabel "Born from the fire of" .
-
-[] a yc:Link ;
-    yc:from :agni ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :draupadi ;
-    yc:forwardLabel "Gives birth from the altar to" ;
-    yc:reverseLabel "Born from the fire of" .
-
-[] a yc:Link ;
-    yc:from :ashvins ;
-    yc:relation yc:linkedWith ;
-    yc:to :chyavana ;
-    yc:forwardLabel "Restore the youth of" ;
-    yc:reverseLabel "Youth restored by" .
-
-[] a yc:Link ;
-    yc:from :ashvins ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :twins ;
-    yc:forwardLabel "Divine fathers of" ;
-    yc:reverseLabel "Sons of" .
-
-[] a yc:Link ;
-    yc:from :bhudevi ;
-    yc:relation yc:linkedWith ;
-    yc:to :karna ;
-    yc:forwardLabel "Swallows his chariot wheel (the curse is a brahmin's)" ;
-    yc:reverseLabel "Chariot wheel swallowed by" .
-
-[] a yc:Link ;
-    yc:from :bhudevi ;
-    yc:relation yc:parentOf ;
-    yc:to :sita ;
-    yc:forwardLabel "Gives birth from the furrow to" ;
-    yc:reverseLabel "Born from" .
-
-[] a yc:Link ;
-    yc:from :brahma ;
-    yc:relation yc:kinOf ;
-    yc:to :saraswati ;
-    yc:forwardLabel "Married to" ;
-    yc:reverseLabel "Married to" .
-
-[] a yc:Link ;
-    yc:from :brahma ;
-    yc:relation yc:linkedWith ;
-    yc:to :jambavan ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Creates from his yawn (Puranas)" ;
-    yc:reverseLabel "Born from the yawn of" .
-
-[] a yc:Link ;
-    yc:from :brahma ;
-    yc:relation yc:linkedWith ;
-    yc:to :krishna ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Hides the calves and boys from" ;
-    yc:reverseLabel "Tested by" .
-
-[] a yc:Link ;
-    yc:from :brahma ;
-    yc:relation yc:linkedWith ;
-    yc:to :kumbhakarna ;
-    yc:forwardLabel "Curses to sleep six months at a time (the Uttara Kanda calls it a twisted boon)" ;
-    yc:reverseLabel "Cursed to sleep by" .
-
-[] a yc:Link ;
-    yc:from :brahma ;
-    yc:relation yc:linkedWith ;
-    yc:to :ravana ;
-    yc:forwardLabel "Grants invulnerability to gods and demons" ;
-    yc:reverseLabel "Boon from" .
-
-[] a yc:Link ;
-    yc:from :brahma ;
-    yc:relation yc:linkedWith ;
-    yc:to :vedas ;
-    yc:forwardLabel "Speaks from his four mouths" ;
-    yc:reverseLabel "Spoken by" .
-
-[] a yc:Link ;
-    yc:from :brahma ;
-    yc:relation yc:linkedWith ;
-    yc:to :vibhishana ;
-    yc:forwardLabel "Grants a mind fixed on dharma" ;
-    yc:reverseLabel "Boon from" .
-
-[] a yc:Link ;
-    yc:from :brahma ;
-    yc:relation yc:parentOf ;
-    yc:to :angiras ;
-    yc:forwardLabel "Mind-born son" ;
-    yc:reverseLabel "Mind-born son of" .
-
-[] a yc:Link ;
-    yc:from :brahma ;
-    yc:relation yc:parentOf ;
-    yc:to :bhrigu ;
-    yc:forwardLabel "Bhrigu springs from his breast (Adi Parva)" ;
-    yc:reverseLabel "Born from the breast of" .
-
-[] a yc:Link ;
-    yc:from :brahma ;
-    yc:relation yc:parentOf ;
-    yc:to :daksha ;
-    yc:forwardLabel "Daksha springs from his toe (Adi Parva)" ;
-    yc:reverseLabel "Born from" .
-
-[] a yc:Link ;
-    yc:from :brahma ;
-    yc:relation yc:parentOf ;
-    yc:to :kratu ;
-    yc:forwardLabel "Mind-born son" ;
-    yc:reverseLabel "Mind-born son of" .
-
-[] a yc:Link ;
-    yc:from :brahma ;
-    yc:relation yc:parentOf ;
-    yc:to :marichi ;
-    yc:forwardLabel "Mind-born son" ;
-    yc:reverseLabel "Mind-born son of" .
-
-[] a yc:Link ;
-    yc:from :brahma ;
-    yc:relation yc:parentOf ;
-    yc:to :narada ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Mind-born son" ;
-    yc:reverseLabel "Mind-born son of" .
-
-[] a yc:Link ;
-    yc:from :brahma ;
-    yc:relation yc:parentOf ;
-    yc:to :pulaha ;
-    yc:forwardLabel "Mind-born son" ;
-    yc:reverseLabel "Mind-born son of" .
-
-[] a yc:Link ;
-    yc:from :brahma ;
-    yc:relation yc:parentOf ;
-    yc:to :pulastya ;
-    yc:forwardLabel "Mind-born son" ;
-    yc:reverseLabel "Mind-born son of" .
-
-[] a yc:Link ;
-    yc:from :brahma ;
-    yc:relation yc:parentOf ;
-    yc:to :sanaka ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Mind-born sons" ;
-    yc:reverseLabel "Mind-born sons of" .
-
-[] a yc:Link ;
-    yc:from :brahma ;
-    yc:relation yc:parentOf ;
-    yc:to :svayambhuva ;
-    yc:forwardLabel "Creates" ;
-    yc:reverseLabel "Created by" .
-
-[] a yc:Link ;
-    yc:from :brahma ;
-    yc:relation yc:parentOf ;
-    yc:to :vashishtha ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Mind-born son" ;
-    yc:reverseLabel "Mind-born son of" .
-
-[] a yc:Link ;
-    yc:from :ganesha ;
-    yc:relation yc:linkedWith ;
-    yc:to :vyasa ;
-    yc:tier yc:tier-vulgate ;
-    yc:forwardLabel "Writes down the epic as dictated by" ;
-    yc:reverseLabel "Dictates the epic to" .
-
-[] a yc:Link ;
-    yc:from :indra ;
-    yc:relation yc:linkedWith ;
-    yc:to :ahalya ;
-    yc:tier yc:tier-layer ;
-    yc:forwardLabel "Seduces" ;
-    yc:reverseLabel "Seduced by" .
-
-[] a yc:Link ;
-    yc:from :indra ;
-    yc:relation yc:linkedWith ;
-    yc:to :karna ;
-    yc:forwardLabel "Takes the armour and earrings of" ;
-    yc:reverseLabel "Gives his armour to" .
-
-[] a yc:Link ;
-    yc:from :indra ;
-    yc:relation yc:linkedWith ;
-    yc:to :maruts ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Splits Diti's unborn child into" ;
-    yc:reverseLabel "Born when Indra splits them" .
-
-[] a yc:Link ;
-    yc:from :indra ;
-    yc:relation yc:linkedWith ;
-    yc:to :menaka ;
-    yc:forwardLabel "Sends to tempt Vishvamitra" ;
-    yc:reverseLabel "Sent by" .
-
-[] a yc:Link ;
-    yc:from :indra ;
-    yc:relation yc:linkedWith ;
-    yc:to :muchukunda ;
-    yc:tier yc:tier-layer ;
-    yc:forwardLabel "Grants the boon of sleep to" ;
-    yc:reverseLabel "Granted sleep by" .
-
-[] a yc:Link ;
-    yc:from :indra ;
-    yc:relation yc:linkedWith ;
-    yc:to :sagara ;
-    yc:forwardLabel "Steals the horse of, in a demon's form" ;
-    yc:reverseLabel "Horse stolen by" .
-
-[] a yc:Link ;
-    yc:from :indra ;
-    yc:relation yc:linkedWith ;
-    yc:to :shibi ;
-    yc:forwardLabel "Tests as a hawk" ;
-    yc:reverseLabel "Tested by" .
-
-[] a yc:Link ;
-    yc:from :indra ;
-    yc:relation yc:kills ;
-    yc:to :vritra ;
-    yc:forwardLabel "Kills with foam and the thunderbolt, Vishnu inside it" ;
-    yc:reverseLabel "Killed by" .
-
-[] a yc:Link ;
-    yc:from :kama ;
-    yc:relation yc:rebornAs ;
-    yc:to :pradyumna ;
-    yc:tier yc:tier-purana .
-
-[] a yc:Link ;
-    yc:from :kartikeya ;
-    yc:relation yc:kills ;
-    yc:to :taraka ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Kills (Puranas; in the Vana Parva he kills Mahisha)" .
-
-[] a yc:Link ;
-    yc:from :kubera ;
-    yc:relation yc:linkedWith ;
-    yc:to :pushpaka ;
-    yc:forwardLabel "Owns" ;
-    yc:reverseLabel "Owned by" .
-
-[] a yc:Link ;
-    yc:from :kubera ;
-    yc:relation yc:linkedWith ;
-    yc:to :ravana ;
-    yc:forwardLabel "Gives up Lanka to, and later loses the Pushpaka to" ;
-    yc:reverseLabel "Takes Lanka and the Pushpaka from" .
-
-[] a yc:Link ;
-    yc:from :lakshmi ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :draupadi ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Incarnates as (later tradition; Ganguli's Adi Parva calls Draupadi a portion of Shachi)" ;
-    yc:reverseLabel "Partial incarnation of" .
-
-[] a yc:Link ;
-    yc:from :lakshmi ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :rukmini ;
-    yc:forwardLabel "Incarnates in part as (Adi Parva)" ;
-    yc:reverseLabel "Incarnation of" .
-
-[] a yc:Link ;
-    yc:from :lakshmi ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :sita ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Incarnates as" ;
-    yc:reverseLabel "Incarnation of" .
-
-[] a yc:Link ;
-    yc:from :parvati ;
-    yc:relation yc:parentOf ;
-    yc:to :ganesha ;
-    yc:tier yc:tier-purana .
-
-[] a yc:Link ;
-    yc:from :saraswati ;
-    yc:relation yc:linkedWith ;
-    yc:to :kumbhakarna ;
-    yc:tier yc:tier-layer ;
-    yc:forwardLabel "Twists his tongue so he asks for sleep" ;
-    yc:reverseLabel "Tongue twisted by" .
-
-[] a yc:Link ;
-    yc:from :saraswati ;
-    yc:relation yc:linkedWith ;
-    yc:to :sarasvati ;
-    yc:forwardLabel "Goddess of the river" ;
-    yc:reverseLabel "River of the goddess" .
-
-[] a yc:Link ;
-    yc:from :shesha ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :balarama ;
-    yc:forwardLabel "Incarnates as (Adi Parva)" ;
-    yc:reverseLabel "Incarnation of" .
-
-[] a yc:Link ;
-    yc:from :shesha ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :lakshmana ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Incarnates as" ;
-    yc:reverseLabel "Incarnation of" .
-
-[] a yc:Link ;
-    yc:from :shesha ;
-    yc:relation yc:tells ;
-    yc:to :deogarh ;
-    yc:forwardLabel "Carved at" ;
-    yc:reverseLabel "Carves" .
-
-[] a yc:Link ;
-    yc:from :shiva ;
-    yc:relation yc:kinOf ;
-    yc:to :parvati ;
-    yc:forwardLabel "Married to" ;
-    yc:reverseLabel "Married to" .
-
-[] a yc:Link ;
-    yc:from :shiva ;
-    yc:relation yc:kinOf ;
-    yc:to :sati ;
-    yc:forwardLabel "Married to" ;
-    yc:reverseLabel "Married to" .
-
-[] a yc:Link ;
-    yc:from :shiva ;
-    yc:relation yc:linkedWith ;
-    yc:to :daksha ;
-    yc:forwardLabel "Destroys the sacrifice of" ;
-    yc:reverseLabel "Insults; sacrifice destroyed by" .
-
-[] a yc:Link ;
-    yc:from :shiva ;
-    yc:relation yc:linkedWith ;
-    yc:to :dissolution ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Destroys the worlds at" ;
-    yc:reverseLabel "Brought by" .
-
-[] a yc:Link ;
-    yc:from :shiva ;
-    yc:relation yc:linkedWith ;
-    yc:to :ganga ;
-    yc:tier yc:tier-layer ;
-    yc:forwardLabel "Bears her fall" ;
-    yc:reverseLabel "Falls onto" .
-
-[] a yc:Link ;
-    yc:from :shiva ;
-    yc:relation yc:linkedWith ;
-    yc:to :halahala ;
-    yc:forwardLabel "Drinks, turning his throat blue" ;
-    yc:reverseLabel "Drunk by" .
-
-[] a yc:Link ;
-    yc:from :shiva ;
-    yc:relation yc:linkedWith ;
-    yc:to :kailasa ;
-    yc:forwardLabel "Presses down with a toe" ;
-    yc:reverseLabel "Held down by" .
-
-[] a yc:Link ;
-    yc:from :shiva ;
-    yc:relation yc:linkedWith ;
-    yc:to :nandi ;
-    yc:forwardLabel "Master of" ;
-    yc:reverseLabel "Attendant of" .
-
-[] a yc:Link ;
-    yc:from :shiva ;
-    yc:relation yc:linkedWith ;
-    yc:to :ravana ;
-    yc:forwardLabel "Pins under Kailasa, then names him and gives Chandrahasa" ;
-    yc:reverseLabel "Pinned under Kailasa by" .
-
-[] a yc:Link ;
-    yc:from :shiva ;
-    yc:relation yc:linkedWith ;
-    yc:to :tripura ;
-    yc:forwardLabel "Burns with a single arrow" ;
-    yc:reverseLabel "Burned by" .
-
-[] a yc:Link ;
-    yc:from :shiva ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :arjuna ;
-    yc:forwardLabel "Fights as a hunter, gives the Pashupata" ;
-    yc:reverseLabel "Receives the Pashupata from" .
-
-[] a yc:Link ;
-    yc:from :shiva ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :ashwatthama ;
-    yc:forwardLabel "Born in part as" ;
-    yc:reverseLabel "Partial incarnation of" .
-
-[] a yc:Link ;
-    yc:from :shiva ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :draupadi ;
-    yc:forwardLabel "Grants five husbands to" ;
-    yc:reverseLabel "Boon from" .
-
-[] a yc:Link ;
-    yc:from :shiva ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :durvasa ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Is born in part as (Puranas)" ;
-    yc:reverseLabel "Partial incarnation of" .
-
-[] a yc:Link ;
-    yc:from :shiva ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :hanuman ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Incarnates as (Shiva Purana)" ;
-    yc:reverseLabel "Incarnation of" .
-
-[] a yc:Link ;
-    yc:from :shiva ;
-    yc:relation yc:kills ;
-    yc:to :kama ;
-    yc:forwardLabel "Burns to ash with his third eye" ;
-    yc:reverseLabel "Burned by" .
-
-[] a yc:Link ;
-    yc:from :shiva ;
-    yc:relation yc:parentOf ;
-    yc:to :ganesha ;
-    yc:tier yc:tier-purana .
-
-[] a yc:Link ;
-    yc:from :surya ;
-    yc:relation yc:linkedWith ;
-    yc:to :akshayapatra ;
-    yc:forwardLabel "Gives the inexhaustible bowl" ;
-    yc:reverseLabel "Given by" .
-
-[] a yc:Link ;
-    yc:from :surya ;
-    yc:relation yc:linkedWith ;
-    yc:to :yajnavalkya ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Teaches the White Yajurveda to" ;
-    yc:reverseLabel "Learns the White Yajurveda from" .
-
-[] a yc:Link ;
-    yc:from :surya ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :satrajit ;
-    yc:forwardLabel "Gives the Syamantaka to" ;
-    yc:reverseLabel "Receives the gem from" .
-
-[] a yc:Link ;
-    yc:from :surya ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :tapati ;
-    yc:forwardLabel "Father of" ;
-    yc:reverseLabel "Daughter of" .
-
-[] a yc:Link ;
-    yc:from :varuna ;
-    yc:relation yc:linkedWith ;
-    yc:to :arjuna ;
-    yc:forwardLabel "Gives the Gandiva bow, through Agni, to" ;
-    yc:reverseLabel "Receives the Gandiva from" .
-
-[] a yc:Link ;
-    yc:from :vasus ;
-    yc:relation yc:rebornAs ;
-    yc:to :bhishma ;
-    yc:forwardLabel "Dyaus is reborn as" ;
-    yc:reverseLabel "Dyaus in a previous life" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:kinOf ;
-    yc:to :lakshmi ;
-    yc:forwardLabel "Married to" ;
-    yc:reverseLabel "Married to" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:linkedWith ;
-    yc:to :markandeya ;
-    yc:forwardLabel "Appears as a child on a banyan leaf to" ;
-    yc:reverseLabel "Sees in the flood" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:linkedWith ;
-    yc:to :rahu ;
-    yc:forwardLabel "Beheads with the discus at the churning" ;
-    yc:reverseLabel "Beheaded by" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :brahma ;
-    yc:forwardLabel "Brahma is born from his navel lotus" ;
-    yc:reverseLabel "Born from the navel lotus of" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :buddha ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Counted as an avatar (later Puranas)" ;
-    yc:reverseLabel "Counted as an avatar of" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :dattatreya ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Partial avatar" ;
-    yc:reverseLabel "Partial avatar of" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :dhruva ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Makes the pole star" ;
-    yc:reverseLabel "Made the pole star by" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :kalki ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Will incarnate as (Bhagavata)" ;
-    yc:reverseLabel "Avatar of" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :kapila ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Partial avatar (Bhagavata)" ;
-    yc:reverseLabel "Partial avatar of" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :krishna ;
-    yc:forwardLabel "Incarnates as" ;
-    yc:reverseLabel "Avatar of" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :kurma ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Incarnates as (Puranas; the Adi Parva names only a tortoise king)" ;
-    yc:reverseLabel "Avatar of" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :matsya ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Incarnates as (Puranas; the Vana Parva fish is Brahma)" ;
-    yc:reverseLabel "Avatar of" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :mohini ;
-    yc:forwardLabel "Takes the form of" ;
-    yc:reverseLabel "Form of" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :naranarayana ;
-    yc:forwardLabel "Appears as" ;
-    yc:reverseLabel "Form of" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :narasimha ;
-    yc:forwardLabel "Incarnates as" ;
-    yc:reverseLabel "Avatar of" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :parashurama ;
-    yc:forwardLabel "Incarnates as" ;
-    yc:reverseLabel "Avatar of" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :prithu ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Partial avatar (Bhagavata)" ;
-    yc:reverseLabel "Partial avatar of" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :rama ;
-    yc:forwardLabel "Incarnates as" ;
-    yc:reverseLabel "Avatar of" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :rishabha ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Partial avatar (Bhagavata)" ;
-    yc:reverseLabel "Partial avatar of" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :vamana ;
-    yc:forwardLabel "Incarnates as" ;
-    yc:reverseLabel "Avatar of" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :varaha ;
-    yc:forwardLabel "Incarnates as" ;
-    yc:reverseLabel "Avatar of" .
-
-[] a yc:Link ;
-    yc:from :vishnu ;
-    yc:relation yc:divineOriginOf ;
-    yc:to :vyasa ;
-    yc:tier yc:tier-purana ;
-    yc:forwardLabel "Partial avatar (Bhagavata)" ;
-    yc:reverseLabel "Partial avatar of" .
-
-[] a yc:Link ;
-    yc:from :vishvakarma ;
-    yc:relation yc:linkedWith ;
-    yc:to :krishna ;
-    yc:tier yc:tier-layer ;
-    yc:forwardLabel "Builds Dvaraka for" ;
-    yc:reverseLabel "Has Dvaraka built by" .
-
-[] a yc:Link ;
-    yc:from :vishvakarma ;
-    yc:relation yc:linkedWith ;
-    yc:to :pushpaka ;
-    yc:forwardLabel "Makes" ;
-    yc:reverseLabel "Made by" .
-
-[] a yc:Link ;
-    yc:from :vishvakarma ;
-    yc:relation yc:linkedWith ;
-    yc:to :t_lanka ;
-    yc:forwardLabel "His son Nala builds the bridge in" ;
-    yc:reverseLabel "Bridge built by Nala, son of" .
-
-[] a yc:Link ;
-    yc:from :vishvakarma ;
-    yc:relation yc:parentOf ;
-    yc:to :tilottama ;
-    yc:forwardLabel "Creates" ;
-    yc:reverseLabel "Created by" .
-
-[] a yc:Link ;
-    yc:from :vishvakarma ;
-    yc:relation yc:parentOf ;
-    yc:to :vritra ;
-    yc:forwardLabel "Creates, as Tvashtr, to avenge his son" ;
-    yc:reverseLabel "Created by Tvashtr" .
-
-[] a yc:Link ;
-    yc:from :yama ;
-    yc:relation yc:linkedWith ;
-    yc:to :savitri ;
-    yc:forwardLabel "Returns Satyavan's life to" ;
-    yc:reverseLabel "Wins back Satyavan from" .
-
-[] a yc:Link ;
-    yc:from :yama ;
-    yc:relation yc:linkedWith ;
-    yc:to :yaksha ;
-    yc:forwardLabel "Takes the form of" ;
-    yc:reverseLabel "Form of" .
-
-[] a yc:Link ;
-    yc:from :yama ;
-    yc:relation yc:rebornAs ;
-    yc:to :vidura ;
-    yc:forwardLabel "Born on earth as" ;
-    yc:reverseLabel "Yama in a previous life" .
+        [ a aoa:Citation ; rdfs:label "Uttara 7.22" ; schema:url <https://www.wisdomlib.org/hinduism/book/the-ramayana-of-valmiki/d/doc424783.html> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.67; MBh 1.108" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.67; MBh 1.123" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-lxvii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 1.108; MBh 1.123" ; schema:url <https://sacred-texts.com/book/the-mahabharata-book-1-adi-parva/section-cviii> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 3.295" ; schema:url <https://www.sacred-texts.com/hin/m03/m03295.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 3.312" ; schema:url <https://www.sacred-texts.com/hin/m03/m03312.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "MBh 18.3" ; schema:url <https://sacred-texts.com/hin/m18/m18003.htm> ] ,
+        [ a aoa:Citation ; rdfs:label "Harivamsa 2.33" ; schema:url <https://www.wisdomlib.org/hinduism/book/harivamsha-purana-dutt/d/doc485574.html> ] .
+
+[] a aoa:Link ;
+    aoa:from :agni ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :kartikeya ;
+    aoa:forwardLabel "Fathers him (Vana Parva); carries Shiva's seed in the Puranas" ;
+    aoa:reverseLabel "Born through" .
+
+[] a aoa:Link ;
+    aoa:from :agni ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :shibi ;
+    aoa:forwardLabel "Tests as a dove" ;
+    aoa:reverseLabel "Tested by" .
+
+[] a aoa:Link ;
+    aoa:from :agni ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :dhrishtadyumna ;
+    aoa:forwardLabel "Gives birth from the altar to" ;
+    aoa:reverseLabel "Born from the fire of" .
+
+[] a aoa:Link ;
+    aoa:from :agni ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :draupadi ;
+    aoa:forwardLabel "Gives birth from the altar to" ;
+    aoa:reverseLabel "Born from the fire of" .
+
+[] a aoa:Link ;
+    aoa:from :ashvins ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :chyavana ;
+    aoa:forwardLabel "Restore the youth of" ;
+    aoa:reverseLabel "Youth restored by" .
+
+[] a aoa:Link ;
+    aoa:from :ashvins ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :twins ;
+    aoa:forwardLabel "Divine fathers of" ;
+    aoa:reverseLabel "Sons of" .
+
+[] a aoa:Link ;
+    aoa:from :bhudevi ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :karna ;
+    aoa:forwardLabel "Swallows his chariot wheel (the curse is a brahmin's)" ;
+    aoa:reverseLabel "Chariot wheel swallowed by" .
+
+[] a aoa:Link ;
+    aoa:from :bhudevi ;
+    aoa:relation aoa:parentOf ;
+    aoa:to :sita ;
+    aoa:forwardLabel "Gives birth from the furrow to" ;
+    aoa:reverseLabel "Born from" .
+
+[] a aoa:Link ;
+    aoa:from :brahma ;
+    aoa:relation aoa:kinOf ;
+    aoa:to :saraswati ;
+    aoa:forwardLabel "Married to" ;
+    aoa:reverseLabel "Married to" .
+
+[] a aoa:Link ;
+    aoa:from :brahma ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :jambavan ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Creates from his yawn (Puranas)" ;
+    aoa:reverseLabel "Born from the yawn of" .
+
+[] a aoa:Link ;
+    aoa:from :brahma ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :krishna ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Hides the calves and boys from" ;
+    aoa:reverseLabel "Tested by" .
+
+[] a aoa:Link ;
+    aoa:from :brahma ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :kumbhakarna ;
+    aoa:forwardLabel "Curses to sleep six months at a time (the Uttara Kanda calls it a twisted boon)" ;
+    aoa:reverseLabel "Cursed to sleep by" .
+
+[] a aoa:Link ;
+    aoa:from :brahma ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :ravana ;
+    aoa:forwardLabel "Grants invulnerability to gods and demons" ;
+    aoa:reverseLabel "Boon from" .
+
+[] a aoa:Link ;
+    aoa:from :brahma ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :vedas ;
+    aoa:forwardLabel "Speaks from his four mouths" ;
+    aoa:reverseLabel "Spoken by" .
+
+[] a aoa:Link ;
+    aoa:from :brahma ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :vibhishana ;
+    aoa:forwardLabel "Grants a mind fixed on dharma" ;
+    aoa:reverseLabel "Boon from" .
+
+[] a aoa:Link ;
+    aoa:from :brahma ;
+    aoa:relation aoa:parentOf ;
+    aoa:to :angiras ;
+    aoa:forwardLabel "Mind-born son" ;
+    aoa:reverseLabel "Mind-born son of" .
+
+[] a aoa:Link ;
+    aoa:from :brahma ;
+    aoa:relation aoa:parentOf ;
+    aoa:to :bhrigu ;
+    aoa:forwardLabel "Bhrigu springs from his breast (Adi Parva)" ;
+    aoa:reverseLabel "Born from the breast of" .
+
+[] a aoa:Link ;
+    aoa:from :brahma ;
+    aoa:relation aoa:parentOf ;
+    aoa:to :daksha ;
+    aoa:forwardLabel "Daksha springs from his toe (Adi Parva)" ;
+    aoa:reverseLabel "Born from" .
+
+[] a aoa:Link ;
+    aoa:from :brahma ;
+    aoa:relation aoa:parentOf ;
+    aoa:to :kratu ;
+    aoa:forwardLabel "Mind-born son" ;
+    aoa:reverseLabel "Mind-born son of" .
+
+[] a aoa:Link ;
+    aoa:from :brahma ;
+    aoa:relation aoa:parentOf ;
+    aoa:to :marichi ;
+    aoa:forwardLabel "Mind-born son" ;
+    aoa:reverseLabel "Mind-born son of" .
+
+[] a aoa:Link ;
+    aoa:from :brahma ;
+    aoa:relation aoa:parentOf ;
+    aoa:to :narada ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Mind-born son" ;
+    aoa:reverseLabel "Mind-born son of" .
+
+[] a aoa:Link ;
+    aoa:from :brahma ;
+    aoa:relation aoa:parentOf ;
+    aoa:to :pulaha ;
+    aoa:forwardLabel "Mind-born son" ;
+    aoa:reverseLabel "Mind-born son of" .
+
+[] a aoa:Link ;
+    aoa:from :brahma ;
+    aoa:relation aoa:parentOf ;
+    aoa:to :pulastya ;
+    aoa:forwardLabel "Mind-born son" ;
+    aoa:reverseLabel "Mind-born son of" .
+
+[] a aoa:Link ;
+    aoa:from :brahma ;
+    aoa:relation aoa:parentOf ;
+    aoa:to :sanaka ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Mind-born sons" ;
+    aoa:reverseLabel "Mind-born sons of" .
+
+[] a aoa:Link ;
+    aoa:from :brahma ;
+    aoa:relation aoa:parentOf ;
+    aoa:to :svayambhuva ;
+    aoa:forwardLabel "Creates" ;
+    aoa:reverseLabel "Created by" .
+
+[] a aoa:Link ;
+    aoa:from :brahma ;
+    aoa:relation aoa:parentOf ;
+    aoa:to :vashishtha ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Mind-born son" ;
+    aoa:reverseLabel "Mind-born son of" .
+
+[] a aoa:Link ;
+    aoa:from :ganesha ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :vyasa ;
+    aoa:tier aoa:tier-vulgate ;
+    aoa:forwardLabel "Writes down the epic as dictated by" ;
+    aoa:reverseLabel "Dictates the epic to" .
+
+[] a aoa:Link ;
+    aoa:from :indra ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :ahalya ;
+    aoa:tier aoa:tier-layer ;
+    aoa:forwardLabel "Seduces" ;
+    aoa:reverseLabel "Seduced by" .
+
+[] a aoa:Link ;
+    aoa:from :indra ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :karna ;
+    aoa:forwardLabel "Takes the armour and earrings of" ;
+    aoa:reverseLabel "Gives his armour to" .
+
+[] a aoa:Link ;
+    aoa:from :indra ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :maruts ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Splits Diti's unborn child into" ;
+    aoa:reverseLabel "Born when Indra splits them" .
+
+[] a aoa:Link ;
+    aoa:from :indra ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :menaka ;
+    aoa:forwardLabel "Sends to tempt Vishvamitra" ;
+    aoa:reverseLabel "Sent by" .
+
+[] a aoa:Link ;
+    aoa:from :indra ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :muchukunda ;
+    aoa:tier aoa:tier-layer ;
+    aoa:forwardLabel "Grants the boon of sleep to" ;
+    aoa:reverseLabel "Granted sleep by" .
+
+[] a aoa:Link ;
+    aoa:from :indra ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :sagara ;
+    aoa:forwardLabel "Steals the horse of, in a demon's form" ;
+    aoa:reverseLabel "Horse stolen by" .
+
+[] a aoa:Link ;
+    aoa:from :indra ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :shibi ;
+    aoa:forwardLabel "Tests as a hawk" ;
+    aoa:reverseLabel "Tested by" .
+
+[] a aoa:Link ;
+    aoa:from :indra ;
+    aoa:relation aoa:kills ;
+    aoa:to :vritra ;
+    aoa:forwardLabel "Kills with foam and the thunderbolt, Vishnu inside it" ;
+    aoa:reverseLabel "Killed by" .
+
+[] a aoa:Link ;
+    aoa:from :kama ;
+    aoa:relation aoa:rebornAs ;
+    aoa:to :pradyumna ;
+    aoa:tier aoa:tier-purana .
+
+[] a aoa:Link ;
+    aoa:from :kartikeya ;
+    aoa:relation aoa:kills ;
+    aoa:to :taraka ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Kills (Puranas; in the Vana Parva he kills Mahisha)" .
+
+[] a aoa:Link ;
+    aoa:from :kubera ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :pushpaka ;
+    aoa:forwardLabel "Owns" ;
+    aoa:reverseLabel "Owned by" .
+
+[] a aoa:Link ;
+    aoa:from :kubera ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :ravana ;
+    aoa:forwardLabel "Gives up Lanka to, and later loses the Pushpaka to" ;
+    aoa:reverseLabel "Takes Lanka and the Pushpaka from" .
+
+[] a aoa:Link ;
+    aoa:from :lakshmi ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :draupadi ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Incarnates as (later tradition; Ganguli's Adi Parva calls Draupadi a portion of Shachi)" ;
+    aoa:reverseLabel "Partial incarnation of" .
+
+[] a aoa:Link ;
+    aoa:from :lakshmi ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :rukmini ;
+    aoa:forwardLabel "Incarnates in part as (Adi Parva)" ;
+    aoa:reverseLabel "Incarnation of" .
+
+[] a aoa:Link ;
+    aoa:from :lakshmi ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :sita ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Incarnates as" ;
+    aoa:reverseLabel "Incarnation of" .
+
+[] a aoa:Link ;
+    aoa:from :parvati ;
+    aoa:relation aoa:parentOf ;
+    aoa:to :ganesha ;
+    aoa:tier aoa:tier-purana .
+
+[] a aoa:Link ;
+    aoa:from :saraswati ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :kumbhakarna ;
+    aoa:tier aoa:tier-layer ;
+    aoa:forwardLabel "Twists his tongue so he asks for sleep" ;
+    aoa:reverseLabel "Tongue twisted by" .
+
+[] a aoa:Link ;
+    aoa:from :saraswati ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :sarasvati ;
+    aoa:forwardLabel "Goddess of the river" ;
+    aoa:reverseLabel "River of the goddess" .
+
+[] a aoa:Link ;
+    aoa:from :shesha ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :balarama ;
+    aoa:forwardLabel "Incarnates as (Adi Parva)" ;
+    aoa:reverseLabel "Incarnation of" .
+
+[] a aoa:Link ;
+    aoa:from :shesha ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :lakshmana ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Incarnates as" ;
+    aoa:reverseLabel "Incarnation of" .
+
+[] a aoa:Link ;
+    aoa:from :shesha ;
+    aoa:relation aoa:tells ;
+    aoa:to :deogarh ;
+    aoa:forwardLabel "Carved at" ;
+    aoa:reverseLabel "Carves" .
+
+[] a aoa:Link ;
+    aoa:from :shiva ;
+    aoa:relation aoa:kinOf ;
+    aoa:to :parvati ;
+    aoa:forwardLabel "Married to" ;
+    aoa:reverseLabel "Married to" .
+
+[] a aoa:Link ;
+    aoa:from :shiva ;
+    aoa:relation aoa:kinOf ;
+    aoa:to :sati ;
+    aoa:forwardLabel "Married to" ;
+    aoa:reverseLabel "Married to" .
+
+[] a aoa:Link ;
+    aoa:from :shiva ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :daksha ;
+    aoa:forwardLabel "Destroys the sacrifice of" ;
+    aoa:reverseLabel "Insults; sacrifice destroyed by" .
+
+[] a aoa:Link ;
+    aoa:from :shiva ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :dissolution ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Destroys the worlds at" ;
+    aoa:reverseLabel "Brought by" .
+
+[] a aoa:Link ;
+    aoa:from :shiva ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :ganga ;
+    aoa:tier aoa:tier-layer ;
+    aoa:forwardLabel "Bears her fall" ;
+    aoa:reverseLabel "Falls onto" .
+
+[] a aoa:Link ;
+    aoa:from :shiva ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :halahala ;
+    aoa:forwardLabel "Drinks, turning his throat blue" ;
+    aoa:reverseLabel "Drunk by" .
+
+[] a aoa:Link ;
+    aoa:from :shiva ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :kailasa ;
+    aoa:forwardLabel "Presses down with a toe" ;
+    aoa:reverseLabel "Held down by" .
+
+[] a aoa:Link ;
+    aoa:from :shiva ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :nandi ;
+    aoa:forwardLabel "Master of" ;
+    aoa:reverseLabel "Attendant of" .
+
+[] a aoa:Link ;
+    aoa:from :shiva ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :ravana ;
+    aoa:forwardLabel "Pins under Kailasa, then names him and gives Chandrahasa" ;
+    aoa:reverseLabel "Pinned under Kailasa by" .
+
+[] a aoa:Link ;
+    aoa:from :shiva ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :tripura ;
+    aoa:forwardLabel "Burns with a single arrow" ;
+    aoa:reverseLabel "Burned by" .
+
+[] a aoa:Link ;
+    aoa:from :shiva ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :arjuna ;
+    aoa:forwardLabel "Fights as a hunter, gives the Pashupata" ;
+    aoa:reverseLabel "Receives the Pashupata from" .
+
+[] a aoa:Link ;
+    aoa:from :shiva ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :ashwatthama ;
+    aoa:forwardLabel "Born in part as" ;
+    aoa:reverseLabel "Partial incarnation of" .
+
+[] a aoa:Link ;
+    aoa:from :shiva ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :draupadi ;
+    aoa:forwardLabel "Grants five husbands to" ;
+    aoa:reverseLabel "Boon from" .
+
+[] a aoa:Link ;
+    aoa:from :shiva ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :durvasa ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Is born in part as (Puranas)" ;
+    aoa:reverseLabel "Partial incarnation of" .
+
+[] a aoa:Link ;
+    aoa:from :shiva ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :hanuman ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Incarnates as (Shiva Purana)" ;
+    aoa:reverseLabel "Incarnation of" .
+
+[] a aoa:Link ;
+    aoa:from :shiva ;
+    aoa:relation aoa:kills ;
+    aoa:to :kama ;
+    aoa:forwardLabel "Burns to ash with his third eye" ;
+    aoa:reverseLabel "Burned by" .
+
+[] a aoa:Link ;
+    aoa:from :shiva ;
+    aoa:relation aoa:parentOf ;
+    aoa:to :ganesha ;
+    aoa:tier aoa:tier-purana .
+
+[] a aoa:Link ;
+    aoa:from :surya ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :akshayapatra ;
+    aoa:forwardLabel "Gives the inexhaustible bowl" ;
+    aoa:reverseLabel "Given by" .
+
+[] a aoa:Link ;
+    aoa:from :surya ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :yajnavalkya ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Teaches the White Yajurveda to" ;
+    aoa:reverseLabel "Learns the White Yajurveda from" .
+
+[] a aoa:Link ;
+    aoa:from :surya ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :satrajit ;
+    aoa:forwardLabel "Gives the Syamantaka to" ;
+    aoa:reverseLabel "Receives the gem from" .
+
+[] a aoa:Link ;
+    aoa:from :surya ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :tapati ;
+    aoa:forwardLabel "Father of" ;
+    aoa:reverseLabel "Daughter of" .
+
+[] a aoa:Link ;
+    aoa:from :varuna ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :arjuna ;
+    aoa:forwardLabel "Gives the Gandiva bow, through Agni, to" ;
+    aoa:reverseLabel "Receives the Gandiva from" .
+
+[] a aoa:Link ;
+    aoa:from :vasus ;
+    aoa:relation aoa:rebornAs ;
+    aoa:to :bhishma ;
+    aoa:forwardLabel "Dyaus is reborn as" ;
+    aoa:reverseLabel "Dyaus in a previous life" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:kinOf ;
+    aoa:to :lakshmi ;
+    aoa:forwardLabel "Married to" ;
+    aoa:reverseLabel "Married to" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :markandeya ;
+    aoa:forwardLabel "Appears as a child on a banyan leaf to" ;
+    aoa:reverseLabel "Sees in the flood" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :rahu ;
+    aoa:forwardLabel "Beheads with the discus at the churning" ;
+    aoa:reverseLabel "Beheaded by" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :brahma ;
+    aoa:forwardLabel "Brahma is born from his navel lotus" ;
+    aoa:reverseLabel "Born from the navel lotus of" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :buddha ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Counted as an avatar (later Puranas)" ;
+    aoa:reverseLabel "Counted as an avatar of" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :dattatreya ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Partial avatar" ;
+    aoa:reverseLabel "Partial avatar of" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :dhruva ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Makes the pole star" ;
+    aoa:reverseLabel "Made the pole star by" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :kalki ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Will incarnate as (Bhagavata)" ;
+    aoa:reverseLabel "Avatar of" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :kapila ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Partial avatar (Bhagavata)" ;
+    aoa:reverseLabel "Partial avatar of" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :krishna ;
+    aoa:forwardLabel "Incarnates as" ;
+    aoa:reverseLabel "Avatar of" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :kurma ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Incarnates as (Puranas; the Adi Parva names only a tortoise king)" ;
+    aoa:reverseLabel "Avatar of" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :matsya ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Incarnates as (Puranas; the Vana Parva fish is Brahma)" ;
+    aoa:reverseLabel "Avatar of" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :mohini ;
+    aoa:forwardLabel "Takes the form of" ;
+    aoa:reverseLabel "Form of" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :naranarayana ;
+    aoa:forwardLabel "Appears as" ;
+    aoa:reverseLabel "Form of" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :narasimha ;
+    aoa:forwardLabel "Incarnates as" ;
+    aoa:reverseLabel "Avatar of" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :parashurama ;
+    aoa:forwardLabel "Incarnates as" ;
+    aoa:reverseLabel "Avatar of" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :prithu ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Partial avatar (Bhagavata)" ;
+    aoa:reverseLabel "Partial avatar of" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :rama ;
+    aoa:forwardLabel "Incarnates as" ;
+    aoa:reverseLabel "Avatar of" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :rishabha ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Partial avatar (Bhagavata)" ;
+    aoa:reverseLabel "Partial avatar of" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :vamana ;
+    aoa:forwardLabel "Incarnates as" ;
+    aoa:reverseLabel "Avatar of" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :varaha ;
+    aoa:forwardLabel "Incarnates as" ;
+    aoa:reverseLabel "Avatar of" .
+
+[] a aoa:Link ;
+    aoa:from :vishnu ;
+    aoa:relation aoa:divineOriginOf ;
+    aoa:to :vyasa ;
+    aoa:tier aoa:tier-purana ;
+    aoa:forwardLabel "Partial avatar (Bhagavata)" ;
+    aoa:reverseLabel "Partial avatar of" .
+
+[] a aoa:Link ;
+    aoa:from :vishvakarma ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :krishna ;
+    aoa:tier aoa:tier-layer ;
+    aoa:forwardLabel "Builds Dvaraka for" ;
+    aoa:reverseLabel "Has Dvaraka built by" .
+
+[] a aoa:Link ;
+    aoa:from :vishvakarma ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :pushpaka ;
+    aoa:forwardLabel "Makes" ;
+    aoa:reverseLabel "Made by" .
+
+[] a aoa:Link ;
+    aoa:from :vishvakarma ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :t_lanka ;
+    aoa:forwardLabel "His son Nala builds the bridge in" ;
+    aoa:reverseLabel "Bridge built by Nala, son of" .
+
+[] a aoa:Link ;
+    aoa:from :vishvakarma ;
+    aoa:relation aoa:parentOf ;
+    aoa:to :tilottama ;
+    aoa:forwardLabel "Creates" ;
+    aoa:reverseLabel "Created by" .
+
+[] a aoa:Link ;
+    aoa:from :vishvakarma ;
+    aoa:relation aoa:parentOf ;
+    aoa:to :vritra ;
+    aoa:forwardLabel "Creates, as Tvashtr, to avenge his son" ;
+    aoa:reverseLabel "Created by Tvashtr" .
+
+[] a aoa:Link ;
+    aoa:from :yama ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :savitri ;
+    aoa:forwardLabel "Returns Satyavan's life to" ;
+    aoa:reverseLabel "Wins back Satyavan from" .
+
+[] a aoa:Link ;
+    aoa:from :yama ;
+    aoa:relation aoa:linkedWith ;
+    aoa:to :yaksha ;
+    aoa:forwardLabel "Takes the form of" ;
+    aoa:reverseLabel "Form of" .
+
+[] a aoa:Link ;
+    aoa:from :yama ;
+    aoa:relation aoa:rebornAs ;
+    aoa:to :vidura ;
+    aoa:forwardLabel "Born on earth as" ;
+    aoa:reverseLabel "Yama in a previous life" .

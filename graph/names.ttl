@@ -1,0 +1,33 @@
+# Names a place bore in an age or span of years; the map shows the name in use at the chosen time.
+# Kushasthali: Bhagavata 9.3 (Kakudmi's city, later Dvaraka). Rajagriha, Saketa: the Pali canon and later sources.
+# Patna: Sher Shah's refounding (1541). Shahjahanabad: Shah Jahan's city (1648). Calcutta, Poona: British-era names.
+
+@prefix : <https://w3id.org/atlas-of-ages#> .
+@prefix aoa: <https://w3id.org/atlas-of-ages#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:p_dvaraka aoa:nameDuring [ a aoa:PlaceName ; rdfs:label "Kushasthali" ; aoa:period aoa:period-satya ; aoa:tier aoa:tier-purana ] .
+
+:p_girivraja aoa:nameDuring [ a aoa:PlaceName ; rdfs:label "Rajagriha" ;
+    aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0599"^^xsd:gYear ] ;
+                                time:hasEnd [ a time:Instant ; time:inXSDgYear "0500"^^xsd:gYear ] ] ] .
+:p_ayodhya aoa:nameDuring [ a aoa:PlaceName ; rdfs:label "Saketa" ;
+    aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0599"^^xsd:gYear ] ;
+                                time:hasEnd [ a time:Instant ; time:inXSDgYear "0500"^^xsd:gYear ] ] ] .
+:p_kashi aoa:nameDuring [ a aoa:PlaceName ; rdfs:label "Varanasi" ;
+    aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "-0599"^^xsd:gYear ] ;
+                                time:hasEnd [ a time:Instant ; time:inXSDgYear "1947"^^xsd:gYear ] ] ] .
+:p_pataliputra aoa:nameDuring [ a aoa:PlaceName ; rdfs:label "Patna" ;
+    aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "1541"^^xsd:gYear ] ;
+                                time:hasEnd [ a time:Instant ; time:inXSDgYear "1947"^^xsd:gYear ] ] ] .
+:p_delhi aoa:nameDuring [ a aoa:PlaceName ; rdfs:label "Shahjahanabad" ;
+    aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "1648"^^xsd:gYear ] ;
+                                time:hasEnd [ a time:Instant ; time:inXSDgYear "1857"^^xsd:gYear ] ] ] .
+:p_kolkata aoa:nameDuring [ a aoa:PlaceName ; rdfs:label "Calcutta" ;
+    aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "1690"^^xsd:gYear ] ;
+                                time:hasEnd [ a time:Instant ; time:inXSDgYear "1947"^^xsd:gYear ] ] ] .
+:p_pune aoa:nameDuring [ a aoa:PlaceName ; rdfs:label "Poona" ;
+    aoa:when [ a time:Interval ; time:hasBeginning [ a time:Instant ; time:inXSDgYear "1818"^^xsd:gYear ] ;
+                                time:hasEnd [ a time:Instant ; time:inXSDgYear "1947"^^xsd:gYear ] ] ] .

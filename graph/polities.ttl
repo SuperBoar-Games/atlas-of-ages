@@ -1,0 +1,81 @@
+# Kingdoms and states. Epic ones carry the age they belong to; historical ones take their years from Wikidata.
+# Territories are the places listed with aoa:locatedIn; extents are in graph/extents.ttl and from Cliopatria.
+
+@prefix : <https://w3id.org/atlas-of-ages#> .
+@prefix aoa: <https://w3id.org/atlas-of-ages#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+:pol_kosala a aoa:Polity ; rdfs:label "Kosala" ; aoa:period aoa:period-satya, aoa:period-treta .
+:pol_videha a aoa:Polity ; rdfs:label "Videha" ; aoa:period aoa:period-treta .
+:pol_kishkindha a aoa:Polity ; rdfs:label "Kishkindha" ; aoa:period aoa:period-treta .
+:pol_lanka a aoa:Polity ; rdfs:label "Lanka" ; aoa:period aoa:period-treta .
+:pol_kuru a aoa:Polity ; rdfs:label "Kuru" ; aoa:period aoa:period-dvapara .
+:pol_panchala a aoa:Polity ; rdfs:label "Panchala" ; aoa:period aoa:period-dvapara .
+:pol_matsya a aoa:Polity ; rdfs:label "Matsya" ; aoa:period aoa:period-dvapara .
+:pol_shurasena a aoa:Polity ; rdfs:label "Shurasena" ; aoa:period aoa:period-dvapara .
+:pol_anarta a aoa:Polity ; rdfs:label "Anarta" ; aoa:period aoa:period-dvapara .
+:pol_magadha_epic a aoa:Polity ; rdfs:label "Magadha" ; aoa:period aoa:period-dvapara .
+:pol_anga a aoa:Polity ; rdfs:label "Anga" ; aoa:period aoa:period-dvapara .
+:pol_vidarbha a aoa:Polity ; rdfs:label "Vidarbha" ; aoa:period aoa:period-dvapara .
+:pol_pragjyotisha a aoa:Polity ; rdfs:label "Pragjyotisha" ; aoa:period aoa:period-dvapara .
+:pol_avanti a aoa:Polity ; rdfs:label "Avanti" ; aoa:period aoa:period-dvapara .
+
+:pol_kuru_vedic a aoa:Polity ; rdfs:label "Kuru kingdom" ; skos:exactMatch wd:Q1068408 .
+:pol_kosala_h a aoa:Polity ; rdfs:label "Kosala" ; skos:exactMatch wd:Q756854 .
+:pol_magadha a aoa:Polity ; rdfs:label "Magadha" ; skos:exactMatch wd:Q234009 .
+:pol_shakya a aoa:Polity ; rdfs:label "Shakya" ; skos:exactMatch wd:Q1062748 .
+:pol_maurya a aoa:Polity ; rdfs:label "Maurya empire" ; skos:exactMatch wd:Q62943 .
+:pol_gupta a aoa:Polity ; rdfs:label "Gupta empire" ; skos:exactMatch wd:Q11774 .
+:pol_sultanate a aoa:Polity ; rdfs:label "Delhi Sultanate" ; skos:exactMatch wd:Q229411 .
+:pol_vijayanagara a aoa:Polity ; rdfs:label "Vijayanagara" ; skos:exactMatch wd:Q167639 .
+:pol_mughal a aoa:Polity ; rdfs:label "Mughal empire" ; skos:exactMatch wd:Q33296 .
+:pol_maratha a aoa:Polity ; rdfs:label "Maratha state" ; skos:exactMatch wd:Q83618 .
+:pol_company a aoa:Polity ; rdfs:label "Company rule" ; skos:exactMatch wd:Q2001966 .
+:pol_raj a aoa:Polity ; rdfs:label "British Raj" ; skos:exactMatch wd:Q129286 .
+
+:p_ayodhya aoa:locatedIn :pol_kosala, :pol_kosala_h .
+:p_shravasti aoa:locatedIn :pol_kosala_h .
+:p_mithila aoa:locatedIn :pol_videha .
+:p_kishkindha aoa:locatedIn :pol_kishkindha .
+:p_pampa aoa:locatedIn :pol_kishkindha .
+:p_lanka aoa:locatedIn :pol_lanka .
+:p_hastinapura aoa:locatedIn :pol_kuru, :pol_kuru_vedic .
+:p_indraprastha aoa:locatedIn :pol_kuru, :pol_kuru_vedic, :pol_sultanate, :pol_mughal .
+:p_kurukshetra aoa:locatedIn :pol_kuru, :pol_kuru_vedic .
+:p_kampilya aoa:locatedIn :pol_panchala .
+:p_ahichchhatra aoa:locatedIn :pol_panchala .
+:p_viratanagara aoa:locatedIn :pol_matsya .
+:p_mathura aoa:locatedIn :pol_shurasena, :pol_maurya, :pol_mughal .
+:p_gokula aoa:locatedIn :pol_shurasena .
+:p_vrindavan aoa:locatedIn :pol_shurasena .
+:p_govardhana aoa:locatedIn :pol_shurasena .
+:p_dvaraka aoa:locatedIn :pol_anarta .
+:p_prabhasa aoa:locatedIn :pol_anarta .
+:p_girivraja aoa:locatedIn :pol_magadha_epic, :pol_magadha, :pol_maurya .
+:p_champa aoa:locatedIn :pol_anga, :pol_magadha .
+:p_kundina aoa:locatedIn :pol_vidarbha .
+:p_pragjyotisha aoa:locatedIn :pol_pragjyotisha .
+:p_ujjayini aoa:locatedIn :pol_avanti, :pol_maurya, :pol_gupta .
+:p_kashi aoa:locatedIn :pol_kosala_h, :pol_maurya, :pol_gupta, :pol_mughal, :pol_company .
+:p_kapilavastu aoa:locatedIn :pol_shakya .
+:p_lumbini aoa:locatedIn :pol_shakya .
+:p_bodhgaya aoa:locatedIn :pol_magadha, :pol_maurya, :pol_gupta .
+:p_sarnath aoa:locatedIn :pol_maurya, :pol_gupta .
+:p_kushinagar aoa:locatedIn :pol_maurya .
+:p_pataliputra aoa:locatedIn :pol_magadha, :pol_maurya, :pol_gupta, :pol_mughal, :pol_company, :pol_raj .
+:p_taxila aoa:locatedIn :pol_maurya .
+:p_sanchi aoa:locatedIn :pol_maurya, :pol_gupta .
+:p_vidisha aoa:locatedIn :pol_maurya, :pol_gupta .
+:p_udayagiri aoa:locatedIn :pol_gupta .
+:p_deogarh aoa:locatedIn :pol_gupta .
+:p_delhi aoa:locatedIn :pol_sultanate, :pol_mughal, :pol_raj .
+:p_panipat aoa:locatedIn :pol_sultanate, :pol_mughal .
+:p_vijayanagara aoa:locatedIn :pol_vijayanagara .
+:p_badami aoa:locatedIn :pol_vijayanagara .
+:p_raigad aoa:locatedIn :pol_maratha .
+:p_pune aoa:locatedIn :pol_maratha, :pol_raj .
+:p_jhansi aoa:locatedIn :pol_maratha, :pol_raj .
+:p_kolkata aoa:locatedIn :pol_company, :pol_raj .
+:p_plassey aoa:locatedIn :pol_company .

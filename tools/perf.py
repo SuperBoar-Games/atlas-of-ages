@@ -18,21 +18,21 @@ class Quiet(SimpleHTTPRequestHandler):
     def log_message(self, *args):
         pass
 
-# The page, opened with ?perf, times its own draws and tiles in window.__yc; this samples the camera every frame.
+# The page, opened with ?perf, times its own draws and tiles in window.__aoa; this samples the camera every frame.
 PROBE = """
 (() => {
-  const yc = window.__yc;
+  const aoa = window.__aoa;
   window.__frames = [];
   window.__cams = [];
   let last = 0;
   const tick = t => {
     if (last) window.__frames.push(t - last);
     last = t;
-    window.__cams.push([yc.cam.x, yc.cam.y, yc.cam.k, t]);
+    window.__cams.push([aoa.cam.x, aoa.cam.y, aoa.cam.k, t]);
     requestAnimationFrame(tick);
   };
   requestAnimationFrame(tick);
-  window.__reset = () => { yc.stats.reset(); window.__frames.length = 0; window.__cams.length = 0; last = 0; };
+  window.__reset = () => { aoa.stats.reset(); window.__frames.length = 0; window.__cams.length = 0; last = 0; };
 })();
 """
 
@@ -79,7 +79,7 @@ def smoothness(cams, w, h):
 
 
 def collect(page, name):
-    d = page.evaluate('({ draws: __yc.stats.draws, tiles: __yc.stats.tiles, frames: __frames, cams: __cams, w: innerWidth, h: innerHeight })')
+    d = page.evaluate('({ draws: __aoa.stats.draws, tiles: __aoa.stats.tiles, frames: __frames, cams: __cams, w: innerWidth, h: innerHeight })')
     draws, frames, tiles = d['draws'], d['frames'], d['tiles']
     jump, still, jerks = smoothness(d['cams'], d['w'], d['h'])
     return {
@@ -96,7 +96,7 @@ def collect(page, name):
 
 
 def run(page, name, action):
-    page.wait_for_function('__yc.idle()')
+    page.wait_for_function('__aoa.idle()')
     page.wait_for_timeout(500)
     page.evaluate('__reset()')
     action()
@@ -123,7 +123,7 @@ def main():
         errors = []
         page.on('pageerror', lambda e: errors.append(str(e)))
         page.goto(f'http://127.0.0.1:{server.server_port}/?perf')
-        page.wait_for_function('window.__yc')
+        page.wait_for_function('window.__aoa')
         page.wait_for_timeout(800)
         if args.shot:
             page.screenshot(path=str(args.shot))
@@ -146,7 +146,7 @@ def main():
                 page.mouse.move(cx - i * 6, cy - i * 9)
             page.mouse.up()
         results.append(run(page, 'drag and coast', drag))
-        page.evaluate("__yc.select('arjuna', true)")
+        page.evaluate("__aoa.select('arjuna', true)")
         page.wait_for_timeout(600)
         results.append(run(page, 'wheel with selection', wheel(24, 4, 0, 100, False)))
         browser.close()

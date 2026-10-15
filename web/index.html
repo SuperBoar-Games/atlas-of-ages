@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Yugachakra</title>
+<title>Atlas of Ages</title>
 <meta name="description" content="Gods, sages and kings across the four ages of Indian sacred history, all connected.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,20 +12,25 @@
 </head>
 <body>
 <canvas id="sky" role="img" aria-label="Map of Indian sacred history: figures and events in bands from creation through the four yugas to 1947, joined by their links"></canvas>
+<canvas id="map" hidden role="img" aria-label="Map of South Asia with the places of the epics and of history, lit by what is attested there at the chosen age or year"></canvas>
 
 <nav class="ribbon" id="ribbon" aria-label="Ages"></nav>
 
 <header class="top">
   <div class="brand">
-    <h1>Yugachakra</h1>
-    <p id="stats"></p>
+    <h1>Atlas of Ages</h1>
   </div>
   <div class="tools">
+    <div class="views" role="group" aria-label="View">
+      <a href="#graph" class="btn" id="viewGraph">Graph</a>
+      <a href="#map" class="btn" id="viewMap">Map</a>
+    </div>
     <div class="search">
       <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5 14 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
       <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Find a name" aria-label="Find a name" role="combobox" aria-controls="qres" aria-expanded="false">
       <ul id="qres" role="listbox" aria-label="Matches" hidden></ul>
     </div>
+    <button type="button" class="btn" id="storiesBtn" aria-expanded="false" aria-controls="stories">Stories</button>
     <button type="button" class="btn" id="filtersBtn" aria-expanded="false" aria-controls="filters">Filters</button>
     <button type="button" class="btn icon" id="themeBtn" aria-label="Switch light and dark">
       <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.6A5.8 5.8 0 0 1 6.4 2.5a5.8 5.8 0 1 0 7.1 7.1Z" fill="currentColor"/></svg>
@@ -50,7 +55,23 @@
   </div>
 </section>
 
+<section class="filters stories" id="stories" hidden aria-label="Stories">
+  <div class="seg" id="storyAges" role="tablist" aria-label="Age"></div>
+  <ol class="steps" id="storySteps"></ol>
+</section>
+
 <aside class="panel" id="panel" hidden aria-live="polite"></aside>
+<aside class="panel" id="mapPanel" hidden aria-live="polite"></aside>
+
+<div class="timebar" id="timebar" hidden>
+  <button type="button" class="btn" id="timePlay" aria-pressed="false">Play</button>
+  <div class="track">
+    <input type="range" id="timeSlider" min="0" max="1" value="0" step="1" aria-label="Age or year">
+    <div class="ticks" id="timeTicks" aria-hidden="true"></div>
+  </div>
+  <output id="timeLabel" for="timeSlider"></output>
+  <button type="button" class="btn" id="mapToday" aria-pressed="false">Today's names and borders</button>
+</div>
 
 <div class="zoom" aria-label="Zoom">
   <button type="button" class="btn icon" id="zout" aria-label="Zoom out"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 7h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
