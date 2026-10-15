@@ -7,7 +7,7 @@ const FAR = 700;
 const STRAIGHT = new Set(['line', 'gap', 'bond', 'story', 'reign', 'meet']);
 // The graph is drawn into cached tiles per zoom level, as map engines do: panning only moves bitmaps,
 // zooming scales them until the gesture rests, and the selection is painted as a live overlay on top.
-const T = 256, MAX_TILES = 220, FRAME_BUDGET = 3;
+const T = 512, MAX_TILES = 64, FRAME_BUDGET = 3;
 // A critically damped spring (per ms) pulls the view to its goal and keeps velocity, so wheel notches
 // blend into one steady motion instead of restarting an ease each time.
 const OMEGA = 0.016, COAST_MS = 180;
@@ -53,14 +53,17 @@ export function startGraph(model) {
   let selected = null, sel = null, focusKey = null, foc = null, hover = null;
 
   const PERF = new URLSearchParams(location.search).has('perf');
-  const stats = { draws: [], tiles: [], reset() { this.draws.length = 0; this.tiles.length = 0; } };
+  const stats = { draws: [], tiles: [], labels: [], reset() { this.draws.length = 0; this.tiles.length = 0; this.labels.length = 0; } };
 
   let raf = 0;
   const redraw = () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; draw(); }); };
 
   const tiles = new Map(), labelSets = new Map();
-  let baseVer = 0, level = null, prevLevel = null, zooming = false, zoomIdle = 0, firstFrame = true;
-  function invalidate() { baseVer++; tiles.clear(); labelSets.clear(); redraw(); }
+  let baseVer = 0, level = null, prevLevel = null, zooming = false, zoomIdle = 0, firstFrame = true, budgetEnd = 0;
+  // Evicted tile canvases are reused, so steady zooming and panning allocate nothing for the GC to pause on.
+  const pool = [];
+  const recycle = c => { if (pool.length < 64 && c.width === Math.round(T * dpr)) pool.push(c); };
+  function invalidate() { baseVer++; tiles.forEach(recycle); tiles.clear(); labelSets.clear(); redraw(); }
   function zoomMotion() {
     zooming = true;
     clearTimeout(zoomIdle);
@@ -156,6 +159,7 @@ export function startGraph(model) {
   function labelSet(z) {
     let set = labelSets.get(z);
     if (set) return set;
+    const t0 = PERF ? performance.now() : 0;
     const kz = 2 ** z, rs = sizeAt(kz), grid = new Map(), C = 64;
     const cells = (x, y, w, h, f) => {
       for (let i = Math.floor(x / C); i <= Math.floor((x + w) / C); i++) for (let j = Math.floor(y / C); j <= Math.floor((y + h) / C); j++) if (f(i * 65536 + j) === false) return false;
@@ -175,6 +179,7 @@ export function startGraph(model) {
       set.push({ n, x, y, w, dim: !!foc && nodeBaseState(n) === 1 });
     }
     labelSets.set(z, set);
+    if (PERF) stats.labels.push(performance.now() - t0);
     return set;
   }
 
@@ -182,8 +187,10 @@ export function startGraph(model) {
     const t0 = PERF ? performance.now() : 0;
     const kz = 2 ** z, ws = T / kz, x0 = tx * ws, y0 = ty * ws, x1 = x0 + ws, y1 = y0 + ws;
     const px = Math.round(T * dpr);
-    const c = Object.assign(document.createElement('canvas'), { width: px, height: px });
+    const c = pool.pop() || Object.assign(document.createElement('canvas'), { width: px, height: px });
     const g = c.getContext('2d');
+    g.setTransform(1, 0, 0, 1, 0, 0);
+    g.clearRect(0, 0, px, px);
     g.setTransform(dpr * kz, 0, 0, dpr * kz, -x0 * kz * dpr, -y0 * kz * dpr);
     const pad = 6 / kz, buckets = new Map();
     for (const e of EDGES) {
@@ -223,7 +230,11 @@ export function startGraph(model) {
     if (performance.now() > deadline) return null;
     c = renderTile(z, tx, ty);
     tiles.set(key, c);
-    if (tiles.size > MAX_TILES) tiles.delete(tiles.keys().next().value);
+    if (tiles.size > MAX_TILES) {
+      const oldest = tiles.keys().next().value;
+      recycle(tiles.get(oldest));
+      tiles.delete(oldest);
+    }
     return c;
   }
   function drawLevel(z, deadline) {
@@ -250,10 +261,11 @@ export function startGraph(model) {
     if (prefetchJob || level === null) return;
     prefetchJob = idleCb(dl => {
       prefetchJob = 0;
-      if (zooming) return;
-      const [tx0, tx1, ty0, ty1] = tileRange(level, 2), end = performance.now() + Math.max(2, dl.timeRemaining() - 1);
+      if (zooming || glideRaf) return;
+      // Short slices, so input arriving during idle work is never held back.
+      const [tx0, tx1, ty0, ty1] = tileRange(level, 2), end = performance.now() + Math.min(6, Math.max(2, dl.timeRemaining() - 1));
       for (let ty = ty0; ty <= ty1; ty++) for (let tx = tx0; tx <= tx1; tx++) {
-        if (!getTile(level, tx, ty, end)) { prefetch(); return; }
+        if (!getTile(level, tx, ty, end)) { setTimeout(prefetch, 40); return; }
       }
     });
   }
@@ -271,7 +283,10 @@ export function startGraph(model) {
     if (level === null) level = want;
     else if (want !== level && (!zooming || Math.abs(want - level) >= 1.5)) { prevLevel = level; level = want; }
     if (prevLevel !== null) drawLevel(prevLevel, 0);
-    const deadline = firstFrame ? Infinity : performance.now() + FRAME_BUDGET;
+    // Draws landing in the same frame share one tile budget.
+    const now = performance.now();
+    if (now > budgetEnd + 8) budgetEnd = now + FRAME_BUDGET;
+    const deadline = firstFrame ? Infinity : budgetEnd;
     const complete = drawLevel(level, deadline);
     firstFrame = false;
     if (complete) { prevLevel = null; aheadOf(deadline); prefetch(); } else redraw();
@@ -346,7 +361,7 @@ export function startGraph(model) {
     btn.type = 'button';
     btn.style.setProperty('--w', b.years ? b.years / 432000 : 0.8);
     if (!b.years) btn.classList.add('short');
-    btn.innerHTML = `<span>${b.name.replace(' Yuga', '')}</span>`;
+    btn.innerHTML = `<span>${b.tab || b.name.replace(' Yuga', '')}</span>`;
     btn.title = b.years ? `${b.name}: ${b.years.toLocaleString('en')} years by tradition` : `${b.name}: ${b.note}`;
     btn.setAttribute('aria-label', btn.title);
     btn.onclick = () => flyTo(cam.x, S.t + 10 - b.y0 * cam.k, cam.k);
@@ -369,7 +384,7 @@ export function startGraph(model) {
 
   function resize() {
     const d = Math.min(2, devicePixelRatio || 1);
-    if (d !== dpr) { dpr = d; tiles.clear(); }
+    if (d !== dpr) { dpr = d; tiles.clear(); pool.length = 0; }
     vw = innerWidth; vh = innerHeight;
     cv.width = Math.round(vw * dpr); cv.height = Math.round(vh * dpr);
     const wide = vw > 760;

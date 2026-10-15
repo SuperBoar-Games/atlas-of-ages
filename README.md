@@ -52,7 +52,7 @@ A new entry needs only its block in the right `graph/*.ttl`; the layout places i
 
 ## Rendering
 
-The page draws on one canvas. The graph is rendered into 256 px tiles per half-octave zoom level and cached, as map
+The page draws on one canvas. The graph is rendered into 512 px tiles per half-octave zoom level and cached, as map
 engines do: panning moves bitmaps, zooming scales them until the gesture rests, and new tiles are drawn within a
 3 ms per-frame budget plus idle prefetch. Labels are placed once per zoom level. Selection and hover are a live overlay.
 

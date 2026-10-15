@@ -11,7 +11,7 @@
   { "period": "treta", "name": "Treta Yuga", "note": "The age of the three fires", "years": 1296000 },
   { "period": "dvapara", "name": "Dvapara Yuga", "note": "The age of doubt", "years": 864000 },
   { "period": "kali", "name": "Kali Yuga", "note": "The age of strife, from 3102 BCE by tradition", "years": 432000 },
-  { "period": "history", "name": "Recorded history", "note": "c. 3300 BCE to 1947 CE, a separate timeline from the epic" }
+  { "period": "history", "name": "Recorded history", "tab": "History", "note": "c. 3300 BCE to 1947 CE, a separate timeline from the epic" }
  ],
  "rail": { "period": "deva", "name": "The gods", "width": 240, "gap": 64 }
 }
